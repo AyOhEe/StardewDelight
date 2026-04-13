@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "stardewdelight:example_item"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "stardewdelight:example_item"
+  }
+}
