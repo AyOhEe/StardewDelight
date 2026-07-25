@@ -136,6 +136,11 @@ public class SDItemModelProvider extends ItemModelProvider {
         basicItem(SDItems.ORANGE.get());
         basicItem(SDItems.PEACH.get());
         basicItem(SDItems.POMEGRANATE.get());
+
+        /*----- BERRY PUNNETS -----*/
+        basicItem(SDItems.STRAWBERRY_PUNNET.get());
+        basicItem(SDItems.BLUEBERRY_PUNNET.get());
+        basicItem(SDItems.CRANBERRY_PUNNET.get());
     }
 
     private void sapling(DeferredItem<? extends Item> i) {

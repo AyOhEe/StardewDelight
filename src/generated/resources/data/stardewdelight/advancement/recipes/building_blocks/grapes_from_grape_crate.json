@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_grape_crate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardewdelight:grape_crate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewdelight:grapes_from_grape_crate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_grape_crate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewdelight:grapes_from_grape_crate"
+    ]
+  }
+}

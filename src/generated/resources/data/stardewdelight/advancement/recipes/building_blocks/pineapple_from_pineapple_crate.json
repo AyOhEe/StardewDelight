@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pineapple_crate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardewdelight:pineapple_crate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewdelight:pineapple_from_pineapple_crate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pineapple_crate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewdelight:pineapple_from_pineapple_crate"
+    ]
+  }
+}

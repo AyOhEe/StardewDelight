@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "stardewdelight:summer_squash_crate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "stardewdelight:summer_squash"
+  }
+}

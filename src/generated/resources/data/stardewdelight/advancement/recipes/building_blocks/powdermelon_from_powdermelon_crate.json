@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_powdermelon_crate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardewdelight:powdermelon_crate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewdelight:powdermelon_from_powdermelon_crate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_powdermelon_crate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewdelight:powdermelon_from_powdermelon_crate"
+    ]
+  }
+}

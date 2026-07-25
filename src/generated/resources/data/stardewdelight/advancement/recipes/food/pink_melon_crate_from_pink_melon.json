@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pink_melon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardewdelight:pink_melon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewdelight:pink_melon_crate_from_pink_melon"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pink_melon"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewdelight:pink_melon_crate_from_pink_melon"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "stardewdelight:amaranth_bale"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "stardewdelight:amaranth"
+  }
+}

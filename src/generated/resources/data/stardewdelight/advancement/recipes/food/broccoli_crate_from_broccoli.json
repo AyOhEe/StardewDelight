@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_broccoli": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardewdelight:broccoli"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewdelight:broccoli_crate_from_broccoli"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_broccoli"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewdelight:broccoli_crate_from_broccoli"
+    ]
+  }
+}

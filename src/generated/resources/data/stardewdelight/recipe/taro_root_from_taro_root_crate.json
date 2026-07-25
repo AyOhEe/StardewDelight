@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "stardewdelight:taro_root_crate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "stardewdelight:taro_root"
+  }
+}

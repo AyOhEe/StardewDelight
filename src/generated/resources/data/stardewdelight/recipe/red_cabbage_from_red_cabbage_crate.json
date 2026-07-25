@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "stardewdelight:red_cabbage_crate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "stardewdelight:red_cabbage"
+  }
+}

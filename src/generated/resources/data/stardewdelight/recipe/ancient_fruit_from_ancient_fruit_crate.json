@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "stardewdelight:ancient_fruit_crate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "stardewdelight:ancient_fruit"
+  }
+}

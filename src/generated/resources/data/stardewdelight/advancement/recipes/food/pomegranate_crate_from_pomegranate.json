@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pomegranate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardewdelight:pomegranate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewdelight:pomegranate_crate_from_pomegranate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pomegranate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewdelight:pomegranate_crate_from_pomegranate"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "stardewdelight:fairy_rose_box"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "stardewdelight:fairy_rose"
+  }
+}

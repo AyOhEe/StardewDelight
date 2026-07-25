@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fairy_rose_box": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardewdelight:fairy_rose_box"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewdelight:fairy_rose_from_fairy_rose_box"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_fairy_rose_box"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewdelight:fairy_rose_from_fairy_rose_box"
+    ]
+  }
+}

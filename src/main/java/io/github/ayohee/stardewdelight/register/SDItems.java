@@ -542,6 +542,25 @@ public class SDItems {
     );
 
 
+    /*----- BERRY PUNNETS -----*/
+    public static final DeferredItem<Item> STRAWBERRY_PUNNET = item(
+            "strawberry_punnet",
+            Item::new,
+            p -> p
+    );
+
+    public static final DeferredItem<Item> BLUEBERRY_PUNNET = item(
+            "blueberry_punnet",
+            Item::new,
+            p -> p
+    );
+
+    public static final DeferredItem<Item> CRANBERRY_PUNNET = item(
+            "cranberry_punnet",
+            Item::new,
+            p -> p
+    );
+
 
     /*----- UTILITY METHODS -----*/
     public static <I extends Item> DeferredItem<I> item(String name, Function<Item.Properties, I> sup, Function<Item.Properties, Item.Properties> pBuilder) {

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "get_item": {
+    "has_blueberry": {
       "conditions": {
         "items": [
           {
-            "items": "stardewdelight:blueberry_seeds"
+            "items": "stardewdelight:blueberry"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "stardewdelight:test"
+        "recipe": "stardewdelight:blueberry_punnet_from_blueberry"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "get_item"
+      "has_blueberry"
     ]
   ],
   "rewards": {
     "recipes": [
-      "stardewdelight:test"
+      "stardewdelight:blueberry_punnet_from_blueberry"
     ]
   }
 }

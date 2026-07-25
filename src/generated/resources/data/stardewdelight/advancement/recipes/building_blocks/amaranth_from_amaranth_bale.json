@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_amaranth_bale": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardewdelight:amaranth_bale"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewdelight:amaranth_from_amaranth_bale"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_amaranth_bale"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewdelight:amaranth_from_amaranth_bale"
+    ]
+  }
+}

@@ -169,5 +169,9 @@
   "item.stardewdelight.mango": "Mango",
   "item.stardewdelight.orange": "Orange",
   "item.stardewdelight.peach": "Peach",
-  "item.stardewdelight.pomegranate": "Pomegranate"
+  "item.stardewdelight.pomegranate": "Pomegranate",
+
+  "item.stardewdelight.strawberry_punnet": "Strawberry Punnet",
+  "item.stardewdelight.blueberry_punnet": "Blueberry Punnet",
+  "item.stardewdelight.cranberry_punnet": "Cranberry Punnet"
 }

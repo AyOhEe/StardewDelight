@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_red_cabbage_crate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardewdelight:red_cabbage_crate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewdelight:red_cabbage_from_red_cabbage_crate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_red_cabbage_crate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewdelight:red_cabbage_from_red_cabbage_crate"
+    ]
+  }
+}

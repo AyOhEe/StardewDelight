@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_taro_root": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardewdelight:taro_root"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewdelight:taro_root_crate_from_taro_root"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_taro_root"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewdelight:taro_root_crate_from_taro_root"
+    ]
+  }
+}

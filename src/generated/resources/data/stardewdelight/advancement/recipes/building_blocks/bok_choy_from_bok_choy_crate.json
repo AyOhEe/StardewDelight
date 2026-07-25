@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bok_choy_crate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardewdelight:bok_choy_crate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewdelight:bok_choy_from_bok_choy_crate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bok_choy_crate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewdelight:bok_choy_from_bok_choy_crate"
+    ]
+  }
+}

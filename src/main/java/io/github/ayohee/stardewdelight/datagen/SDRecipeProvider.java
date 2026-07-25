@@ -1,6 +1,7 @@
 package io.github.ayohee.stardewdelight.datagen;
 
 import io.github.ayohee.stardewdelight.StardewDelight;
+import io.github.ayohee.stardewdelight.register.SDBlocks;
 import io.github.ayohee.stardewdelight.register.SDItems;
 import net.minecraft.advancements.Criterion;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
@@ -8,11 +9,11 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
+import net.neoforged.neoforge.registries.DeferredItem;
+import vectorwing.farmersdelight.common.registry.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -23,10 +24,60 @@ public class SDRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, SDItems.BLUEBERRY_SEEDS)
-                .requires(SDItems.BLUEBERRY_SEEDS)
-                .unlockedBy("get_item", hasItems(SDItems.BLUEBERRY_SEEDS))
-                .save(recipeOutput, StardewDelight.modLoc("test"));
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.BLUE_JAZZ, RecipeCategory.BUILDING_BLOCKS, SDBlocks.BLUE_JAZZ_BOX.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.CAULIFLOWER, RecipeCategory.BUILDING_BLOCKS, SDBlocks.CAULIFLOWER_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.COFFEE_BEAN, RecipeCategory.BUILDING_BLOCKS, SDBlocks.COFFEE_BAG.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.GARLIC, RecipeCategory.BUILDING_BLOCKS, SDBlocks.GARLIC_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.GREEN_BEAN, RecipeCategory.BUILDING_BLOCKS, SDBlocks.GREEN_BEAN_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.KALE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.KALE_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.PARSNIP, RecipeCategory.BUILDING_BLOCKS, SDBlocks.PARSNIP_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.RHUBARB, RecipeCategory.BUILDING_BLOCKS, SDBlocks.RHUBARB_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.STRAWBERRY_PUNNET, RecipeCategory.BUILDING_BLOCKS, SDBlocks.STRAWBERRY_PUNNET_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.BLUEBERRY_PUNNET, RecipeCategory.BUILDING_BLOCKS, SDBlocks.BLUEBERRY_PUNNET_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.CORN, RecipeCategory.BUILDING_BLOCKS, SDBlocks.CORN_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.HOPS, RecipeCategory.BUILDING_BLOCKS, SDBlocks.HOPS_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.HOT_PEPPER, RecipeCategory.BUILDING_BLOCKS, SDBlocks.HOT_PEPPER_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.PINK_MELON, RecipeCategory.BUILDING_BLOCKS, SDBlocks.PINK_MELON_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.RADISH, RecipeCategory.BUILDING_BLOCKS, SDBlocks.RADISH_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.RED_CABBAGE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.RED_CABBAGE_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.STARFRUIT, RecipeCategory.BUILDING_BLOCKS, SDBlocks.STARFRUIT_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.SUMMER_SPANGLE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.SUMMER_SPANGLE_BOX.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.SUMMER_SQUASH, RecipeCategory.BUILDING_BLOCKS, SDBlocks.SUMMER_SQUASH_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.AMARANTH, RecipeCategory.BUILDING_BLOCKS, SDBlocks.AMARANTH_BALE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.ARTICHOKE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.ARTICHOKE_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.BOK_CHOY, RecipeCategory.BUILDING_BLOCKS, SDBlocks.BOK_CHOY_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.BROCCOLI, RecipeCategory.BUILDING_BLOCKS, SDBlocks.BROCCOLI_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.CRANBERRY_PUNNET, RecipeCategory.BUILDING_BLOCKS, SDBlocks.CRANBERRY_PUNNET_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.EGGPLANT, RecipeCategory.BUILDING_BLOCKS, SDBlocks.EGGPLANT_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.FAIRY_ROSE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.FAIRY_ROSE_BOX.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.GRAPES, RecipeCategory.BUILDING_BLOCKS, SDBlocks.GRAPE_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.SUGAR_PUMPKIN, RecipeCategory.BUILDING_BLOCKS, SDBlocks.SUGAR_PUMPKIN_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.YAM, RecipeCategory.BUILDING_BLOCKS, SDBlocks.YAM_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.POWDERMELON, RecipeCategory.BUILDING_BLOCKS, SDBlocks.POWDERMELON_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.ANCIENT_FRUIT, RecipeCategory.BUILDING_BLOCKS, SDBlocks.ANCIENT_FRUIT_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.QI_FRUIT, RecipeCategory.BUILDING_BLOCKS, SDBlocks.QI_FRUIT_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.SWEET_GEM_BERRY, RecipeCategory.BUILDING_BLOCKS, SDBlocks.SWEET_GEM_BERRY_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.PINEAPPLE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.PINEAPPLE_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.TARO_ROOT, RecipeCategory.BUILDING_BLOCKS, SDBlocks.TARO_ROOT_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.TEA_LEAVES, RecipeCategory.BUILDING_BLOCKS, SDBlocks.TEA_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.APRICOT, RecipeCategory.BUILDING_BLOCKS, SDBlocks.APRICOT_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.CHERRY, RecipeCategory.BUILDING_BLOCKS, SDBlocks.CHERRY_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.BANANA, RecipeCategory.BUILDING_BLOCKS, SDBlocks.BANANA_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.MANGO, RecipeCategory.BUILDING_BLOCKS, SDBlocks.MANGO_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.ORANGE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.ORANGE_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.PEACH, RecipeCategory.BUILDING_BLOCKS, SDBlocks.PEACH_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.POMEGRANATE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.POMEGRANATE_CRATE.getItem());
+
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.STRAWBERRY, RecipeCategory.FOOD, SDItems.STRAWBERRY_PUNNET);
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.BLUEBERRY, RecipeCategory.FOOD, SDItems.BLUEBERRY_PUNNET);
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.CRANBERRY, RecipeCategory.FOOD, SDItems.CRANBERRY_PUNNET);
+    }
+
+    private static void modNineBlockStorageRecipes(RecipeOutput output, RecipeCategory compactingCategory, ItemLike item, RecipeCategory breakingCategory, ItemLike compacted) {
+        String itemName = getItemName(item);
+        String compactedName = getItemName(compacted);
+        ShapedRecipeBuilder.shaped(compactingCategory, compacted, 1).pattern("###").pattern("###").pattern("###").define('#', item).unlockedBy("has_" + itemName, hasItems(item)).save(output, StardewDelight.modLoc(compactedName + "_from_" + itemName));
+        ShapelessRecipeBuilder.shapeless(breakingCategory, item, 9).requires(compacted).unlockedBy("has_" + compactedName, hasItems(compacted)).save(output, StardewDelight.modLoc(itemName + "_from_" + compactedName));
     }
 
 

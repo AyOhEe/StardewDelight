@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kale": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardewdelight:kale"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewdelight:kale_crate_from_kale"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_kale"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewdelight:kale_crate_from_kale"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_coffee_bag": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardewdelight:coffee_bag"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "stardewdelight:coffee_bean_from_coffee_bag"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_coffee_bag"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "stardewdelight:coffee_bean_from_coffee_bag"
+    ]
+  }
+}
