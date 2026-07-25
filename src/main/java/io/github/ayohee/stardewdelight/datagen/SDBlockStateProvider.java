@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import vectorwing.farmersdelight.FarmersDelight;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
@@ -23,6 +24,7 @@ public class SDBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        /*----- CROP BLOCKS -----*/
         /*----- SPRING CROPS -----*/
         new BlockModelPair(SDBlocks.BLUE_JAZZ_CROP.get(), this::crop)
                 .makeBlockModel();
@@ -121,6 +123,150 @@ public class SDBlockStateProvider extends BlockStateProvider {
                 .makeBlockModel();
         new BlockModelPair(SDBlocks.POMEGRANATE_SAPLING.getBlock().get(), this::sapling)
                 .makeBlockModel();
+
+
+        /*----- CRATES -----*/
+        /*----- SPRING CROPS -----*/
+        new BlockModelPair(SDBlocks.BLUE_JAZZ_BOX.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.CAULIFLOWER_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.COFFEE_BAG.getBlock().get(), this::bag)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.GARLIC_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.GREEN_BEAN_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.KALE_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.PARSNIP_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.RHUBARB_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.STRAWBERRY_PUNNET_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+
+        /*----- SUMMER CROPS -----*/
+        new BlockModelPair(SDBlocks.BLUEBERRY_PUNNET_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.CORN_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.HOPS_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.HOT_PEPPER_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.PINK_MELON_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.RADISH_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.RED_CABBAGE_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.STARFRUIT_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.SUMMER_SPANGLE_BOX.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.SUMMER_SQUASH_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+
+        /*----- FALL CROPS -----*/
+        new BlockModelPair(SDBlocks.AMARANTH_BALE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.ARTICHOKE_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.BOK_CHOY_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.BROCCOLI_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.CRANBERRY_PUNNET_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.EGGPLANT_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.FAIRY_ROSE_BOX.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.GRAPE_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.SUGAR_PUMPKIN_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.YAM_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+
+
+        /*----- WINTER CROPS -----*/
+        new BlockModelPair(SDBlocks.POWDERMELON_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+
+        /*----- SPECIAL CROPS -----*/
+        new BlockModelPair(SDBlocks.ANCIENT_FRUIT_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.QI_FRUIT_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.SWEET_GEM_BERRY_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.PINEAPPLE_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.TARO_ROOT_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+
+        /*----- FRUIT TREES -----*/
+        new BlockModelPair(SDBlocks.TEA_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.APRICOT_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.CHERRY_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.BANANA_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.MANGO_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.ORANGE_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.PEACH_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.POMEGRANATE_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
     }
 
 
@@ -151,6 +297,30 @@ public class SDBlockStateProvider extends BlockStateProvider {
 
     private ModelFile crop(Block b) {
         return this.models().crop(this.name(b), this.blockTexture(b)).renderType(mcLoc("cutout"));
+    }
+
+    private ModelFile crate(Block b) {
+        return this.models()
+                .cubeBottomTop(
+                        this.name(b),
+                        modLoc("block/" + this.name(b) + "_side"),
+                        ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/crate_bottom"),
+                        modLoc("block/" + this.name(b) + "_top"))
+                .renderType(mcLoc("cutout"));
+    }
+
+    private ModelFile bag(Block b) {
+        return this.models()
+                .cube(
+                        this.name(b),
+                        ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_bottom"),
+                        modLoc("block/" + this.name(b) + "_top"),
+                        ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_side_tied"),
+                        ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_side_tied"),
+                        ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_side"),
+                        ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_side"))
+                .texture("particle", modLoc("block/" + this.name(b) + "_top"))
+                .renderType(mcLoc("cutout"));
     }
 
 

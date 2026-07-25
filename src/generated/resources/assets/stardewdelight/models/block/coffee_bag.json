@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:block/cube",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "down": "farmersdelight:block/rice_bag_bottom",
+    "east": "farmersdelight:block/rice_bag_side",
+    "north": "farmersdelight:block/rice_bag_side_tied",
+    "particle": "stardewdelight:block/coffee_bag_top",
+    "south": "farmersdelight:block/rice_bag_side_tied",
+    "up": "stardewdelight:block/coffee_bag_top",
+    "west": "farmersdelight:block/rice_bag_side"
+  }
+}

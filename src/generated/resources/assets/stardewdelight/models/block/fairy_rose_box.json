@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "farmersdelight:block/crate_bottom",
+    "side": "stardewdelight:block/fairy_rose_box_side",
+    "top": "stardewdelight:block/fairy_rose_box_top"
+  }
+}
