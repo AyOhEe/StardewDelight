@@ -18,14 +18,14 @@ public class SDBlocks {
 
 
     /*----- SPRING CROPS -----*/
-    public static final DeferredBlock<Block> BLUE_JAZZ = block(
-            "blue_jazz",
+    public static final DeferredBlock<Block> BLUE_JAZZ_CROP = block(
+            "blue_jazz_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> CAULIFLOWER = block(
-            "cauliflower",
+    public static final DeferredBlock<Block> CAULIFLOWER_CROP = block(
+            "cauliflower_crop",
             Block::new,
             p -> p
     );
@@ -36,32 +36,32 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> GARLIC = block(
-            "garlic",
+    public static final DeferredBlock<Block> GARLIC_CROP = block(
+            "garlic_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> GREEN_BEANS = block(
-            "green_beans",
+    public static final DeferredBlock<Block> GREEN_BEANS_CROP = block(
+            "green_beans_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> KALE = block(
-            "kale",
+    public static final DeferredBlock<Block> KALE_CROP = block(
+            "kale_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> PARSNIP = block(
-            "parsnip",
+    public static final DeferredBlock<Block> PARSNIP_CROP = block(
+            "parsnip_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> RHUBARB = block(
-            "rhubarb",
+    public static final DeferredBlock<Block> RHUBARB_CROP = block(
+            "rhubarb_crop",
             Block::new,
             p -> p
     );
@@ -80,158 +80,158 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> CORN = block(
-            "corn",
+    public static final DeferredBlock<Block> CORN_CROP = block(
+            "corn_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> HOPS = block(
-            "hops",
+    public static final DeferredBlock<Block> HOPS_CROP = block(
+            "hops_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> HOT_PEPPERS = block(
-            "hot_peppers",
+    public static final DeferredBlock<Block> HOT_PEPPERS_CROP = block(
+            "hot_peppers_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> PINK_MELON = block(
-            "pink_melon",
+    public static final DeferredBlock<Block> PINK_MELON_CROP = block(
+            "pink_melon_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> RADISH = block(
-            "radish",
+    public static final DeferredBlock<Block> RADISH_CROP = block(
+            "radish_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> RED_CABBAGE = block(
-            "red_cabbage",
+    public static final DeferredBlock<Block> RED_CABBAGE_CROP = block(
+            "red_cabbage_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> STARFRUIT = block(
-            "starfruit",
+    public static final DeferredBlock<Block> STARFRUIT_CROP = block(
+            "starfruit_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> SUMMER_SPANGLE = block(
-            "summer_spangle",
+    public static final DeferredBlock<Block> SUMMER_SPANGLE_CROP = block(
+            "summer_spangle_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> SUMMER_SQUASH = block(
-            "summer_squash",
+    public static final DeferredBlock<Block> SUMMER_SQUASH_CROP = block(
+            "summer_squash_crop",
             Block::new,
             p -> p
     );
 
 
     /*----- FALL CROPS -----*/
-    public static final DeferredBlock<Block> AMARANTH = block(
-            "amaranth",
+    public static final DeferredBlock<Block> AMARANTH_CROP = block(
+            "amaranth_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> ARTICHOKE = block(
-            "artichoke",
+    public static final DeferredBlock<Block> ARTICHOKE_CROP = block(
+            "artichoke_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> BOK_CHOY = block(
-            "bok_choy",
+    public static final DeferredBlock<Block> BOK_CHOY_CROP = block(
+            "bok_choy_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> BROCCOLI = block(
-            "broccoli",
+    public static final DeferredBlock<Block> BROCCOLI_CROP = block(
+            "broccoli_crop",
             Block::new,
             p -> p
     );
 
     public static final DeferredBlock<Block> CRANBERRY_BUSH = block(
-            "cranberry",
+            "cranberry_bush",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> EGGPLANT = block(
-            "eggplant",
+    public static final DeferredBlock<Block> EGGPLANT_CROP = block(
+            "eggplant_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> FAIRY_ROSE = block(
-            "fairy_rose",
+    public static final DeferredBlock<Block> FAIRY_ROSE_CROP = block(
+            "fairy_rose_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> GRAPES = block(
-            "grapes",
+    public static final DeferredBlock<Block> GRAPES_CROP = block(
+            "grapes_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> SUGAR_PUMPKIN = block(
-            "sugar_pumpkin",
+    public static final DeferredBlock<Block> SUGAR_PUMPKIN_CROP = block(
+            "sugar_pumpkin_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> YAM = block(
-            "yam",
+    public static final DeferredBlock<Block> YAM_CROP = block(
+            "yam_crop",
             Block::new,
             p -> p
     );
 
 
     /*----- WINTER CROPS -----*/
-    public static final DeferredBlock<Block> POWDERMELON = block(
-            "powdermelon",
+    public static final DeferredBlock<Block> POWDERMELON_CROP = block(
+            "powdermelon_crop",
             Block::new,
             p -> p
     );
 
 
     /*----- SPECIAL CROPS -----*/
-    public static final DeferredBlock<Block> ANCIENT_FRUIT = block(
-            "ancient_fruit",
+    public static final DeferredBlock<Block> ANCIENT_FRUIT_CROP = block(
+            "ancient_fruit_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> QI_FRUIT = block(
-            "qi_fruit",
+    public static final DeferredBlock<Block> QI_FRUIT_CROP = block(
+            "qi_fruit_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> SWEET_GEM_BERRY = block(
-            "sweet_gem_berry",
+    public static final DeferredBlock<Block> SWEET_GEM_BERRY_CROP = block(
+            "sweet_gem_berry_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> PINEAPPLE = block(
-            "pineapple",
+    public static final DeferredBlock<Block> PINEAPPLE_CROP = block(
+            "pineapple_crop",
             Block::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> TARO_ROOT = block(
-            "taro_root",
+    public static final DeferredBlock<Block> TARO_ROOT_CROP = block(
+            "taro_root_crop",
             Block::new,
             p -> p
     );

@@ -22,14 +22,14 @@ public class SDItems {
     /*----- SPRING CROPS -----*/
     public static final DeferredItem<Item> JAZZ_SEEDS = seed(
             "jazz_seeds",
-            SDBlocks.BLUE_JAZZ,
+            SDBlocks.BLUE_JAZZ_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> CAULIFLOWER_SEEDS = seed(
             "cauliflower_seeds",
-            SDBlocks.CAULIFLOWER,
+            SDBlocks.CAULIFLOWER_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
@@ -43,35 +43,35 @@ public class SDItems {
 
     public static final DeferredItem<Item> GARLIC_SEEDS = seed(
             "garlic_seeds",
-            SDBlocks.GARLIC,
+            SDBlocks.GARLIC_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> BEAN_STARTER = seed(
             "bean_starter",
-            SDBlocks.GREEN_BEANS,
+            SDBlocks.GREEN_BEANS_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> KALE_SEEDS = seed(
             "kale_seeds",
-            SDBlocks.KALE,
+            SDBlocks.KALE_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> PARSNIP_SEEDS = seed(
             "parsnip_seeds",
-            SDBlocks.PARSNIP,
+            SDBlocks.PARSNIP_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> RHUBARB_SEEDS = seed(
             "rhubarb_seeds",
-            SDBlocks.RHUBARB,
+            SDBlocks.RHUBARB_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
@@ -94,63 +94,63 @@ public class SDItems {
 
     public static final DeferredItem<Item> CORN_SEEDS = seed(
             "corn_seeds",
-            SDBlocks.CORN,
+            SDBlocks.CORN_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> HOPS_STARTER = seed(
             "hops_starter",
-            SDBlocks.HOPS,
+            SDBlocks.HOPS_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> PEPPER_SEEDS = seed(
             "pepper_seeds",
-            SDBlocks.HOT_PEPPERS,
+            SDBlocks.HOT_PEPPERS_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> PINK_MELON_SEEDS = seed(
             "pink_melon_seeds",
-            SDBlocks.PINK_MELON,
+            SDBlocks.PINK_MELON_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> RADISH_SEEDS = seed(
             "radish_seeds",
-            SDBlocks.RADISH,
+            SDBlocks.RADISH_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> RED_CABBAGE_SEEDS = seed(
             "red_cabbage_seeds",
-            SDBlocks.RED_CABBAGE,
+            SDBlocks.RED_CABBAGE_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> STARFRUIT_SEEDS = seed(
             "starfruit_seeds",
-            SDBlocks.STARFRUIT,
+            SDBlocks.STARFRUIT_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> SPANGLE_SEEDS = seed(
             "spangle_seeds",
-            SDBlocks.SUMMER_SPANGLE,
+            SDBlocks.SUMMER_SPANGLE_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> SUMMER_SQUASH_SEEDS = seed(
             "summer_squash_seeds",
-            SDBlocks.SUMMER_SQUASH,
+            SDBlocks.SUMMER_SQUASH_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
@@ -159,28 +159,28 @@ public class SDItems {
     /*----- FALL CROPS -----*/
     public static final DeferredItem<Item> AMARANTH_SEEDS = seed(
             "amaranth_seeds",
-            SDBlocks.AMARANTH,
+            SDBlocks.AMARANTH_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> ARTICHOKE_SEEDS = seed(
             "artichoke_seeds",
-            SDBlocks.ARTICHOKE,
+            SDBlocks.ARTICHOKE_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> BOK_CHOY_SEEDS = seed(
             "bok_choy_seeds",
-            SDBlocks.BOK_CHOY,
+            SDBlocks.BOK_CHOY_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> BROCCOLI_SEEDS = seed(
             "broccoli_seeds",
-            SDBlocks.BROCCOLI,
+            SDBlocks.BROCCOLI_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
@@ -194,35 +194,35 @@ public class SDItems {
 
     public static final DeferredItem<Item> EGGPLANT_SEEDS = seed(
             "eggplant_seeds",
-            SDBlocks.EGGPLANT,
+            SDBlocks.EGGPLANT_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> FAIRY_SEEDS = seed(
             "fairy_seeds",
-            SDBlocks.FAIRY_ROSE,
+            SDBlocks.FAIRY_ROSE_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> GRAPE_STARTER = seed(
             "grape_starter",
-            SDBlocks.GRAPES,
+            SDBlocks.GRAPES_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> SUGAR_PUMPKIN_SEEDS = seed(
             "sugar_pumpkin_seeds",
-            SDBlocks.SUGAR_PUMPKIN,
+            SDBlocks.SUGAR_PUMPKIN_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> YAM_SEEDS = seed(
             "yam_seeds",
-            SDBlocks.YAM,
+            SDBlocks.YAM_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
@@ -231,7 +231,7 @@ public class SDItems {
     /*----- WINTER CROPS -----*/
     public static final DeferredItem<Item> POWDERMELON_SEEDS = seed(
             "powdermelon_seeds",
-            SDBlocks.POWDERMELON,
+            SDBlocks.POWDERMELON_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
@@ -240,35 +240,35 @@ public class SDItems {
     /*----- SPECIAL CROPS -----*/
     public static final DeferredItem<Item> ANCIENT_SEEDS = seed(
             "ancient_seeds",
-            SDBlocks.ANCIENT_FRUIT,
+            SDBlocks.ANCIENT_FRUIT_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> QI_BEAN = seed(
             "qi_bean",
-            SDBlocks.QI_FRUIT,
+            SDBlocks.QI_FRUIT_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> RARE_SEED = seed(
             "rare_seed",
-            SDBlocks.SWEET_GEM_BERRY,
+            SDBlocks.SWEET_GEM_BERRY_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> PINEAPPLE_SEEDS = seed(
             "pineapple_seeds",
-            SDBlocks.PINEAPPLE,
+            SDBlocks.PINEAPPLE_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
 
     public static final DeferredItem<Item> TARO_TUBER = seed(
             "taro_tuber",
-            SDBlocks.TARO_ROOT,
+            SDBlocks.TARO_ROOT_CROP,
             ItemNameBlockItem::new,
             p -> p
     );
