@@ -3,7 +3,10 @@ package io.github.ayohee.stardewdelight.register;
 import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
@@ -241,49 +244,89 @@ public class SDBlocks {
     public static final DeferredBlockItem<Block> TEA_SAPLING = blockItem(
             "tea_sapling",
             Block::new,
-            p -> p
+            p -> p.mapColor(MapColor.PLANT)
+                    .noCollission()
+                    //.randomTicks()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .pushReaction(PushReaction.DESTROY)
     );
 
     public static final DeferredBlockItem<Block> APRICOT_SAPLING = blockItem(
             "apricot_sapling",
             Block::new,
-            p -> p
+            p -> p.mapColor(MapColor.PLANT)
+                    .noCollission()
+                    //.randomTicks()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .pushReaction(PushReaction.DESTROY)
     );
 
     public static final DeferredBlockItem<Block> CHERRY_SAPLING = blockItem(
             "cherry_sapling",
             Block::new,
-            p -> p
+            p -> p.mapColor(MapColor.PLANT)
+                    .noCollission()
+                    //.randomTicks()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .pushReaction(PushReaction.DESTROY)
     );
 
     public static final DeferredBlockItem<Block> BANANA_SAPLING = blockItem(
             "banana_sapling",
             Block::new,
-            p -> p
+            p -> p.mapColor(MapColor.PLANT)
+                    .noCollission()
+                    //.randomTicks()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .pushReaction(PushReaction.DESTROY)
     );
 
     public static final DeferredBlockItem<Block> MANGO_SAPLING = blockItem(
             "mango_sapling",
             Block::new,
-            p -> p
+            p -> p.mapColor(MapColor.PLANT)
+                    .noCollission()
+                    //.randomTicks()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .pushReaction(PushReaction.DESTROY)
     );
 
     public static final DeferredBlockItem<Block> ORANGE_SAPLING = blockItem(
             "orange_sapling",
             Block::new,
-            p -> p
+            p -> p.mapColor(MapColor.PLANT)
+                    .noCollission()
+                    //.randomTicks()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .pushReaction(PushReaction.DESTROY)
     );
 
     public static final DeferredBlockItem<Block> PEACH_SAPLING = blockItem(
             "peach_sapling",
             Block::new,
-            p -> p
+            p -> p.mapColor(MapColor.PLANT)
+                    .noCollission()
+                    //.randomTicks()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .pushReaction(PushReaction.DESTROY)
     );
 
     public static final DeferredBlockItem<Block> POMEGRANATE_SAPLING = blockItem(
             "pomegranate_sapling",
             Block::new,
-            p -> p
+            p -> p.mapColor(MapColor.PLANT)
+                    .noCollission()
+                    //.randomTicks()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .pushReaction(PushReaction.DESTROY)
     );
 
 

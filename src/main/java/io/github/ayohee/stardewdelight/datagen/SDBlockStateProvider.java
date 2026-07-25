@@ -146,11 +146,11 @@ public class SDBlockStateProvider extends BlockStateProvider {
     }
 
     private ModelFile sapling(Block b) {
-        return this.models().cross(this.name(b), this.blockTexture(b));
+        return this.models().cross(this.name(b), this.blockTexture(b)).renderType(mcLoc("cutout"));
     }
 
     private ModelFile crop(Block b) {
-        return this.models().crop(this.name(b), this.blockTexture(b));
+        return this.models().crop(this.name(b), this.blockTexture(b)).renderType(mcLoc("cutout"));
     }
 
 
