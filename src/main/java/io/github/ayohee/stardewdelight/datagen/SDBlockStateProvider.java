@@ -106,21 +106,29 @@ public class SDBlockStateProvider extends BlockStateProvider {
 
         /*----- FRUIT TREES -----*/
         new BlockModelPair(SDBlocks.TEA_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel();
+                .makeBlockModel()
+                .makeItemModel();
         new BlockModelPair(SDBlocks.APRICOT_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel();
+                .makeBlockModel()
+                .makeItemModel();
         new BlockModelPair(SDBlocks.CHERRY_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel();
+                .makeBlockModel()
+                .makeItemModel();
         new BlockModelPair(SDBlocks.BANANA_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel();
+                .makeBlockModel()
+                .makeItemModel();
         new BlockModelPair(SDBlocks.MANGO_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel();
+                .makeBlockModel()
+                .makeItemModel();
         new BlockModelPair(SDBlocks.ORANGE_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel();
+                .makeBlockModel()
+                .makeItemModel();
         new BlockModelPair(SDBlocks.PEACH_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel();
+                .makeBlockModel()
+                .makeItemModel();
         new BlockModelPair(SDBlocks.POMEGRANATE_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel();
+                .makeBlockModel()
+                .makeItemModel();
     }
 
 

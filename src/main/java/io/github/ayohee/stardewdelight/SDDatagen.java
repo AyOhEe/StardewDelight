@@ -29,7 +29,7 @@ public class SDDatagen {
 
 
         generator.addProvider(event.includeServer(), new SDRecipeProvider(output, lookupProvider).namedWrapper());
-        generator.addProvider(event.includeClient(), new SDBlockStateProvider(output, fileHelper).namedWrapper());
+        //generator.addProvider(event.includeClient(), new SDBlockStateProvider(output, fileHelper).namedWrapper());
         generator.addProvider(event.includeClient(), new SDItemModelProvider(output, fileHelper).namedWrapper());
 
         System.out.println("Gathering data for Stardew's Delight");

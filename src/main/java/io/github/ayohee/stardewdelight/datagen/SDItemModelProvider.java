@@ -21,7 +21,7 @@ public class SDItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         /*----- SEEDS -----*/
         /*----- SPRING CROPS -----*/
-        basicItem(SDItems.BLUE_JAZZ_SEEDS.get());
+        basicItem(SDItems.JAZZ_SEEDS.get());
         basicItem(SDItems.CAULIFLOWER_SEEDS.get());
         basicItem(SDItems.COFFEE_BEAN.get());
         basicItem(SDItems.GARLIC_SEEDS.get());
@@ -64,16 +64,6 @@ public class SDItemModelProvider extends ItemModelProvider {
         basicItem(SDItems.RARE_SEED.get());
         basicItem(SDItems.PINEAPPLE_SEEDS.get());
         basicItem(SDItems.TARO_TUBER.get());
-
-        /*----- FRUIT TREES -----*/
-        basicItem(SDBlocks.TEA_SAPLING.getItem().get());
-        basicItem(SDBlocks.APRICOT_SAPLING.getItem().get());
-        basicItem(SDBlocks.CHERRY_SAPLING.getItem().get());
-        basicItem(SDBlocks.BANANA_SAPLING.getItem().get());
-        basicItem(SDBlocks.MANGO_SAPLING.getItem().get());
-        basicItem(SDBlocks.ORANGE_SAPLING.getItem().get());
-        basicItem(SDBlocks.PEACH_SAPLING.getItem().get());
-        basicItem(SDBlocks.POMEGRANATE_SAPLING.getItem().get());
 
 
 

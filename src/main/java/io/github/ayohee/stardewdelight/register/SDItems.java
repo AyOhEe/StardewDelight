@@ -20,7 +20,7 @@ public class SDItems {
 
     /*----- SEEDS -----*/
     /*----- SPRING CROPS -----*/
-    public static final DeferredItem<Item> BLUE_JAZZ_SEEDS = seed(
+    public static final DeferredItem<Item> JAZZ_SEEDS = seed(
             "jazz_seeds",
             SDBlocks.BLUE_JAZZ,
             ItemNameBlockItem::new,
