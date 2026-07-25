@@ -1,6 +1,5 @@
 {
   "parent": "minecraft:block/cube",
-  "render_type": "minecraft:cutout",
   "textures": {
     "down": "farmersdelight:block/rice_bag_bottom",
     "east": "farmersdelight:block/rice_bag_side",

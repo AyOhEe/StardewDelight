@@ -305,8 +305,7 @@ public class SDBlockStateProvider extends BlockStateProvider {
                         this.name(b),
                         modLoc("block/" + this.name(b) + "_side"),
                         ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/crate_bottom"),
-                        modLoc("block/" + this.name(b) + "_top"))
-                .renderType(mcLoc("cutout"));
+                        modLoc("block/" + this.name(b) + "_top"));
     }
 
     private ModelFile bag(Block b) {
@@ -319,8 +318,7 @@ public class SDBlockStateProvider extends BlockStateProvider {
                         ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_side_tied"),
                         ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_side"),
                         ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_side"))
-                .texture("particle", modLoc("block/" + this.name(b) + "_top"))
-                .renderType(mcLoc("cutout"));
+                .texture("particle", modLoc("block/" + this.name(b) + "_top"));
     }
 
 
