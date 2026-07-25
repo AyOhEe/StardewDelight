@@ -6,3 +6,95 @@ tree growth phases
 - outline
 
 am i doing wood types?
+
+
+1/2 block trellis crops:
+- green beans: 7
+- grapes: 7
+- hops: 7
+
+
+1 block stem crops:
+- garlic: 5
+- parsnip: 5
+- rhubarb: 6
+- radish: 5
+- yam: 5
+- taro root: 5
+
+2 block stem crops:
+- corn: 7
+- amaranth: 5
+
+
+1 block bush crops:
+- kale: 5
+- eggplant: 7
+- strawberries: 7
+
+2 block bush crops:
+- coffee: 7
+- blueberries: 7
+- summer squash: 7
+- hot peppers: 7
+- cranberry: 7
+- ancient fruit: 7
+
+
+1 block flowers:
+- blue jazz: 5
+- summer spangle: 5
+
+2 block flowers:
+- fairy rose: 5
+
+
+1 block bulb crops:
+- cauliflower: 6
+- red cabbage: 6
+- bok choy: 5
+- broccoli: 6
+- pineapple: 7
+
+2 block bulb crops:
+- sweet gem berry: 6
+- starfruit: 6
+- qi fruit: 5
+- pink melon: 6
+- powdermelon: 6
+- sugar pumpkin: 6
+- artichoke: 6
+
+
+fruit trees (initially normal sapling, then 1 block, then 2 block, then 3, then fully grown):
+- apricot: 6
+- cherry: 6
+- banana: 6
+- mango: 6
+- orange: 6
+- peach: 6
+- pomegranate: 6
+
+
+Giant crops:
+- cauliflower
+- pink melon
+- sugar pumpkin
+- powdermelon
+- qi Fruit
+
+
+distinct types:
+- 1 block trellis -> 2 block trellis
+- 1 block stem
+- 2 block stem
+- 1 block bush
+- 2 block bush
+- 1 block flower
+- 2 block flower
+- 1 block bulb
+- 2 block bulb
+- 1/2 block bulb -> giant crop
+- fruit tree sapling
+- immature fruit tree
+- fruit tree leaves
