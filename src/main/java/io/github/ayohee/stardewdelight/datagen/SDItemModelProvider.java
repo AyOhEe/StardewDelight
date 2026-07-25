@@ -1,12 +1,15 @@
 package io.github.ayohee.stardewdelight.datagen;
 
+import io.github.ayohee.stardewdelight.StardewDelight;
 import io.github.ayohee.stardewdelight.register.SDBlocks;
 import io.github.ayohee.stardewdelight.register.SDItems;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -65,6 +68,17 @@ public class SDItemModelProvider extends ItemModelProvider {
         basicItem(SDItems.PINEAPPLE_SEEDS.get());
         basicItem(SDItems.TARO_TUBER.get());
 
+        /*----- FRUIT TREES -----*/
+        sapling(SDBlocks.TEA_SAPLING.getItem());
+        sapling(SDBlocks.APRICOT_SAPLING.getItem());
+        sapling(SDBlocks.CHERRY_SAPLING.getItem());
+        sapling(SDBlocks.BANANA_SAPLING.getItem());
+        sapling(SDBlocks.MANGO_SAPLING.getItem());
+        sapling(SDBlocks.ORANGE_SAPLING.getItem());
+        sapling(SDBlocks.PEACH_SAPLING.getItem());
+        sapling(SDBlocks.POMEGRANATE_SAPLING.getItem());
+
+
 
 
         /*----- CROP ITEMS -----*/
@@ -122,6 +136,10 @@ public class SDItemModelProvider extends ItemModelProvider {
         basicItem(SDItems.ORANGE.get());
         basicItem(SDItems.PEACH.get());
         basicItem(SDItems.POMEGRANATE.get());
+    }
+
+    private void sapling(DeferredItem<? extends Item> i) {
+        withExistingParent(i.getId().toString(), mcLoc("item/generated")).texture("layer0", StardewDelight.modLoc("block/" + i.getId().getPath()));
     }
 
     /*----- NAMED WRAPPER FOR DataProvider -----*/

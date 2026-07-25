@@ -24,111 +24,103 @@ public class SDBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         /*----- SPRING CROPS -----*/
-        new BlockModelPair(SDBlocks.BLUE_JAZZ_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.BLUE_JAZZ_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.CAULIFLOWER_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.CAULIFLOWER_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.COFFEE_BUSH.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.COFFEE_BUSH.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.GARLIC_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.GARLIC_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.GREEN_BEANS_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.GREEN_BEANS_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.KALE_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.KALE_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.PARSNIP_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.PARSNIP_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.RHUBARB_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.RHUBARB_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.STRAWBERRY_BUSH.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.STRAWBERRY_BUSH.get(), this::crop)
                 .makeBlockModel();
 
         /*----- SUMMER CROPS -----*/
-        new BlockModelPair(SDBlocks.BLUEBERRY_BUSH.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.BLUEBERRY_BUSH.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.CORN_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.CORN_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.HOPS_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.HOPS_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.HOT_PEPPERS_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.HOT_PEPPERS_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.PINK_MELON_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.PINK_MELON_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.RADISH_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.RADISH_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.RED_CABBAGE_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.RED_CABBAGE_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.STARFRUIT_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.STARFRUIT_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.SUMMER_SPANGLE_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.SUMMER_SPANGLE_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.SUMMER_SQUASH_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.SUMMER_SQUASH_CROP.get(), this::crop)
                 .makeBlockModel();
 
         /*----- FALL CROPS -----*/
-        new BlockModelPair(SDBlocks.AMARANTH_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.AMARANTH_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.ARTICHOKE_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.ARTICHOKE_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.BOK_CHOY_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.BOK_CHOY_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.BROCCOLI_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.BROCCOLI_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.CRANBERRY_BUSH.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.CRANBERRY_BUSH.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.EGGPLANT_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.EGGPLANT_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.FAIRY_ROSE_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.FAIRY_ROSE_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.GRAPES_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.GRAPES_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.SUGAR_PUMPKIN_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.SUGAR_PUMPKIN_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.YAM_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.YAM_CROP.get(), this::crop)
                 .makeBlockModel();
 
 
         /*----- WINTER CROPS -----*/
-        new BlockModelPair(SDBlocks.POWDERMELON_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.POWDERMELON_CROP.get(), this::crop)
                 .makeBlockModel();
 
         /*----- SPECIAL CROPS -----*/
-        new BlockModelPair(SDBlocks.ANCIENT_FRUIT_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.ANCIENT_FRUIT_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.QI_FRUIT_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.QI_FRUIT_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.SWEET_GEM_BERRY_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.SWEET_GEM_BERRY_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.PINEAPPLE_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.PINEAPPLE_CROP.get(), this::crop)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.TARO_ROOT_CROP.get(), this::cubeAll)
+        new BlockModelPair(SDBlocks.TARO_ROOT_CROP.get(), this::crop)
                 .makeBlockModel();
 
         /*----- FRUIT TREES -----*/
         new BlockModelPair(SDBlocks.TEA_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel()
-                .makeItemModel();
+                .makeBlockModel();
         new BlockModelPair(SDBlocks.APRICOT_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel()
-                .makeItemModel();
+                .makeBlockModel();
         new BlockModelPair(SDBlocks.CHERRY_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel()
-                .makeItemModel();
+                .makeBlockModel();
         new BlockModelPair(SDBlocks.BANANA_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel()
-                .makeItemModel();
+                .makeBlockModel();
         new BlockModelPair(SDBlocks.MANGO_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel()
-                .makeItemModel();
+                .makeBlockModel();
         new BlockModelPair(SDBlocks.ORANGE_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel()
-                .makeItemModel();
+                .makeBlockModel();
         new BlockModelPair(SDBlocks.PEACH_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel()
-                .makeItemModel();
+                .makeBlockModel();
         new BlockModelPair(SDBlocks.POMEGRANATE_SAPLING.getBlock().get(), this::sapling)
-                .makeBlockModel()
-                .makeItemModel();
+                .makeBlockModel();
     }
 
 
@@ -155,6 +147,10 @@ public class SDBlockStateProvider extends BlockStateProvider {
 
     private ModelFile sapling(Block b) {
         return this.models().cross(this.name(b), this.blockTexture(b));
+    }
+
+    private ModelFile crop(Block b) {
+        return this.models().crop(this.name(b), this.blockTexture(b));
     }
 
 
