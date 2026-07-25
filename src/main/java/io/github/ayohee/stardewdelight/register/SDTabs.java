@@ -16,7 +16,7 @@ public class SDTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STARDEW_DELIGHT = CREATIVE_MODE_TABS.register("stardew_delight", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.stardewdelight"))
             .withTabsBefore(FARMERS_TAB.getKey())
-            .icon(SDBlocks.EXAMPLE_BLOCK.getItem()::toStack)
+            .icon(SDItems.BLUEBERRY_SEEDS::toStack)
             .displayItems((parameters, output) -> {
                 SDTabs.TAB_CONTENTS.get(SDTabs.STARDEW_DELIGHT).forEach(output::accept);
             })

@@ -1,6 +1,5 @@
 package io.github.ayohee.stardewdelight.datagen;
 
-import io.github.ayohee.stardewdelight.StardewDelight;
 import io.github.ayohee.stardewdelight.register.SDBlocks;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.CachedOutput;
@@ -24,9 +23,104 @@ public class SDBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        new BlockModelPair(SDBlocks.EXAMPLE_BLOCK.getBlock().get(), this::cubeAll)
-                .makeBlockModel()
-                .makeItemModel();
+        /*----- SPRING CROPS -----*/
+        new BlockModelPair(SDBlocks.BLUE_JAZZ.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.CAULIFLOWER.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.COFFEE_BUSH.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.GARLIC.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.GREEN_BEANS.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.KALE.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.PARSNIP.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.RHUBARB.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.STRAWBERRY_BUSH.get(), this::cubeAll)
+                .makeBlockModel();
+
+        /*----- SUMMER CROPS -----*/
+        new BlockModelPair(SDBlocks.BLUEBERRY_BUSH.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.CORN.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.HOPS.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.HOT_PEPPERS.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.PINK_MELON.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.RADISH.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.RED_CABBAGE.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.STARFRUIT.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.SUMMER_SPANGLE.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.SUMMER_SQUASH.get(), this::cubeAll)
+                .makeBlockModel();
+
+        /*----- FALL CROPS -----*/
+        new BlockModelPair(SDBlocks.AMARANTH.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.ARTICHOKE.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.BOK_CHOY.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.BROCCOLI.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.CRANBERRY_BUSH.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.EGGPLANT.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.FAIRY_ROSE.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.GRAPES.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.SUGAR_PUMPKIN.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.YAM.get(), this::cubeAll)
+                .makeBlockModel();
+
+
+        /*----- WINTER CROPS -----*/
+        new BlockModelPair(SDBlocks.POWDERMELON.get(), this::cubeAll)
+                .makeBlockModel();
+
+        /*----- SPECIAL CROPS -----*/
+        new BlockModelPair(SDBlocks.ANCIENT_FRUIT.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.QI_FRUIT.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.SWEET_GEM_BERRY.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.PINEAPPLE.get(), this::cubeAll)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.TARO_ROOT.get(), this::cubeAll)
+                .makeBlockModel();
+
+        /*----- FRUIT TREES -----*/
+        new BlockModelPair(SDBlocks.TEA_SAPLING.getBlock().get(), this::sapling)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.APRICOT_SAPLING.getBlock().get(), this::sapling)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.CHERRY_SAPLING.getBlock().get(), this::sapling)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.BANANA_SAPLING.getBlock().get(), this::sapling)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.MANGO_SAPLING.getBlock().get(), this::sapling)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.ORANGE_SAPLING.getBlock().get(), this::sapling)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.PEACH_SAPLING.getBlock().get(), this::sapling)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.POMEGRANATE_SAPLING.getBlock().get(), this::sapling)
+                .makeBlockModel();
     }
 
 
@@ -51,6 +145,19 @@ public class SDBlockStateProvider extends BlockStateProvider {
         }
     }
 
+    private ModelFile sapling(Block b) {
+        return this.models().cross(this.name(b), this.blockTexture(b));
+    }
+
+
+    /*----- SHAMELESSLY STOLEN FROM SUPERCLASS -----*/
+    private ResourceLocation key(Block block) {
+        return BuiltInRegistries.BLOCK.getKey(block);
+    }
+
+    private String name(Block block) {
+        return this.key(block).getPath();
+    }
 
 
     /*----- NAMED WRAPPER FOR DataProvider -----*/

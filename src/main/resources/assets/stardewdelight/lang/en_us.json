@@ -1,5 +1,6 @@
 {
   "itemGroup.stardewdelight": "Stardew's Delight",
-  "block.stardewdelight.example_block": "Example Block",
-  "item.stardewdelight.example_item": "Example Item"
+
+  "block.stardewdelight.garlic": "Garlic",
+  "item.stardewdelight.garlic_seeds": "Garlic Seeds"
 }

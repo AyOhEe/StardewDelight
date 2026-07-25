@@ -23,9 +23,9 @@ public class SDRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, SDItems.EXAMPLE_ITEM)
-                .requires(SDItems.EXAMPLE_ITEM)
-                .unlockedBy("get_item", hasItems(SDItems.EXAMPLE_ITEM))
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, SDItems.BLUEBERRY_SEEDS)
+                .requires(SDItems.BLUEBERRY_SEEDS)
+                .unlockedBy("get_item", hasItems(SDItems.BLUEBERRY_SEEDS))
                 .save(recipeOutput, StardewDelight.modLoc("test"));
     }
 
