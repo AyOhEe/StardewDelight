@@ -575,7 +575,7 @@ public class SDItems {
         return item(name, sup, p -> p);
     }
 
-    public static <I extends Item> DeferredItem<I> seed(String name, DeferredBlock<Block> b, BiFunction<Block, Item.Properties, I> sup, Function<Item.Properties, Item.Properties> pBuilder) {
+    public static <I extends Item> DeferredItem<I> seed(String name, DeferredBlock<? extends Block> b, BiFunction<Block, Item.Properties, I> sup, Function<Item.Properties, Item.Properties> pBuilder) {
         return item(name, p -> sup.apply(b.get(), p), pBuilder);
     }
 

@@ -1,5 +1,6 @@
 package io.github.ayohee.stardewdelight.register;
 
+import io.github.ayohee.stardewdelight.content.blocks.crops.*;
 import io.github.ayohee.stardewdelight.content.trees.FruitSaplingBlock;
 import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -12,6 +13,8 @@ import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.function.Function;
 
 import static io.github.ayohee.stardewdelight.register.SDRegistries.BLOCKS;
@@ -20,6 +23,8 @@ import static io.github.ayohee.stardewdelight.register.SDTabs.TAB_CONTENTS;
 
 public class SDBlocks {
     private static DeferredHolder<CreativeModeTab, CreativeModeTab> currentTab = SDTabs.STARDEW_DELIGHT;
+    public static final List<DeferredBlock<? extends Block>> CRATES = new LinkedList<>();
+    public static final List<DeferredBlock<? extends Block>> SAPLINGS = new LinkedList<>();
 
 
     /*----- CROP BLOCKS -----*/
@@ -42,9 +47,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> GARLIC_CROP = standardCrop(
+    public static final DeferredBlock<GarlicBlock> GARLIC_CROP = standardCrop(
             "garlic_crop",
-            Block::new,
+            GarlicBlock::new,
             p -> p
     );
 
@@ -60,15 +65,15 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> PARSNIP_CROP = standardCrop(
+    public static final DeferredBlock<ParsnipBlock> PARSNIP_CROP = standardCrop(
             "parsnip_crop",
-            Block::new,
+            ParsnipBlock::new,
             p -> p
     );
 
-    public static final DeferredBlock<Block> RHUBARB_CROP = standardCrop(
+    public static final DeferredBlock<RhubarbBlock> RHUBARB_CROP = standardCrop(
             "rhubarb_crop",
-            Block::new,
+            RhubarbBlock::new,
             p -> p
     );
 
@@ -110,9 +115,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> RADISH_CROP = standardCrop(
+    public static final DeferredBlock<RadishBlock> RADISH_CROP = standardCrop(
             "radish_crop",
-            Block::new,
+            RadishBlock::new,
             p -> p
     );
 
@@ -196,9 +201,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> YAM_CROP = standardCrop(
+    public static final DeferredBlock<YamBlock> YAM_CROP = standardCrop(
             "yam_crop",
-            Block::new,
+            YamBlock::new,
             p -> p
     );
 
@@ -604,7 +609,7 @@ public class SDBlocks {
     }
 
     private static <B extends Block> DeferredBlockItem<B> sapling(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
-        return blockItem(name, sup, (p) -> pBuilder.apply(p)
+        var b = blockItem(name, sup, (p) -> pBuilder.apply(p)
                 .mapColor(MapColor.PLANT)
                 .noCollission()
                 .randomTicks()
@@ -612,6 +617,8 @@ public class SDBlocks {
                 .sound(SoundType.GRASS)
                 .pushReaction(PushReaction.DESTROY)
         );
+        SAPLINGS.add(b.getBlock());
+        return b;
     }
 
     private static <B extends Block> DeferredBlock<B> standardCrop(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
@@ -626,10 +633,12 @@ public class SDBlocks {
     }
 
     private static <B extends Block> DeferredBlockItem<B> crate(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
-        return blockItem(name, sup, (p) -> BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)
+        var b = blockItem(name, sup, (p) -> BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)
                 .strength(2.0F, 3.0F)
                 .sound(SoundType.WOOD)
         );
+        CRATES.add(b.getBlock());
+        return b;
     }
 
 
