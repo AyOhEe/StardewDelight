@@ -76,8 +76,8 @@ public class SDItemModelProvider extends ItemModelProvider {
         sapling(SDBlocks.MANGO_SAPLING.getItem());
         sapling(SDBlocks.ORANGE_SAPLING.getItem());
         sapling(SDBlocks.PEACH_SAPLING.getItem());
+        sapling(SDBlocks.APPLE_SAPLING.getItem());
         sapling(SDBlocks.POMEGRANATE_SAPLING.getItem());
-
 
 
 

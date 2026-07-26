@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "farmersdelight:block/crate_bottom",
+    "side": "stardewdelight:block/apple_crate_side",
+    "top": "stardewdelight:block/apple_crate_top"
+  }
+}

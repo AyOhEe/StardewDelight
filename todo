@@ -1,11 +1,7 @@
-tags for all crops
-
-crop growth phases
-- outline
-tree growth phases
-- outline
-
-am i doing wood types?
+tags for all crop blocks
+tags for all crop items
+tags for all seed items
+tags for crates
 
 
 1/2 block trellis crops:
@@ -73,6 +69,7 @@ fruit trees (initially normal sapling, then 1 block, then 2 block, then 3, then 
 - mango: 6
 - orange: 6
 - peach: 6
+- apple: 6
 - pomegranate: 6
 
 
@@ -98,3 +95,13 @@ distinct types:
 - fruit tree sapling
 - immature fruit tree
 - fruit tree leaves
+
+wood types
+- apricot
+- banana
+- mango
+- orange
+- peach
+- apple
+- pomegranate
+cherry can use existing logs

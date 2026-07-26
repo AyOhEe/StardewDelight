@@ -121,6 +121,8 @@ public class SDBlockStateProvider extends BlockStateProvider {
                 .makeBlockModel();
         new BlockModelPair(SDBlocks.PEACH_SAPLING.getBlock().get(), this::sapling)
                 .makeBlockModel();
+        new BlockModelPair(SDBlocks.APPLE_SAPLING.getBlock().get(), this::sapling)
+                .makeBlockModel();
         new BlockModelPair(SDBlocks.POMEGRANATE_SAPLING.getBlock().get(), this::sapling)
                 .makeBlockModel();
 
@@ -262,6 +264,9 @@ public class SDBlockStateProvider extends BlockStateProvider {
                 .makeBlockModel()
                 .makeItemModel();
         new BlockModelPair(SDBlocks.PEACH_CRATE.getBlock().get(), this::crate)
+                .makeBlockModel()
+                .makeItemModel();
+        new BlockModelPair(SDBlocks.APPLE_CRATE.getBlock().get(), this::crate)
                 .makeBlockModel()
                 .makeItemModel();
         new BlockModelPair(SDBlocks.POMEGRANATE_CRATE.getBlock().get(), this::crate)

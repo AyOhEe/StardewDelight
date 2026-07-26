@@ -286,6 +286,12 @@ public class SDBlocks {
             p -> p
     );
 
+    public static final DeferredBlockItem<FruitSaplingBlock> APPLE_SAPLING = sapling(
+            "apple_sapling",
+            FruitSaplingBlock::new,
+            p -> p
+    );
+
     public static final DeferredBlockItem<FruitSaplingBlock> POMEGRANATE_SAPLING = sapling(
             "pomegranate_sapling",
             FruitSaplingBlock::new,
@@ -553,6 +559,13 @@ public class SDBlocks {
 
     public static final DeferredBlockItem<Block> PEACH_CRATE = crate(
             "peach_crate",
+            Block::new,
+            p -> p
+    );
+
+
+    public static final DeferredBlockItem<Block> APPLE_CRATE = crate(
+            "apple_crate",
             Block::new,
             p -> p
     );

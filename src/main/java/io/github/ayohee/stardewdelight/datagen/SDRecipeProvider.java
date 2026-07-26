@@ -11,6 +11,7 @@ import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.registries.DeferredItem;
 import vectorwing.farmersdelight.common.registry.ModItems;
@@ -66,6 +67,7 @@ public class SDRecipeProvider extends RecipeProvider {
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.MANGO, RecipeCategory.BUILDING_BLOCKS, SDBlocks.MANGO_CRATE.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.ORANGE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.ORANGE_CRATE.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.PEACH, RecipeCategory.BUILDING_BLOCKS, SDBlocks.PEACH_CRATE.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, Items.APPLE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.APPLE_CRATE.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.POMEGRANATE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.POMEGRANATE_CRATE.getItem());
 
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.STRAWBERRY, RecipeCategory.FOOD, SDItems.STRAWBERRY_PUNNET);

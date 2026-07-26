@@ -44,6 +44,7 @@
   "block.stardewdelight.mango_sapling": "Mango Sapling",
   "block.stardewdelight.orange_sapling": "Orange Sapling",
   "block.stardewdelight.peach_sapling": "Peach Sapling",
+  "block.stardewdelight.apple_sapling": "Apple Sapling",
   "block.stardewdelight.pomegranate_sapling": "Pomegranate Sapling",
 
   "block.stardewdelight.blue_jazz_box": "Box of Blue Jazz",
@@ -89,6 +90,7 @@
   "block.stardewdelight.mango_crate": "Mango Crate",
   "block.stardewdelight.orange_crate": "Orange Crate",
   "block.stardewdelight.peach_crate": "Peach Crate",
+  "block.stardewdelight.apple_crate": "Apple Crate",
   "block.stardewdelight.pomegranate_crate": "Pomegranate Crate",
 
   "item.stardewdelight.jazz_seeds": "Jazz Seeds",
