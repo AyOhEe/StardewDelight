@@ -111,7 +111,7 @@ public class SDBlockStateProvider extends BlockStateProvider {
                 .makeBlockModel();
         new BlockModelPair(SDBlocks.APRICOT_SAPLING.getBlock().get(), this::sapling)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.CHERRY_SAPLING.getBlock().get(), this::sapling)
+        new BlockModelPair(SDBlocks.FRUITING_CHERRY_SAPLING.getBlock().get(), this::sapling)
                 .makeBlockModel();
         new BlockModelPair(SDBlocks.BANANA_SAPLING.getBlock().get(), this::sapling)
                 .makeBlockModel();

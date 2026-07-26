@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-25T23:18:11.0452401	Stardew's Delight's Item Models
+// 1.21.1	2026-07-26T19:44:41.4975793	Stardew's Delight's Item Models
 c80c5cd3050be4cc5222f1ee05061d40a56c0f9d assets/stardewdelight/models/item/amaranth.json
 c72b6390f795d02ac9d77eeb6e957b79d2c76b8a assets/stardewdelight/models/item/amaranth_seeds.json
 33565a838f79888fff561207abb8e3fa2964c1ab assets/stardewdelight/models/item/ancient_fruit.json
@@ -22,7 +22,6 @@ ae358295b0bc3ef01466ac9b6dd20d3d4fb16254 assets/stardewdelight/models/item/brocc
 cb53fe788f759acd6b9444f5d3f583900d0338a5 assets/stardewdelight/models/item/cauliflower.json
 04f988259c4bf65e5b68772f13f01d63417ef24c assets/stardewdelight/models/item/cauliflower_seeds.json
 336f99f297a3814893eb5d167d48e1ce78489bcd assets/stardewdelight/models/item/cherry.json
-2c94fd899f7cc84f996d4ce0fe3c3cd283cd4ce8 assets/stardewdelight/models/item/cherry_sapling.json
 ccb9366c1fc9f372d84a7f724d12c7271aabdcc0 assets/stardewdelight/models/item/coffee_bean.json
 c2b660603699aa9ad797ef7079ce971f8abf217f assets/stardewdelight/models/item/corn.json
 3b952295b7aac64438e5db0a4b06ca545752ced2 assets/stardewdelight/models/item/corn_seeds.json
@@ -33,6 +32,7 @@ f183fe35931d65bc3015ffd8c3c020f2fb29952c assets/stardewdelight/models/item/cranb
 c91c604ec7c515a2bf730aed7748e4f442d6b451 assets/stardewdelight/models/item/eggplant_seeds.json
 d5c535abcc9108bff8d4154a18bb628bd4a9ed23 assets/stardewdelight/models/item/fairy_rose.json
 596abe326c8e8f03ae1dc92f3e766e089c012212 assets/stardewdelight/models/item/fairy_seeds.json
+1937f9eb414ed39c9bfc4db380f94a2011f7961a assets/stardewdelight/models/item/fruiting_cherry_sapling.json
 bf6bab602961d086042af919003631ab2c4934c0 assets/stardewdelight/models/item/garlic.json
 9040cf6a003f972de1b1330746962a352bf093b1 assets/stardewdelight/models/item/garlic_seeds.json
 9bdfdb8e7d29a01df77d91a9aa1bab2fd19a6f63 assets/stardewdelight/models/item/grapes.json

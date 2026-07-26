@@ -256,8 +256,8 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlockItem<FruitSaplingBlock> CHERRY_SAPLING = sapling(
-            "cherry_sapling",
+    public static final DeferredBlockItem<FruitSaplingBlock> FRUITING_CHERRY_SAPLING = sapling(
+            "fruiting_cherry_sapling",
             FruitSaplingBlock::new,
             p -> p
     );
