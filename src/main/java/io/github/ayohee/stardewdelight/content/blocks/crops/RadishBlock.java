@@ -3,13 +3,12 @@ package io.github.ayohee.stardewdelight.content.blocks.crops;
 import io.github.ayohee.stardewdelight.register.SDItems;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
-public class RadishBlock extends CropBlock {
+public class RadishBlock extends BaseCropBlock {
     private static final IntegerProperty AGE = BlockStateProperties.AGE_4;
 
 
@@ -24,7 +23,7 @@ public class RadishBlock extends CropBlock {
     }
 
     @Override
-    protected IntegerProperty getAgeProperty() {
+    public IntegerProperty getAgeProperty() {
         return AGE;
     }
 

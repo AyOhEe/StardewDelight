@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-26T21:17:38.6641386	Loot Tables
+// 1.21.1	2026-07-27T21:34:26.3480081	Loot Tables
 82c9a4c94299267696f7aa54269f15302f31dc25 data/stardewdelight/loot_table/blocks/amaranth_bale.json
 452b01372903f0d5d2a914a303c842833c744ffd data/stardewdelight/loot_table/blocks/ancient_fruit_crate.json
 a007258cde52170b320059ed1f52c789ff342974 data/stardewdelight/loot_table/blocks/apple_crate.json
@@ -21,6 +21,7 @@ cf678e847b655d079088eb8333070a26bc1ab0fb data/stardewdelight/loot_table/blocks/c
 687c29189b909240013128976611f240510e05dc data/stardewdelight/loot_table/blocks/fairy_rose_box.json
 bbcd50aed1629b2e6fecaf5939b7d310f32de8cf data/stardewdelight/loot_table/blocks/fruiting_cherry_sapling.json
 e3bdba5b368eef4bcd3cfcfb03c47c5680ef7bed data/stardewdelight/loot_table/blocks/garlic_crate.json
+ec497ab1d69cd8570b91920eb30e3f3d7c4f1e68 data/stardewdelight/loot_table/blocks/garlic_crop.json
 2900bc912a1a16bf55057b7b386f112db730214c data/stardewdelight/loot_table/blocks/grape_crate.json
 a97dff99f2eafe453f0d90c70d7d19afebbd785f data/stardewdelight/loot_table/blocks/green_bean_crate.json
 99461ad1ddf8a80a33e7b1dfccac54ea2bf01609 data/stardewdelight/loot_table/blocks/hops_crate.json
@@ -31,6 +32,7 @@ a97dff99f2eafe453f0d90c70d7d19afebbd785f data/stardewdelight/loot_table/blocks/g
 c5b85b7bd7e177a066a53e6dad6648a18ea797f5 data/stardewdelight/loot_table/blocks/orange_crate.json
 da7770df4b2636d470fe02549b167296c104b23d data/stardewdelight/loot_table/blocks/orange_sapling.json
 d20117b37e958a45325abfa89cc202c39ea5b0f5 data/stardewdelight/loot_table/blocks/parsnip_crate.json
+fb181061a50dc5508d474d391d200adea106dd09 data/stardewdelight/loot_table/blocks/parsnip_crop.json
 286cfeccc0e07896b7ddf82519db2429672e8029 data/stardewdelight/loot_table/blocks/peach_crate.json
 564110ab34d6da0b09bd2d8890cfde84a4c0489b data/stardewdelight/loot_table/blocks/peach_sapling.json
 21e4f2cf3386c27e2dd41b37717bd2e11723f9bd data/stardewdelight/loot_table/blocks/pineapple_crate.json
@@ -40,8 +42,10 @@ a7dc520af5ef2acaf56c08304116186b0dcaab2b data/stardewdelight/loot_table/blocks/p
 c38b676aea6915809f5f902815d41126b2363358 data/stardewdelight/loot_table/blocks/powdermelon_crate.json
 77dfc20922d4e15b28742881cffe9311ac0bcdb0 data/stardewdelight/loot_table/blocks/qi_fruit_crate.json
 f3130115e1e19d0538a2be2a3c4396c051ca195b data/stardewdelight/loot_table/blocks/radish_crate.json
+56a6abb943647ad25dd8a5c4beb3d5ca0c5057c4 data/stardewdelight/loot_table/blocks/radish_crop.json
 605676afb9e017695259d0a1ca49e33a4467c828 data/stardewdelight/loot_table/blocks/red_cabbage_crate.json
 a0d1e0e82671dd8f28f8ae3ef59c4d6563cad0bf data/stardewdelight/loot_table/blocks/rhubarb_crate.json
+50df76063cd056b3f3a297a9f9dce7679725d9f4 data/stardewdelight/loot_table/blocks/rhubarb_crop.json
 08b3210441703801bf3de24a7bad2ac9f218b463 data/stardewdelight/loot_table/blocks/starfruit_crate.json
 bdde82351ef58d78bbc40b2c81b346fc87367282 data/stardewdelight/loot_table/blocks/strawberry_punnet_crate.json
 8bf525cee711fac2d24b98ce05d544f0f16a52f4 data/stardewdelight/loot_table/blocks/sugar_pumpkin_crate.json
@@ -52,3 +56,4 @@ fbd1016c1f4dd8f10a24b13d2316ef383c96b42d data/stardewdelight/loot_table/blocks/s
 2fad809bec9c49b76b5867dbc1e74db4a0284b35 data/stardewdelight/loot_table/blocks/tea_crate.json
 653f893c5a3805810c410076c34e1b667c019158 data/stardewdelight/loot_table/blocks/tea_sapling.json
 439e33da6552547a12478a7e779a3a789bebd06f data/stardewdelight/loot_table/blocks/yam_crate.json
+95792856e3a9d7df3eda8f312720f8fbd7130992 data/stardewdelight/loot_table/blocks/yam_crop.json

@@ -1,7 +1,7 @@
 package io.github.ayohee.stardewdelight.register;
 
 import io.github.ayohee.stardewdelight.content.blocks.crops.*;
-import io.github.ayohee.stardewdelight.content.trees.FruitSaplingBlock;
+import io.github.ayohee.stardewdelight.content.blocks.trees.FruitSaplingBlock;
 import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.level.block.Block;
