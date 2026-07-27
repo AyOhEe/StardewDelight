@@ -59,9 +59,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> KALE_CROP = standardCrop(
+    public static final DeferredBlock<KaleBlock> KALE_CROP = standardCrop(
             "kale_crop",
-            Block::new,
+            KaleBlock::new,
             p -> p
     );
 

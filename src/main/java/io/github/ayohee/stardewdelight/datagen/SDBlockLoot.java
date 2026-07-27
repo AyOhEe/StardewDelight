@@ -32,11 +32,13 @@ public class SDBlockLoot extends BlockLootSubProvider {
             dropSelf(b.get());
         }
 
+        // TODO some of these should drop bigger stacks
         stardewCropDrops(SDBlocks.GARLIC_CROP.get(), SDItems.GARLIC.asItem(), SDItems.GARLIC_SEEDS.asItem());
         stardewCropDrops(SDBlocks.PARSNIP_CROP.get(), SDItems.PARSNIP.asItem(), SDItems.PARSNIP_SEEDS.asItem());
         stardewCropDrops(SDBlocks.RADISH_CROP.get(), SDItems.RADISH.asItem(), SDItems.RADISH_SEEDS.asItem());
         stardewCropDrops(SDBlocks.RHUBARB_CROP.get(), SDItems.RHUBARB.asItem(), SDItems.RHUBARB_SEEDS.asItem());
         stardewCropDrops(SDBlocks.YAM_CROP.get(), SDItems.YAM.asItem(), SDItems.YAM_SEEDS.asItem());
+        stardewCropDrops(SDBlocks.KALE_CROP.get(), SDItems.KALE.asItem(), SDItems.KALE_SEEDS.asItem());
     }
 
     protected void add(Block block, LootTable.Builder builder) {

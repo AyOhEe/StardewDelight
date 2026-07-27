@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-27T21:34:26.3480081	Loot Tables
+// 1.21.1	2026-07-27T21:45:04.551365	Loot Tables
 82c9a4c94299267696f7aa54269f15302f31dc25 data/stardewdelight/loot_table/blocks/amaranth_bale.json
 452b01372903f0d5d2a914a303c842833c744ffd data/stardewdelight/loot_table/blocks/ancient_fruit_crate.json
 a007258cde52170b320059ed1f52c789ff342974 data/stardewdelight/loot_table/blocks/apple_crate.json
@@ -27,6 +27,7 @@ a97dff99f2eafe453f0d90c70d7d19afebbd785f data/stardewdelight/loot_table/blocks/g
 99461ad1ddf8a80a33e7b1dfccac54ea2bf01609 data/stardewdelight/loot_table/blocks/hops_crate.json
 3de55f896bc61d2490d3afcdafcf381c70f9c74f data/stardewdelight/loot_table/blocks/hot_pepper_crate.json
 594ea3b4dedab5d1bf99283e01040f22d2efb3f9 data/stardewdelight/loot_table/blocks/kale_crate.json
+b073f2611b202dd9de5f00bcdea22b6818c84950 data/stardewdelight/loot_table/blocks/kale_crop.json
 2ffc56c582b59da198c18fbfe3ce163c34a55558 data/stardewdelight/loot_table/blocks/mango_crate.json
 4a62250b1c700f2ca2d13f910c3ba23b0aff43dd data/stardewdelight/loot_table/blocks/mango_sapling.json
 c5b85b7bd7e177a066a53e6dad6648a18ea797f5 data/stardewdelight/loot_table/blocks/orange_crate.json
