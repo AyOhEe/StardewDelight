@@ -35,9 +35,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> CAULIFLOWER_CROP = standardCrop(
+    public static final DeferredBlock<CauliflowerBlock> CAULIFLOWER_CROP = standardCrop(
             "cauliflower_crop",
-            Block::new,
+            CauliflowerBlock::new,
             p -> p
     );
 
@@ -121,9 +121,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> RED_CABBAGE_CROP = standardCrop(
+    public static final DeferredBlock<RedCabbageBlock> RED_CABBAGE_CROP = standardCrop(
             "red_cabbage_crop",
-            Block::new,
+            RedCabbageBlock::new,
             p -> p
     );
 
@@ -159,9 +159,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> BOK_CHOY_CROP = standardCrop(
+    public static final DeferredBlock<BokChoyBlock> BOK_CHOY_CROP = standardCrop(
             "bok_choy_crop",
-            Block::new,
+            BokChoyBlock::new,
             p -> p
     );
 

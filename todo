@@ -20,6 +20,8 @@ bury in sand:
 1 block bush crops:
 - eggplant: 7
 - strawberries: 7
+- broccoli: 6
+- pineapple: 7
 
 2 block bush crops:
 - coffee: 7
@@ -37,13 +39,6 @@ bury in sand:
 2 block flowers:
 - fairy rose: 5
 
-
-1 block bulb crops:
-- cauliflower: 6
-- red cabbage: 6
-- bok choy: 5
-- broccoli: 6
-- pineapple: 7
 
 2 block bulb crops:
 - sweet gem berry: 6

@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-27T21:45:04.551365	Loot Tables
+// 1.21.1	2026-07-27T22:01:51.1252438	Loot Tables
 82c9a4c94299267696f7aa54269f15302f31dc25 data/stardewdelight/loot_table/blocks/amaranth_bale.json
 452b01372903f0d5d2a914a303c842833c744ffd data/stardewdelight/loot_table/blocks/ancient_fruit_crate.json
 a007258cde52170b320059ed1f52c789ff342974 data/stardewdelight/loot_table/blocks/apple_crate.json
@@ -11,8 +11,10 @@ db0ccffd852f58ec3a69d5f6d160eb31dfc329ac data/stardewdelight/loot_table/blocks/b
 5c0093d351b81a51f608d4da035879521e1ecdf1 data/stardewdelight/loot_table/blocks/blueberry_punnet_crate.json
 1c3129e785f7637f5f4f1246540af89178ac3374 data/stardewdelight/loot_table/blocks/blue_jazz_box.json
 e1989ea206c504d451da8a834b8b6307c5b3a521 data/stardewdelight/loot_table/blocks/bok_choy_crate.json
+642fb99c1b0b6d3e8f3e2c450305569894ae3d0d data/stardewdelight/loot_table/blocks/bok_choy_crop.json
 3d1b6e8f1fee8cc17850ac6c2f23e4e65f01a8b3 data/stardewdelight/loot_table/blocks/broccoli_crate.json
 77f0a55642773702468a17a759d65aed9851795e data/stardewdelight/loot_table/blocks/cauliflower_crate.json
+6bd6c46a758bc0238eb9e182f94fa56284c9e084 data/stardewdelight/loot_table/blocks/cauliflower_crop.json
 3d5fc412789e310d8811f21517fb0abc2e4c777a data/stardewdelight/loot_table/blocks/cherry_crate.json
 cf678e847b655d079088eb8333070a26bc1ab0fb data/stardewdelight/loot_table/blocks/coffee_bag.json
 27900f3e5f2eedc6745b3225760b28a80122951d data/stardewdelight/loot_table/blocks/corn_crate.json
@@ -45,6 +47,7 @@ c38b676aea6915809f5f902815d41126b2363358 data/stardewdelight/loot_table/blocks/p
 f3130115e1e19d0538a2be2a3c4396c051ca195b data/stardewdelight/loot_table/blocks/radish_crate.json
 56a6abb943647ad25dd8a5c4beb3d5ca0c5057c4 data/stardewdelight/loot_table/blocks/radish_crop.json
 605676afb9e017695259d0a1ca49e33a4467c828 data/stardewdelight/loot_table/blocks/red_cabbage_crate.json
+368621831816785cfaed1577153f5f97e02d716b data/stardewdelight/loot_table/blocks/red_cabbage_crop.json
 a0d1e0e82671dd8f28f8ae3ef59c4d6563cad0bf data/stardewdelight/loot_table/blocks/rhubarb_crate.json
 50df76063cd056b3f3a297a9f9dce7679725d9f4 data/stardewdelight/loot_table/blocks/rhubarb_crop.json
 08b3210441703801bf3de24a7bad2ac9f218b463 data/stardewdelight/loot_table/blocks/starfruit_crate.json
