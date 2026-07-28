@@ -1,5 +1,6 @@
 package io.github.ayohee.stardewdelight.content.blocks.crops;
 
+import io.github.ayohee.stardewdelight.register.SDBlocks;
 import io.github.ayohee.stardewdelight.register.SDItems;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
@@ -8,7 +9,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
-public class FairyRoseBlock extends BaseCropBlock {
+public class FairyRoseBlock extends TallFlowerCrop {
     private static final IntegerProperty AGE = BlockStateProperties.AGE_4;
 
 
@@ -25,6 +26,11 @@ public class FairyRoseBlock extends BaseCropBlock {
     @Override
     public IntegerProperty getAgeProperty() {
         return AGE;
+    }
+
+    @Override
+    public BlockState getBottomMatureBlockState() {
+        return SDBlocks.GROWN_FAIRY_ROSE.getBlock().get().defaultBlockState();
     }
 
     @Override
