@@ -3,11 +3,11 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "stardewdelight:fairy_rose_box"
+      "item": "stardewdelight:summer_spangle_box"
     }
   ],
   "result": {
     "count": 9,
-    "id": "stardewdelight:fairy_rose"
+    "id": "stardewdelight:grown_summer_spangle"
   }
 }

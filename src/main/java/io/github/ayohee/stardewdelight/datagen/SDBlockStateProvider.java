@@ -7,8 +7,11 @@ import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.neoforged.neoforge.client.model.generators.VariantBlockStateBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import vectorwing.farmersdelight.FarmersDelight;
 
@@ -107,24 +110,37 @@ public class SDBlockStateProvider extends BlockStateProvider {
                 .makeBlockModel();
 
         /*----- FRUIT TREES -----*/
-        new BlockModelPair(SDBlocks.TEA_SAPLING.getBlock().get(), this::sapling)
+        new BlockModelPair(SDBlocks.TEA_SAPLING.getBlock().get(), this::cross_cutout)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.APRICOT_SAPLING.getBlock().get(), this::sapling)
+        new BlockModelPair(SDBlocks.APRICOT_SAPLING.getBlock().get(), this::cross_cutout)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.FRUITING_CHERRY_SAPLING.getBlock().get(), this::sapling)
+        new BlockModelPair(SDBlocks.FRUITING_CHERRY_SAPLING.getBlock().get(), this::cross_cutout)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.BANANA_SAPLING.getBlock().get(), this::sapling)
+        new BlockModelPair(SDBlocks.BANANA_SAPLING.getBlock().get(), this::cross_cutout)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.MANGO_SAPLING.getBlock().get(), this::sapling)
+        new BlockModelPair(SDBlocks.MANGO_SAPLING.getBlock().get(), this::cross_cutout)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.ORANGE_SAPLING.getBlock().get(), this::sapling)
+        new BlockModelPair(SDBlocks.ORANGE_SAPLING.getBlock().get(), this::cross_cutout)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.PEACH_SAPLING.getBlock().get(), this::sapling)
+        new BlockModelPair(SDBlocks.PEACH_SAPLING.getBlock().get(), this::cross_cutout)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.APPLE_SAPLING.getBlock().get(), this::sapling)
+        new BlockModelPair(SDBlocks.APPLE_SAPLING.getBlock().get(), this::cross_cutout)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.POMEGRANATE_SAPLING.getBlock().get(), this::sapling)
+        new BlockModelPair(SDBlocks.POMEGRANATE_SAPLING.getBlock().get(), this::cross_cutout)
                 .makeBlockModel();
+
+
+        /*----- GROWN FLOWERS -----*/
+        new BlockModelPair(SDBlocks.GROWN_BLUE_JAZZ.getBlock().get(), this::cross_cutout)
+                .makeBlockModel();
+        new BlockModelPair(SDBlocks.GROWN_SUMMER_SPANGLE.getBlock().get(), this::cross_cutout)
+                .makeBlockModel();
+
+        ModelFile fairyRoseBottom = cross_cutout(SDBlocks.GROWN_FAIRY_ROSE.getBlock().get(), "_bottom");
+        ModelFile fairyRoseTop = cross_cutout(SDBlocks.GROWN_FAIRY_ROSE.getBlock().get(), "_top");
+        VariantBlockStateBuilder fairyRoseVariant = getVariantBuilder(SDBlocks.GROWN_FAIRY_ROSE.getBlock().get())
+                .partialState().with(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER).modelForState().modelFile(fairyRoseBottom).addModel()
+                .partialState().with(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.UPPER).modelForState().modelFile(fairyRoseTop).addModel();
 
 
         /*----- CRATES -----*/
@@ -296,8 +312,12 @@ public class SDBlockStateProvider extends BlockStateProvider {
         }
     }
 
-    private ModelFile sapling(Block b) {
+    private ModelFile cross_cutout(Block b) {
         return this.models().cross(this.name(b), this.blockTexture(b)).renderType(mcLoc("cutout"));
+    }
+
+    private ModelFile cross_cutout(Block b, String suffix) {
+        return this.models().cross(this.name(b) + suffix, this.blockTexture(b).withSuffix(suffix)).renderType(mcLoc("cutout"));
     }
 
     private ModelFile crop(Block b) {
@@ -325,6 +345,7 @@ public class SDBlockStateProvider extends BlockStateProvider {
                         ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_side"))
                 .texture("particle", modLoc("block/" + this.name(b) + "_top"));
     }
+
 
 
     /*----- SHAMELESSLY STOLEN FROM SUPERCLASS -----*/

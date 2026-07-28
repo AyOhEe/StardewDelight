@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "stardewdelight:fairy_rose_from_fairy_rose_box"
+        "recipe": "stardewdelight:grown_fairy_rose_from_fairy_rose_box"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "stardewdelight:fairy_rose_from_fairy_rose_box"
+      "stardewdelight:grown_fairy_rose_from_fairy_rose_box"
     ]
   }
 }

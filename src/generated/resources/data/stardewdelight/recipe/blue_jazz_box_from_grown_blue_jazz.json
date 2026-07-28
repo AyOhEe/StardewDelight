@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "stardewdelight:summer_spangle"
+      "item": "stardewdelight:grown_blue_jazz"
     }
   },
   "pattern": [
@@ -13,6 +13,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "stardewdelight:summer_spangle_box"
+    "id": "stardewdelight:blue_jazz_box"
   }
 }

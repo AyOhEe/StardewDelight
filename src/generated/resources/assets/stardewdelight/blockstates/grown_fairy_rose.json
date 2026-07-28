@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "stardewdelight:block/grown_fairy_rose_bottom"
+    },
+    "half=upper": {
+      "model": "stardewdelight:block/grown_fairy_rose_top"
+    }
+  }
+}

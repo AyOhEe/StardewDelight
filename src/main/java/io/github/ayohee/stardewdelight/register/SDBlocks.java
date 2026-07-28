@@ -8,8 +8,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
@@ -29,9 +27,9 @@ public class SDBlocks {
 
     /*----- CROP BLOCKS -----*/
     /*----- SPRING CROPS -----*/
-    public static final DeferredBlock<Block> BLUE_JAZZ_CROP = standardCrop(
+    public static final DeferredBlock<BlueJazzBlock> BLUE_JAZZ_CROP = standardCrop(
             "blue_jazz_crop",
-            Block::new,
+            BlueJazzBlock::new,
             p -> p
     );
 
@@ -133,9 +131,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> SUMMER_SPANGLE_CROP = standardCrop(
+    public static final DeferredBlock<SummerSpangleBlock> SUMMER_SPANGLE_CROP = standardCrop(
             "summer_spangle_crop",
-            Block::new,
+            SummerSpangleBlock::new,
             p -> p
     );
 
@@ -183,9 +181,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> FAIRY_ROSE_CROP = standardCrop(
+    public static final DeferredBlock<FairyRoseBlock> FAIRY_ROSE_CROP = standardCrop(
             "fairy_rose_crop",
-            Block::new,
+            FairyRoseBlock::new,
             p -> p
     );
 
@@ -300,6 +298,26 @@ public class SDBlocks {
     public static final DeferredBlockItem<FruitSaplingBlock> POMEGRANATE_SAPLING = sapling(
             "pomegranate_sapling",
             FruitSaplingBlock::new,
+            p -> p
+    );
+
+
+    /*----- GROWN FLOWERS -----*/
+    public static final DeferredBlockItem<GrownBlueJazzBlock> GROWN_BLUE_JAZZ = flower(
+            "grown_blue_jazz",
+            GrownBlueJazzBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<GrownSummerSpangleBlock> GROWN_SUMMER_SPANGLE = flower(
+            "grown_summer_spangle",
+            GrownSummerSpangleBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<GrownFairyRoseBlock> GROWN_FAIRY_ROSE = tallFlower(
+            "grown_fairy_rose",
+            GrownFairyRoseBlock::new,
             p -> p
     );
 
@@ -609,38 +627,33 @@ public class SDBlocks {
     }
 
     private static <B extends Block> DeferredBlockItem<B> sapling(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
-        var b = blockItem(name, sup, (p) -> pBuilder.apply(p)
-                .mapColor(MapColor.PLANT)
-                .noCollission()
-                .randomTicks()
-                .instabreak()
-                .sound(SoundType.GRASS)
-                .pushReaction(PushReaction.DESTROY)
-        );
+        var b = blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
         SAPLINGS.add(b.getBlock());
         return b;
     }
 
     private static <B extends Block> DeferredBlock<B> standardCrop(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
-        return block(name, sup, (p) -> pBuilder.apply(p)
-                .mapColor(MapColor.PLANT)
-                .noCollission()
-                .randomTicks()
-                .instabreak()
-                .sound(SoundType.CROP)
-                .pushReaction(PushReaction.DESTROY)
-        );
+        return block(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
     }
 
     private static <B extends Block> DeferredBlockItem<B> crate(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
-        var b = blockItem(name, sup, (p) -> BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)
+        var b = blockItem(name, sup, (p) -> pBuilder.apply(
+                BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)
                 .strength(2.0F, 3.0F)
                 .sound(SoundType.WOOD)
+                )
         );
         CRATES.add(b.getBlock());
         return b;
     }
 
+    private static <B extends Block> DeferredBlockItem<B> flower(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.POPPY)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> tallFlower(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.ROSE_BUSH)));
+    }
 
     /*----- STATIC INITIALIZER -----*/
     public static void register() { }

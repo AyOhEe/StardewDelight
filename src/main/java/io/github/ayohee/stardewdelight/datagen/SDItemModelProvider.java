@@ -69,21 +69,21 @@ public class SDItemModelProvider extends ItemModelProvider {
         basicItem(SDItems.TARO_TUBER.get());
 
         /*----- FRUIT TREES -----*/
-        sapling(SDBlocks.TEA_SAPLING.getItem());
-        sapling(SDBlocks.APRICOT_SAPLING.getItem());
-        sapling(SDBlocks.FRUITING_CHERRY_SAPLING.getItem());
-        sapling(SDBlocks.BANANA_SAPLING.getItem());
-        sapling(SDBlocks.MANGO_SAPLING.getItem());
-        sapling(SDBlocks.ORANGE_SAPLING.getItem());
-        sapling(SDBlocks.PEACH_SAPLING.getItem());
-        sapling(SDBlocks.APPLE_SAPLING.getItem());
-        sapling(SDBlocks.POMEGRANATE_SAPLING.getItem());
+        blockTexture(SDBlocks.TEA_SAPLING.getItem());
+        blockTexture(SDBlocks.APRICOT_SAPLING.getItem());
+        blockTexture(SDBlocks.FRUITING_CHERRY_SAPLING.getItem());
+        blockTexture(SDBlocks.BANANA_SAPLING.getItem());
+        blockTexture(SDBlocks.MANGO_SAPLING.getItem());
+        blockTexture(SDBlocks.ORANGE_SAPLING.getItem());
+        blockTexture(SDBlocks.PEACH_SAPLING.getItem());
+        blockTexture(SDBlocks.APPLE_SAPLING.getItem());
+        blockTexture(SDBlocks.POMEGRANATE_SAPLING.getItem());
 
 
 
         /*----- CROP ITEMS -----*/
         /*----- SPRING CROPS -----*/
-        basicItem(SDItems.BLUE_JAZZ.get());
+        blockTexture(SDBlocks.GROWN_BLUE_JAZZ.getItem());
         basicItem(SDItems.CAULIFLOWER.get());
         // Coffee beans are both seeds and a usable crop.
         basicItem(SDItems.GARLIC.get());
@@ -102,7 +102,7 @@ public class SDItemModelProvider extends ItemModelProvider {
         basicItem(SDItems.RADISH.get());
         basicItem(SDItems.RED_CABBAGE.get());
         basicItem(SDItems.STARFRUIT.get());
-        basicItem(SDItems.SUMMER_SPANGLE.get());
+        blockTexture(SDBlocks.GROWN_SUMMER_SPANGLE.getItem());
         basicItem(SDItems.SUMMER_SQUASH.get());
 
         /*----- FALL CROPS -----*/
@@ -112,7 +112,7 @@ public class SDItemModelProvider extends ItemModelProvider {
         basicItem(SDItems.BROCCOLI.get());
         basicItem(SDItems.CRANBERRY.get());
         basicItem(SDItems.EGGPLANT.get());
-        basicItem(SDItems.FAIRY_ROSE.get());
+        blockTexture(SDBlocks.GROWN_FAIRY_ROSE.getItem(), "_top");
         basicItem(SDItems.GRAPES.get());
         basicItem(SDItems.SUGAR_PUMPKIN.get());
         basicItem(SDItems.YAM.get());
@@ -143,8 +143,12 @@ public class SDItemModelProvider extends ItemModelProvider {
         basicItem(SDItems.CRANBERRY_PUNNET.get());
     }
 
-    private void sapling(DeferredItem<? extends Item> i) {
+    private void blockTexture(DeferredItem<? extends Item> i) {
         withExistingParent(i.getId().toString(), mcLoc("item/generated")).texture("layer0", StardewDelight.modLoc("block/" + i.getId().getPath()));
+    }
+
+    private void blockTexture(DeferredItem<? extends Item> i, String suffix) {
+        withExistingParent(i.getId().toString(), mcLoc("item/generated")).texture("layer0", StardewDelight.modLoc("block/" + i.getId().withSuffix(suffix).getPath()));
     }
 
     /*----- NAMED WRAPPER FOR DataProvider -----*/

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "stardewdelight:item/blue_jazz"
+    "layer0": "stardewdelight:block/grown_blue_jazz"
   }
 }

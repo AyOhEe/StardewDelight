@@ -25,7 +25,7 @@ public class SDRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.BLUE_JAZZ, RecipeCategory.BUILDING_BLOCKS, SDBlocks.BLUE_JAZZ_BOX.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.MISC, SDBlocks.GROWN_BLUE_JAZZ.getItem(), RecipeCategory.BUILDING_BLOCKS, SDBlocks.BLUE_JAZZ_BOX.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.CAULIFLOWER, RecipeCategory.BUILDING_BLOCKS, SDBlocks.CAULIFLOWER_CRATE.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.COFFEE_BEAN, RecipeCategory.BUILDING_BLOCKS, SDBlocks.COFFEE_BAG.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.GARLIC, RecipeCategory.BUILDING_BLOCKS, SDBlocks.GARLIC_CRATE.getItem());
@@ -42,7 +42,7 @@ public class SDRecipeProvider extends RecipeProvider {
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.RADISH, RecipeCategory.BUILDING_BLOCKS, SDBlocks.RADISH_CRATE.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.RED_CABBAGE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.RED_CABBAGE_CRATE.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.STARFRUIT, RecipeCategory.BUILDING_BLOCKS, SDBlocks.STARFRUIT_CRATE.getItem());
-        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.SUMMER_SPANGLE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.SUMMER_SPANGLE_BOX.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.MISC, SDBlocks.GROWN_SUMMER_SPANGLE.getItem(), RecipeCategory.BUILDING_BLOCKS, SDBlocks.SUMMER_SPANGLE_BOX.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.SUMMER_SQUASH, RecipeCategory.BUILDING_BLOCKS, SDBlocks.SUMMER_SQUASH_CRATE.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.AMARANTH, RecipeCategory.BUILDING_BLOCKS, SDBlocks.AMARANTH_BALE.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.ARTICHOKE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.ARTICHOKE_CRATE.getItem());
@@ -50,7 +50,7 @@ public class SDRecipeProvider extends RecipeProvider {
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.BROCCOLI, RecipeCategory.BUILDING_BLOCKS, SDBlocks.BROCCOLI_CRATE.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.CRANBERRY_PUNNET, RecipeCategory.BUILDING_BLOCKS, SDBlocks.CRANBERRY_PUNNET_CRATE.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.EGGPLANT, RecipeCategory.BUILDING_BLOCKS, SDBlocks.EGGPLANT_CRATE.getItem());
-        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.FAIRY_ROSE, RecipeCategory.BUILDING_BLOCKS, SDBlocks.FAIRY_ROSE_BOX.getItem());
+        modNineBlockStorageRecipes(recipeOutput, RecipeCategory.MISC, SDBlocks.GROWN_FAIRY_ROSE.getItem(), RecipeCategory.BUILDING_BLOCKS, SDBlocks.FAIRY_ROSE_BOX.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.GRAPES, RecipeCategory.BUILDING_BLOCKS, SDBlocks.GRAPE_CRATE.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.SUGAR_PUMPKIN, RecipeCategory.BUILDING_BLOCKS, SDBlocks.SUGAR_PUMPKIN_CRATE.getItem());
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.YAM, RecipeCategory.BUILDING_BLOCKS, SDBlocks.YAM_CRATE.getItem());

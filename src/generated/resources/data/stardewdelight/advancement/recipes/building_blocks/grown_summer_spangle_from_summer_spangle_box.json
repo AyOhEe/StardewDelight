@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "stardewdelight:summer_spangle_from_summer_spangle_box"
+        "recipe": "stardewdelight:grown_summer_spangle_from_summer_spangle_box"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "stardewdelight:summer_spangle_from_summer_spangle_box"
+      "stardewdelight:grown_summer_spangle_from_summer_spangle_box"
     ]
   }
 }

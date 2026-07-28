@@ -277,11 +277,7 @@ public class SDItems {
 
     /*----- CROP ITEMS -----*/
     /*----- SPRING CROPS -----*/
-    public static final DeferredItem<Item> BLUE_JAZZ = item(
-            "blue_jazz",
-            Item::new,
-            p -> p
-    );
+    // Blue jazz is a BlockItem
 
     public static final DeferredItem<Item> CAULIFLOWER = item(
             "cauliflower",
@@ -377,11 +373,7 @@ public class SDItems {
             p -> p
     );
 
-    public static final DeferredItem<Item> SUMMER_SPANGLE = item(
-            "summer_spangle",
-            Item::new,
-            p -> p
-    );
+    // Summer Spangle is a BlockItem
 
     public static final DeferredItem<Item> SUMMER_SQUASH = item(
             "summer_squash",
@@ -427,11 +419,7 @@ public class SDItems {
             p -> p
     );
 
-    public static final DeferredItem<Item> FAIRY_ROSE = item(
-            "fairy_rose",
-            Item::new,
-            p -> p
-    );
+    // Fairy Rose is a BlockItem
 
     public static final DeferredItem<Item> GRAPES = item(
             "grapes",

@@ -9,6 +9,8 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -31,6 +33,15 @@ public class SDBlockLoot extends BlockLootSubProvider {
         for (DeferredBlock<? extends Block> b : SDBlocks.SAPLINGS) {
             dropSelf(b.get());
         }
+
+        dropSelf(SDBlocks.GROWN_BLUE_JAZZ.getBlock().get());
+        dropSelf(SDBlocks.GROWN_SUMMER_SPANGLE.getBlock().get());
+        add(SDBlocks.GROWN_FAIRY_ROSE.getBlock().get(), createSinglePropConditionTable(SDBlocks.GROWN_FAIRY_ROSE.getBlock().get(), BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER));
+
+
+        dropOther(SDBlocks.BLUE_JAZZ_CROP.get(), SDItems.JAZZ_SEEDS);
+        dropOther(SDBlocks.SUMMER_SPANGLE_CROP.get(), SDItems.SPANGLE_SEEDS);
+        dropOther(SDBlocks.FAIRY_ROSE_CROP.get(), SDItems.FAIRY_SEEDS);
 
         // TODO some of these should drop bigger stacks
         stardewCropDrops(SDBlocks.GARLIC_CROP.get(), SDItems.GARLIC.asItem(), SDItems.GARLIC_SEEDS.asItem());

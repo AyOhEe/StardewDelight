@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "stardewdelight:item/summer_spangle"
+    "layer0": "stardewdelight:block/grown_fairy_rose_top"
   }
 }

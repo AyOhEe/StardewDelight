@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "stardewdelight:blue_jazz"
+      "item": "stardewdelight:grown_fairy_rose"
     }
   },
   "pattern": [
@@ -13,6 +13,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "stardewdelight:blue_jazz_box"
+    "id": "stardewdelight:fairy_rose_box"
   }
 }

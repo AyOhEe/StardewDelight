@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_summer_spangle": {
+    "has_blue_jazz_box": {
       "conditions": {
         "items": [
           {
-            "items": "stardewdelight:summer_spangle"
+            "items": "stardewdelight:blue_jazz_box"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "stardewdelight:summer_spangle_box_from_summer_spangle"
+        "recipe": "stardewdelight:grown_blue_jazz_from_blue_jazz_box"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_summer_spangle"
+      "has_blue_jazz_box"
     ]
   ],
   "rewards": {
     "recipes": [
-      "stardewdelight:summer_spangle_box_from_summer_spangle"
+      "stardewdelight:grown_blue_jazz_from_blue_jazz_box"
     ]
   }
 }

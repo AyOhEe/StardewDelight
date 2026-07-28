@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_fairy_rose": {
+    "has_grown_fairy_rose": {
       "conditions": {
         "items": [
           {
-            "items": "stardewdelight:fairy_rose"
+            "items": "stardewdelight:grown_fairy_rose"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "stardewdelight:fairy_rose_box_from_fairy_rose"
+        "recipe": "stardewdelight:fairy_rose_box_from_grown_fairy_rose"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_fairy_rose"
+      "has_grown_fairy_rose"
     ]
   ],
   "rewards": {
     "recipes": [
-      "stardewdelight:fairy_rose_box_from_fairy_rose"
+      "stardewdelight:fairy_rose_box_from_grown_fairy_rose"
     ]
   }
 }

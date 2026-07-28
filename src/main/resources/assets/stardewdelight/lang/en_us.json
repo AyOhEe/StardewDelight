@@ -1,7 +1,7 @@
 {
   "itemGroup.stardewdelight": "Stardew's Delight",
 
-  "block.stardewdelight.blue_jazz_crop": "Blue Jazz",
+  "block.stardewdelight.blue_jazz_crop": "Growing Blue Jazz",
   "block.stardewdelight.cauliflower_crop": "Cauliflower",
   "block.stardewdelight.coffee_bush": "Coffee Bush",
   "block.stardewdelight.garlic_crop": "Garlic",
@@ -18,7 +18,7 @@
   "block.stardewdelight.radish_crop": "Radish",
   "block.stardewdelight.red_cabbage_crop": "Red Cabbage",
   "block.stardewdelight.starfruit_crop": "Starfruit",
-  "block.stardewdelight.summer_spangle_crop": "Summer Spangle",
+  "block.stardewdelight.summer_spangle_crop": "Growing Summer Spangle",
   "block.stardewdelight.summer_squash_crop": "Summer Squash",
   "block.stardewdelight.amaranth_crop": "Amaranth",
   "block.stardewdelight.artichoke_crop": "Artichoke",
@@ -26,7 +26,7 @@
   "block.stardewdelight.broccoli_crop": "Broccoli",
   "block.stardewdelight.cranberry_bush": "Cranberry Bush",
   "block.stardewdelight.eggplant_crop": "Eggplant Bush",
-  "block.stardewdelight.fairy_rose_crop": "Fairy Rose",
+  "block.stardewdelight.fairy_rose_crop": "Growing Fairy Rose",
   "block.stardewdelight.grapes_crop": "Grapes",
   "block.stardewdelight.sugar_pumpkin_crop": "Sugar Pumpkin",
   "block.stardewdelight.yam_crop": "Yam",
@@ -46,6 +46,10 @@
   "block.stardewdelight.peach_sapling": "Peach Sapling",
   "block.stardewdelight.apple_sapling": "Apple Sapling",
   "block.stardewdelight.pomegranate_sapling": "Pomegranate Sapling",
+
+  "block.stardewdelight.grown_blue_jazz": "Blue Jazz",
+  "block.stardewdelight.grown_summer_spangle": "Summer Spangle",
+  "block.stardewdelight.grown_fairy_rose": "Fairy Rose",
 
   "block.stardewdelight.blue_jazz_box": "Box of Blue Jazz",
   "block.stardewdelight.cauliflower_crate": "Cauliflower Crate",
@@ -129,7 +133,6 @@
   "item.stardewdelight.pineapple_seeds": "Pineapple Seeds",
   "item.stardewdelight.taro_tuber": "Taro Tuber",
 
-  "item.stardewdelight.blue_jazz": "Blue Jazz",
   "item.stardewdelight.cauliflower": "Cauliflower",
   "item.stardewdelight.garlic": "Garlic Bulb",
   "item.stardewdelight.green_bean": "Green Bean",
@@ -145,7 +148,6 @@
   "item.stardewdelight.radish": "Radish",
   "item.stardewdelight.red_cabbage": "Red Cabbage",
   "item.stardewdelight.starfruit": "Starfruit",
-  "item.stardewdelight.summer_spangle": "Summer Spangle",
   "item.stardewdelight.summer_squash": "Summer Squash",
   "item.stardewdelight.amaranth": "Amaranth",
   "item.stardewdelight.artichoke": "Artichoke",
@@ -153,7 +155,6 @@
   "item.stardewdelight.broccoli": "Broccoli",
   "item.stardewdelight.cranberry": "Cranberry",
   "item.stardewdelight.eggplant": "Eggplant",
-  "item.stardewdelight.fairy_rose": "Fairy Rose",
   "item.stardewdelight.grapes": "Grapes",
   "item.stardewdelight.sugar_pumpkin": "Sugar Pumpkin",
   "item.stardewdelight.yam": "Yam",

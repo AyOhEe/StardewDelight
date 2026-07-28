@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-26T19:44:41.4975793	Stardew's Delight's Item Models
+// 1.21.1	2026-07-28T01:23:00.5946124	Stardew's Delight's Item Models
 c80c5cd3050be4cc5222f1ee05061d40a56c0f9d assets/stardewdelight/models/item/amaranth.json
 c72b6390f795d02ac9d77eeb6e957b79d2c76b8a assets/stardewdelight/models/item/amaranth_seeds.json
 33565a838f79888fff561207abb8e3fa2964c1ab assets/stardewdelight/models/item/ancient_fruit.json
@@ -14,7 +14,6 @@ c082e54c129722d11e0776cbaf498b6b3d7b3bc2 assets/stardewdelight/models/item/banan
 f1d5b2b3e25ffbe452d4aef464a9c04d0d132fbc assets/stardewdelight/models/item/blueberry.json
 4893ce056663f90369940741151aff9da795df0a assets/stardewdelight/models/item/blueberry_punnet.json
 249e37163410121ed731d8b83ca20bd27b305f08 assets/stardewdelight/models/item/blueberry_seeds.json
-dc352f3cba3889a6a6f60c5b26ecee6e827dc393 assets/stardewdelight/models/item/blue_jazz.json
 93fab97fe4dcb36ffc865e58ad71f6bc0217961d assets/stardewdelight/models/item/bok_choy.json
 5ea16611d7dd22a99e5c70f556f76ef0b17bdf50 assets/stardewdelight/models/item/bok_choy_seeds.json
 13612184233f00615724da88f6b3ccc48e02907e assets/stardewdelight/models/item/broccoli.json
@@ -30,7 +29,6 @@ f183fe35931d65bc3015ffd8c3c020f2fb29952c assets/stardewdelight/models/item/cranb
 67f8dd42df37040ea034ed7e0757782510359d03 assets/stardewdelight/models/item/cranberry_seeds.json
 405146ee9ee3177eb49533486296d4bfaa6400f8 assets/stardewdelight/models/item/eggplant.json
 c91c604ec7c515a2bf730aed7748e4f442d6b451 assets/stardewdelight/models/item/eggplant_seeds.json
-d5c535abcc9108bff8d4154a18bb628bd4a9ed23 assets/stardewdelight/models/item/fairy_rose.json
 596abe326c8e8f03ae1dc92f3e766e089c012212 assets/stardewdelight/models/item/fairy_seeds.json
 1937f9eb414ed39c9bfc4db380f94a2011f7961a assets/stardewdelight/models/item/fruiting_cherry_sapling.json
 bf6bab602961d086042af919003631ab2c4934c0 assets/stardewdelight/models/item/garlic.json
@@ -38,6 +36,9 @@ bf6bab602961d086042af919003631ab2c4934c0 assets/stardewdelight/models/item/garli
 9bdfdb8e7d29a01df77d91a9aa1bab2fd19a6f63 assets/stardewdelight/models/item/grapes.json
 d8c694c43a1b04f08187eb930eb5b602c62f9949 assets/stardewdelight/models/item/grape_starter.json
 258e24a208cd032b894906eadc983c104ccd71fe assets/stardewdelight/models/item/green_bean.json
+a53902b0c5688175fcebcc26fa72399f68c61818 assets/stardewdelight/models/item/grown_blue_jazz.json
+b186a5a74ce10bce0b7843c42751ca0b67efe8ae assets/stardewdelight/models/item/grown_fairy_rose.json
+8a5c8b607fb986c7fa578d605f5483c3560a93dd assets/stardewdelight/models/item/grown_summer_spangle.json
 96cd109128e47698f44c2cfd27e0320add6bfa1d assets/stardewdelight/models/item/hops.json
 9445d05d1f2bc20679a14356a1fddf13726e2cff assets/stardewdelight/models/item/hops_starter.json
 a50ee18316f0811c7706a8c8eb5d3eeaad75fe49 assets/stardewdelight/models/item/hot_pepper.json
@@ -78,7 +79,6 @@ e0df9ef506fe5d8f1eebd6802edd9e6a7e47266a assets/stardewdelight/models/item/straw
 1428bdd9d85aead20aa57019708fec4be306f027 assets/stardewdelight/models/item/strawberry_seeds.json
 c0e48637796d2ac8c7773bf1fe3c3fbf7d654431 assets/stardewdelight/models/item/sugar_pumpkin.json
 86e98eae0dc4a2487394e6f4f07d4467da2cfa76 assets/stardewdelight/models/item/sugar_pumpkin_seeds.json
-aea88f6abb91fa4c0effe6e3321cb87a85f2ef21 assets/stardewdelight/models/item/summer_spangle.json
 97ca7a44b45bd916366f6b26fed5bbbc2085aa7d assets/stardewdelight/models/item/summer_squash.json
 37bc73335de9b9901af677ffad4304d426cb880c assets/stardewdelight/models/item/summer_squash_seeds.json
 15a6b019792770fc9d81897fdce4f96471450457 assets/stardewdelight/models/item/sweet_gem_berry.json
