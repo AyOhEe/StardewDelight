@@ -87,9 +87,9 @@ public class SDBlocks {
 
 
     /*----- SUMMER CROPS -----*/
-    public static final DeferredBlock<Block> BLUEBERRY_BUSH = standardCrop(
+    public static final DeferredBlock<BushCropBlock> BLUEBERRY_BUSH = standardCrop(
             "blueberry_bush",
-            Block::new,
+            p -> BushCropBlock.create(p, SDBlockStateProperties.AGE_6, 6, SDItems.BLUEBERRY_SEEDS, SDItems.BLUEBERRY, 1, 1),
             p -> p
     );
 
@@ -105,9 +105,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> HOT_PEPPERS_CROP = standardCrop(
+    public static final DeferredBlock<BushCropBlock> HOT_PEPPERS_CROP = standardCrop(
             "hot_peppers_crop",
-            Block::new,
+            p -> BushCropBlock.create(p, SDBlockStateProperties.AGE_6, 6, SDItems.PEPPER_SEEDS, SDItems.HOT_PEPPER, 1, 1),
             p -> p
     );
 
@@ -141,9 +141,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> SUMMER_SQUASH_CROP = standardCrop(
+    public static final DeferredBlock<BushCropBlock> SUMMER_SQUASH_CROP = standardCrop(
             "summer_squash_crop",
-            Block::new,
+            p -> BushCropBlock.create(p, SDBlockStateProperties.AGE_6, 6, SDItems.SUMMER_SQUASH_SEEDS, SDItems.SUMMER_SQUASH, 1, 0),
             p -> p
     );
 

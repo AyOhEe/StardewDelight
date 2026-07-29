@@ -74,6 +74,9 @@ public class SDBlockLoot extends BlockLootSubProvider {
         bushCropDrops(SDBlocks.BROCCOLI_CROP.get(), SDItems.BROCCOLI.asItem(), SDItems.BROCCOLI_SEEDS.asItem());
         bushCropDrops(SDBlocks.EGGPLANT_CROP.get(), SDItems.EGGPLANT.asItem(), SDItems.EGGPLANT_SEEDS.asItem());
         bushCropDrops(SDBlocks.PINEAPPLE_CROP.get(), SDItems.PINEAPPLE.asItem(), SDItems.PINEAPPLE_SEEDS.asItem());
+        bushCropDrops(SDBlocks.BLUEBERRY_BUSH.get(), SDItems.BLUEBERRY.asItem(), SDItems.BLUEBERRY_SEEDS.asItem());
+        bushCropDrops(SDBlocks.HOT_PEPPERS_CROP.get(), SDItems.HOT_PEPPER.asItem(), SDItems.PEPPER_SEEDS.asItem());
+        bushCropDrops(SDBlocks.SUMMER_SQUASH_CROP.get(), SDItems.SUMMER_SQUASH.asItem(), SDItems.SUMMER_SQUASH_SEEDS.asItem());
     }
 
     protected void add(Block block, LootTable.Builder builder) {
