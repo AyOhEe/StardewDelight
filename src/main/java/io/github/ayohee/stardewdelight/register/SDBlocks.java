@@ -1,5 +1,6 @@
 package io.github.ayohee.stardewdelight.register;
 
+import io.github.ayohee.stardewdelight.SDBlockStateProperties;
 import io.github.ayohee.stardewdelight.content.blocks.crops.*;
 import io.github.ayohee.stardewdelight.content.blocks.trees.FruitSaplingBlock;
 import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
@@ -78,9 +79,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> STRAWBERRY_BUSH = standardCrop(
+    public static final DeferredBlock<BushCropBlock> STRAWBERRY_BUSH = standardCrop(
             "strawberry_bush",
-            Block::new,
+            p -> BushCropBlock.create(p, SDBlockStateProperties.AGE_6, 6, SDItems.STRAWBERRY_SEEDS, SDItems.STRAWBERRY, 1, 1),
             p -> p
     );
 
@@ -166,9 +167,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> BROCCOLI_CROP = standardCrop(
+    public static final DeferredBlock<BushCropBlock> BROCCOLI_CROP = standardCrop(
             "broccoli_crop",
-            Block::new,
+            p -> BushCropBlock.create(p, BlockStateProperties.AGE_5, 5, SDItems.BROCCOLI_SEEDS, SDItems.BROCCOLI, 1, 0),
             p -> p
     );
 
@@ -178,9 +179,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> EGGPLANT_CROP = standardCrop(
+    public static final DeferredBlock<BushCropBlock> EGGPLANT_CROP = standardCrop(
             "eggplant_crop",
-            Block::new,
+            p -> BushCropBlock.create(p, SDBlockStateProperties.AGE_6, 6, SDItems.EGGPLANT_SEEDS, SDItems.EGGPLANT, 1, 0),
             p -> p
     );
 
@@ -236,9 +237,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> PINEAPPLE_CROP = standardCrop(
+    public static final DeferredBlock<BushCropBlock> PINEAPPLE_CROP = standardCrop(
             "pineapple_crop",
-            Block::new,
+            p -> BushCropBlock.create(p, SDBlockStateProperties.AGE_6, 6, SDItems.PINEAPPLE_SEEDS, SDItems.PINEAPPLE, 1, 0),
             p -> p
     );
 
