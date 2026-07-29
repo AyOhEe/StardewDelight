@@ -149,9 +149,9 @@ public class SDBlocks {
 
 
     /*----- FALL CROPS -----*/
-    public static final DeferredBlock<BaseCropBlock> AMARANTH_CROP = standardCrop(
+    public static final DeferredBlock<TallCropBlock> AMARANTH_CROP = standardCrop(
             "amaranth_crop",
-            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.AMARANTH_SEEDS),
+            p -> TallCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.AMARANTH_SEEDS, 4),
             p -> p
     );
 
@@ -187,7 +187,7 @@ public class SDBlocks {
 
     public static final DeferredBlock<TallFlowerCrop> FAIRY_ROSE_CROP = standardCrop(
             "fairy_rose_crop",
-            p -> TallFlowerCrop.create(p, BlockStateProperties.AGE_4, 4, SDItems.FAIRY_SEEDS, () -> SDBlocks.GROWN_FAIRY_ROSE.getBlock().get().defaultBlockState()),
+            p -> TallFlowerCrop.create(p, BlockStateProperties.AGE_4, 4, SDItems.FAIRY_SEEDS, 3, () -> SDBlocks.GROWN_FAIRY_ROSE.getBlock().get().defaultBlockState()),
             p -> p
     );
 

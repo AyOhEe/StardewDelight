@@ -1,6 +1,6 @@
-// 1.21.1	2026-07-29T17:40:42.8245348	Loot Tables
+// 1.21.1	2026-07-29T19:48:44.5433347	Loot Tables
 82c9a4c94299267696f7aa54269f15302f31dc25 data/stardewdelight/loot_table/blocks/amaranth_bale.json
-1ebdcba45d5847354cd8018c1ce1df65599392cf data/stardewdelight/loot_table/blocks/amaranth_crop.json
+2988ea00bb756ebdc11ce769da2eb9b6291cf08e data/stardewdelight/loot_table/blocks/amaranth_crop.json
 452b01372903f0d5d2a914a303c842833c744ffd data/stardewdelight/loot_table/blocks/ancient_fruit_crate.json
 a007258cde52170b320059ed1f52c789ff342974 data/stardewdelight/loot_table/blocks/apple_crate.json
 05736c5abc8324de6e9c129a279d2d076e8a4ec3 data/stardewdelight/loot_table/blocks/apple_sapling.json
@@ -25,7 +25,7 @@ cf678e847b655d079088eb8333070a26bc1ab0fb data/stardewdelight/loot_table/blocks/c
 55221f3be2863f716214ce8d3f47d51dd39d09be data/stardewdelight/loot_table/blocks/eggplant_crate.json
 8880472af866756e3b8edc8b96f7155e8f85edcf data/stardewdelight/loot_table/blocks/eggplant_crop.json
 687c29189b909240013128976611f240510e05dc data/stardewdelight/loot_table/blocks/fairy_rose_box.json
-52d18ec2bf137de3bcf85c732a62d13be6c49dea data/stardewdelight/loot_table/blocks/fairy_rose_crop.json
+1a7028a34fe4e077e81e9fe0635dee7f083edf52 data/stardewdelight/loot_table/blocks/fairy_rose_crop.json
 bbcd50aed1629b2e6fecaf5939b7d310f32de8cf data/stardewdelight/loot_table/blocks/fruiting_cherry_sapling.json
 e3bdba5b368eef4bcd3cfcfb03c47c5680ef7bed data/stardewdelight/loot_table/blocks/garlic_crate.json
 ec497ab1d69cd8570b91920eb30e3f3d7c4f1e68 data/stardewdelight/loot_table/blocks/garlic_crop.json

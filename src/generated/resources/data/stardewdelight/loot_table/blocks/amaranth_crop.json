@@ -10,44 +10,37 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
+          "type": "minecraft:item",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "block": "stardewdelight:amaranth_crop",
-                  "condition": "minecraft:block_state_property",
-                  "properties": {
-                    "age": "4"
-                  }
-                }
-              ],
-              "name": "stardewdelight:amaranth"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "stardewdelight:amaranth_seeds"
+              "block": "stardewdelight:amaranth_crop",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "age": "4",
+                "half": "lower"
+              }
             }
-          ]
+          ],
+          "name": "stardewdelight:amaranth"
         }
       ],
       "rolls": 1.0
     },
     {
       "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "block": "stardewdelight:amaranth_crop",
-          "condition": "minecraft:block_state_property",
-          "properties": {
-            "age": "4"
-          }
-        }
-      ],
       "entries": [
         {
           "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "stardewdelight:amaranth_crop",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "age": "4",
+                "half": "lower"
+              }
+            }
+          ],
           "functions": [
             {
               "enchantment": "minecraft:fortune",
@@ -56,6 +49,19 @@
               "parameters": {
                 "extra": 3,
                 "probability": 0.5714286
+              }
+            }
+          ],
+          "name": "stardewdelight:amaranth_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "stardewdelight:amaranth_crop",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
               }
             }
           ],
