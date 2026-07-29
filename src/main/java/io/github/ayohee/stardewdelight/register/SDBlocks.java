@@ -4,10 +4,13 @@ import io.github.ayohee.stardewdelight.content.blocks.crops.*;
 import io.github.ayohee.stardewdelight.content.blocks.trees.FruitSaplingBlock;
 import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.component.SuspiciousStewEffects;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
@@ -27,15 +30,15 @@ public class SDBlocks {
 
     /*----- CROP BLOCKS -----*/
     /*----- SPRING CROPS -----*/
-    public static final DeferredBlock<BlueJazzBlock> BLUE_JAZZ_CROP = standardCrop(
+    public static final DeferredBlock<FlowerCrop> BLUE_JAZZ_CROP = standardCrop(
             "blue_jazz_crop",
-            BlueJazzBlock::new,
+            p -> FlowerCrop.create(p, BlockStateProperties.AGE_4, 4, SDItems.JAZZ_SEEDS, () -> SDBlocks.GROWN_BLUE_JAZZ.getBlock().get().defaultBlockState()),
             p -> p
     );
 
-    public static final DeferredBlock<CauliflowerBlock> CAULIFLOWER_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> CAULIFLOWER_CROP = standardCrop(
             "cauliflower_crop",
-            CauliflowerBlock::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_5, 5, SDItems.CAULIFLOWER_SEEDS),
             p -> p
     );
 
@@ -45,9 +48,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<GarlicBlock> GARLIC_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> GARLIC_CROP = standardCrop(
             "garlic_crop",
-            GarlicBlock::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.GARLIC_SEEDS),
             p -> p
     );
 
@@ -57,21 +60,21 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<KaleBlock> KALE_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> KALE_CROP = standardCrop(
             "kale_crop",
-            KaleBlock::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.KALE_SEEDS),
             p -> p
     );
 
-    public static final DeferredBlock<ParsnipBlock> PARSNIP_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> PARSNIP_CROP = standardCrop(
             "parsnip_crop",
-            ParsnipBlock::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.PARSNIP_SEEDS),
             p -> p
     );
 
-    public static final DeferredBlock<RhubarbBlock> RHUBARB_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> RHUBARB_CROP = standardCrop(
             "rhubarb_crop",
-            RhubarbBlock::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_5, 5, SDItems.RHUBARB_SEEDS),
             p -> p
     );
 
@@ -113,15 +116,15 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<RadishBlock> RADISH_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> RADISH_CROP = standardCrop(
             "radish_crop",
-            RadishBlock::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.RADISH_SEEDS),
             p -> p
     );
 
-    public static final DeferredBlock<RedCabbageBlock> RED_CABBAGE_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> RED_CABBAGE_CROP = standardCrop(
             "red_cabbage_crop",
-            RedCabbageBlock::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_5, 5, SDItems.RED_CABBAGE_SEEDS),
             p -> p
     );
 
@@ -131,9 +134,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<SummerSpangleBlock> SUMMER_SPANGLE_CROP = standardCrop(
+    public static final DeferredBlock<FlowerCrop> SUMMER_SPANGLE_CROP = standardCrop(
             "summer_spangle_crop",
-            SummerSpangleBlock::new,
+            p -> FlowerCrop.create(p, BlockStateProperties.AGE_4, 4, SDItems.SPANGLE_SEEDS, () -> SDBlocks.GROWN_SUMMER_SPANGLE.getBlock().get().defaultBlockState()),
             p -> p
     );
 
@@ -157,9 +160,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<BokChoyBlock> BOK_CHOY_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> BOK_CHOY_CROP = standardCrop(
             "bok_choy_crop",
-            BokChoyBlock::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.BOK_CHOY_SEEDS),
             p -> p
     );
 
@@ -181,9 +184,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<FairyRoseBlock> FAIRY_ROSE_CROP = standardCrop(
+    public static final DeferredBlock<TallFlowerCrop> FAIRY_ROSE_CROP = standardCrop(
             "fairy_rose_crop",
-            FairyRoseBlock::new,
+            p -> TallFlowerCrop.create(p, BlockStateProperties.AGE_4, 4, SDItems.FAIRY_SEEDS, () -> SDBlocks.GROWN_FAIRY_ROSE.getBlock().get().defaultBlockState()),
             p -> p
     );
 
@@ -199,9 +202,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<YamBlock> YAM_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> YAM_CROP = standardCrop(
             "yam_crop",
-            YamBlock::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.YAM_SEEDS),
             p -> p
     );
 
@@ -303,15 +306,15 @@ public class SDBlocks {
 
 
     /*----- GROWN FLOWERS -----*/
-    public static final DeferredBlockItem<GrownBlueJazzBlock> GROWN_BLUE_JAZZ = flower(
+    public static final DeferredBlockItem<FlowerBlock> GROWN_BLUE_JAZZ = flower(
             "grown_blue_jazz",
-            GrownBlueJazzBlock::new,
+            p -> new FlowerBlock(SuspiciousStewEffects.EMPTY, p),
             p -> p
     );
 
-    public static final DeferredBlockItem<GrownSummerSpangleBlock> GROWN_SUMMER_SPANGLE = flower(
+    public static final DeferredBlockItem<FlowerBlock> GROWN_SUMMER_SPANGLE = flower(
             "grown_summer_spangle",
-            GrownSummerSpangleBlock::new,
+            p -> new FlowerBlock(SuspiciousStewEffects.EMPTY, p),
             p -> p
     );
 

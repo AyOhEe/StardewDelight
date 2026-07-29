@@ -3,19 +3,37 @@ package io.github.ayohee.stardewdelight.content.blocks.crops;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.neoforged.neoforge.common.CommonHooks;
 
+import java.util.function.Supplier;
 
-// TODO i want to revisit this, and probably move it out into its own TallCropBlock or something
+
 public abstract class TallFlowerCrop extends BaseCropBlock {
-    public TallFlowerCrop(Properties properties) {
-        super(properties);
+    protected Supplier<BlockState> grownForm;
+
+    protected TallFlowerCrop(Properties properties, int maxAge, ItemLike seed, Supplier<BlockState> grownForm) {
+        super(properties, maxAge, seed);
+        this.grownForm = grownForm;
+    }
+
+    // We do it this way because providing it in the constructor doesn't give us a way to
+    // have it *not* be null in createBlockStateDefinition
+    public static TallFlowerCrop create(Properties properties, IntegerProperty ageProperty, int maxAge, ItemLike seed, Supplier<BlockState> grownForm) {
+        return new TallFlowerCrop(properties, maxAge, seed, grownForm) {
+            @Override
+            public IntegerProperty getAgeProperty() {
+                return ageProperty;
+            }
+        };
     }
 
     @Override
@@ -39,12 +57,7 @@ public abstract class TallFlowerCrop extends BaseCropBlock {
 
         float f = getGrowthSpeed(blockstate, level, pos);
         if (CommonHooks.canCropGrow(level, pos, blockstate, random.nextInt((int)(25.0F / f) + 1) == 0)) {
-            if (age + 1 == this.getMaxAge()) {
-                level.setBlock(pos, this.getBottomMatureBlockState(), Block.UPDATE_CLIENTS);
-                level.setBlock(pos.above(), this.getBottomMatureBlockState().setValue(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.UPPER), Block.UPDATE_CLIENTS);
-            } else {
-                level.setBlock(pos, this.getStateForAge(age + 1), Block.UPDATE_CLIENTS);
-            }
+            growToAge(age + 1, pos, level);
             CommonHooks.fireCropGrowPost(level, pos, blockstate);
         }
     }
@@ -67,18 +80,15 @@ public abstract class TallFlowerCrop extends BaseCropBlock {
             age = Math.min(age, this.getMaxAge() - 1);
         }
 
+        growToAge(age, pos, level);
+    }
+
+    protected void growToAge(int age, BlockPos pos, LevelAccessor level) {
         if (age == this.getMaxAge()) {
-            level.setBlock(pos, this.getBottomMatureBlockState(), Block.UPDATE_CLIENTS);
-            level.setBlock(pos.above(), this.getBottomMatureBlockState().setValue(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.UPPER), Block.UPDATE_CLIENTS);
+            level.setBlock(pos, grownForm.get(), Block.UPDATE_CLIENTS);
+            level.setBlock(pos.above(), grownForm.get().setValue(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.UPPER), Block.UPDATE_CLIENTS);
         } else {
             level.setBlock(pos, this.getStateForAge(age), Block.UPDATE_CLIENTS);
         }
     }
-
-    @Override
-    public void performBonemeal(ServerLevel p_221040_, RandomSource p_221041_, BlockPos p_221042_, BlockState p_221043_) {
-        super.performBonemeal(p_221040_, p_221041_, p_221042_, p_221043_);
-    }
-
-    public abstract BlockState getBottomMatureBlockState();
 }
