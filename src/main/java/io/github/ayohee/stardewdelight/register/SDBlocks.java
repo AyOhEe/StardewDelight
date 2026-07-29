@@ -149,9 +149,9 @@ public class SDBlocks {
 
 
     /*----- FALL CROPS -----*/
-    public static final DeferredBlock<Block> AMARANTH_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> AMARANTH_CROP = standardCrop(
             "amaranth_crop",
-            Block::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.AMARANTH_SEEDS),
             p -> p
     );
 

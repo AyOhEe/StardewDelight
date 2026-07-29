@@ -67,6 +67,7 @@ public class SDBlockLoot extends BlockLootSubProvider {
         stardewCropDrops(SDBlocks.CAULIFLOWER_CROP.get(), SDItems.CAULIFLOWER.asItem(), SDItems.CAULIFLOWER_SEEDS.asItem());
         stardewCropDrops(SDBlocks.RED_CABBAGE_CROP.get(), SDItems.RED_CABBAGE.asItem(), SDItems.RED_CABBAGE_SEEDS.asItem());
         stardewCropDrops(SDBlocks.BOK_CHOY_CROP.get(), SDItems.BOK_CHOY.asItem(), SDItems.BOK_CHOY_SEEDS.asItem());
+        stardewCropDrops(SDBlocks.AMARANTH_CROP.get(), SDItems.AMARANTH.asItem(), SDItems.AMARANTH_SEEDS.asItem());
 
         bushCropDrops(SDBlocks.STRAWBERRY_BUSH.get(), SDItems.STRAWBERRY.asItem(), SDItems.STRAWBERRY_SEEDS.asItem());
         bushCropDrops(SDBlocks.BROCCOLI_CROP.get(), SDItems.BROCCOLI.asItem(), SDItems.BROCCOLI_SEEDS.asItem());

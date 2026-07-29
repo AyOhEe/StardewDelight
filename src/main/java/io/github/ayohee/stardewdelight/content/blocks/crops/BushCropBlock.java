@@ -97,6 +97,4 @@ public abstract class BushCropBlock extends BaseCropBlock {
     public int getBonusDrops() {
         return bonusDrops;
     }
-
-
 }
