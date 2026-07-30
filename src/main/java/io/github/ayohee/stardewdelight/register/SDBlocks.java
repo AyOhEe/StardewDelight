@@ -31,9 +31,9 @@ public class SDBlocks {
 
     /*----- CROP BLOCKS -----*/
     /*----- SPRING CROPS -----*/
-    public static final DeferredBlock<FlowerCrop> BLUE_JAZZ_CROP = standardCrop(
+    public static final DeferredBlock<FlowerCropBlock> BLUE_JAZZ_CROP = standardCrop(
             "blue_jazz_crop",
-            p -> FlowerCrop.create(p, BlockStateProperties.AGE_4, 4, SDItems.JAZZ_SEEDS, () -> SDBlocks.GROWN_BLUE_JAZZ.getBlock().get().defaultBlockState()),
+            p -> FlowerCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.JAZZ_SEEDS, () -> SDBlocks.GROWN_BLUE_JAZZ.getBlock().get().defaultBlockState()),
             p -> p
     );
 
@@ -43,9 +43,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> COFFEE_BUSH = standardCrop(
+    public static final DeferredBlock<TallBushCropBlock> COFFEE_BUSH = standardCrop(
             "coffee_bush",
-            Block::new,
+            p -> TallBushCropBlock.create(p, SDBlockStateProperties.AGE_6, 6, SDItems.COFFEE_BEAN, 4, SDItems.COFFEE_BEAN, 1, 1),
             p -> p
     );
 
@@ -93,9 +93,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> CORN_CROP = standardCrop(
+    public static final DeferredBlock<TallUpperBushCropBlock> CORN_CROP = standardCrop(
             "corn_crop",
-            Block::new,
+            p -> TallUpperBushCropBlock.create(p, SDBlockStateProperties.AGE_6, 6, SDItems.CORN_SEEDS, 4, SDItems.CORN, 1, 0),
             p -> p
     );
 
@@ -135,9 +135,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<FlowerCrop> SUMMER_SPANGLE_CROP = standardCrop(
+    public static final DeferredBlock<FlowerCropBlock> SUMMER_SPANGLE_CROP = standardCrop(
             "summer_spangle_crop",
-            p -> FlowerCrop.create(p, BlockStateProperties.AGE_4, 4, SDItems.SPANGLE_SEEDS, () -> SDBlocks.GROWN_SUMMER_SPANGLE.getBlock().get().defaultBlockState()),
+            p -> FlowerCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.SPANGLE_SEEDS, () -> SDBlocks.GROWN_SUMMER_SPANGLE.getBlock().get().defaultBlockState()),
             p -> p
     );
 
@@ -173,9 +173,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> CRANBERRY_BUSH = standardCrop(
+    public static final DeferredBlock<TallBushCropBlock> CRANBERRY_BUSH = standardCrop(
             "cranberry_bush",
-            Block::new,
+            p -> TallBushCropBlock.create(p, SDBlockStateProperties.AGE_6, 6, SDItems.CRANBERRY_SEEDS, 4, SDItems.CRANBERRY, 1, 1),
             p -> p
     );
 
@@ -185,9 +185,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<TallFlowerCrop> FAIRY_ROSE_CROP = standardCrop(
+    public static final DeferredBlock<TallFlowerCropBlock> FAIRY_ROSE_CROP = standardCrop(
             "fairy_rose_crop",
-            p -> TallFlowerCrop.create(p, BlockStateProperties.AGE_4, 4, SDItems.FAIRY_SEEDS, 3, () -> SDBlocks.GROWN_FAIRY_ROSE.getBlock().get().defaultBlockState()),
+            p -> TallFlowerCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.FAIRY_SEEDS, 3, () -> SDBlocks.GROWN_FAIRY_ROSE.getBlock().get().defaultBlockState()),
             p -> p
     );
 
@@ -219,9 +219,9 @@ public class SDBlocks {
 
 
     /*----- SPECIAL CROPS -----*/
-    public static final DeferredBlock<Block> ANCIENT_FRUIT_CROP = standardCrop(
+    public static final DeferredBlock<TallUpperBushCropBlock> ANCIENT_FRUIT_CROP = standardCrop(
             "ancient_fruit_crop",
-            Block::new,
+            p -> TallUpperBushCropBlock.create(p, SDBlockStateProperties.AGE_6, 6, SDItems.ANCIENT_SEEDS, 3, SDItems.ANCIENT_FRUIT, 1, 0),
             p -> p
     );
 

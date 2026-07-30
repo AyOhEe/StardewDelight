@@ -6,26 +6,24 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
 import java.util.function.Supplier;
 
-
-public abstract class TallFlowerCrop extends TallCropBlock {
+public abstract class FlowerCropBlock extends BaseCropBlock {
     protected Supplier<BlockState> grownForm;
 
-    protected TallFlowerCrop(Properties properties, int maxAge, ItemLike seed, int doubleAge, Supplier<BlockState> grownForm) {
-        super(properties, maxAge, seed, doubleAge);
+    protected FlowerCropBlock(Properties properties, int maxAge, ItemLike seed, Supplier<BlockState> grownForm) {
+        super(properties, maxAge, seed);
         this.grownForm = grownForm;
     }
 
     // We do it this way because providing it in the constructor doesn't give us a way to
     // have it *not* be null in createBlockStateDefinition
-    public static TallFlowerCrop create(Properties properties, IntegerProperty ageProperty, int maxAge, ItemLike seed, int doubleAge, Supplier<BlockState> grownForm) {
-        return new TallFlowerCrop(properties, maxAge, seed, doubleAge, grownForm) {
+    public static FlowerCropBlock create(Properties properties, IntegerProperty ageProperty, int maxAge, ItemLike seed, Supplier<BlockState> grownForm) {
+        return new FlowerCropBlock(properties, maxAge, seed, grownForm) {
             @Override
             public IntegerProperty getAgeProperty() {
                 return ageProperty;
             }
         };
     }
-
 
     @Override
     public BlockState getStateForAge(int age) {
