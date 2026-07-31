@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "stardewdelight:block/apple_slab"
+    },
+    "type=double": {
+      "model": "stardewdelight:block/apple_planks"
+    },
+    "type=top": {
+      "model": "stardewdelight:block/apple_slab_top"
+    }
+  }
+}

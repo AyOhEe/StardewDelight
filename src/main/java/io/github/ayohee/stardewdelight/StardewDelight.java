@@ -27,6 +27,7 @@ public class StardewDelight {
         SDTabs.register();
         SDItems.register();
         SDBlocks.register();
+        SDTags.init();
 
         SDRegistries.register(modEventBus);
 

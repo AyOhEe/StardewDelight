@@ -3,14 +3,18 @@ package io.github.ayohee.stardewdelight.datagen;
 import io.github.ayohee.stardewdelight.StardewDelight;
 import io.github.ayohee.stardewdelight.register.SDBlocks;
 import io.github.ayohee.stardewdelight.register.SDItems;
+import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredItem;
 
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
 import static io.github.ayohee.stardewdelight.StardewDelight.MODID;
@@ -79,23 +83,28 @@ public class SDItemModelProvider extends ItemModelProvider {
         blockTexture(SDBlocks.APPLE_SAPLING.getItem());
         blockTexture(SDBlocks.POMEGRANATE_SAPLING.getItem());
 
-        /*----- LOGS -----*/
-        simpleBlockItem(SDBlocks.APRICOT_LOG.getBlock().get());
-        simpleBlockItem(SDBlocks.BANANA_LOG.getBlock().get());
-        simpleBlockItem(SDBlocks.MANGO_LOG.getBlock().get());
-        simpleBlockItem(SDBlocks.ORANGE_LOG.getBlock().get());
-        simpleBlockItem(SDBlocks.PEACH_LOG.getBlock().get());
-        simpleBlockItem(SDBlocks.APPLE_LOG.getBlock().get());
-        simpleBlockItem(SDBlocks.POMEGRANATE_LOG.getBlock().get());
+        /*----- WOOD/TREE BLOCKS -----*/
+        for (Map.Entry<WoodType, Map<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>>> entry : SDBlocks.WOOD_BLOCKS.entrySet()) {
+            Map<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>> blocks = entry.getValue();
+            WoodType woodType = entry.getKey();
 
-        /*----- PLANKS -----*/
-        simpleBlockItem(SDBlocks.APRICOT_PLANKS.getBlock().get());
-        simpleBlockItem(SDBlocks.BANANA_PLANKS.getBlock().get());
-        simpleBlockItem(SDBlocks.MANGO_PLANKS.getBlock().get());
-        simpleBlockItem(SDBlocks.ORANGE_PLANKS.getBlock().get());
-        simpleBlockItem(SDBlocks.PEACH_PLANKS.getBlock().get());
-        simpleBlockItem(SDBlocks.APPLE_PLANKS.getBlock().get());
-        simpleBlockItem(SDBlocks.POMEGRANATE_PLANKS.getBlock().get());
+            simpleBlockItem(blocks.get(SDBlocks.WoodBlockTypes.LOG).getBlock().get());
+            simpleBlockItem(blocks.get(SDBlocks.WoodBlockTypes.WOOD).getBlock().get());
+            simpleBlockItem(blocks.get(SDBlocks.WoodBlockTypes.STRIPPED_LOG).getBlock().get());
+            simpleBlockItem(blocks.get(SDBlocks.WoodBlockTypes.STRIPPED_WOOD).getBlock().get());
+            simpleBlockItem(blocks.get(SDBlocks.WoodBlockTypes.PLANKS).getBlock().get());
+            simpleBlockItem(blocks.get(SDBlocks.WoodBlockTypes.STAIRS).getBlock().get());
+            simpleBlockItem(blocks.get(SDBlocks.WoodBlockTypes.SLAB).getBlock().get());
+
+            withExistingParent(StardewDelight.modLoc(woodType.name() + "_fence").toString(), StardewDelight.modLoc("block/" + woodType.name() + "_fence_inventory"));
+
+            simpleBlockItem(blocks.get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().get());
+            basicItem(blocks.get(SDBlocks.WoodBlockTypes.DOOR).getItem().get());
+            withExistingParent(StardewDelight.modLoc(woodType.name() + "_trapdoor").toString(), StardewDelight.modLoc("block/" + woodType.name() + "_trapdoor_bottom"));
+            simpleBlockItem(blocks.get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE).getBlock().get());
+            withExistingParent(StardewDelight.modLoc(woodType.name() + "_button").toString(), StardewDelight.modLoc("block/" + woodType.name() + "_button_inventory"));
+            simpleBlockItem(blocks.get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get());
+        }
 
 
         /*----- CROP ITEMS -----*/

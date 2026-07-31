@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "stardewdelight:block/orange_planks"
+  }
+}

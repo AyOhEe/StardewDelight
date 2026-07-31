@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "stardewdelight:block/pomegranate_slab"
+    },
+    "type=double": {
+      "model": "stardewdelight:block/pomegranate_planks"
+    },
+    "type=top": {
+      "model": "stardewdelight:block/pomegranate_slab_top"
+    }
+  }
+}

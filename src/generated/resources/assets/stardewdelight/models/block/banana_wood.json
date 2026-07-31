@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "stardewdelight:block/banana_log",
+    "side": "stardewdelight:block/banana_log"
+  }
+}

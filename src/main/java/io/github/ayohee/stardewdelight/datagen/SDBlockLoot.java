@@ -3,6 +3,7 @@ package io.github.ayohee.stardewdelight.datagen;
 import io.github.ayohee.stardewdelight.content.blocks.crops.*;
 import io.github.ayohee.stardewdelight.register.SDBlocks;
 import io.github.ayohee.stardewdelight.register.SDItems;
+import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -28,6 +29,7 @@ import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class SDBlockLoot extends BlockLootSubProvider {
@@ -42,25 +44,41 @@ public class SDBlockLoot extends BlockLootSubProvider {
         for (DeferredBlock<? extends Block> b : SDBlocks.CRATES) {
             dropSelf(b.get());
         }
-        for (DeferredBlock<? extends Block> b : SDBlocks.SAPLINGS) {
-            dropSelf(b.get());
+
+        dropSelf(SDBlocks.TEA_SAPLING.getBlock().get());
+        dropSelf(SDBlocks.APRICOT_SAPLING.getBlock().get());
+        dropSelf(SDBlocks.FRUITING_CHERRY_SAPLING.getBlock().get());
+        dropSelf(SDBlocks.BANANA_SAPLING.getBlock().get());
+        dropSelf(SDBlocks.MANGO_SAPLING.getBlock().get());
+        dropSelf(SDBlocks.ORANGE_SAPLING.getBlock().get());
+        dropSelf(SDBlocks.PEACH_SAPLING.getBlock().get());
+        dropSelf(SDBlocks.APPLE_SAPLING.getBlock().get());
+        dropSelf(SDBlocks.POMEGRANATE_SAPLING.getBlock().get());
+
+        for (Map<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>> blocks : SDBlocks.WOOD_BLOCKS.values()) {
+            for (Map.Entry<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>> entry : blocks.entrySet()) {
+                if (entry.getKey() == SDBlocks.WoodBlockTypes.LEAVES || entry.getKey() == SDBlocks.WoodBlockTypes.DOOR) {
+                    continue;
+                }
+                dropSelf(entry.getValue().getBlock().get());
+            }
         }
 
-        dropSelf(SDBlocks.APRICOT_LOG.getBlock().get());
-        dropSelf(SDBlocks.BANANA_LOG.getBlock().get());
-        dropSelf(SDBlocks.MANGO_LOG.getBlock().get());
-        dropSelf(SDBlocks.ORANGE_LOG.getBlock().get());
-        dropSelf(SDBlocks.PEACH_LOG.getBlock().get());
-        dropSelf(SDBlocks.APPLE_LOG.getBlock().get());
-        dropSelf(SDBlocks.POMEGRANATE_LOG.getBlock().get());
+        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.APRICOT_SAPLING.getBlock().get());
+        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.BANANA_SAPLING.getBlock().get());
+        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.MANGO_SAPLING.getBlock().get());
+        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.ORANGE_SAPLING.getBlock().get());
+        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.PEACH_SAPLING.getBlock().get());
+        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.APPLE_SAPLING.getBlock().get());
+        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.POMEGRANATE_SAPLING.getBlock().get());
 
-        dropSelf(SDBlocks.APRICOT_PLANKS.getBlock().get());
-        dropSelf(SDBlocks.BANANA_PLANKS.getBlock().get());
-        dropSelf(SDBlocks.MANGO_PLANKS.getBlock().get());
-        dropSelf(SDBlocks.ORANGE_PLANKS.getBlock().get());
-        dropSelf(SDBlocks.PEACH_PLANKS.getBlock().get());
-        dropSelf(SDBlocks.APPLE_PLANKS.getBlock().get());
-        dropSelf(SDBlocks.POMEGRANATE_PLANKS.getBlock().get());
+        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
+        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
+        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
+        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
+        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
+        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
+        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
 
         dropSelf(SDBlocks.GROWN_BLUE_JAZZ.getBlock().get());
         dropSelf(SDBlocks.GROWN_SUMMER_SPANGLE.getBlock().get());

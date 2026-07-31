@@ -25,7 +25,7 @@ public class SDTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STARDEW_DELIGHT_BUILDING = CREATIVE_MODE_TABS.register("stardew_delight_building", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.stardewdelight_building"))
             .withTabsBefore(STARDEW_DELIGHT.getKey())
-            .icon(SDBlocks.APPLE_PLANKS.getItem()::toStack)
+            .icon(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.PLANKS).getItem()::toStack)
             .displayItems((parameters, output) -> {
                 SDTabs.TAB_CONTENTS.get(SDTabs.STARDEW_DELIGHT_BUILDING).forEach(output::accept);
             })

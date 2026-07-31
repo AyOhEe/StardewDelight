@@ -1,9 +1,6 @@
 package io.github.ayohee.stardewdelight;
 
-import io.github.ayohee.stardewdelight.datagen.SDBlockLoot;
-import io.github.ayohee.stardewdelight.datagen.SDBlockStateProvider;
-import io.github.ayohee.stardewdelight.datagen.SDItemModelProvider;
-import io.github.ayohee.stardewdelight.datagen.SDRecipeProvider;
+import io.github.ayohee.stardewdelight.datagen.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -37,6 +34,7 @@ public class SDDatagen {
         generator.addProvider(event.includeClient(), new SDBlockStateProvider(output, fileHelper).namedWrapper());
         generator.addProvider(event.includeClient(), new SDItemModelProvider(output, fileHelper).namedWrapper());
         generator.addProvider(event.includeServer(), new LootTableProvider(output, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(SDBlockLoot::new, LootContextParamSets.BLOCK)), lookupProvider));
+        generator.addProvider(event.includeServer(), new SDBlockTagsProvider(output, lookupProvider, fileHelper));
 
         System.out.println("Gathering data for Stardew's Delight");
         System.out.println(event.includeServer());

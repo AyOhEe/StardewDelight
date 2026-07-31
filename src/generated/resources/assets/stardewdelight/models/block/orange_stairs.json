@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "stardewdelight:block/orange_planks",
+    "side": "stardewdelight:block/orange_planks",
+    "top": "stardewdelight:block/orange_planks"
+  }
+}

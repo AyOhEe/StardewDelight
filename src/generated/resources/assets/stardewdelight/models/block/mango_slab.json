@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "stardewdelight:block/mango_planks",
+    "side": "stardewdelight:block/mango_planks",
+    "top": "stardewdelight:block/mango_planks"
+  }
+}

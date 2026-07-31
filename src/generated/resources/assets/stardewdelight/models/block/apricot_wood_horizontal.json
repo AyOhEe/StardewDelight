@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "stardewdelight:block/apricot_log",
+    "side": "stardewdelight:block/apricot_log"
+  }
+}

@@ -3,8 +3,16 @@ tags for all crop items
 tags for all seed items
 tags for all saplings
 tags for logs
+tags for leaves
 tags for planks
+tags for decorative blocks
 tags for crates
+
+signs for all wood types
+wood block recipes
+
+names for fruit tree wood blocks is a bit weird. "Banana Stairs"?
+
 how get more flower seeds?
 seed recipes from fruits? cutting board?
 block shapes, once textures are done.
@@ -28,7 +36,7 @@ proper blockstate definitions per crop age
 - artichoke: 6
 
 
-fruit trees (initially normal sapling, then 1 block, then 2 block, then 3, then fully grown):
+fruit trees (one intermediary phase before growing into a full tree):
 - apricot: 6
 - cherry: 6
 - banana: 6
@@ -45,6 +53,3 @@ Giant crops:
 - sugar pumpkin
 - powdermelon
 - qi Fruit
-
-decorative blocks for wood types:
--

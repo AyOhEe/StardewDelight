@@ -8,12 +8,13 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.component.SuspiciousStewEffects;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.function.Function;
 
 import static io.github.ayohee.stardewdelight.register.SDRegistries.BLOCKS;
@@ -23,7 +24,6 @@ import static io.github.ayohee.stardewdelight.register.SDTabs.TAB_CONTENTS;
 public class SDBlocks {
     private static DeferredHolder<CreativeModeTab, CreativeModeTab> currentTab = SDTabs.STARDEW_DELIGHT;
     public static final List<DeferredBlock<? extends Block>> CRATES = new LinkedList<>();
-    public static final List<DeferredBlock<? extends Block>> SAPLINGS = new LinkedList<>();
 
 
     /*----- CROP BLOCKS -----*/
@@ -302,94 +302,14 @@ public class SDBlocks {
             p -> p
     );
 
-    /*----- LOGS -----*/
+    /*----- WOOD/TREE BLOCKS -----*/
     static {
         currentTab = SDTabs.STARDEW_DELIGHT_BUILDING;
     }
 
-    public static final DeferredBlockItem<RotatedPillarBlock> APRICOT_LOG = log(
-            "apricot_log",
-            RotatedPillarBlock::new,
-            p -> p
-    );
-
-    public static final DeferredBlockItem<RotatedPillarBlock> BANANA_LOG = log(
-            "banana_log",
-            RotatedPillarBlock::new,
-            p -> p
-    );
-
-    public static final DeferredBlockItem<RotatedPillarBlock> MANGO_LOG = log(
-            "mango_log",
-            RotatedPillarBlock::new,
-            p -> p
-    );
-
-    public static final DeferredBlockItem<RotatedPillarBlock> ORANGE_LOG = log(
-            "orange_log",
-            RotatedPillarBlock::new,
-            p -> p
-    );
-
-    public static final DeferredBlockItem<RotatedPillarBlock> PEACH_LOG = log(
-            "peach_log",
-            RotatedPillarBlock::new,
-            p -> p
-    );
-
-    public static final DeferredBlockItem<RotatedPillarBlock> APPLE_LOG = log(
-            "apple_log",
-            RotatedPillarBlock::new,
-            p -> p
-    );
-
-    public static final DeferredBlockItem<RotatedPillarBlock> POMEGRANATE_LOG = log(
-            "pomegranate_log",
-            RotatedPillarBlock::new,
-            p -> p
-    );
-
-    /*----- PLANKS -----*/
-    public static final DeferredBlockItem<Block> APRICOT_PLANKS = plank(
-            "apricot_planks",
-            Block::new,
-            p -> p
-    );
-
-    public static final DeferredBlockItem<Block> BANANA_PLANKS = plank(
-            "banana_planks",
-            Block::new,
-            p -> p
-    );
-
-    public static final DeferredBlockItem<Block> MANGO_PLANKS = plank(
-            "mango_planks",
-            Block::new,
-            p -> p
-    );
-
-    public static final DeferredBlockItem<Block> ORANGE_PLANKS = plank(
-            "orange_planks",
-            Block::new,
-            p -> p
-    );
-
-    public static final DeferredBlockItem<Block> PEACH_PLANKS = plank(
-            "peach_planks",
-            Block::new,
-            p -> p
-    );
-
-    public static final DeferredBlockItem<Block> APPLE_PLANKS = plank(
-            "apple_planks",
-            Block::new,
-            p -> p
-    );
-
-    public static final DeferredBlockItem<Block> POMEGRANATE_PLANKS = plank(
-            "pomegranate_planks",
-            Block::new,
-            p -> p
+    // TODO this is disgusting
+    public static final Map<WoodType, Map<WoodBlockTypes, DeferredBlockItem<?>>> WOOD_BLOCKS = Map.ofEntries(
+            Arrays.stream(SDWoodTypes.values()).map((t) -> new AbstractMap.SimpleImmutableEntry(t, WoodBlockTypes.createVariants(t))).toList().toArray(new AbstractMap.SimpleImmutableEntry[SDWoodTypes.values().length])
     );
 
 
@@ -722,9 +642,7 @@ public class SDBlocks {
     }
 
     private static <B extends Block> DeferredBlockItem<B> sapling(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
-        var b = blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
-        SAPLINGS.add(b.getBlock());
-        return b;
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
     }
 
     private static <B extends Block> DeferredBlock<B> standardCrop(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
@@ -754,10 +672,137 @@ public class SDBlocks {
         return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     }
 
-    private static <B extends Block> DeferredBlockItem<B> plank(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+    private static <B extends Block> DeferredBlockItem<B> strippedLog(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> planks(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
         return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> wood(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> strippedWood(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> leaves(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> button(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> stairs(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_STAIRS)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> slab(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> fence(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> fenceGate(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE_GATE)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> door(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> trapdoor(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> pressurePlate(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)));
     }
 
     /*----- STATIC INITIALIZER -----*/
     public static void register() { }
+
+
+    public enum WoodBlockTypes {
+        LOG("", "log"),
+        WOOD("", "wood"),
+        STRIPPED_LOG("stripped", "log"),
+        STRIPPED_WOOD("stripped", "wood"),
+        PLANKS("", "planks"),
+        STAIRS("", "stairs"),
+        SLAB("", "slab"),
+        FENCE("", "fence"),
+        FENCE_GATE("", "fence_gate"),
+        DOOR("", "door"),
+        TRAPDOOR("", "trapdoor"),
+        PRESSURE_PLATE("", "pressure_plate"),
+        BUTTON("", "button"),
+        LEAVES("", "leaves");
+
+        private String prefix;
+        private String suffix;
+
+        WoodBlockTypes(String prefix, String suffix) {
+            this.prefix = prefix;
+            this.suffix = suffix;
+        }
+
+        public String of(WoodType wood) {
+            if (prefix.isEmpty()) {
+                return wood.name() + "_" + suffix;
+            } else {
+                return prefix + "_" + wood.name() + "_" + suffix;
+            }
+        }
+
+        public static Map<WoodBlockTypes, DeferredBlockItem<?>> createVariants(WoodType type) {
+            Map<WoodBlockTypes, DeferredBlockItem<?>> map = new EnumMap<>(WoodBlockTypes.class);
+
+            map.put(LOG, log(LOG.of(type), RotatedPillarBlock::new, p -> p));
+            map.put(WOOD, wood(WOOD.of(type), RotatedPillarBlock::new, p -> p));
+            map.put(STRIPPED_LOG, strippedLog(STRIPPED_LOG.of(type), RotatedPillarBlock::new, p -> p));
+            map.put(STRIPPED_WOOD, strippedWood(STRIPPED_WOOD.of(type), RotatedPillarBlock::new, p -> p));
+            map.put(PLANKS, planks(PLANKS.of(type), Block::new, p -> p));
+            map.put(STAIRS, stairs(STAIRS.of(type), p -> new StairBlock(map.get(PLANKS).getBlock().get().defaultBlockState(), p), p -> p));
+            map.put(SLAB, slab(SLAB.of(type), SlabBlock::new, p -> p));
+            map.put(FENCE, fence(FENCE.of(type), FenceBlock::new, p -> p));
+            map.put(FENCE_GATE, fenceGate(FENCE_GATE.of(type), p -> new FenceGateBlock(type, p), p -> p));
+            map.put(DOOR, door(DOOR.of(type), p -> new DoorBlock(type.setType(), p), p -> p));
+            map.put(TRAPDOOR, trapdoor(TRAPDOOR.of(type), p -> new TrapDoorBlock(type.setType(), p), p -> p));
+            map.put(PRESSURE_PLATE, pressurePlate(PRESSURE_PLATE.of(type), p -> new PressurePlateBlock(type.setType(), p), p -> p));
+            map.put(BUTTON, button(BUTTON.of(type), p -> new ButtonBlock(type.setType(), 30, p), p -> p));
+            map.put(LEAVES, leaves(LEAVES.of(type), LeavesBlock::new, p -> p));
+
+            return map;
+        }
+    }
+
+    public static class SDWoodTypes {
+        public static final BlockSetType
+            APRICOT_SET = BlockSetType.register(new BlockSetType("apricot")),
+            BANANA_SET = BlockSetType.register(new BlockSetType("banana")),
+            MANGO_SET = BlockSetType.register(new BlockSetType("mango")),
+            ORANGE_SET = BlockSetType.register(new BlockSetType("orange")),
+            PEACH_SET = BlockSetType.register(new BlockSetType("peach")),
+            APPLE_SET = BlockSetType.register(new BlockSetType("apple")),
+            POMEGRANATE_SET = BlockSetType.register(new BlockSetType("pomegranate"));
+
+        public static final WoodType
+                APRICOT = WoodType.register(new WoodType("apricot", APRICOT_SET)),
+                BANANA = WoodType.register(new WoodType("banana", BANANA_SET)),
+                MANGO = WoodType.register(new WoodType("mango", MANGO_SET)),
+                ORANGE = WoodType.register(new WoodType("orange", ORANGE_SET)),
+                PEACH = WoodType.register(new WoodType("peach", PEACH_SET)),
+                APPLE = WoodType.register(new WoodType("apple", APPLE_SET)),
+                POMEGRANATE = WoodType.register(new WoodType("pomegranate", POMEGRANATE_SET));
+
+        public static WoodType[] values() {
+            return new WoodType[] {APRICOT, BANANA, MANGO, ORANGE, PEACH, APPLE, POMEGRANATE};
+        }
+    }
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "stardewdelight:block/mango_slab"
+    },
+    "type=double": {
+      "model": "stardewdelight:block/mango_planks"
+    },
+    "type=top": {
+      "model": "stardewdelight:block/mango_slab_top"
+    }
+  }
+}

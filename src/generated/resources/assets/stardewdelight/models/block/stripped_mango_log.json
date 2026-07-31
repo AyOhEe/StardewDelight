@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "stardewdelight:block/stripped_mango_log_top",
+    "side": "stardewdelight:block/stripped_mango_log"
+  }
+}

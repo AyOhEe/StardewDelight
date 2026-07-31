@@ -1,0 +1,9 @@
+// 1.21.1	2026-07-31T20:13:00.7368967	Tags for minecraft:block mod id stardewdelight
+9777eb967d7e95fe1cf85c16c55c86bdc292da2a data/c/tags/block/fences.json
+9777eb967d7e95fe1cf85c16c55c86bdc292da2a data/c/tags/block/fences/wooden.json
+7c38936fb89390259fc7f062dc574fffbf1b2256 data/c/tags/block/fence_gates.json
+7c38936fb89390259fc7f062dc574fffbf1b2256 data/c/tags/block/fence_gates/wooden.json
+9777eb967d7e95fe1cf85c16c55c86bdc292da2a data/minecraft/tags/block/fences.json
+7c38936fb89390259fc7f062dc574fffbf1b2256 data/minecraft/tags/block/fence_gates.json
+7c38936fb89390259fc7f062dc574fffbf1b2256 data/minecraft/tags/block/unstable_bottom_center.json
+9777eb967d7e95fe1cf85c16c55c86bdc292da2a data/minecraft/tags/block/wooden_fences.json

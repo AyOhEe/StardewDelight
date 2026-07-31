@@ -1,20 +1,24 @@
 package io.github.ayohee.stardewdelight.datagen;
 
+import io.github.ayohee.stardewdelight.StardewDelight;
 import io.github.ayohee.stardewdelight.register.SDBlocks;
+import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.client.model.generators.VariantBlockStateBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import vectorwing.farmersdelight.FarmersDelight;
 
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 
@@ -129,23 +133,41 @@ public class SDBlockStateProvider extends BlockStateProvider {
         new BlockModelPair(SDBlocks.POMEGRANATE_SAPLING.getBlock().get(), this::cross_cutout)
                 .makeBlockModel();
 
-        /*----- LOGS -----*/
-        this.logBlock(SDBlocks.APRICOT_LOG.getBlock().get());
-        this.logBlock(SDBlocks.BANANA_LOG.getBlock().get());
-        this.logBlock(SDBlocks.MANGO_LOG.getBlock().get());
-        this.logBlock(SDBlocks.ORANGE_LOG.getBlock().get());
-        this.logBlock(SDBlocks.PEACH_LOG.getBlock().get());
-        this.logBlock(SDBlocks.APPLE_LOG.getBlock().get());
-        this.logBlock(SDBlocks.POMEGRANATE_LOG.getBlock().get());
+        /*----- WOOD/TREE BLOCKS -----*/
+        for (Map.Entry<WoodType, Map<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>>> entry : SDBlocks.WOOD_BLOCKS.entrySet()) {
+            Map<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>> blocks = entry.getValue();
+            WoodType woodType = entry.getKey();
 
-        /*----- PLANKS -----*/
-        this.simpleBlock(SDBlocks.APRICOT_PLANKS.getBlock().get());
-        this.simpleBlock(SDBlocks.BANANA_PLANKS.getBlock().get());
-        this.simpleBlock(SDBlocks.MANGO_PLANKS.getBlock().get());
-        this.simpleBlock(SDBlocks.ORANGE_PLANKS.getBlock().get());
-        this.simpleBlock(SDBlocks.PEACH_PLANKS.getBlock().get());
-        this.simpleBlock(SDBlocks.APPLE_PLANKS.getBlock().get());
-        this.simpleBlock(SDBlocks.POMEGRANATE_PLANKS.getBlock().get());
+            ResourceLocation planksTexture = blockTexture(blocks.get(SDBlocks.WoodBlockTypes.PLANKS).getBlock().get());
+            ResourceLocation logTexture = StardewDelight.modLoc("block/" + woodType.name() + "_log");
+            ResourceLocation strippedLogTexture = StardewDelight.modLoc("block/stripped_" + woodType.name() + "_log");
+            ResourceLocation doubleSlabModel = StardewDelight.modLoc("block/" + woodType.name() + "_planks");
+            ResourceLocation doorBottomTexture = StardewDelight.modLoc("block/" + woodType.name() + "_door_bottom");
+            ResourceLocation doorTopTexture = StardewDelight.modLoc("block/" + woodType.name() + "_door_top");
+            ResourceLocation trapdoorTexture = StardewDelight.modLoc("block/" + woodType.name() + "_trapdoor");
+
+            logBlock((RotatedPillarBlock) blocks.get(SDBlocks.WoodBlockTypes.LOG).getBlock().get());
+            axisBlock((RotatedPillarBlock) blocks.get(SDBlocks.WoodBlockTypes.WOOD).getBlock().get(), logTexture, logTexture);
+            logBlock((RotatedPillarBlock) blocks.get(SDBlocks.WoodBlockTypes.STRIPPED_LOG).getBlock().get());
+            axisBlock((RotatedPillarBlock) blocks.get(SDBlocks.WoodBlockTypes.STRIPPED_WOOD).getBlock().get(), strippedLogTexture, strippedLogTexture);
+            simpleBlock(blocks.get(SDBlocks.WoodBlockTypes.PLANKS).getBlock().get());
+            stairsBlock((StairBlock) blocks.get(SDBlocks.WoodBlockTypes.STAIRS).getBlock().get(), planksTexture);
+            slabBlock((SlabBlock) blocks.get(SDBlocks.WoodBlockTypes.SLAB).getBlock().get(), doubleSlabModel, planksTexture);
+            fenceBlock((FenceBlock) blocks.get(SDBlocks.WoodBlockTypes.FENCE).getBlock().get(), planksTexture);
+            fenceGateBlock((FenceGateBlock) blocks.get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().get(), planksTexture);
+            doorBlockWithRenderType((DoorBlock) blocks.get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get(), doorBottomTexture, doorTopTexture, mcLoc("cutout"));
+            trapdoorBlockWithRenderType((TrapDoorBlock) blocks.get(SDBlocks.WoodBlockTypes.TRAPDOOR).getBlock().get(), trapdoorTexture, true, mcLoc("cutout"));
+            pressurePlateBlock((PressurePlateBlock) blocks.get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE).getBlock().get(), planksTexture);
+            buttonBlock((ButtonBlock) blocks.get(SDBlocks.WoodBlockTypes.BUTTON).getBlock().get(), planksTexture);
+
+            Block leavesBlock = blocks.get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get();
+            this.simpleBlock(leavesBlock, this.models().cubeAll(this.name(leavesBlock), this.blockTexture(leavesBlock)).renderType(mcLoc("cutout")));
+
+
+            // Inventory models
+            this.models().withExistingParent(woodType.name() + "_fence_inventory", "block/fence_inventory").texture("texture", planksTexture);
+            this.models().withExistingParent(woodType.name() + "_button_inventory", "block/button_inventory").texture("texture", planksTexture);
+        }
 
         /*----- GROWN FLOWERS -----*/
         new BlockModelPair(SDBlocks.GROWN_BLUE_JAZZ.getBlock().get(), this::cross_cutout)
