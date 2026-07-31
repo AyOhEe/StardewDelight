@@ -3,6 +3,9 @@ package io.github.ayohee.stardewdelight.content.blocks.crops;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -11,6 +14,8 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.neoforged.neoforge.common.CommonHooks;
+
+import javax.annotation.Nullable;
 
 
 public abstract class TallCropBlock extends BaseCropBlock {
@@ -38,11 +43,35 @@ public abstract class TallCropBlock extends BaseCropBlock {
     }
 
     @Override
-    protected boolean mayPlaceOn(BlockState blockstate, BlockGetter level, BlockPos pos) {
-        if (!blockstate.is(this)) {
-            return super.mayPlaceOn(blockstate, level, pos);
+    public BlockState getStateForPlacement(BlockPlaceContext ctx) {
+        if (doubleAge == 0) {
+            BlockPos clicked = ctx.getClickedPos();
+            Level level = ctx.getLevel();
+            return clicked.getY() < level.getMaxBuildHeight() - 1 && level.getBlockState(clicked.above()).canBeReplaced(ctx) ? super.getStateForPlacement(ctx) : null;
         } else {
-            return blockstate.is(this) && blockstate.getValue(BlockStateProperties.DOUBLE_BLOCK_HALF) == DoubleBlockHalf.LOWER;
+            return super.getStateForPlacement(ctx);
+        }
+    }
+
+    @Override
+    public void setPlacedBy(Level level, BlockPos pos, BlockState blockstate, LivingEntity entity, ItemStack stack) {
+        if (doubleAge == 0) {
+            BlockPos above = pos.above();
+            level.setBlock(above, this.defaultBlockState().setValue(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.UPPER), Block.UPDATE_ALL);
+        }
+    }
+
+    @Override
+    protected boolean canSurvive(BlockState blockstate, LevelReader level, BlockPos pos) {
+        if (blockstate.getValue(BlockStateProperties.DOUBLE_BLOCK_HALF) != DoubleBlockHalf.UPPER) {
+            return super.canSurvive(blockstate, level, pos);
+        } else {
+            BlockState below = level.getBlockState(pos.below());
+            if (!blockstate.is(this)) {
+                return super.canSurvive(blockstate, level, pos);
+            } else {
+                return below.is(this) && below.getValue(BlockStateProperties.DOUBLE_BLOCK_HALF) == DoubleBlockHalf.LOWER;
+            }
         }
     }
 

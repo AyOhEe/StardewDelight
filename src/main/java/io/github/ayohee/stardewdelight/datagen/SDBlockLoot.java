@@ -89,7 +89,6 @@ public class SDBlockLoot extends BlockLootSubProvider {
         dropOther(SDBlocks.SUMMER_SPANGLE_CROP.get(), SDItems.SPANGLE_SEEDS);
         add(SDBlocks.FAIRY_ROSE_CROP.get(), createSinglePropConditionTable(SDItems.FAIRY_SEEDS, BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER));
 
-        // TODO some of these should drop bigger stacks
         stardewCropDrops(SDBlocks.GARLIC_CROP.get(), SDItems.GARLIC.asItem(), SDItems.GARLIC_SEEDS.asItem());
         stardewCropDrops(SDBlocks.PARSNIP_CROP.get(), SDItems.PARSNIP.asItem(), SDItems.PARSNIP_SEEDS.asItem());
         stardewCropDrops(SDBlocks.RADISH_CROP.get(), SDItems.RADISH.asItem(), SDItems.RADISH_SEEDS.asItem());
@@ -113,6 +112,9 @@ public class SDBlockLoot extends BlockLootSubProvider {
 
         tallBushCropDrops(SDBlocks.COFFEE_BUSH.get(), SDItems.COFFEE_BEAN.asItem(), SDItems.COFFEE_BEAN.asItem());
         tallBushCropDrops(SDBlocks.CRANBERRY_BUSH.get(), SDItems.CRANBERRY.asItem(), SDItems.CRANBERRY_SEEDS.asItem());
+        tallBushCropDrops(SDBlocks.GREEN_BEANS_CROP.get(), SDItems.GREEN_BEAN.asItem(), SDItems.BEAN_STARTER.asItem());
+        tallBushCropDrops(SDBlocks.HOPS_CROP.get(), SDItems.HOPS.asItem(), SDItems.HOPS_STARTER.asItem());
+        tallBushCropDrops(SDBlocks.GRAPES_CROP.get(), SDItems.GRAPES.asItem(), SDItems.GRAPE_STARTER.asItem());
 
         tallUpperBushCropDrops(SDBlocks.CORN_CROP.get(), SDItems.CORN.asItem(), SDItems.CORN_SEEDS.asItem());
         tallUpperBushCropDrops(SDBlocks.ANCIENT_FRUIT_CROP.get(), SDItems.ANCIENT_FRUIT.asItem(), SDItems.ANCIENT_SEEDS.asItem());

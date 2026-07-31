@@ -11,6 +11,8 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
@@ -52,9 +54,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> GREEN_BEANS_CROP = standardCrop(
+    public static final DeferredBlock<TallBushCropBlock> GREEN_BEANS_CROP = trellisCrop(
             "green_beans_crop",
-            Block::new,
+            p -> TallBushCropBlock.create(p, SDBlockStateProperties.AGE_6, 6, SDItems.BEAN_STARTER, 0, SDItems.GREEN_BEAN, 1, 0),
             p -> p
     );
 
@@ -96,9 +98,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> HOPS_CROP = standardCrop(
+    public static final DeferredBlock<TallBushCropBlock> HOPS_CROP = trellisCrop(
             "hops_crop",
-            Block::new,
+            p -> TallBushCropBlock.create(p, SDBlockStateProperties.AGE_6, 6, SDItems.HOPS_STARTER, 0, SDItems.HOPS, 1, 0),
             p -> p
     );
 
@@ -188,9 +190,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> GRAPES_CROP = standardCrop(
+    public static final DeferredBlock<TallBushCropBlock> GRAPES_CROP = trellisCrop(
             "grapes_crop",
-            Block::new,
+            p -> TallBushCropBlock.create(p, SDBlockStateProperties.AGE_6, 6, SDItems.GRAPE_STARTER, 0, SDItems.GRAPES, 1, 0),
             p -> p
     );
 
@@ -309,7 +311,10 @@ public class SDBlocks {
 
     // TODO this is disgusting
     public static final Map<WoodType, Map<WoodBlockTypes, DeferredBlockItem<?>>> WOOD_BLOCKS = Map.ofEntries(
-            Arrays.stream(SDWoodTypes.values()).map((t) -> new AbstractMap.SimpleImmutableEntry(t, WoodBlockTypes.createVariants(t))).toList().toArray(new AbstractMap.SimpleImmutableEntry[SDWoodTypes.values().length])
+            Arrays.stream(SDWoodTypes.values())
+                    .map((t) -> new AbstractMap.SimpleImmutableEntry<>(t, WoodBlockTypes.createVariants(t)))
+                    .toList()
+                    .toArray(new AbstractMap.SimpleImmutableEntry[SDWoodTypes.values().length])
     );
 
 
@@ -647,6 +652,10 @@ public class SDBlocks {
 
     private static <B extends Block> DeferredBlock<B> standardCrop(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
         return block(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+    }
+
+    private static <B extends Block> DeferredBlock<B> trellisCrop(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return block(name, sup, (p) -> pBuilder.apply(p.mapColor(MapColor.PLANT).randomTicks().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY).forceSolidOff()));
     }
 
     private static <B extends Block> DeferredBlockItem<B> crate(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {

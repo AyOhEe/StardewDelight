@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-31T18:38:59.4297338	Loot Tables
+// 1.21.1	2026-07-31T20:44:04.5105586	Loot Tables
 82c9a4c94299267696f7aa54269f15302f31dc25 data/stardewdelight/loot_table/blocks/amaranth_bale.json
 2988ea00bb756ebdc11ce769da2eb9b6291cf08e data/stardewdelight/loot_table/blocks/amaranth_crop.json
 452b01372903f0d5d2a914a303c842833c744ffd data/stardewdelight/loot_table/blocks/ancient_fruit_crate.json
@@ -64,12 +64,15 @@ a095071dc7e56824701d5aceba7ac30cd74adce7 data/stardewdelight/loot_table/blocks/c
 bbcd50aed1629b2e6fecaf5939b7d310f32de8cf data/stardewdelight/loot_table/blocks/fruiting_cherry_sapling.json
 e3bdba5b368eef4bcd3cfcfb03c47c5680ef7bed data/stardewdelight/loot_table/blocks/garlic_crate.json
 ec497ab1d69cd8570b91920eb30e3f3d7c4f1e68 data/stardewdelight/loot_table/blocks/garlic_crop.json
+e6183540ac31ece40dcd81fe9d0d2e62ff5512bb data/stardewdelight/loot_table/blocks/grapes_crop.json
 2900bc912a1a16bf55057b7b386f112db730214c data/stardewdelight/loot_table/blocks/grape_crate.json
+ac827f9ea2f49afa04d9ee22e96f56363c23b65a data/stardewdelight/loot_table/blocks/green_beans_crop.json
 a97dff99f2eafe453f0d90c70d7d19afebbd785f data/stardewdelight/loot_table/blocks/green_bean_crate.json
 ba1bcbcddca27ceb627404c6bcde2a83fe44a9c8 data/stardewdelight/loot_table/blocks/grown_blue_jazz.json
 609ed113fe6e27e41982f5018de5b302b2f7a2ec data/stardewdelight/loot_table/blocks/grown_fairy_rose.json
 9bf5132bc4329564356bd0198c400d005b775f03 data/stardewdelight/loot_table/blocks/grown_summer_spangle.json
 99461ad1ddf8a80a33e7b1dfccac54ea2bf01609 data/stardewdelight/loot_table/blocks/hops_crate.json
+56574bb03c756af7ca48e9aafcebdf79df3178ab data/stardewdelight/loot_table/blocks/hops_crop.json
 deb694617d9e8a1c75ad9282b1fb3b8bc167a0bb data/stardewdelight/loot_table/blocks/hot_peppers_crop.json
 3de55f896bc61d2490d3afcdafcf381c70f9c74f data/stardewdelight/loot_table/blocks/hot_pepper_crate.json
 594ea3b4dedab5d1bf99283e01040f22d2efb3f9 data/stardewdelight/loot_table/blocks/kale_crate.json

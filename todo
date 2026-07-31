@@ -19,11 +19,8 @@ block shapes, once textures are done.
 go over and ensure all necessary methods are being implemented e.g. pathfinding
 proper blockstate definitions per crop age
 
-
-1/2 block trellis crops:
-- green beans: 7
-- grapes: 7
-- hops: 7
+some crops should drop more
+some crops should not drop seeds when mature
 
 
 2 block bulb crops:

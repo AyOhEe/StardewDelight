@@ -1,5 +1,6 @@
 package io.github.ayohee.stardewdelight.register;
 
+import io.github.ayohee.stardewdelight.content.items.DoubleHighNamedBlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -51,7 +52,7 @@ public class SDItems {
     public static final DeferredItem<Item> BEAN_STARTER = seed(
             "bean_starter",
             SDBlocks.GREEN_BEANS_CROP,
-            ItemNameBlockItem::new,
+            DoubleHighNamedBlockItem::new,
             p -> p
     );
 
@@ -102,7 +103,7 @@ public class SDItems {
     public static final DeferredItem<Item> HOPS_STARTER = seed(
             "hops_starter",
             SDBlocks.HOPS_CROP,
-            ItemNameBlockItem::new,
+            DoubleHighNamedBlockItem::new,
             p -> p
     );
 
@@ -209,7 +210,7 @@ public class SDItems {
     public static final DeferredItem<Item> GRAPE_STARTER = seed(
             "grape_starter",
             SDBlocks.GRAPES_CROP,
-            ItemNameBlockItem::new,
+            DoubleHighNamedBlockItem::new,
             p -> p
     );
 
