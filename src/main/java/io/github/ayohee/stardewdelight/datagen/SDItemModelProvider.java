@@ -79,6 +79,23 @@ public class SDItemModelProvider extends ItemModelProvider {
         blockTexture(SDBlocks.APPLE_SAPLING.getItem());
         blockTexture(SDBlocks.POMEGRANATE_SAPLING.getItem());
 
+        /*----- LOGS -----*/
+        simpleBlockItem(SDBlocks.APRICOT_LOG.getBlock().get());
+        simpleBlockItem(SDBlocks.BANANA_LOG.getBlock().get());
+        simpleBlockItem(SDBlocks.MANGO_LOG.getBlock().get());
+        simpleBlockItem(SDBlocks.ORANGE_LOG.getBlock().get());
+        simpleBlockItem(SDBlocks.PEACH_LOG.getBlock().get());
+        simpleBlockItem(SDBlocks.APPLE_LOG.getBlock().get());
+        simpleBlockItem(SDBlocks.POMEGRANATE_LOG.getBlock().get());
+
+        /*----- PLANKS -----*/
+        simpleBlockItem(SDBlocks.APRICOT_PLANKS.getBlock().get());
+        simpleBlockItem(SDBlocks.BANANA_PLANKS.getBlock().get());
+        simpleBlockItem(SDBlocks.MANGO_PLANKS.getBlock().get());
+        simpleBlockItem(SDBlocks.ORANGE_PLANKS.getBlock().get());
+        simpleBlockItem(SDBlocks.PEACH_PLANKS.getBlock().get());
+        simpleBlockItem(SDBlocks.APPLE_PLANKS.getBlock().get());
+        simpleBlockItem(SDBlocks.POMEGRANATE_PLANKS.getBlock().get());
 
 
         /*----- CROP ITEMS -----*/

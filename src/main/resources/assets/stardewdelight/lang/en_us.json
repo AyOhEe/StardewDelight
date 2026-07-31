@@ -1,5 +1,6 @@
 {
   "itemGroup.stardewdelight": "Stardew's Delight",
+  "itemGroup.stardewdelight_building": "Stardew's Delight Building Blocks",
 
   "block.stardewdelight.blue_jazz_crop": "Growing Blue Jazz",
   "block.stardewdelight.cauliflower_crop": "Cauliflower",
@@ -46,6 +47,22 @@
   "block.stardewdelight.peach_sapling": "Peach Sapling",
   "block.stardewdelight.apple_sapling": "Apple Sapling",
   "block.stardewdelight.pomegranate_sapling": "Pomegranate Sapling",
+
+  "block.stardewdelight.apricot_log": "Apricot Log",
+  "block.stardewdelight.banana_log": "Banana Log",
+  "block.stardewdelight.mango_log": "Mango Log",
+  "block.stardewdelight.orange_log": "Orange Log",
+  "block.stardewdelight.peach_log": "Peach Log",
+  "block.stardewdelight.apple_log": "Apple Log",
+  "block.stardewdelight.pomegranate_log": "Pomegranate Log",
+
+  "block.stardewdelight.apricot_planks": "Apricot Planks",
+  "block.stardewdelight.banana_planks": "Banana Planks",
+  "block.stardewdelight.mango_planks": "Mango Planks",
+  "block.stardewdelight.orange_planks": "Orange Planks",
+  "block.stardewdelight.peach_planks": "Peach Planks",
+  "block.stardewdelight.apple_planks": "Apple Planks",
+  "block.stardewdelight.pomegranate_planks": "Pomegranate Planks",
 
   "block.stardewdelight.grown_blue_jazz": "Blue Jazz",
   "block.stardewdelight.grown_summer_spangle": "Summer Spangle",

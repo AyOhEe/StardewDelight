@@ -129,6 +129,23 @@ public class SDBlockStateProvider extends BlockStateProvider {
         new BlockModelPair(SDBlocks.POMEGRANATE_SAPLING.getBlock().get(), this::cross_cutout)
                 .makeBlockModel();
 
+        /*----- LOGS -----*/
+        this.logBlock(SDBlocks.APRICOT_LOG.getBlock().get());
+        this.logBlock(SDBlocks.BANANA_LOG.getBlock().get());
+        this.logBlock(SDBlocks.MANGO_LOG.getBlock().get());
+        this.logBlock(SDBlocks.ORANGE_LOG.getBlock().get());
+        this.logBlock(SDBlocks.PEACH_LOG.getBlock().get());
+        this.logBlock(SDBlocks.APPLE_LOG.getBlock().get());
+        this.logBlock(SDBlocks.POMEGRANATE_LOG.getBlock().get());
+
+        /*----- PLANKS -----*/
+        this.simpleBlock(SDBlocks.APRICOT_PLANKS.getBlock().get());
+        this.simpleBlock(SDBlocks.BANANA_PLANKS.getBlock().get());
+        this.simpleBlock(SDBlocks.MANGO_PLANKS.getBlock().get());
+        this.simpleBlock(SDBlocks.ORANGE_PLANKS.getBlock().get());
+        this.simpleBlock(SDBlocks.PEACH_PLANKS.getBlock().get());
+        this.simpleBlock(SDBlocks.APPLE_PLANKS.getBlock().get());
+        this.simpleBlock(SDBlocks.POMEGRANATE_PLANKS.getBlock().get());
 
         /*----- GROWN FLOWERS -----*/
         new BlockModelPair(SDBlocks.GROWN_BLUE_JAZZ.getBlock().get(), this::cross_cutout)

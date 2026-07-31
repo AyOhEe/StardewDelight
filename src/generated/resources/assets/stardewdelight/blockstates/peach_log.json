@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "stardewdelight:block/peach_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "stardewdelight:block/peach_log"
+    },
+    "axis=z": {
+      "model": "stardewdelight:block/peach_log_horizontal",
+      "x": 90
+    }
+  }
+}

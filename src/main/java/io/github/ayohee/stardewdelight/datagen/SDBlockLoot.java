@@ -46,6 +46,22 @@ public class SDBlockLoot extends BlockLootSubProvider {
             dropSelf(b.get());
         }
 
+        dropSelf(SDBlocks.APRICOT_LOG.getBlock().get());
+        dropSelf(SDBlocks.BANANA_LOG.getBlock().get());
+        dropSelf(SDBlocks.MANGO_LOG.getBlock().get());
+        dropSelf(SDBlocks.ORANGE_LOG.getBlock().get());
+        dropSelf(SDBlocks.PEACH_LOG.getBlock().get());
+        dropSelf(SDBlocks.APPLE_LOG.getBlock().get());
+        dropSelf(SDBlocks.POMEGRANATE_LOG.getBlock().get());
+
+        dropSelf(SDBlocks.APRICOT_PLANKS.getBlock().get());
+        dropSelf(SDBlocks.BANANA_PLANKS.getBlock().get());
+        dropSelf(SDBlocks.MANGO_PLANKS.getBlock().get());
+        dropSelf(SDBlocks.ORANGE_PLANKS.getBlock().get());
+        dropSelf(SDBlocks.PEACH_PLANKS.getBlock().get());
+        dropSelf(SDBlocks.APPLE_PLANKS.getBlock().get());
+        dropSelf(SDBlocks.POMEGRANATE_PLANKS.getBlock().get());
+
         dropSelf(SDBlocks.GROWN_BLUE_JAZZ.getBlock().get());
         dropSelf(SDBlocks.GROWN_SUMMER_SPANGLE.getBlock().get());
         add(SDBlocks.GROWN_FAIRY_ROSE.getBlock().get(), createSinglePropConditionTable(SDBlocks.GROWN_FAIRY_ROSE.getBlock().get(), BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER));

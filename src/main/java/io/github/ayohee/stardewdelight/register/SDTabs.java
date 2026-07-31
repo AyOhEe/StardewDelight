@@ -22,11 +22,21 @@ public class SDTabs {
             })
             .build());
 
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STARDEW_DELIGHT_BUILDING = CREATIVE_MODE_TABS.register("stardew_delight_building", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.stardewdelight_building"))
+            .withTabsBefore(STARDEW_DELIGHT.getKey())
+            .icon(SDBlocks.APPLE_PLANKS.getItem()::toStack)
+            .displayItems((parameters, output) -> {
+                SDTabs.TAB_CONTENTS.get(SDTabs.STARDEW_DELIGHT_BUILDING).forEach(output::accept);
+            })
+            .build());
+
 
     /* Keeps track of the order in which items should appear in the creative menu. Each tab needs a new empty list. */
     public static final Map<DeferredHolder<CreativeModeTab, CreativeModeTab>, List<ItemLike>> TAB_CONTENTS = new HashMap<>();
     static {
         TAB_CONTENTS.put(SDTabs.STARDEW_DELIGHT, new LinkedList<>());
+        TAB_CONTENTS.put(SDTabs.STARDEW_DELIGHT_BUILDING, new LinkedList<>());
     }
 
     /*----- STATIC INITIALIZER -----*/

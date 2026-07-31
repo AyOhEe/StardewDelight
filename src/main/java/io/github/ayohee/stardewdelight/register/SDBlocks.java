@@ -6,10 +6,7 @@ import io.github.ayohee.stardewdelight.content.blocks.trees.FruitSaplingBlock;
 import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.component.SuspiciousStewEffects;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -305,8 +302,102 @@ public class SDBlocks {
             p -> p
     );
 
+    /*----- LOGS -----*/
+    static {
+        currentTab = SDTabs.STARDEW_DELIGHT_BUILDING;
+    }
+
+    public static final DeferredBlockItem<RotatedPillarBlock> APRICOT_LOG = log(
+            "apricot_log",
+            RotatedPillarBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<RotatedPillarBlock> BANANA_LOG = log(
+            "banana_log",
+            RotatedPillarBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<RotatedPillarBlock> MANGO_LOG = log(
+            "mango_log",
+            RotatedPillarBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<RotatedPillarBlock> ORANGE_LOG = log(
+            "orange_log",
+            RotatedPillarBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<RotatedPillarBlock> PEACH_LOG = log(
+            "peach_log",
+            RotatedPillarBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<RotatedPillarBlock> APPLE_LOG = log(
+            "apple_log",
+            RotatedPillarBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<RotatedPillarBlock> POMEGRANATE_LOG = log(
+            "pomegranate_log",
+            RotatedPillarBlock::new,
+            p -> p
+    );
+
+    /*----- PLANKS -----*/
+    public static final DeferredBlockItem<Block> APRICOT_PLANKS = plank(
+            "apricot_planks",
+            Block::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<Block> BANANA_PLANKS = plank(
+            "banana_planks",
+            Block::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<Block> MANGO_PLANKS = plank(
+            "mango_planks",
+            Block::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<Block> ORANGE_PLANKS = plank(
+            "orange_planks",
+            Block::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<Block> PEACH_PLANKS = plank(
+            "peach_planks",
+            Block::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<Block> APPLE_PLANKS = plank(
+            "apple_planks",
+            Block::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<Block> POMEGRANATE_PLANKS = plank(
+            "pomegranate_planks",
+            Block::new,
+            p -> p
+    );
+
 
     /*----- GROWN FLOWERS -----*/
+    static {
+        currentTab = SDTabs.STARDEW_DELIGHT;
+    }
+
     public static final DeferredBlockItem<FlowerBlock> GROWN_BLUE_JAZZ = flower(
             "grown_blue_jazz",
             p -> new FlowerBlock(SuspiciousStewEffects.EMPTY, p),
@@ -657,6 +748,14 @@ public class SDBlocks {
 
     private static <B extends Block> DeferredBlockItem<B> tallFlower(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
         return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.ROSE_BUSH)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> log(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> plank(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
     }
 
     /*----- STATIC INITIALIZER -----*/
