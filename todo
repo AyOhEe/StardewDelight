@@ -1,18 +1,19 @@
 tags for all crop blocks
 tags for all crop items
 tags for all seed items
+tags for all saplings
 tags for crates
 how get more flower seeds?
 seed recipes from fruits? cutting board?
+block shapes, once textures are done.
+go over and ensure all necessary methods are being implemented e.g. pathfinding
+proper blockstate definitions per crop age
 
 
 1/2 block trellis crops:
 - green beans: 7
 - grapes: 7
 - hops: 7
-
-bury in sand:
-- taro root: 5
 
 
 2 block bulb crops:
@@ -43,21 +44,6 @@ Giant crops:
 - powdermelon
 - qi Fruit
 
-
-distinct types:
-- 1 block trellis -> 2 block trellis
-- 1 block stem
-- 2 block stem
-- 1 block bush
-- 2 block bush
-- 1 block flower
-- 2 block flower
-- 1 block bulb
-- 2 block bulb
-- 1/2 block bulb -> giant crop
-- fruit tree sapling
-- immature fruit tree
-- fruit tree leaves
 
 wood types
 - apricot

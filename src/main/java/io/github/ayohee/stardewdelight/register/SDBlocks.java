@@ -243,9 +243,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> TARO_ROOT_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> TARO_ROOT_CROP = standardCrop(
             "taro_root_crop",
-            Block::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.TARO_TUBER),
             p -> p
     );
 
