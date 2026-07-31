@@ -21,16 +21,14 @@ proper blockstate definitions per crop age
 
 some crops should drop more
 some crops should not drop seeds when mature
+sweet gem berry should not drop extra seeds
 
 
 2 block bulb crops:
-- sweet gem berry: 6
-- starfruit: 6
 - qi fruit: 5
 - pink melon: 6
 - powdermelon: 6
 - sugar pumpkin: 6
-- artichoke: 6
 
 
 fruit trees (one intermediary phase before growing into a full tree):

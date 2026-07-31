@@ -128,9 +128,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> STARFRUIT_CROP = standardCrop(
+    public static final DeferredBlock<TallCropBlock> STARFRUIT_CROP = standardCrop(
             "starfruit_crop",
-            Block::new,
+            p -> TallCropBlock.create(p, BlockStateProperties.AGE_5, 5, SDItems.STARFRUIT_SEEDS, 4),
             p -> p
     );
 
@@ -154,9 +154,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> ARTICHOKE_CROP = standardCrop(
+    public static final DeferredBlock<TallCropBlock> ARTICHOKE_CROP = standardCrop(
             "artichoke_crop",
-            Block::new,
+            p -> TallCropBlock.create(p, BlockStateProperties.AGE_5, 5, SDItems.ARTICHOKE_SEEDS, 4),
             p -> p
     );
 
@@ -230,9 +230,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> SWEET_GEM_BERRY_CROP = standardCrop(
+    public static final DeferredBlock<TallCropBlock> SWEET_GEM_BERRY_CROP = standardCrop(
             "sweet_gem_berry_crop",
-            Block::new,
+            p -> TallCropBlock.create(p, BlockStateProperties.AGE_5, 5, SDItems.RARE_SEED, 4),
             p -> p
     );
 
