@@ -3,6 +3,7 @@ package io.github.ayohee.stardewdelight.datagen;
 import io.github.ayohee.stardewdelight.StardewDelight;
 import io.github.ayohee.stardewdelight.register.SDBlocks;
 import io.github.ayohee.stardewdelight.register.SDItems;
+import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
 import net.minecraft.advancements.Criterion;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.core.HolderLookup;
@@ -12,7 +13,9 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.state.properties.WoodType;
 
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
 public class SDRecipeProvider extends RecipeProvider {
@@ -70,6 +73,24 @@ public class SDRecipeProvider extends RecipeProvider {
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.STRAWBERRY, RecipeCategory.FOOD, SDItems.STRAWBERRY_PUNNET);
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.BLUEBERRY, RecipeCategory.FOOD, SDItems.BLUEBERRY_PUNNET);
         modNineBlockStorageRecipes(recipeOutput, RecipeCategory.FOOD, SDItems.CRANBERRY, RecipeCategory.FOOD, SDItems.CRANBERRY_PUNNET);
+
+
+        for (Map.Entry<WoodType, Map<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>>> entry : SDBlocks.WOOD_BLOCKS.entrySet()) {
+            WoodType woodtype = entry.getKey();
+            Map<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>> blocks = entry.getValue();
+
+            //wood
+            //stripped wood
+            //planks
+            //stairs
+            //slabs
+            //fence
+            //fence gate
+            //door
+            //trapdoor
+            //pressure plate
+            //button
+        }
     }
 
     private static void modNineBlockStorageRecipes(RecipeOutput output, RecipeCategory compactingCategory, ItemLike item, RecipeCategory breakingCategory, ItemLike compacted) {

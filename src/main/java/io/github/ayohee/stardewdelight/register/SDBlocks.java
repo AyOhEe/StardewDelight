@@ -4,10 +4,12 @@ import io.github.ayohee.stardewdelight.SDBlockStateProperties;
 import io.github.ayohee.stardewdelight.content.blocks.crops.*;
 import io.github.ayohee.stardewdelight.content.blocks.trees.FruitSaplingBlock;
 import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.component.SuspiciousStewEffects;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.WoodType;
@@ -18,6 +20,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 
 import java.util.*;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 import static io.github.ayohee.stardewdelight.register.SDRegistries.BLOCKS;
 import static io.github.ayohee.stardewdelight.register.SDRegistries.ITEMS;
@@ -26,6 +29,7 @@ import static io.github.ayohee.stardewdelight.register.SDTabs.TAB_CONTENTS;
 public class SDBlocks {
     private static DeferredHolder<CreativeModeTab, CreativeModeTab> currentTab = SDTabs.STARDEW_DELIGHT;
     public static final List<DeferredBlock<? extends Block>> CRATES = new LinkedList<>();
+    public static final Map<ResourceLocation, Supplier<BlockState>> STRIPPABLES = new HashMap<>();
 
 
     /*----- CROP BLOCKS -----*/
@@ -786,6 +790,14 @@ public class SDBlocks {
             map.put(PRESSURE_PLATE, pressurePlate(PRESSURE_PLATE.of(type), p -> new PressurePlateBlock(type.setType(), p), p -> p));
             map.put(BUTTON, button(BUTTON.of(type), p -> new ButtonBlock(type.setType(), 30, p), p -> p));
             map.put(LEAVES, leaves(LEAVES.of(type), LeavesBlock::new, p -> p));
+
+            DeferredBlockItem<?> log = map.get(LOG);
+            DeferredBlockItem<?> wood = map.get(WOOD);
+            DeferredBlockItem<?> stripped_log = map.get(STRIPPED_LOG);
+            DeferredBlockItem<?> stripped_wood = map.get(STRIPPED_WOOD);
+
+            STRIPPABLES.put(log.getBlock().getId(), () -> stripped_log.getBlock().get().defaultBlockState());
+            STRIPPABLES.put(wood.getBlock().getId(), () -> stripped_wood.getBlock().get().defaultBlockState());
 
             return map;
         }

@@ -9,7 +9,6 @@ tags for decorative blocks
 tags for crates
 
 signs for all wood types
-wood block recipes
 
 names for fruit tree wood blocks is a bit weird. "Banana Stairs"?
 
@@ -22,6 +21,8 @@ proper blockstate definitions per crop age
 some crops should drop more
 some crops should not drop seeds when mature
 sweet gem berry should not drop extra seeds
+
+actual food recipes
 
 
 2 block bulb crops:
