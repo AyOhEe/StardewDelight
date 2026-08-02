@@ -1,1 +1,8 @@
-// 1.21.1	2026-08-02T21:15:25.4465586	Tags for minecraft:item mod id stardewdelight
+// 1.21.1	2026-08-02T22:42:29.6038487	Tags for minecraft:item mod id stardewdelight
+d56ae03fe53109713b014b7e94136933b1e08a4e data/stardewdelight/tags/item/apple_logs.json
+827a48481a279f03cbd0e295e617fdbcb953b306 data/stardewdelight/tags/item/apricot_logs.json
+60b1097875f6cee737be3f0ac44308d39514d730 data/stardewdelight/tags/item/banana_logs.json
+489d02da8a81a1b1bd788de343cdc81b039b459c data/stardewdelight/tags/item/mango_logs.json
+c274514f6c784d5394d49ff84b6b442710ee88db data/stardewdelight/tags/item/orange_logs.json
+db32828fec5053d41c67b8ee63e9e73cf4702eb8 data/stardewdelight/tags/item/peach_logs.json
+4d8c347bd350d2ac705a2bd90c66510ba63ffc8b data/stardewdelight/tags/item/pomegrate_logs.json

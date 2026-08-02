@@ -187,7 +187,7 @@ public class SDItemModelProvider extends ItemModelProvider {
 
             @Override
             public String getName() {
-                return "Stardew's Delight's Item Models";
+                return "Stardew's Delight's ItemTags Models";
             }
         };
     }

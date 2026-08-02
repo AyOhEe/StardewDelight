@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "stardewdelight:orange_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "stardewdelight:orange_planks"
+  }
+}

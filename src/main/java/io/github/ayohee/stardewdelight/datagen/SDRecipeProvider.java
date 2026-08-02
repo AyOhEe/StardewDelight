@@ -1,5 +1,6 @@
 package io.github.ayohee.stardewdelight.datagen;
 
+import io.github.ayohee.stardewdelight.SDTags;
 import io.github.ayohee.stardewdelight.StardewDelight;
 import io.github.ayohee.stardewdelight.register.SDBlocks;
 import io.github.ayohee.stardewdelight.register.SDItems;
@@ -12,6 +13,7 @@ import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.state.properties.WoodType;
 
@@ -78,18 +80,19 @@ public class SDRecipeProvider extends RecipeProvider {
         for (Map.Entry<WoodType, Map<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>>> entry : SDBlocks.WOOD_BLOCKS.entrySet()) {
             WoodType woodtype = entry.getKey();
             Map<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>> blocks = entry.getValue();
+            Criterion<?> hasPlanks = has(blocks.get(SDBlocks.WoodBlockTypes.PLANKS));
 
-            //wood
-            //stripped wood
-            //planks
-            //stairs
-            //slabs
-            //fence
-            //fence gate
-            //door
-            //trapdoor
-            //pressure plate
-            //button
+            woodFromLogs(recipeOutput, blocks.get(SDBlocks.WoodBlockTypes.WOOD), blocks.get(SDBlocks.WoodBlockTypes.LOG));
+            woodFromLogs(recipeOutput, blocks.get(SDBlocks.WoodBlockTypes.STRIPPED_WOOD), blocks.get(SDBlocks.WoodBlockTypes.STRIPPED_LOG));
+            planksFromLogs(recipeOutput, blocks.get(SDBlocks.WoodBlockTypes.PLANKS), SDTags.ItemTags.LOG_TAGS.get(woodtype), 4);
+            stairBuilder(blocks.get(SDBlocks.WoodBlockTypes.STAIRS), Ingredient.of(blocks.get(SDBlocks.WoodBlockTypes.PLANKS))).unlockedBy("has_planks", hasPlanks).save(recipeOutput);
+            slabBuilder(RecipeCategory.BUILDING_BLOCKS, blocks.get(SDBlocks.WoodBlockTypes.SLAB), Ingredient.of(blocks.get(SDBlocks.WoodBlockTypes.PLANKS))).unlockedBy("has_planks", hasPlanks).save(recipeOutput);
+            fenceBuilder(blocks.get(SDBlocks.WoodBlockTypes.FENCE), Ingredient.of(blocks.get(SDBlocks.WoodBlockTypes.PLANKS))).unlockedBy("has_planks", hasPlanks).save(recipeOutput);
+            fenceGateBuilder(blocks.get(SDBlocks.WoodBlockTypes.FENCE_GATE), Ingredient.of(blocks.get(SDBlocks.WoodBlockTypes.PLANKS))).unlockedBy("has_planks", hasPlanks).save(recipeOutput);
+            doorBuilder(blocks.get(SDBlocks.WoodBlockTypes.DOOR), Ingredient.of(blocks.get(SDBlocks.WoodBlockTypes.PLANKS))).unlockedBy("has_planks", hasPlanks).save(recipeOutput);
+            trapdoorBuilder(blocks.get(SDBlocks.WoodBlockTypes.TRAPDOOR), Ingredient.of(blocks.get(SDBlocks.WoodBlockTypes.PLANKS))).unlockedBy("has_planks", hasPlanks).save(recipeOutput);
+            pressurePlateBuilder(RecipeCategory.REDSTONE, blocks.get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE), Ingredient.of(blocks.get(SDBlocks.WoodBlockTypes.PLANKS))).unlockedBy("has_planks", hasPlanks).save(recipeOutput);
+            buttonBuilder(blocks.get(SDBlocks.WoodBlockTypes.BUTTON), Ingredient.of(blocks.get(SDBlocks.WoodBlockTypes.PLANKS))).unlockedBy("has_planks", hasPlanks).save(recipeOutput);
         }
     }
 

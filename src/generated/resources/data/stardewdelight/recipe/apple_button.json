@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "stardewdelight:apple_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "stardewdelight:apple_button"
+  }
+}

@@ -1,5 +1,6 @@
 package io.github.ayohee.stardewdelight.datagen;
 
+import io.github.ayohee.stardewdelight.SDTags;
 import io.github.ayohee.stardewdelight.StardewDelight;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -18,6 +19,12 @@ public class SDItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-
+        this.copy(SDTags.BlockTags.APRICOT_LOGS, SDTags.ItemTags.APRICOT_LOGS);
+        this.copy(SDTags.BlockTags.BANANA_LOGS, SDTags.ItemTags.BANANA_LOGS);
+        this.copy(SDTags.BlockTags.MANGO_LOGS, SDTags.ItemTags.MANGO_LOGS);
+        this.copy(SDTags.BlockTags.ORANGE_LOGS, SDTags.ItemTags.ORANGE_LOGS);
+        this.copy(SDTags.BlockTags.PEACH_LOGS, SDTags.ItemTags.PEACH_LOGS);
+        this.copy(SDTags.BlockTags.APPLE_LOGS, SDTags.ItemTags.APPLE_LOGS);
+        this.copy(SDTags.BlockTags.POMEGRANATE_LOGS, SDTags.ItemTags.POMEGRANATE_LOGS);
     }
 }
