@@ -1,9 +1,9 @@
-// 1.21.1	2026-07-31T22:23:02.688547	Tags for minecraft:block mod id stardewdelight
-79b3a15570cbd24fddefe46bcf895666a550b830 data/c/tags/block/fences.json
-79b3a15570cbd24fddefe46bcf895666a550b830 data/c/tags/block/fences/wooden.json
-efbb300c5b5299db0a295c7ccd6614efbe2f5b98 data/c/tags/block/fence_gates.json
-efbb300c5b5299db0a295c7ccd6614efbe2f5b98 data/c/tags/block/fence_gates/wooden.json
-79b3a15570cbd24fddefe46bcf895666a550b830 data/minecraft/tags/block/fences.json
-efbb300c5b5299db0a295c7ccd6614efbe2f5b98 data/minecraft/tags/block/fence_gates.json
-efbb300c5b5299db0a295c7ccd6614efbe2f5b98 data/minecraft/tags/block/unstable_bottom_center.json
-79b3a15570cbd24fddefe46bcf895666a550b830 data/minecraft/tags/block/wooden_fences.json
+// 1.21.1	2026-08-02T21:15:25.4497995	Tags for minecraft:block mod id stardewdelight
+cde9bfddb5bbcb79c363baaaca75597fab2e6218 data/c/tags/block/fences.json
+cde9bfddb5bbcb79c363baaaca75597fab2e6218 data/c/tags/block/fences/wooden.json
+8bfda8ce894434b9aa7be419522ef97a7be56388 data/c/tags/block/fence_gates.json
+8bfda8ce894434b9aa7be419522ef97a7be56388 data/c/tags/block/fence_gates/wooden.json
+cde9bfddb5bbcb79c363baaaca75597fab2e6218 data/minecraft/tags/block/fences.json
+8bfda8ce894434b9aa7be419522ef97a7be56388 data/minecraft/tags/block/fence_gates.json
+8bfda8ce894434b9aa7be419522ef97a7be56388 data/minecraft/tags/block/unstable_bottom_center.json
+cde9bfddb5bbcb79c363baaaca75597fab2e6218 data/minecraft/tags/block/wooden_fences.json

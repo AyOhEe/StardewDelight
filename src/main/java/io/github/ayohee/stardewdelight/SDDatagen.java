@@ -34,7 +34,9 @@ public class SDDatagen {
         generator.addProvider(event.includeClient(), new SDBlockStateProvider(output, fileHelper).namedWrapper());
         generator.addProvider(event.includeClient(), new SDItemModelProvider(output, fileHelper).namedWrapper());
         generator.addProvider(event.includeServer(), new LootTableProvider(output, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(SDBlockLoot::new, LootContextParamSets.BLOCK)), lookupProvider));
-        generator.addProvider(event.includeServer(), new SDBlockTagsProvider(output, lookupProvider, fileHelper));
+        SDBlockTagsProvider blockTags = new SDBlockTagsProvider(output, lookupProvider, fileHelper);
+        generator.addProvider(event.includeServer(), blockTags);
+        generator.addProvider(event.includeServer(), new SDItemTagsProvider(output, lookupProvider, blockTags.contentsGetter(), fileHelper));
 
         System.out.println("Gathering data for Stardew's Delight");
         System.out.println(event.includeServer());
