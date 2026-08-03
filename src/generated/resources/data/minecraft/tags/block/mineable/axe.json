@@ -6,6 +6,27 @@
     "#stardewdelight:orange_logs",
     "#stardewdelight:peach_logs",
     "#stardewdelight:apple_logs",
-    "#stardewdelight:pomegrate_logs"
+    "#stardewdelight:pomegrate_logs",
+    "stardewdelight:apricot_planks",
+    "stardewdelight:banana_planks",
+    "stardewdelight:mango_planks",
+    "stardewdelight:orange_planks",
+    "stardewdelight:peach_planks",
+    "stardewdelight:apple_planks",
+    "stardewdelight:pomegranate_planks",
+    "stardewdelight:apricot_stairs",
+    "stardewdelight:banana_stairs",
+    "stardewdelight:mango_stairs",
+    "stardewdelight:orange_stairs",
+    "stardewdelight:peach_stairs",
+    "stardewdelight:apple_stairs",
+    "stardewdelight:pomegranate_stairs",
+    "stardewdelight:apricot_slab",
+    "stardewdelight:banana_slab",
+    "stardewdelight:mango_slab",
+    "stardewdelight:orange_slab",
+    "stardewdelight:peach_slab",
+    "stardewdelight:apple_slab",
+    "stardewdelight:pomegranate_slab"
   ]
 }

@@ -23,6 +23,10 @@ public class SDTags {
         public static final TagKey<Block> FRUIT_TREE_WOOD = create("fruit_tree_wood");
         public static final TagKey<Block> FRUIT_TREE_STRIPPED_LOGS = create("fruit_tree_stripped_logs");
         public static final TagKey<Block> FRUIT_TREE_STRIPPED_WOOD = create("fruit_tree_stripped_wood");
+        public static final TagKey<Block> FRUIT_TREE_PLANKS = create("fruit_tree_planks");
+        public static final TagKey<Block> FRUIT_TREE_STAIRS = create("fruit_tree_stairs");
+        public static final TagKey<Block> FRUIT_TREE_SLABS = create("fruit_tree_slabs");
+        public static final TagKey<Block> FRUIT_TREE_LEAVES = create("fruit_tree_leaves");
 
         private static TagKey<Block> create(String name) {
             return TagKey.create(Registries.BLOCK, StardewDelight.modLoc(name));
