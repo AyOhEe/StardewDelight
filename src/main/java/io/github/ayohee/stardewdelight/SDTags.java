@@ -19,6 +19,11 @@ public class SDTags {
         public static final TagKey<Block> APPLE_LOGS = create("apple_logs");
         public static final TagKey<Block> POMEGRANATE_LOGS = create("pomegrate_logs");
 
+        public static final TagKey<Block> FRUIT_TREE_LOGS = create("fruit_tree_logs");
+        public static final TagKey<Block> FRUIT_TREE_WOOD = create("fruit_tree_wood");
+        public static final TagKey<Block> FRUIT_TREE_STRIPPED_LOGS = create("fruit_tree_stripped_logs");
+        public static final TagKey<Block> FRUIT_TREE_STRIPPED_WOOD = create("fruit_tree_stripped_wood");
+
         private static TagKey<Block> create(String name) {
             return TagKey.create(Registries.BLOCK, StardewDelight.modLoc(name));
         }

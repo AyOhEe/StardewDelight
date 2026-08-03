@@ -1,11 +1,11 @@
 {
   "values": [
-    "stardewdelight:banana_fence",
-    "stardewdelight:orange_fence",
-    "stardewdelight:apricot_fence",
-    "stardewdelight:peach_fence",
-    "stardewdelight:mango_fence",
+    "stardewdelight:apple_fence",
     "stardewdelight:pomegranate_fence",
-    "stardewdelight:apple_fence"
+    "stardewdelight:mango_fence",
+    "stardewdelight:peach_fence",
+    "stardewdelight:apricot_fence",
+    "stardewdelight:orange_fence",
+    "stardewdelight:banana_fence"
   ]
 }
