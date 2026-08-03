@@ -1,11 +1,5 @@
 {
   "values": [
-    "stardewdelight:apricot_slab",
-    "stardewdelight:banana_slab",
-    "stardewdelight:mango_slab",
-    "stardewdelight:orange_slab",
-    "stardewdelight:peach_slab",
-    "stardewdelight:apple_slab",
-    "stardewdelight:pomegranate_slab"
+    "#stardewdelight:fruit_tree_slabs"
   ]
 }

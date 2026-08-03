@@ -1,11 +1,5 @@
 {
   "values": [
-    "stardewdelight:apricot_planks",
-    "stardewdelight:banana_planks",
-    "stardewdelight:mango_planks",
-    "stardewdelight:orange_planks",
-    "stardewdelight:peach_planks",
-    "stardewdelight:apple_planks",
-    "stardewdelight:pomegranate_planks"
+    "#stardewdelight:fruit_tree_planks"
   ]
 }

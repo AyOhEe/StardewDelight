@@ -1,11 +1,5 @@
 {
   "values": [
-    "stardewdelight:stripped_apricot_log",
-    "stardewdelight:stripped_banana_log",
-    "stardewdelight:stripped_mango_log",
-    "stardewdelight:stripped_orange_log",
-    "stardewdelight:stripped_peach_log",
-    "stardewdelight:stripped_apple_log",
-    "stardewdelight:stripped_pomegranate_log"
+    "#stardewdelight:fruit_tree_stripped_logs"
   ]
 }
