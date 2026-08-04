@@ -26,6 +26,12 @@ public class SDTags {
         public static final TagKey<Block> FRUIT_TREE_PLANKS = create("fruit_tree_planks");
         public static final TagKey<Block> FRUIT_TREE_STAIRS = create("fruit_tree_stairs");
         public static final TagKey<Block> FRUIT_TREE_SLABS = create("fruit_tree_slabs");
+        public static final TagKey<Block> FRUIT_TREE_FENCES = create("fruit_tree_fences");
+        public static final TagKey<Block> FRUIT_TREE_FENCE_GATES = create("fruit_tree_fence_gates");
+        public static final TagKey<Block> FRUIT_TREE_DOORS = create("fruit_tree_doors");
+        public static final TagKey<Block> FRUIT_TREE_TRAPDOORS = create("fruit_tree_trapdoors");
+        public static final TagKey<Block> FRUIT_TREE_PRESSURE_PLATES = create("fruit_tree_pressure_plates");
+        public static final TagKey<Block> FRUIT_TREE_BUTTONS = create("fruit_tree_buttons");
         public static final TagKey<Block> FRUIT_TREE_LEAVES = create("fruit_tree_leaves");
 
         private static TagKey<Block> create(String name) {

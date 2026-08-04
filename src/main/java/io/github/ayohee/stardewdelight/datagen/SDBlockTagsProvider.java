@@ -220,30 +220,100 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.SLABS).addTags(SDTags.BlockTags.FRUIT_TREE_SLABS);
 
 
-        /*----- REQUIRED FENCE TAGS -----*/
-        tag(BlockTags.FENCES)
-                .addAll(SDBlocks.WOOD_BLOCKS.values().stream().map(m -> m.get(SDBlocks.WoodBlockTypes.FENCE).getBlock().getKey()).toList());
+        /*----- FENCE TAGS -----*/
+        tag(SDTags.BlockTags.FRUIT_TREE_FENCES)
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.FENCE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.FENCE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.FENCE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.FENCE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.FENCE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.FENCE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.FENCE).getBlock().get());
 
-        tag(BlockTags.WOODEN_FENCES)
-                .addAll(SDBlocks.WOOD_BLOCKS.values().stream().map(m -> m.get(SDBlocks.WoodBlockTypes.FENCE).getBlock().getKey()).toList());
+        tag(Tags.Blocks.FENCES_WOODEN).addTags(SDTags.BlockTags.FRUIT_TREE_FENCES);
+        tag(BlockTags.WOODEN_FENCES).addTags(SDTags.BlockTags.FRUIT_TREE_FENCES);
+        tag(Tags.Blocks.FENCES).addTags(SDTags.BlockTags.FRUIT_TREE_FENCES);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_FENCES);
+        tag(BlockTags.FENCES).addTags(SDTags.BlockTags.FRUIT_TREE_FENCES);
 
-        tag(Tags.Blocks.FENCES)
-                .addAll(SDBlocks.WOOD_BLOCKS.values().stream().map(m -> m.get(SDBlocks.WoodBlockTypes.FENCE).getBlock().getKey()).toList());
 
-        tag(Tags.Blocks.FENCES_WOODEN)
-                .addAll(SDBlocks.WOOD_BLOCKS.values().stream().map(m -> m.get(SDBlocks.WoodBlockTypes.FENCE).getBlock().getKey()).toList());
+        /*----- FENCE GATE TAGS -----*/
+        tag(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES)
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().get());
 
-        tag(BlockTags.FENCE_GATES)
-                .addAll(SDBlocks.WOOD_BLOCKS.values().stream().map(m -> m.get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().getKey()).toList());
+        tag(BlockTags.FENCE_GATES).addTags(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
+        tag(Tags.Blocks.FENCE_GATES_WOODEN).addTags(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
+        tag(BlockTags.UNSTABLE_BOTTOM_CENTER).addTags(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
+        tag(Tags.Blocks.FENCE_GATES).addTags(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
 
-        tag(Tags.Blocks.FENCE_GATES)
-                .addAll(SDBlocks.WOOD_BLOCKS.values().stream().map(m -> m.get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().getKey()).toList());
 
-        tag(Tags.Blocks.FENCE_GATES_WOODEN)
-                .addAll(SDBlocks.WOOD_BLOCKS.values().stream().map(m -> m.get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().getKey()).toList());
+        /*----- DOOR TAGS -----*/
+        tag(SDTags.BlockTags.FRUIT_TREE_DOORS)
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
 
-        tag(BlockTags.UNSTABLE_BOTTOM_CENTER)
-                .addAll(SDBlocks.WOOD_BLOCKS.values().stream().map(m -> m.get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().getKey()).toList());
+        tag(BlockTags.WOODEN_DOORS).addTags(SDTags.BlockTags.FRUIT_TREE_DOORS);
+        tag(BlockTags.DOORS).addTags(SDTags.BlockTags.FRUIT_TREE_DOORS);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_DOORS);
+        tag(BlockTags.MOB_INTERACTABLE_DOORS).addTags(SDTags.BlockTags.FRUIT_TREE_DOORS);
+
+
+        /*----- TRAPDOOR TAGS -----*/
+        tag(SDTags.BlockTags.FRUIT_TREE_TRAPDOORS)
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.TRAPDOOR).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.TRAPDOOR).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.TRAPDOOR).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.TRAPDOOR).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.TRAPDOOR).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.TRAPDOOR).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.TRAPDOOR).getBlock().get());
+
+        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_TRAPDOORS);
+        tag(BlockTags.TRAPDOORS).addTags(SDTags.BlockTags.FRUIT_TREE_TRAPDOORS);
+        tag(BlockTags.WOODEN_TRAPDOORS).addTags(SDTags.BlockTags.FRUIT_TREE_TRAPDOORS);
+
+
+        /*----- PRESSURE PLATE TAGS -----*/
+        tag(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES)
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE).getBlock().get());
+
+        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES);
+        tag(BlockTags.PRESSURE_PLATES).addTags(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES);
+        tag(BlockTags.WALL_POST_OVERRIDE).addTags(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES);
+        tag(BlockTags.WOODEN_PRESSURE_PLATES).addTags(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES);
+
+
+        /*----- BUTTON TAGS -----*/
+        tag(SDTags.BlockTags.FRUIT_TREE_BUTTONS)
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.BUTTON).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.BUTTON).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.BUTTON).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.BUTTON).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.BUTTON).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.BUTTON).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.BUTTON).getBlock().get());
+
+        tag(BlockTags.WOODEN_BUTTONS).addTags(SDTags.BlockTags.FRUIT_TREE_BUTTONS);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_BUTTONS);
+        tag(BlockTags.BUTTONS).addTags(SDTags.BlockTags.FRUIT_TREE_BUTTONS);
 
 
         /*----- LEAVES TAGS -----*/

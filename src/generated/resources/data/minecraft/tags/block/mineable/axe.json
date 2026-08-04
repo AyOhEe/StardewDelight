@@ -9,6 +9,12 @@
     "#stardewdelight:pomegrate_logs",
     "#stardewdelight:fruit_tree_planks",
     "#stardewdelight:fruit_tree_stairs",
-    "#stardewdelight:fruit_tree_slabs"
+    "#stardewdelight:fruit_tree_slabs",
+    "#stardewdelight:fruit_tree_fences",
+    "#stardewdelight:fruit_tree_fence_gates",
+    "#stardewdelight:fruit_tree_doors",
+    "#stardewdelight:fruit_tree_trapdoors",
+    "#stardewdelight:fruit_tree_pressure_plates",
+    "#stardewdelight:fruit_tree_buttons"
   ]
 }

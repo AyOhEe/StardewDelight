@@ -1,11 +1,5 @@
 {
   "values": [
-    "stardewdelight:apricot_fence_gate",
-    "stardewdelight:orange_fence_gate",
-    "stardewdelight:banana_fence_gate",
-    "stardewdelight:apple_fence_gate",
-    "stardewdelight:pomegranate_fence_gate",
-    "stardewdelight:mango_fence_gate",
-    "stardewdelight:peach_fence_gate"
+    "#stardewdelight:fruit_tree_fence_gates"
   ]
 }
