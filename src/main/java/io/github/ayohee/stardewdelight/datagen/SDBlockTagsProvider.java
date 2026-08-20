@@ -9,8 +9,8 @@ import net.minecraft.tags.BlockTags;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.common.data.internal.NeoForgeBlockTagsProvider;
 import org.jetbrains.annotations.Nullable;
+import vectorwing.farmersdelight.common.tag.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -333,5 +333,119 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.LAVA_POOL_STONE_CANNOT_REPLACE).addTags(SDTags.BlockTags.FRUIT_TREE_LEAVES);
         tag(BlockTags.LEAVES).addTags(SDTags.BlockTags.FRUIT_TREE_LEAVES);
         tag(BlockTags.COMPLETES_FIND_TREE_TUTORIAL).addTags(SDTags.BlockTags.FRUIT_TREE_LEAVES);
+
+        /*----- CRATE TAGS -----*/
+        tag(ModTags.STRAW_BLOCKS).add(SDBlocks.COFFEE_BAG.getBlock().get());
+        tag(ModTags.MINEABLE_WITH_KNIFE).add(SDBlocks.COFFEE_BAG.getBlock().get());
+
+        tag(ModTags.CAMPFIRE_SIGNAL_SMOKE).add(SDBlocks.AMARANTH_BALE.getBlock().get());
+        tag(BlockTags.MINEABLE_WITH_HOE).add(SDBlocks.AMARANTH_BALE.getBlock().get());
+
+        tag(SDTags.BlockTags.SD_STORAGE_BLOCKS)
+                .add(SDBlocks.BLUE_JAZZ_BOX.getBlock().get())
+                .add(SDBlocks.CAULIFLOWER_CRATE.getBlock().get())
+                .add(SDBlocks.COFFEE_BAG.getBlock().get())
+                .add(SDBlocks.GARLIC_CRATE.getBlock().get())
+                .add(SDBlocks.GREEN_BEAN_CRATE.getBlock().get())
+                .add(SDBlocks.KALE_CRATE.getBlock().get())
+                .add(SDBlocks.PARSNIP_CRATE.getBlock().get())
+                .add(SDBlocks.RHUBARB_CRATE.getBlock().get())
+                .add(SDBlocks.STRAWBERRY_PUNNET_CRATE.getBlock().get())
+                .add(SDBlocks.BLUEBERRY_PUNNET_CRATE.getBlock().get())
+                .add(SDBlocks.CORN_CRATE.getBlock().get())
+                .add(SDBlocks.HOPS_CRATE.getBlock().get())
+                .add(SDBlocks.HOT_PEPPER_CRATE.getBlock().get())
+                .add(SDBlocks.PINK_MELON_CRATE.getBlock().get())
+                .add(SDBlocks.RADISH_CRATE.getBlock().get())
+                .add(SDBlocks.RED_CABBAGE_CRATE.getBlock().get())
+                .add(SDBlocks.STARFRUIT_CRATE.getBlock().get())
+                .add(SDBlocks.SUMMER_SPANGLE_BOX.getBlock().get())
+                .add(SDBlocks.AMARANTH_BALE.getBlock().get())
+                .add(SDBlocks.ARTICHOKE_CRATE.getBlock().get())
+                .add(SDBlocks.BOK_CHOY_CRATE.getBlock().get())
+                .add(SDBlocks.BROCCOLI_CRATE.getBlock().get())
+                .add(SDBlocks.CRANBERRY_PUNNET_CRATE.getBlock().get())
+                .add(SDBlocks.EGGPLANT_CRATE.getBlock().get())
+                .add(SDBlocks.FAIRY_ROSE_BOX.getBlock().get())
+                .add(SDBlocks.GRAPE_CRATE.getBlock().get())
+                .add(SDBlocks.SUGAR_PUMPKIN_CRATE.getBlock().get())
+                .add(SDBlocks.YAM_CRATE.getBlock().get())
+                .add(SDBlocks.POWDERMELON_CRATE.getBlock().get())
+                .add(SDBlocks.ANCIENT_FRUIT_CRATE.getBlock().get())
+                .add(SDBlocks.QI_FRUIT_CRATE.getBlock().get())
+                .add(SDBlocks.SWEET_GEM_BERRY_CRATE.getBlock().get())
+                .add(SDBlocks.PINEAPPLE_CRATE.getBlock().get())
+                .add(SDBlocks.TARO_ROOT_CRATE.getBlock().get());
+
+        tag(Tags.Blocks.STORAGE_BLOCKS).addTags(SDTags.BlockTags.SD_STORAGE_BLOCKS);
+
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(SDBlocks.BLUE_JAZZ_BOX.getBlock().get())
+                .add(SDBlocks.CAULIFLOWER_CRATE.getBlock().get())
+                .add(SDBlocks.GARLIC_CRATE.getBlock().get())
+                .add(SDBlocks.GREEN_BEAN_CRATE.getBlock().get())
+                .add(SDBlocks.KALE_CRATE.getBlock().get())
+                .add(SDBlocks.PARSNIP_CRATE.getBlock().get())
+                .add(SDBlocks.RHUBARB_CRATE.getBlock().get())
+                .add(SDBlocks.STRAWBERRY_PUNNET_CRATE.getBlock().get())
+                .add(SDBlocks.BLUEBERRY_PUNNET_CRATE.getBlock().get())
+                .add(SDBlocks.CORN_CRATE.getBlock().get())
+                .add(SDBlocks.HOPS_CRATE.getBlock().get())
+                .add(SDBlocks.HOT_PEPPER_CRATE.getBlock().get())
+                .add(SDBlocks.PINK_MELON_CRATE.getBlock().get())
+                .add(SDBlocks.RADISH_CRATE.getBlock().get())
+                .add(SDBlocks.RED_CABBAGE_CRATE.getBlock().get())
+                .add(SDBlocks.STARFRUIT_CRATE.getBlock().get())
+                .add(SDBlocks.SUMMER_SPANGLE_BOX.getBlock().get())
+                .add(SDBlocks.ARTICHOKE_CRATE.getBlock().get())
+                .add(SDBlocks.BOK_CHOY_CRATE.getBlock().get())
+                .add(SDBlocks.BROCCOLI_CRATE.getBlock().get())
+                .add(SDBlocks.CRANBERRY_PUNNET_CRATE.getBlock().get())
+                .add(SDBlocks.EGGPLANT_CRATE.getBlock().get())
+                .add(SDBlocks.FAIRY_ROSE_BOX.getBlock().get())
+                .add(SDBlocks.GRAPE_CRATE.getBlock().get())
+                .add(SDBlocks.SUGAR_PUMPKIN_CRATE.getBlock().get())
+                .add(SDBlocks.YAM_CRATE.getBlock().get())
+                .add(SDBlocks.POWDERMELON_CRATE.getBlock().get())
+                .add(SDBlocks.ANCIENT_FRUIT_CRATE.getBlock().get())
+                .add(SDBlocks.QI_FRUIT_CRATE.getBlock().get())
+                .add(SDBlocks.SWEET_GEM_BERRY_CRATE.getBlock().get())
+                .add(SDBlocks.PINEAPPLE_CRATE.getBlock().get())
+                .add(SDBlocks.TARO_ROOT_CRATE.getBlock().get());
+
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_BLUE_JAZZ).add(SDBlocks.BLUE_JAZZ_BOX.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_CAULIFLOWER).add(SDBlocks.CAULIFLOWER_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_COFFEE).add(SDBlocks.COFFEE_BAG.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_GARLIC).add(SDBlocks.GARLIC_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_GREEN_BEAN).add(SDBlocks.GREEN_BEAN_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_KALE).add(SDBlocks.KALE_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_PARSNIP).add(SDBlocks.PARSNIP_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_RHUBARB).add(SDBlocks.RHUBARB_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_STRAWBERRY_PUNNET).add(SDBlocks.STRAWBERRY_PUNNET_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_BLUEBERRY_PUNNET).add(SDBlocks.BLUEBERRY_PUNNET_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_CORN).add(SDBlocks.CORN_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_HOPS).add(SDBlocks.HOPS_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_HOT_PEPPER).add(SDBlocks.HOT_PEPPER_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_PINK_MELON).add(SDBlocks.PINK_MELON_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_RADISH).add(SDBlocks.RADISH_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_RED_CABBAGE).add(SDBlocks.RED_CABBAGE_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_STARFRUIT).add(SDBlocks.STARFRUIT_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_SUMMER_SPANGLE).add(SDBlocks.SUMMER_SPANGLE_BOX.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_AMARANTH).add(SDBlocks.AMARANTH_BALE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_ARTICHOKE).add(SDBlocks.ARTICHOKE_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_BOK_CHOY).add(SDBlocks.BOK_CHOY_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_BROCCOLI).add(SDBlocks.BROCCOLI_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_CRANBERRY_PUNNET).add(SDBlocks.CRANBERRY_PUNNET_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_EGGPLANT).add(SDBlocks.EGGPLANT_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_FAIRY_ROSE).add(SDBlocks.FAIRY_ROSE_BOX.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_GRAPE).add(SDBlocks.GRAPE_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_SUGAR_PUMPKIN).add(SDBlocks.SUGAR_PUMPKIN_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_YAM).add(SDBlocks.YAM_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_POWDERMELON).add(SDBlocks.POWDERMELON_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_ANCIENT_FRUIT).add(SDBlocks.ANCIENT_FRUIT_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_QI_FRUIT).add(SDBlocks.QI_FRUIT_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_SWEET_GEM_BERRY).add(SDBlocks.SWEET_GEM_BERRY_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_PINEAPPLE).add(SDBlocks.PINEAPPLE_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_TARO_ROOT).add(SDBlocks.TARO_ROOT_CRATE.getBlock().get());
     }
 }
