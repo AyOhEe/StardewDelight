@@ -334,6 +334,7 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.LEAVES).addTags(SDTags.BlockTags.FRUIT_TREE_LEAVES);
         tag(BlockTags.COMPLETES_FIND_TREE_TUTORIAL).addTags(SDTags.BlockTags.FRUIT_TREE_LEAVES);
 
+
         /*----- CRATE TAGS -----*/
         tag(ModTags.STRAW_BLOCKS).add(SDBlocks.COFFEE_BAG.getBlock().get());
         tag(ModTags.MINEABLE_WITH_KNIFE).add(SDBlocks.COFFEE_BAG.getBlock().get());
@@ -447,5 +448,87 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
         tag(SDTags.BlockTags.STORAGE_BLOCKS_SWEET_GEM_BERRY).add(SDBlocks.SWEET_GEM_BERRY_CRATE.getBlock().get());
         tag(SDTags.BlockTags.STORAGE_BLOCKS_PINEAPPLE).add(SDBlocks.PINEAPPLE_CRATE.getBlock().get());
         tag(SDTags.BlockTags.STORAGE_BLOCKS_TARO_ROOT).add(SDBlocks.TARO_ROOT_CRATE.getBlock().get());
+
+
+        /*----- SAPLING TAGS -----*/
+        tag(SDTags.BlockTags.FRUIT_TREE_SAPLINGS)
+                .add(SDBlocks.TEA_SAPLING.getBlock().get())
+                .add(SDBlocks.APRICOT_SAPLING.getBlock().get())
+                .add(SDBlocks.FRUITING_CHERRY_SAPLING.getBlock().get())
+                .add(SDBlocks.BANANA_SAPLING.getBlock().get())
+                .add(SDBlocks.MANGO_SAPLING.getBlock().get())
+                .add(SDBlocks.ORANGE_SAPLING.getBlock().get())
+                .add(SDBlocks.PEACH_SAPLING.getBlock().get())
+                .add(SDBlocks.APPLE_SAPLING.getBlock().get())
+                .add(SDBlocks.POMEGRANATE_SAPLING.getBlock().get());
+
+        tag(BlockTags.SWORD_EFFICIENT).addTags(SDTags.BlockTags.FRUIT_TREE_SAPLINGS);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_SAPLINGS);
+        tag(BlockTags.SAPLINGS).addTags(SDTags.BlockTags.FRUIT_TREE_SAPLINGS);
+
+
+        /*----- FLOWER TAGS -----*/
+        tag(SDTags.BlockTags.SMALL_FLOWERS)
+                .add(SDBlocks.GROWN_BLUE_JAZZ.getBlock().get())
+                .add(SDBlocks.GROWN_SUMMER_SPANGLE.getBlock().get());
+
+        tag(BlockTags.SMALL_FLOWERS).addTags(SDTags.BlockTags.SMALL_FLOWERS);
+        tag(BlockTags.FLOWERS).addTags(SDTags.BlockTags.SMALL_FLOWERS);
+        tag(BlockTags.SWORD_EFFICIENT).addTags(SDTags.BlockTags.SMALL_FLOWERS);
+        tag(BlockTags.ENDERMAN_HOLDABLE).addTags(SDTags.BlockTags.SMALL_FLOWERS);
+
+
+        tag(SDTags.BlockTags.TALL_FLOWERS)
+                .add(SDBlocks.GROWN_FAIRY_ROSE.getBlock().get());
+
+        tag(ModTags.UNAFFECTED_BY_RICH_SOIL).addTags(SDTags.BlockTags.TALL_FLOWERS);
+        tag(BlockTags.TALL_FLOWERS).addTags(SDTags.BlockTags.TALL_FLOWERS);
+        tag(BlockTags.FLOWERS).addTags(SDTags.BlockTags.TALL_FLOWERS);
+        tag(BlockTags.SWORD_EFFICIENT).addTags(SDTags.BlockTags.TALL_FLOWERS);
+        tag(BlockTags.REPLACEABLE_BY_TREES).addTags(SDTags.BlockTags.TALL_FLOWERS);
+
+
+        /*----- CROP TAGS -----*/
+        tag(SDTags.BlockTags.CROPS)
+                .add(SDBlocks.BLUE_JAZZ_CROP.get())
+                .add(SDBlocks.CAULIFLOWER_CROP.get())
+                .add(SDBlocks.COFFEE_BUSH.get())
+                .add(SDBlocks.GARLIC_CROP.get())
+                .add(SDBlocks.GREEN_BEANS_CROP.get())
+                .add(SDBlocks.KALE_CROP.get())
+                .add(SDBlocks.PARSNIP_CROP.get())
+                .add(SDBlocks.RHUBARB_CROP.get())
+                .add(SDBlocks.STRAWBERRY_BUSH.get())
+                .add(SDBlocks.BLUEBERRY_BUSH.get())
+                .add(SDBlocks.CORN_CROP.get())
+                .add(SDBlocks.HOPS_CROP.get())
+                .add(SDBlocks.HOT_PEPPERS_CROP.get())
+                .add(SDBlocks.PINK_MELON_CROP.get())
+                .add(SDBlocks.RADISH_CROP.get())
+                .add(SDBlocks.RED_CABBAGE_CROP.get())
+                .add(SDBlocks.STARFRUIT_CROP.get())
+                .add(SDBlocks.SUMMER_SPANGLE_CROP.get())
+                .add(SDBlocks.SUMMER_SQUASH_CROP.get())
+                .add(SDBlocks.AMARANTH_CROP.get())
+                .add(SDBlocks.ARTICHOKE_CROP.get())
+                .add(SDBlocks.BOK_CHOY_CROP.get())
+                .add(SDBlocks.BROCCOLI_CROP.get())
+                .add(SDBlocks.CRANBERRY_BUSH.get())
+                .add(SDBlocks.EGGPLANT_CROP.get())
+                .add(SDBlocks.FAIRY_ROSE_CROP.get())
+                .add(SDBlocks.GRAPES_CROP.get())
+                .add(SDBlocks.SUGAR_PUMPKIN_CROP.get())
+                .add(SDBlocks.YAM_CROP.get())
+                .add(SDBlocks.POWDERMELON_CROP.get())
+                .add(SDBlocks.ANCIENT_FRUIT_CROP.get())
+                .add(SDBlocks.QI_FRUIT_CROP.get())
+                .add(SDBlocks.SWEET_GEM_BERRY_CROP.get())
+                .add(SDBlocks.PINEAPPLE_CROP.get())
+                .add(SDBlocks.TARO_ROOT_CROP.get());
+
+        tag(BlockTags.SWORD_EFFICIENT).addTags(SDTags.BlockTags.CROPS);
+        tag(BlockTags.BEE_GROWABLES).addTags(SDTags.BlockTags.CROPS);
+        tag(BlockTags.MAINTAINS_FARMLAND).addTags(SDTags.BlockTags.CROPS);
+        tag(BlockTags.CROPS).addTags(SDTags.BlockTags.CROPS);
     }
 }

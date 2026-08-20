@@ -47,6 +47,7 @@
     "stardewdelight:qi_fruit_crate",
     "stardewdelight:sweet_gem_berry_crate",
     "stardewdelight:pineapple_crate",
-    "stardewdelight:taro_root_crate"
+    "stardewdelight:taro_root_crate",
+    "#stardewdelight:fruit_tree_saplings"
   ]
 }

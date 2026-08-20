@@ -1,5 +1,9 @@
 {
   "values": [
-    "#stardewdelight:fruit_tree_leaves"
+    "#stardewdelight:fruit_tree_leaves",
+    "#stardewdelight:fruit_tree_saplings",
+    "#stardewdelight:small_flowers",
+    "#stardewdelight:tall_flowers",
+    "#stardewdelight:crops"
   ]
 }

@@ -35,6 +35,15 @@ public class SDTags {
         public static final TagKey<Block> FRUIT_TREE_BUTTONS = create("fruit_tree_buttons");
         public static final TagKey<Block> FRUIT_TREE_LEAVES = create("fruit_tree_leaves");
 
+        public static final TagKey<Block> FRUIT_TREE_SAPLINGS = create("fruit_tree_saplings");
+
+
+        public static final TagKey<Block> SMALL_FLOWERS = create("small_flowers");
+        public static final TagKey<Block> TALL_FLOWERS = create("tall_flowers");
+
+
+        public static final TagKey<Block> CROPS = create("crops");
+
 
         public static final TagKey<Block> SD_STORAGE_BLOCKS = create("storage_blocks");
 
