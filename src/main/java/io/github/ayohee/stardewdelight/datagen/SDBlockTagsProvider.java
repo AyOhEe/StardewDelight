@@ -135,8 +135,8 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.LOG).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.LOG).getBlock().get());
 
-        tag(BlockTags.OVERWORLD_NATURAL_LOGS).addTags(SDTags.BlockTags.FRUIT_TREE_LOGS);
-        tag(BlockTags.SNAPS_GOAT_HORN).addTags(SDTags.BlockTags.FRUIT_TREE_LOGS);
+        tag(BlockTags.OVERWORLD_NATURAL_LOGS).addTag(SDTags.BlockTags.FRUIT_TREE_LOGS);
+        tag(BlockTags.SNAPS_GOAT_HORN).addTag(SDTags.BlockTags.FRUIT_TREE_LOGS);
 
 
         /*----- WOOD BLOCK TAGS -----*/
@@ -160,7 +160,7 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.STRIPPED_LOG).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.STRIPPED_LOG).getBlock().get());
 
-        tag(Tags.Blocks.STRIPPED_LOGS).addTags(SDTags.BlockTags.FRUIT_TREE_STRIPPED_LOGS);
+        tag(Tags.Blocks.STRIPPED_LOGS).addTag(SDTags.BlockTags.FRUIT_TREE_STRIPPED_LOGS);
 
 
         /*----- STRIPPED WOOD TAGS -----*/
@@ -173,7 +173,7 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.STRIPPED_WOOD).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.STRIPPED_WOOD).getBlock().get());
 
-        tag(Tags.Blocks.STRIPPED_WOODS).addTags(SDTags.BlockTags.FRUIT_TREE_STRIPPED_WOOD);
+        tag(Tags.Blocks.STRIPPED_WOODS).addTag(SDTags.BlockTags.FRUIT_TREE_STRIPPED_WOOD);
 
 
         /*----- PLANK TAGS -----*/
@@ -186,8 +186,8 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.PLANKS).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.PLANKS).getBlock().get());
 
-        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_PLANKS);
-        tag(BlockTags.PLANKS).addTags(SDTags.BlockTags.FRUIT_TREE_PLANKS);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_PLANKS);
+        tag(BlockTags.PLANKS).addTag(SDTags.BlockTags.FRUIT_TREE_PLANKS);
 
 
         /*----- STAIR TAGS -----*/
@@ -200,9 +200,9 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.STAIRS).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.STAIRS).getBlock().get());
 
-        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_STAIRS);
-        tag(BlockTags.WOODEN_STAIRS).addTags(SDTags.BlockTags.FRUIT_TREE_STAIRS);
-        tag(BlockTags.STAIRS).addTags(SDTags.BlockTags.FRUIT_TREE_STAIRS);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_STAIRS);
+        tag(BlockTags.WOODEN_STAIRS).addTag(SDTags.BlockTags.FRUIT_TREE_STAIRS);
+        tag(BlockTags.STAIRS).addTag(SDTags.BlockTags.FRUIT_TREE_STAIRS);
 
 
         /*----- SLAB TAGS -----*/
@@ -215,9 +215,9 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.SLAB).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.SLAB).getBlock().get());
 
-        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_SLABS);
-        tag(BlockTags.WOODEN_SLABS).addTags(SDTags.BlockTags.FRUIT_TREE_SLABS);
-        tag(BlockTags.SLABS).addTags(SDTags.BlockTags.FRUIT_TREE_SLABS);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_SLABS);
+        tag(BlockTags.WOODEN_SLABS).addTag(SDTags.BlockTags.FRUIT_TREE_SLABS);
+        tag(BlockTags.SLABS).addTag(SDTags.BlockTags.FRUIT_TREE_SLABS);
 
 
         /*----- FENCE TAGS -----*/
@@ -230,11 +230,11 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.FENCE).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.FENCE).getBlock().get());
 
-        tag(Tags.Blocks.FENCES_WOODEN).addTags(SDTags.BlockTags.FRUIT_TREE_FENCES);
-        tag(BlockTags.WOODEN_FENCES).addTags(SDTags.BlockTags.FRUIT_TREE_FENCES);
-        tag(Tags.Blocks.FENCES).addTags(SDTags.BlockTags.FRUIT_TREE_FENCES);
-        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_FENCES);
-        tag(BlockTags.FENCES).addTags(SDTags.BlockTags.FRUIT_TREE_FENCES);
+        tag(Tags.Blocks.FENCES_WOODEN).addTag(SDTags.BlockTags.FRUIT_TREE_FENCES);
+        tag(BlockTags.WOODEN_FENCES).addTag(SDTags.BlockTags.FRUIT_TREE_FENCES);
+        tag(Tags.Blocks.FENCES).addTag(SDTags.BlockTags.FRUIT_TREE_FENCES);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_FENCES);
+        tag(BlockTags.FENCES).addTag(SDTags.BlockTags.FRUIT_TREE_FENCES);
 
 
         /*----- FENCE GATE TAGS -----*/
@@ -247,11 +247,11 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.FENCE_GATE).getBlock().get());
 
-        tag(BlockTags.FENCE_GATES).addTags(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
-        tag(Tags.Blocks.FENCE_GATES_WOODEN).addTags(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
-        tag(BlockTags.UNSTABLE_BOTTOM_CENTER).addTags(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
-        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
-        tag(Tags.Blocks.FENCE_GATES).addTags(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
+        tag(BlockTags.FENCE_GATES).addTag(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
+        tag(Tags.Blocks.FENCE_GATES_WOODEN).addTag(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
+        tag(BlockTags.UNSTABLE_BOTTOM_CENTER).addTag(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
+        tag(Tags.Blocks.FENCE_GATES).addTag(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES);
 
 
         /*----- DOOR TAGS -----*/
@@ -264,10 +264,10 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
 
-        tag(BlockTags.WOODEN_DOORS).addTags(SDTags.BlockTags.FRUIT_TREE_DOORS);
-        tag(BlockTags.DOORS).addTags(SDTags.BlockTags.FRUIT_TREE_DOORS);
-        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_DOORS);
-        tag(BlockTags.MOB_INTERACTABLE_DOORS).addTags(SDTags.BlockTags.FRUIT_TREE_DOORS);
+        tag(BlockTags.WOODEN_DOORS).addTag(SDTags.BlockTags.FRUIT_TREE_DOORS);
+        tag(BlockTags.DOORS).addTag(SDTags.BlockTags.FRUIT_TREE_DOORS);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_DOORS);
+        tag(BlockTags.MOB_INTERACTABLE_DOORS).addTag(SDTags.BlockTags.FRUIT_TREE_DOORS);
 
 
         /*----- TRAPDOOR TAGS -----*/
@@ -280,9 +280,9 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.TRAPDOOR).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.TRAPDOOR).getBlock().get());
 
-        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_TRAPDOORS);
-        tag(BlockTags.TRAPDOORS).addTags(SDTags.BlockTags.FRUIT_TREE_TRAPDOORS);
-        tag(BlockTags.WOODEN_TRAPDOORS).addTags(SDTags.BlockTags.FRUIT_TREE_TRAPDOORS);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_TRAPDOORS);
+        tag(BlockTags.TRAPDOORS).addTag(SDTags.BlockTags.FRUIT_TREE_TRAPDOORS);
+        tag(BlockTags.WOODEN_TRAPDOORS).addTag(SDTags.BlockTags.FRUIT_TREE_TRAPDOORS);
 
 
         /*----- PRESSURE PLATE TAGS -----*/
@@ -295,10 +295,10 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE).getBlock().get());
 
-        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES);
-        tag(BlockTags.PRESSURE_PLATES).addTags(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES);
-        tag(BlockTags.WALL_POST_OVERRIDE).addTags(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES);
-        tag(BlockTags.WOODEN_PRESSURE_PLATES).addTags(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES);
+        tag(BlockTags.PRESSURE_PLATES).addTag(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES);
+        tag(BlockTags.WALL_POST_OVERRIDE).addTag(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES);
+        tag(BlockTags.WOODEN_PRESSURE_PLATES).addTag(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES);
 
 
         /*----- BUTTON TAGS -----*/
@@ -311,9 +311,9 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.BUTTON).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.BUTTON).getBlock().get());
 
-        tag(BlockTags.WOODEN_BUTTONS).addTags(SDTags.BlockTags.FRUIT_TREE_BUTTONS);
-        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_BUTTONS);
-        tag(BlockTags.BUTTONS).addTags(SDTags.BlockTags.FRUIT_TREE_BUTTONS);
+        tag(BlockTags.WOODEN_BUTTONS).addTag(SDTags.BlockTags.FRUIT_TREE_BUTTONS);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_BUTTONS);
+        tag(BlockTags.BUTTONS).addTag(SDTags.BlockTags.FRUIT_TREE_BUTTONS);
 
 
         /*----- LEAVES TAGS -----*/
@@ -326,13 +326,13 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get());
 
-        tag(BlockTags.REPLACEABLE_BY_TREES).addTags(SDTags.BlockTags.FRUIT_TREE_LEAVES);
-        tag(BlockTags.PARROTS_SPAWNABLE_ON).addTags(SDTags.BlockTags.FRUIT_TREE_LEAVES);
-        tag(BlockTags.MINEABLE_WITH_HOE).addTags(SDTags.BlockTags.FRUIT_TREE_LEAVES);
-        tag(BlockTags.SWORD_EFFICIENT).addTags(SDTags.BlockTags.FRUIT_TREE_LEAVES);
-        tag(BlockTags.LAVA_POOL_STONE_CANNOT_REPLACE).addTags(SDTags.BlockTags.FRUIT_TREE_LEAVES);
-        tag(BlockTags.LEAVES).addTags(SDTags.BlockTags.FRUIT_TREE_LEAVES);
-        tag(BlockTags.COMPLETES_FIND_TREE_TUTORIAL).addTags(SDTags.BlockTags.FRUIT_TREE_LEAVES);
+        tag(BlockTags.REPLACEABLE_BY_TREES).addTag(SDTags.BlockTags.FRUIT_TREE_LEAVES);
+        tag(BlockTags.PARROTS_SPAWNABLE_ON).addTag(SDTags.BlockTags.FRUIT_TREE_LEAVES);
+        tag(BlockTags.MINEABLE_WITH_HOE).addTag(SDTags.BlockTags.FRUIT_TREE_LEAVES);
+        tag(BlockTags.SWORD_EFFICIENT).addTag(SDTags.BlockTags.FRUIT_TREE_LEAVES);
+        tag(BlockTags.LAVA_POOL_STONE_CANNOT_REPLACE).addTag(SDTags.BlockTags.FRUIT_TREE_LEAVES);
+        tag(BlockTags.LEAVES).addTag(SDTags.BlockTags.FRUIT_TREE_LEAVES);
+        tag(BlockTags.COMPLETES_FIND_TREE_TUTORIAL).addTag(SDTags.BlockTags.FRUIT_TREE_LEAVES);
 
 
         /*----- CRATE TAGS -----*/
@@ -378,7 +378,7 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.PINEAPPLE_CRATE.getBlock().get())
                 .add(SDBlocks.TARO_ROOT_CRATE.getBlock().get());
 
-        tag(Tags.Blocks.STORAGE_BLOCKS).addTags(SDTags.BlockTags.SD_STORAGE_BLOCKS);
+        tag(Tags.Blocks.STORAGE_BLOCKS).addTag(SDTags.BlockTags.SD_STORAGE_BLOCKS);
 
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(SDBlocks.BLUE_JAZZ_BOX.getBlock().get())
@@ -462,9 +462,9 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.APPLE_SAPLING.getBlock().get())
                 .add(SDBlocks.POMEGRANATE_SAPLING.getBlock().get());
 
-        tag(BlockTags.SWORD_EFFICIENT).addTags(SDTags.BlockTags.FRUIT_TREE_SAPLINGS);
-        tag(BlockTags.MINEABLE_WITH_AXE).addTags(SDTags.BlockTags.FRUIT_TREE_SAPLINGS);
-        tag(BlockTags.SAPLINGS).addTags(SDTags.BlockTags.FRUIT_TREE_SAPLINGS);
+        tag(BlockTags.SWORD_EFFICIENT).addTag(SDTags.BlockTags.FRUIT_TREE_SAPLINGS);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_SAPLINGS);
+        tag(BlockTags.SAPLINGS).addTag(SDTags.BlockTags.FRUIT_TREE_SAPLINGS);
 
 
         /*----- FLOWER TAGS -----*/
@@ -472,20 +472,20 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.GROWN_BLUE_JAZZ.getBlock().get())
                 .add(SDBlocks.GROWN_SUMMER_SPANGLE.getBlock().get());
 
-        tag(BlockTags.SMALL_FLOWERS).addTags(SDTags.BlockTags.SMALL_FLOWERS);
-        tag(BlockTags.FLOWERS).addTags(SDTags.BlockTags.SMALL_FLOWERS);
-        tag(BlockTags.SWORD_EFFICIENT).addTags(SDTags.BlockTags.SMALL_FLOWERS);
-        tag(BlockTags.ENDERMAN_HOLDABLE).addTags(SDTags.BlockTags.SMALL_FLOWERS);
+        tag(BlockTags.SMALL_FLOWERS).addTag(SDTags.BlockTags.SMALL_FLOWERS);
+        tag(BlockTags.FLOWERS).addTag(SDTags.BlockTags.SMALL_FLOWERS);
+        tag(BlockTags.SWORD_EFFICIENT).addTag(SDTags.BlockTags.SMALL_FLOWERS);
+        tag(BlockTags.ENDERMAN_HOLDABLE).addTag(SDTags.BlockTags.SMALL_FLOWERS);
 
 
         tag(SDTags.BlockTags.TALL_FLOWERS)
                 .add(SDBlocks.GROWN_FAIRY_ROSE.getBlock().get());
 
-        tag(ModTags.UNAFFECTED_BY_RICH_SOIL).addTags(SDTags.BlockTags.TALL_FLOWERS);
-        tag(BlockTags.TALL_FLOWERS).addTags(SDTags.BlockTags.TALL_FLOWERS);
-        tag(BlockTags.FLOWERS).addTags(SDTags.BlockTags.TALL_FLOWERS);
-        tag(BlockTags.SWORD_EFFICIENT).addTags(SDTags.BlockTags.TALL_FLOWERS);
-        tag(BlockTags.REPLACEABLE_BY_TREES).addTags(SDTags.BlockTags.TALL_FLOWERS);
+        tag(ModTags.UNAFFECTED_BY_RICH_SOIL).addTag(SDTags.BlockTags.TALL_FLOWERS);
+        tag(BlockTags.TALL_FLOWERS).addTag(SDTags.BlockTags.TALL_FLOWERS);
+        tag(BlockTags.FLOWERS).addTag(SDTags.BlockTags.TALL_FLOWERS);
+        tag(BlockTags.SWORD_EFFICIENT).addTag(SDTags.BlockTags.TALL_FLOWERS);
+        tag(BlockTags.REPLACEABLE_BY_TREES).addTag(SDTags.BlockTags.TALL_FLOWERS);
 
 
         /*----- CROP TAGS -----*/
@@ -526,9 +526,9 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.PINEAPPLE_CROP.get())
                 .add(SDBlocks.TARO_ROOT_CROP.get());
 
-        tag(BlockTags.SWORD_EFFICIENT).addTags(SDTags.BlockTags.CROPS);
-        tag(BlockTags.BEE_GROWABLES).addTags(SDTags.BlockTags.CROPS);
-        tag(BlockTags.MAINTAINS_FARMLAND).addTags(SDTags.BlockTags.CROPS);
-        tag(BlockTags.CROPS).addTags(SDTags.BlockTags.CROPS);
+        tag(BlockTags.SWORD_EFFICIENT).addTag(SDTags.BlockTags.CROPS);
+        tag(BlockTags.BEE_GROWABLES).addTag(SDTags.BlockTags.CROPS);
+        tag(BlockTags.MAINTAINS_FARMLAND).addTag(SDTags.BlockTags.CROPS);
+        tag(BlockTags.CROPS).addTag(SDTags.BlockTags.CROPS);
     }
 }

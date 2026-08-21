@@ -129,7 +129,7 @@ public class SDTags {
         public static final TagKey<Item> SD_FOODS_FRUIT = create("foods/fruit");
         public static final TagKey<Item> SD_FOODS_VEGETABLE = create("foods/vegetable");
 
-        //TODO food and crop tags for each? farmers does that
+        //TODO crop tags for each? farmers does that
 
 
         public static final TagKey<Item> SD_STORAGE_BLOCKS = create("storage_blocks");
@@ -168,6 +168,34 @@ public class SDTags {
         public static final TagKey<Item> STORAGE_BLOCKS_SWEET_GEM_BERRY = common("storage_blocks/sweet_gem_berry");
         public static final TagKey<Item> STORAGE_BLOCKS_PINEAPPLE = common("storage_blocks/pineapple");
         public static final TagKey<Item> STORAGE_BLOCKS_TARO_ROOT = common("storage_blocks/taro_root");
+
+
+        public static final TagKey<Item> FOOD_STRAWBERRY = common("foods/strawberry");
+        public static final TagKey<Item> FOOD_BLUEBERRY = common("foods/blueberry");
+        public static final TagKey<Item> FOOD_CRANBERRY = common("foods/cranberry");
+        public static final TagKey<Item> FOOD_PINK_MELON = common("foods/pink_melon");
+        public static final TagKey<Item> FOOD_STARFRUIT = common("foods/starfruit");
+        public static final TagKey<Item> FOOD_GRAPES = common("foods/grapes");
+        public static final TagKey<Item> FOOD_POWDERMELON = common("foods/powdermelon");
+        public static final TagKey<Item> FOOD_PINEAPPLE = common("foods/pineapple");
+        public static final TagKey<Item> FOOD_CAULIFLOWER = common("foods/cauliflower");
+        public static final TagKey<Item> FOOD_GARLIC = common("foods/garlic");
+        public static final TagKey<Item> FOOD_GREEN_BEAN = common("foods/green_bean");
+        public static final TagKey<Item> FOOD_KALE = common("foods/kale");
+        public static final TagKey<Item> FOOD_PARSNIP = common("foods/parsnip");
+        public static final TagKey<Item> FOOD_CORN = common("foods/corn");
+        public static final TagKey<Item> FOOD_HOT_PEPPER = common("foods/hot_pepper");
+        public static final TagKey<Item> FOOD_CHILLI_PEPPER = common("foods/chilli_pepper");
+        public static final TagKey<Item> FOOD_RADISH = common("foods/radish");
+        public static final TagKey<Item> FOOD_RED_CABBAGE = common("foods/red_cabbage");
+        public static final TagKey<Item> FOOD_SQUASH = common("foods/squash");
+        public static final TagKey<Item> FOOD_ARTICHOKE = common("foods/artichoke");
+        public static final TagKey<Item> FOOD_BOK_CHOY = common("foods/bok_choy");
+        public static final TagKey<Item> FOOD_BROCCOLI = common("foods/broccoli");
+        public static final TagKey<Item> FOOD_EGGPLANT = common("foods/eggplant");
+        public static final TagKey<Item> FOOD_YAM = common("foods/yam");
+        public static final TagKey<Item> FOOD_TARO_ROOT = common("foods/taro_root");
+        public static final TagKey<Item> FOOD_TARO = common("foods/taro");
 
 
         public static final Map<WoodType, TagKey<Item>> LOG_TAGS = Map.of(

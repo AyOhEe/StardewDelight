@@ -1,10 +1,36 @@
-// 1.21.1	2026-08-21T17:30:53.9330746	Tags for minecraft:item mod id stardewdelight
+// 1.21.1	2026-08-21T17:41:32.3236122	Tags for minecraft:item mod id stardewdelight
 d69833ff124e5c7822a01083d9052688288cf598 data/c/tags/item/animal_foods.json
 c2a1e896205ace70e0412136aef43ebd93a74465 data/c/tags/item/crops.json
 ca17e9288f16b99fcb1b159bc1dc434078239ffb data/c/tags/item/foods.json
+12e9a3416e01569833c27aeb5e8f28ab607eddd8 data/c/tags/item/foods/artichoke.json
 60cf622cc505d8a0fa5b40c8d06da109d2bcd45f data/c/tags/item/foods/berry.json
+714ea833b0145d5b7b0f50bb0e3ad5da72d9d26d data/c/tags/item/foods/blueberry.json
+4b40efc159cfd5987e9cdc8cf8d4185eeb6b46bd data/c/tags/item/foods/bok_choy.json
+f7fe1d020d3f1703fb3d5d88d19aeab3f1f54e93 data/c/tags/item/foods/broccoli.json
+a3012f9be9ea912c4fc6a68b8ad11d7769686c2a data/c/tags/item/foods/cauliflower.json
+359b0143a1565bd3ffd698ab5f7c1e381c7026bb data/c/tags/item/foods/chilli_pepper.json
+1db5126b0f60cda3bc57b505ad51a53c739e48d1 data/c/tags/item/foods/corn.json
+1b5524a7da6697f7a74be1c6d33587a583524387 data/c/tags/item/foods/cranberry.json
+39988243163105452d6a33a83a3a397be6ecc069 data/c/tags/item/foods/eggplant.json
 4c72ec827c461cbcc1e3c4a3e0c9badee2d0a505 data/c/tags/item/foods/fruit.json
+fc24a84f4e32ab7769358f6966ef71f7f7611e35 data/c/tags/item/foods/garlic.json
+9736d2f0f243f4697a6e482789c8aedb78b88d14 data/c/tags/item/foods/grapes.json
+23514b42240f7882bcfbbe3811d745f31ecd8b6d data/c/tags/item/foods/green_bean.json
+359b0143a1565bd3ffd698ab5f7c1e381c7026bb data/c/tags/item/foods/hot_pepper.json
+9eba2944aaab81568f65ff0ecc5517755c9c0349 data/c/tags/item/foods/kale.json
+50991b856c82f2b67d914fd2e2c489b5cfeb0ec1 data/c/tags/item/foods/parsnip.json
+dc3003f064481097a831187b78d27c5acc7f2be4 data/c/tags/item/foods/pineapple.json
+6adea9d93219a7aae350dbecebd63e00e751f418 data/c/tags/item/foods/pink_melon.json
+d8fb848cc8bb5729dba21dd0a6efa469aabf057b data/c/tags/item/foods/powdermelon.json
+1e941c1bf6a02740fee8d99566be862c1ea9b58f data/c/tags/item/foods/radish.json
+dd103e427ac2b18ac5a04f822c4d7bcce693dec9 data/c/tags/item/foods/red_cabbage.json
+f5b81af01f1b187e1571cf62fe9a145b63a6cae7 data/c/tags/item/foods/squash.json
+dccc4e55105bb4c2b166f4e1058814246a7b0bf2 data/c/tags/item/foods/starfruit.json
+e91a81bf67fef5ad9932993a7ed2edf1a15d7eaa data/c/tags/item/foods/strawberry.json
+5a804f4642aa5b79432c4eea7423778f911efc09 data/c/tags/item/foods/taro.json
+5a804f4642aa5b79432c4eea7423778f911efc09 data/c/tags/item/foods/taro_root.json
 bab73017c9b721d99f7517526544a2b7db4c4ca6 data/c/tags/item/foods/vegetable.json
+c651be0f80c3332beb1cc86e606fd7d58929947a data/c/tags/item/foods/yam.json
 089f3fb6a4f2aea3626c50b543b82c4e168496b2 data/c/tags/item/seeds.json
 43c31c6bf4c09e192a705badfa3bbb1a3c8171b7 data/c/tags/item/storage_blocks.json
 967eac9914effd1245c5961756edbb79b8946582 data/c/tags/item/storage_blocks/amaranth.json

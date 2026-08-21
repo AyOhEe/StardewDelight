@@ -240,6 +240,31 @@ public class SDItemTagsProvider extends ItemTagsProvider {
         tag(Tags.Items.FOODS_VEGETABLE).addTag(SDTags.ItemTags.SD_FOODS_VEGETABLE);
 
 
-        // TODO individual food tags
+        tag(SDTags.ItemTags.FOOD_STRAWBERRY).add(SDItems.STRAWBERRY.asItem());
+        tag(SDTags.ItemTags.FOOD_BLUEBERRY).add(SDItems.BLUEBERRY.asItem());
+        tag(SDTags.ItemTags.FOOD_CRANBERRY).add(SDItems.CRANBERRY.asItem());
+        tag(SDTags.ItemTags.FOOD_PINK_MELON).add(SDItems.PINK_MELON.asItem());
+        tag(SDTags.ItemTags.FOOD_STARFRUIT).add(SDItems.STARFRUIT.asItem());
+        tag(SDTags.ItemTags.FOOD_GRAPES).add(SDItems.GRAPES.asItem());
+        tag(SDTags.ItemTags.FOOD_POWDERMELON).add(SDItems.POWDERMELON.asItem());
+        tag(SDTags.ItemTags.FOOD_PINEAPPLE).add(SDItems.PINEAPPLE.asItem());
+        tag(SDTags.ItemTags.FOOD_CAULIFLOWER).add(SDItems.CAULIFLOWER.asItem());
+        tag(SDTags.ItemTags.FOOD_GARLIC).add(SDItems.GARLIC.asItem());
+        tag(SDTags.ItemTags.FOOD_GREEN_BEAN).add(SDItems.GREEN_BEAN.asItem());
+        tag(SDTags.ItemTags.FOOD_KALE).add(SDItems.KALE.asItem());
+        tag(SDTags.ItemTags.FOOD_PARSNIP).add(SDItems.PARSNIP.asItem());
+        tag(SDTags.ItemTags.FOOD_CORN).add(SDItems.CORN.asItem());
+        tag(SDTags.ItemTags.FOOD_HOT_PEPPER).add(SDItems.HOT_PEPPER.asItem());
+        tag(SDTags.ItemTags.FOOD_CHILLI_PEPPER).add(SDItems.HOT_PEPPER.asItem());
+        tag(SDTags.ItemTags.FOOD_RADISH).add(SDItems.RADISH.asItem());
+        tag(SDTags.ItemTags.FOOD_RED_CABBAGE).add(SDItems.RED_CABBAGE.asItem());
+        tag(SDTags.ItemTags.FOOD_SQUASH).add(SDItems.SUMMER_SQUASH.asItem());
+        tag(SDTags.ItemTags.FOOD_ARTICHOKE).add(SDItems.ARTICHOKE.asItem());
+        tag(SDTags.ItemTags.FOOD_BOK_CHOY).add(SDItems.BOK_CHOY.asItem());
+        tag(SDTags.ItemTags.FOOD_BROCCOLI).add(SDItems.BROCCOLI.asItem());
+        tag(SDTags.ItemTags.FOOD_EGGPLANT).add(SDItems.EGGPLANT.asItem());
+        tag(SDTags.ItemTags.FOOD_YAM).add(SDItems.YAM.asItem());
+        tag(SDTags.ItemTags.FOOD_TARO_ROOT).add(SDItems.TARO_ROOT.asItem());
+        tag(SDTags.ItemTags.FOOD_TARO).add(SDItems.TARO_ROOT.asItem());
     }
 }
