@@ -57,7 +57,10 @@ public class SDBlockLoot extends BlockLootSubProvider {
 
         for (Map<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>> blocks : SDBlocks.WOOD_BLOCKS.values()) {
             for (Map.Entry<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>> entry : blocks.entrySet()) {
-                if (entry.getKey() == SDBlocks.WoodBlockTypes.LEAVES || entry.getKey() == SDBlocks.WoodBlockTypes.DOOR) {
+                if (entry.getKey() == SDBlocks.WoodBlockTypes.LEAVES
+                        || entry.getKey() == SDBlocks.WoodBlockTypes.DOOR
+                        || entry.getKey() == SDBlocks.WoodBlockTypes.WALL_SIGN
+                        || entry.getKey() == SDBlocks.WoodBlockTypes.WALL_HANGING_SIGN) {
                     continue;
                 }
                 dropSelf(entry.getValue().getBlock().get());

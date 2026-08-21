@@ -1,11 +1,21 @@
 package io.github.ayohee.stardewdelight.register;
 
 import io.github.ayohee.stardewdelight.SDBlockStateProperties;
+import io.github.ayohee.stardewdelight.StardewDelight;
 import io.github.ayohee.stardewdelight.content.crops.*;
+import io.github.ayohee.stardewdelight.content.signs.FruitTreeCeilingHangingSignBlock;
+import io.github.ayohee.stardewdelight.content.signs.FruitTreeStandingSignBlock;
+import io.github.ayohee.stardewdelight.content.signs.FruitTreeWallHangingSignBlock;
+import io.github.ayohee.stardewdelight.content.signs.FruitTreeWallSignBlock;
 import io.github.ayohee.stardewdelight.content.trees.FruitSaplingBlock;
 import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.HangingSignItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SignItem;
 import net.minecraft.world.item.component.SuspiciousStewEffects;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -17,11 +27,13 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.*;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
+import static io.github.ayohee.stardewdelight.StardewDelight.MODID;
 import static io.github.ayohee.stardewdelight.register.SDRegistries.BLOCKS;
 import static io.github.ayohee.stardewdelight.register.SDRegistries.ITEMS;
 import static io.github.ayohee.stardewdelight.register.SDTabs.TAB_CONTENTS;
@@ -737,6 +749,22 @@ public class SDBlocks {
         return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)));
     }
 
+    private static <B extends Block> DeferredBlockItem<B> sign(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return new DeferredBlockItem<>(block(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN))));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> wallSign(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return new DeferredBlockItem<>(block(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN))));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> hangingSign(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return new DeferredBlockItem<>(block(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN))));
+    }
+
+    private static <B extends Block> DeferredBlockItem<B> wallHangingSign(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return new DeferredBlockItem<>(block(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN))));
+    }
+
     /*----- STATIC INITIALIZER -----*/
     public static void register() { }
 
@@ -755,7 +783,12 @@ public class SDBlocks {
         TRAPDOOR("", "trapdoor"),
         PRESSURE_PLATE("", "pressure_plate"),
         BUTTON("", "button"),
-        LEAVES("", "leaves");
+        LEAVES("", "leaves"),
+
+        SIGN("", "sign"),
+        WALL_SIGN("", "wall_sign"),
+        HANGING_SIGN("", "hanging_sign"),
+        WALL_HANGING_SIGN("", "wall_hanging_sign");
 
         private String prefix;
         private String suffix;
@@ -791,6 +824,29 @@ public class SDBlocks {
             map.put(BUTTON, button(BUTTON.of(type), p -> new ButtonBlock(type.setType(), 30, p), p -> p));
             map.put(LEAVES, leaves(LEAVES.of(type), LeavesBlock::new, p -> p));
 
+            map.put(SIGN, sign(SIGN.of(type), p -> new FruitTreeStandingSignBlock(type, p), p -> p));
+            map.put(WALL_SIGN, wallSign(WALL_SIGN.of(type), p -> new FruitTreeWallSignBlock(type, p), p -> p));
+            map.put(HANGING_SIGN, hangingSign(HANGING_SIGN.of(type), p -> new FruitTreeCeilingHangingSignBlock(type, p), p -> p));
+            map.put(WALL_HANGING_SIGN, wallHangingSign(WALL_HANGING_SIGN.of(type), p -> new FruitTreeWallHangingSignBlock(type, p), p -> p));
+
+            DeferredItem<SignItem> signItem = ITEMS.registerItem(
+                    SIGN.of(type),
+                    p -> new SignItem(p, map.get(SIGN).getBlock().get(), map.get(WALL_SIGN).getBlock().get())
+            );
+            DeferredItem<HangingSignItem> hangingSignItem = ITEMS.registerItem(
+                    HANGING_SIGN.of(type),
+                    p -> new HangingSignItem(map.get(HANGING_SIGN).getBlock().get(), map.get(WALL_HANGING_SIGN).getBlock().get(), p)
+            );
+
+            TAB_CONTENTS.get(currentTab).add(signItem);
+            TAB_CONTENTS.get(currentTab).add(hangingSignItem);
+
+            map.get(SIGN).provideItem(signItem);
+            map.get(WALL_SIGN).provideItem(signItem);
+            map.get(HANGING_SIGN).provideItem(hangingSignItem);
+            map.get(WALL_HANGING_SIGN).provideItem(hangingSignItem);
+
+
             DeferredBlockItem<?> log = map.get(LOG);
             DeferredBlockItem<?> wood = map.get(WOOD);
             DeferredBlockItem<?> stripped_log = map.get(STRIPPED_LOG);
@@ -814,16 +870,34 @@ public class SDBlocks {
             POMEGRANATE_SET = BlockSetType.register(new BlockSetType("pomegranate"));
 
         public static final WoodType
-                APRICOT = WoodType.register(new WoodType("apricot", APRICOT_SET)),
-                BANANA = WoodType.register(new WoodType("banana", BANANA_SET)),
-                MANGO = WoodType.register(new WoodType("mango", MANGO_SET)),
-                ORANGE = WoodType.register(new WoodType("orange", ORANGE_SET)),
-                PEACH = WoodType.register(new WoodType("peach", PEACH_SET)),
-                APPLE = WoodType.register(new WoodType("apple", APPLE_SET)),
-                POMEGRANATE = WoodType.register(new WoodType("pomegranate", POMEGRANATE_SET));
+                APRICOT = register("apricot", APRICOT_SET),
+                BANANA = register("banana", BANANA_SET),
+                MANGO = register("mango", MANGO_SET),
+                ORANGE = register("orange", ORANGE_SET),
+                PEACH = register("peach", PEACH_SET),
+                APPLE = register("apple", APPLE_SET),
+                POMEGRANATE = register("pomegranate", POMEGRANATE_SET);
 
         public static WoodType[] values() {
             return new WoodType[] {APRICOT, BANANA, MANGO, ORANGE, PEACH, APPLE, POMEGRANATE};
+        }
+
+        private static WoodType register(String name, BlockSetType set) {
+            WoodType type = new WoodType(name, set);
+            WoodType.register(type);
+
+            Sheets.SIGN_MATERIALS.put(type, createSignMaterial(type));
+            Sheets.HANGING_SIGN_MATERIALS.put(type, createHangingSignMaterial(type));
+
+            return type;
+        }
+
+        private static Material createSignMaterial(WoodType type) {
+            return new Material(Sheets.SIGN_SHEET, StardewDelight.modLoc("entity/signs/" + type.name()));
+        }
+
+        private static Material createHangingSignMaterial(WoodType type) {
+            return new Material(Sheets.SIGN_SHEET, StardewDelight.modLoc("entity/signs/hanging/" + type.name()));
         }
     }
 }

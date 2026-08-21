@@ -13,6 +13,9 @@ issueTrackerURL="https://github.com/AyOhEe/StardewDelight/issues"
     authors = "${mod_authors}"
     description = '''${mod_description}'''
 
+[[mixins]]
+config="stardewdelight.mixins.json"
+
 [[dependencies."${mod_id}"]]
     modId = "neoforge"
     type = "required"

@@ -93,6 +93,9 @@ public class SDRecipeProvider extends RecipeProvider {
             trapdoorBuilder(blocks.get(SDBlocks.WoodBlockTypes.TRAPDOOR), Ingredient.of(blocks.get(SDBlocks.WoodBlockTypes.PLANKS))).unlockedBy("has_planks", hasPlanks).save(recipeOutput);
             pressurePlateBuilder(RecipeCategory.REDSTONE, blocks.get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE), Ingredient.of(blocks.get(SDBlocks.WoodBlockTypes.PLANKS))).unlockedBy("has_planks", hasPlanks).save(recipeOutput);
             buttonBuilder(blocks.get(SDBlocks.WoodBlockTypes.BUTTON), Ingredient.of(blocks.get(SDBlocks.WoodBlockTypes.PLANKS))).unlockedBy("has_planks", hasPlanks).save(recipeOutput);
+
+            signBuilder(blocks.get(SDBlocks.WoodBlockTypes.SIGN), Ingredient.of(blocks.get(SDBlocks.WoodBlockTypes.PLANKS))).unlockedBy("has_planks", hasPlanks).save(recipeOutput);
+            hangingSign(recipeOutput, blocks.get(SDBlocks.WoodBlockTypes.HANGING_SIGN), blocks.get(SDBlocks.WoodBlockTypes.STRIPPED_LOG));
         }
     }
 

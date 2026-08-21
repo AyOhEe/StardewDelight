@@ -104,6 +104,9 @@ public class SDItemModelProvider extends ItemModelProvider {
             simpleBlockItem(blocks.get(SDBlocks.WoodBlockTypes.PRESSURE_PLATE).getBlock().get());
             withExistingParent(StardewDelight.modLoc(woodType.name() + "_button").toString(), StardewDelight.modLoc("block/" + woodType.name() + "_button_inventory"));
             simpleBlockItem(blocks.get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get());
+
+            basicItem(blocks.get(SDBlocks.WoodBlockTypes.SIGN).getItem().get());
+            basicItem(blocks.get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getItem().get());
         }
 
 

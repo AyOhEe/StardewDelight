@@ -21,7 +21,6 @@ public class SDItemTagsProvider extends ItemTagsProvider {
         super(output, provider, blockTagProvider, StardewDelight.MODID, existingFileHelper);
     }
 
-
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         /*----- FRUIT TREE TAGS -----*/
@@ -156,6 +155,30 @@ public class SDItemTagsProvider extends ItemTagsProvider {
         tag(ItemTags.COMPLETES_FIND_TREE_TUTORIAL).addTag(SDTags.ItemTags.FRUIT_TREE_LEAVES);
 
 
+        /*----- SIGN TAGS -----*/
+        tag(SDTags.ItemTags.FRUIT_TREE_SIGNS)
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.SIGN).getItem().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.SIGN).getItem().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.SIGN).getItem().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.SIGN).getItem().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.SIGN).getItem().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.SIGN).getItem().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.SIGN).getItem().get());
+
+        tag(ItemTags.SIGNS).addTag(SDTags.ItemTags.FRUIT_TREE_SIGNS);
+
+
+        /*----- HANGING SIGN TAGS -----*/
+        tag(SDTags.ItemTags.FRUIT_TREE_HANGING_SIGNS)
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getItem().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getItem().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getItem().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getItem().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getItem().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getItem().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getItem().get());
+
+        tag(ItemTags.HANGING_SIGNS).addTag(SDTags.ItemTags.FRUIT_TREE_HANGING_SIGNS);
 
 
         /*----- SAPLING TAGS -----*/

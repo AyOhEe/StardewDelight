@@ -35,6 +35,11 @@ public class SDTags {
         public static final TagKey<Block> FRUIT_TREE_BUTTONS = create("fruit_tree_buttons");
         public static final TagKey<Block> FRUIT_TREE_LEAVES = create("fruit_tree_leaves");
 
+        public static final TagKey<Block> FRUIT_TREE_SIGNS = create("fruit_tree_signs");
+        public static final TagKey<Block> FRUIT_TREE_WALL_SIGNS = create("fruit_tree_wall_signs");
+        public static final TagKey<Block> FRUIT_TREE_HANGING_SIGNS = create("fruit_tree_hanging_signs");
+        public static final TagKey<Block> FRUIT_TREE_WALL_HANGING_SIGNS = create("fruit_tree_wall_hanging_signs");
+
         public static final TagKey<Block> FRUIT_TREE_SAPLINGS = create("fruit_tree_saplings");
 
 
@@ -125,6 +130,9 @@ public class SDTags {
         public static final TagKey<Item> FRUIT_TREE_PRESSURE_PLATES = create("fruit_tree_pressure_plates");
         public static final TagKey<Item> FRUIT_TREE_BUTTONS = create("fruit_tree_buttons");
         public static final TagKey<Item> FRUIT_TREE_LEAVES = create("fruit_tree_leaves");
+
+        public static final TagKey<Item> FRUIT_TREE_SIGNS = create("fruit_tree_signs");
+        public static final TagKey<Item> FRUIT_TREE_HANGING_SIGNS = create("fruit_tree_hanging_signs");
 
         public static final TagKey<Item> FRUIT_TREE_SAPLINGS = create("fruit_tree_saplings");
 

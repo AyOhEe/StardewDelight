@@ -335,6 +335,70 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.COMPLETES_FIND_TREE_TUTORIAL).addTag(SDTags.BlockTags.FRUIT_TREE_LEAVES);
 
 
+        /*----- SIGN TAGS -----*/
+        tag(SDTags.BlockTags.FRUIT_TREE_SIGNS)
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.SIGN).getBlock().get());
+
+        tag(BlockTags.SIGNS).addTag(SDTags.BlockTags.FRUIT_TREE_SIGNS);
+        tag(BlockTags.WALL_POST_OVERRIDE).addTag(SDTags.BlockTags.FRUIT_TREE_SIGNS);
+        tag(BlockTags.ALL_SIGNS).addTag(SDTags.BlockTags.FRUIT_TREE_SIGNS);
+        tag(BlockTags.STANDING_SIGNS).addTag(SDTags.BlockTags.FRUIT_TREE_SIGNS);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_SIGNS);
+
+
+        tag(SDTags.BlockTags.FRUIT_TREE_WALL_SIGNS)
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.WALL_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.WALL_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.WALL_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.WALL_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.WALL_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.WALL_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.WALL_SIGN).getBlock().get());
+
+        tag(BlockTags.WALL_SIGNS).addTag(SDTags.BlockTags.FRUIT_TREE_WALL_SIGNS);
+        tag(BlockTags.SIGNS).addTag(SDTags.BlockTags.FRUIT_TREE_WALL_SIGNS);
+        tag(BlockTags.WALL_POST_OVERRIDE).addTag(SDTags.BlockTags.FRUIT_TREE_WALL_SIGNS);
+        tag(BlockTags.ALL_SIGNS).addTag(SDTags.BlockTags.FRUIT_TREE_WALL_SIGNS);
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_WALL_SIGNS);
+
+
+        /*----- HANGING SIGN TAGS -----*/
+        tag(SDTags.BlockTags.FRUIT_TREE_HANGING_SIGNS)
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getBlock().get());
+
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_HANGING_SIGNS);
+        tag(BlockTags.ALL_HANGING_SIGNS).addTag(SDTags.BlockTags.FRUIT_TREE_HANGING_SIGNS);
+        tag(BlockTags.ALL_SIGNS).addTag(SDTags.BlockTags.FRUIT_TREE_HANGING_SIGNS);
+        tag(BlockTags.CEILING_HANGING_SIGNS).addTag(SDTags.BlockTags.FRUIT_TREE_HANGING_SIGNS);
+
+
+        tag(SDTags.BlockTags.FRUIT_TREE_WALL_HANGING_SIGNS)
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.WALL_HANGING_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.WALL_HANGING_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.WALL_HANGING_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.WALL_HANGING_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.WALL_HANGING_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.WALL_HANGING_SIGN).getBlock().get())
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.WALL_HANGING_SIGN).getBlock().get());
+
+        tag(BlockTags.MINEABLE_WITH_AXE).addTag(SDTags.BlockTags.FRUIT_TREE_WALL_HANGING_SIGNS);
+        tag(BlockTags.WALL_HANGING_SIGNS).addTag(SDTags.BlockTags.FRUIT_TREE_WALL_HANGING_SIGNS);
+        tag(BlockTags.ALL_HANGING_SIGNS).addTag(SDTags.BlockTags.FRUIT_TREE_WALL_HANGING_SIGNS);
+        tag(BlockTags.ALL_SIGNS).addTag(SDTags.BlockTags.FRUIT_TREE_WALL_HANGING_SIGNS);
+
+
         /*----- CRATE TAGS -----*/
         tag(ModTags.STRAW_BLOCKS).add(SDBlocks.COFFEE_BAG.getBlock().get());
         tag(ModTags.MINEABLE_WITH_KNIFE).add(SDBlocks.COFFEE_BAG.getBlock().get());

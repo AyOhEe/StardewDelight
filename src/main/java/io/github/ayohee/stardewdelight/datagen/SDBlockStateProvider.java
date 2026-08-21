@@ -163,6 +163,8 @@ public class SDBlockStateProvider extends BlockStateProvider {
             Block leavesBlock = blocks.get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get();
             this.simpleBlock(leavesBlock, this.models().cubeAll(this.name(leavesBlock), this.blockTexture(leavesBlock)).renderType(mcLoc("cutout")));
 
+            signBlock((StandingSignBlock) blocks.get(SDBlocks.WoodBlockTypes.SIGN).getBlock().get(), (WallSignBlock) blocks.get(SDBlocks.WoodBlockTypes.WALL_SIGN).getBlock().get(), planksTexture);
+            hangingSignBlock((CeilingHangingSignBlock) blocks.get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getBlock().get(), (WallHangingSignBlock) blocks.get(SDBlocks.WoodBlockTypes.WALL_HANGING_SIGN).getBlock().get(), strippedLogTexture);
 
             // Inventory models
             this.models().withExistingParent(woodType.name() + "_fence_inventory", "block/fence_inventory").texture("texture", planksTexture);
