@@ -35,22 +35,125 @@ public class SDItemTagsProvider extends ItemTagsProvider {
 
 
         /*----- COMMON LOG TAGS -----*/
+        tag(ItemTags.LOGS).addTags(
+                SDTags.ItemTags.APRICOT_LOGS,
+                SDTags.ItemTags.BANANA_LOGS,
+                SDTags.ItemTags.MANGO_LOGS,
+                SDTags.ItemTags.ORANGE_LOGS,
+                SDTags.ItemTags.PEACH_LOGS,
+                SDTags.ItemTags.APPLE_LOGS,
+                SDTags.ItemTags.POMEGRANATE_LOGS
+        );
+
+        tag(ItemTags.LOGS_THAT_BURN).addTags(
+                SDTags.ItemTags.APRICOT_LOGS,
+                SDTags.ItemTags.BANANA_LOGS,
+                SDTags.ItemTags.MANGO_LOGS,
+                SDTags.ItemTags.ORANGE_LOGS,
+                SDTags.ItemTags.PEACH_LOGS,
+                SDTags.ItemTags.APPLE_LOGS,
+                SDTags.ItemTags.POMEGRANATE_LOGS
+        );
+
+        tag(ItemTags.COMPLETES_FIND_TREE_TUTORIAL).addTags(
+                SDTags.ItemTags.APRICOT_LOGS,
+                SDTags.ItemTags.BANANA_LOGS,
+                SDTags.ItemTags.MANGO_LOGS,
+                SDTags.ItemTags.ORANGE_LOGS,
+                SDTags.ItemTags.PEACH_LOGS,
+                SDTags.ItemTags.APPLE_LOGS,
+                SDTags.ItemTags.POMEGRANATE_LOGS
+        );
 
 
         /*----- LOG BLOCK TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_LOGS, SDTags.ItemTags.FRUIT_TREE_LOGS);
+
+
         /*----- WOOD BLOCK TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_WOOD, SDTags.ItemTags.FRUIT_TREE_WOOD);
+
+
         /*----- STRIPPED LOG TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_STRIPPED_LOGS, SDTags.ItemTags.FRUIT_TREE_STRIPPED_LOGS);
+
+        tag(Tags.Items.STRIPPED_LOGS).addTag(SDTags.ItemTags.FRUIT_TREE_STRIPPED_LOGS);
+
+
         /*----- STRIPPED WOOD TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_STRIPPED_WOOD, SDTags.ItemTags.FRUIT_TREE_STRIPPED_WOOD);
+
+        tag(Tags.Items.STRIPPED_WOODS).addTag(SDTags.ItemTags.FRUIT_TREE_STRIPPED_WOOD);
+
+
         /*----- PLANK TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_PLANKS, SDTags.ItemTags.FRUIT_TREE_PLANKS);
+
+        tag(ItemTags.PLANKS).addTag(SDTags.ItemTags.FRUIT_TREE_PLANKS);
+
+
         /*----- STAIR TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_STAIRS, SDTags.ItemTags.FRUIT_TREE_STAIRS);
+
+        tag(ItemTags.STAIRS).addTag(SDTags.ItemTags.FRUIT_TREE_STAIRS);
+        tag(ItemTags.WOODEN_STAIRS).addTag(SDTags.ItemTags.FRUIT_TREE_STAIRS);
+
+
         /*----- SLAB TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_SLABS, SDTags.ItemTags.FRUIT_TREE_SLABS);
+
+        tag(ItemTags.SLABS).addTag(SDTags.ItemTags.FRUIT_TREE_SLABS);
+        tag(ItemTags.WOODEN_SLABS).addTag(SDTags.ItemTags.FRUIT_TREE_SLABS);
+
+
         /*----- FENCE TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_FENCES, SDTags.ItemTags.FRUIT_TREE_FENCES);
+
+        tag(ItemTags.FENCES).addTag(SDTags.ItemTags.FRUIT_TREE_FENCES);
+        tag(ItemTags.WOODEN_FENCES).addTag(SDTags.ItemTags.FRUIT_TREE_FENCES);
+        tag(Tags.Items.FENCES).addTag(SDTags.ItemTags.FRUIT_TREE_FENCES);
+        tag(Tags.Items.FENCES_WOODEN).addTag(SDTags.ItemTags.FRUIT_TREE_FENCES);
+
+
         /*----- FENCE GATE TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_FENCE_GATES, SDTags.ItemTags.FRUIT_TREE_FENCE_GATES);
+
+        tag(ItemTags.FENCE_GATES).addTag(SDTags.ItemTags.FRUIT_TREE_FENCE_GATES);
+        tag(Tags.Items.FENCE_GATES).addTag(SDTags.ItemTags.FRUIT_TREE_FENCE_GATES);
+        tag(Tags.Items.FENCE_GATES_WOODEN).addTag(SDTags.ItemTags.FRUIT_TREE_FENCE_GATES);
+
+
         /*----- DOOR TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_DOORS, SDTags.ItemTags.FRUIT_TREE_DOORS);
+
+        tag(ItemTags.DOORS).addTag(SDTags.ItemTags.FRUIT_TREE_DOORS);
+        tag(ItemTags.WOODEN_DOORS).addTag(SDTags.ItemTags.FRUIT_TREE_DOORS);
+
+
         /*----- TRAPDOOR TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_TRAPDOORS, SDTags.ItemTags.FRUIT_TREE_TRAPDOORS);
+
+        tag(ItemTags.TRAPDOORS).addTag(SDTags.ItemTags.FRUIT_TREE_TRAPDOORS);
+        tag(ItemTags.WOODEN_TRAPDOORS).addTag(SDTags.ItemTags.FRUIT_TREE_TRAPDOORS);
+
+
         /*----- PRESSURE PLATE TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_PRESSURE_PLATES, SDTags.ItemTags.FRUIT_TREE_PRESSURE_PLATES);
+
+        tag(ItemTags.WOODEN_PRESSURE_PLATES).addTag(SDTags.ItemTags.FRUIT_TREE_PRESSURE_PLATES);
+
+
         /*----- BUTTON TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_BUTTONS, SDTags.ItemTags.FRUIT_TREE_BUTTONS);
+
+        tag(ItemTags.BUTTONS).addTag(SDTags.ItemTags.FRUIT_TREE_BUTTONS);
+        tag(ItemTags.WOODEN_BUTTONS).addTag(SDTags.ItemTags.FRUIT_TREE_BUTTONS);
+
+
         /*----- LEAVES TAGS -----*/
+        copy(SDTags.BlockTags.FRUIT_TREE_LEAVES, SDTags.ItemTags.FRUIT_TREE_LEAVES);
+
+        tag(ItemTags.COMPLETES_FIND_TREE_TUTORIAL).addTag(SDTags.ItemTags.FRUIT_TREE_LEAVES);
 
 
 
