@@ -122,6 +122,15 @@ public class SDTags {
         public static final TagKey<Item> SMALL_FLOWERS = create("small_flowers");
         public static final TagKey<Item> TALL_FLOWERS = create("tall_flowers");
 
+        public static final TagKey<Item> SD_SEEDS = create("seeds");
+        public static final TagKey<Item> SD_CROPS = create("crops");
+        public static final TagKey<Item> SD_FOODS = create("foods");
+        public static final TagKey<Item> SD_FOODS_BERRY = create("foods/berry");
+        public static final TagKey<Item> SD_FOODS_FRUIT = create("foods/fruit");
+        public static final TagKey<Item> SD_FOODS_VEGETABLE = create("foods/vegetable");
+
+        //TODO food and crop tags for each? farmers does that
+
 
         public static final TagKey<Item> SD_STORAGE_BLOCKS = create("storage_blocks");
 

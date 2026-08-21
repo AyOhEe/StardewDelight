@@ -3,6 +3,7 @@ package io.github.ayohee.stardewdelight.datagen;
 import io.github.ayohee.stardewdelight.SDTags;
 import io.github.ayohee.stardewdelight.StardewDelight;
 import io.github.ayohee.stardewdelight.register.SDBlocks;
+import io.github.ayohee.stardewdelight.register.SDItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -118,10 +119,127 @@ public class SDItemTagsProvider extends ItemTagsProvider {
 
 
         /*----- SEED TAGS -----*/
+        tag(SDTags.ItemTags.SD_SEEDS)
+                .add(SDItems.JAZZ_SEEDS.asItem())
+                .add(SDItems.CAULIFLOWER_SEEDS.asItem())
+                .add(SDItems.COFFEE_BEAN.asItem())
+                .add(SDItems.GARLIC_SEEDS.asItem())
+                .add(SDItems.BEAN_STARTER.asItem())
+                .add(SDItems.KALE_SEEDS.asItem())
+                .add(SDItems.PARSNIP_SEEDS.asItem())
+                .add(SDItems.RHUBARB_SEEDS.asItem())
+                .add(SDItems.STRAWBERRY_SEEDS.asItem())
+                .add(SDItems.BLUEBERRY_SEEDS.asItem())
+                .add(SDItems.CORN_SEEDS.asItem())
+                .add(SDItems.HOPS_STARTER.asItem())
+                .add(SDItems.PEPPER_SEEDS.asItem())
+                .add(SDItems.PINK_MELON_SEEDS.asItem())
+                .add(SDItems.RADISH_SEEDS.asItem())
+                .add(SDItems.RED_CABBAGE_SEEDS.asItem())
+                .add(SDItems.STARFRUIT_SEEDS.asItem())
+                .add(SDItems.SPANGLE_SEEDS.asItem())
+                .add(SDItems.SUMMER_SQUASH_SEEDS.asItem())
+                .add(SDItems.AMARANTH_SEEDS.asItem())
+                .add(SDItems.ARTICHOKE_SEEDS.asItem())
+                .add(SDItems.BOK_CHOY_SEEDS.asItem())
+                .add(SDItems.BROCCOLI_SEEDS.asItem())
+                .add(SDItems.CRANBERRY_SEEDS.asItem())
+                .add(SDItems.EGGPLANT_SEEDS.asItem())
+                .add(SDItems.FAIRY_SEEDS.asItem())
+                .add(SDItems.GRAPE_STARTER.asItem())
+                .add(SDItems.SUGAR_PUMPKIN_SEEDS.asItem())
+                .add(SDItems.YAM_SEEDS.asItem())
+                .add(SDItems.POWDERMELON_SEEDS.asItem())
+                .add(SDItems.ANCIENT_SEEDS.asItem())
+                .add(SDItems.QI_BEAN.asItem())
+                .add(SDItems.RARE_SEED.asItem())
+                .add(SDItems.PINEAPPLE_SEEDS.asItem())
+                .add(SDItems.TARO_TUBER.asItem());
+
+
+        tag(Tags.Items.SEEDS).addTag(SDTags.ItemTags.SD_SEEDS);
+        tag(ItemTags.VILLAGER_PLANTABLE_SEEDS).addTag(SDTags.ItemTags.SD_SEEDS);
 
 
         /*----- CROP ITEM TAGS -----*/
+        tag(SDTags.ItemTags.SD_CROPS)
+                .add(SDItems.CAULIFLOWER.asItem())
+                .add(SDItems.COFFEE_BEAN.asItem()) // Not a food
+                .add(SDItems.GARLIC.asItem())
+                .add(SDItems.GREEN_BEAN.asItem())
+                .add(SDItems.KALE.asItem())
+                .add(SDItems.PARSNIP.asItem())
+                .add(SDItems.RHUBARB.asItem()) // Not a food
+                .add(SDItems.STRAWBERRY.asItem())
+                .add(SDItems.BLUEBERRY.asItem())
+                .add(SDItems.CORN.asItem())
+                .add(SDItems.HOPS.asItem()) // Not a food
+                .add(SDItems.HOT_PEPPER.asItem())
+                .add(SDItems.PINK_MELON.asItem())
+                .add(SDItems.RADISH.asItem())
+                .add(SDItems.RED_CABBAGE.asItem())
+                .add(SDItems.STARFRUIT.asItem())
+                .add(SDItems.SUMMER_SQUASH.asItem())
+                .add(SDItems.AMARANTH.asItem()) // Not a food
+                .add(SDItems.ARTICHOKE.asItem())
+                .add(SDItems.BOK_CHOY.asItem())
+                .add(SDItems.BROCCOLI.asItem())
+                .add(SDItems.CRANBERRY.asItem())
+                .add(SDItems.EGGPLANT.asItem())
+                .add(SDItems.GRAPES.asItem())
+                .add(SDItems.SUGAR_PUMPKIN.asItem()) // Not a food
+                .add(SDItems.YAM.asItem())
+                .add(SDItems.POWDERMELON.asItem())
+                .add(SDItems.ANCIENT_FRUIT.asItem()) // Not a food
+                .add(SDItems.QI_FRUIT.asItem()) // Not a food
+                .add(SDItems.SWEET_GEM_BERRY.asItem()) // Not a food
+                .add(SDItems.PINEAPPLE.asItem())
+                .add(SDItems.TARO_ROOT.asItem());
+
+        tag(Tags.Items.CROPS).addTag(SDTags.ItemTags.SD_CROPS);
+
+        // TODO individual crop tags
 
 
+        tag(SDTags.ItemTags.SD_FOODS_BERRY)
+                .add(SDItems.STRAWBERRY.asItem())
+                .add(SDItems.BLUEBERRY.asItem())
+                .add(SDItems.CRANBERRY.asItem());
+        tag(SDTags.ItemTags.SD_FOODS_FRUIT)
+                .add(SDItems.PINK_MELON.asItem())
+                .add(SDItems.STARFRUIT.asItem())
+                .add(SDItems.GRAPES.asItem())
+                .add(SDItems.POWDERMELON.asItem())
+                .add(SDItems.PINEAPPLE.asItem());
+        tag(SDTags.ItemTags.SD_FOODS_VEGETABLE)
+                .add(SDItems.CAULIFLOWER.asItem())
+                .add(SDItems.GARLIC.asItem())
+                .add(SDItems.GREEN_BEAN.asItem())
+                .add(SDItems.KALE.asItem())
+                .add(SDItems.PARSNIP.asItem())
+                .add(SDItems.CORN.asItem())
+                .add(SDItems.HOT_PEPPER.asItem())
+                .add(SDItems.RADISH.asItem())
+                .add(SDItems.RED_CABBAGE.asItem())
+                .add(SDItems.SUMMER_SQUASH.asItem())
+                .add(SDItems.ARTICHOKE.asItem())
+                .add(SDItems.BOK_CHOY.asItem())
+                .add(SDItems.BROCCOLI.asItem())
+                .add(SDItems.EGGPLANT.asItem())
+                .add(SDItems.YAM.asItem())
+                .add(SDItems.TARO_ROOT.asItem());
+
+        tag(SDTags.ItemTags.SD_FOODS)
+                .addTag(SDTags.ItemTags.SD_FOODS_BERRY)
+                .addTag(SDTags.ItemTags.SD_FOODS_FRUIT)
+                .addTag(SDTags.ItemTags.SD_FOODS_VEGETABLE);
+
+        tag(Tags.Items.FOODS).addTag(SDTags.ItemTags.SD_FOODS);
+        tag(Tags.Items.FOODS_BERRY).addTag(SDTags.ItemTags.SD_FOODS_BERRY);
+        tag(Tags.Items.FOODS_FRUIT).addTag(SDTags.ItemTags.SD_FOODS_FRUIT);
+        tag(Tags.Items.FOODS_VEGETABLE).addTag(SDTags.ItemTags.SD_FOODS_VEGETABLE);
+
+
+        // TODO individual food tags
     }
 }

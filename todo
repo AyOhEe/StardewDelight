@@ -35,10 +35,74 @@ fruit trees (one intermediary phase before growing into a full tree):
 - apple: 6
 - pomegranate: 6
 
+Seed bag (holds 128 items of seeds, up to 12 different stacks)
 
+
+
+
+
+IN UPDATES:
 Giant crops:
 - cauliflower
 - pink melon
 - sugar pumpkin
 - powdermelon
 - qi Fruit
+
+Forageables:
+- Wild seeds (Spring, Summer, Autumn, Winter)
+- Forage bag (holds 128 items of forageables, up to 8 different stacks)
+- Forage spots that replenish forageables over time, and can be repeatedly harvested.
+  Cannot be moved, but should be plentiful in the world (multiple in each biome) and can spawn any of the
+  several options for that particular biome.
+- Spring biomes:
+    - (vanilla) Brown mushrooms
+    - Daffodil
+    - Dandelion
+    - Leek
+    - Morel
+    - Salmonberry
+    - Spring onion
+    - Wild horseradish
+- Summer biomes:
+    - (vanilla) Brown mushrooms
+    - Fiddlehead fern
+    - Grapes
+    - (vanilla) Red mushrooms
+    - Spice berry
+    - Sweet pea
+- Autumnal biomes:
+    - Blackberry
+    - Chanterelle
+    - (vanilla) Brown mushrooms
+    - Hazelnut
+    - Purple mushroom
+    - (vanilla) Red mushrooms
+    - Wild plum
+- Cold/snowy biomes:
+    - Crocus
+    - Crystal fruit
+    - Holly
+    - Snow yam
+    - Winter root
+- Underground:
+    - Cave carrot
+    - Purple mushroom
+    - (vanilla) Red mushrooms
+- Deserts:
+    - Cactus fruit
+- Beaches:
+    - Coconut
+    - Ginger
+- Nether:
+    - Magma cap
+- Rivers:
+    - Clam
+    - Cockle
+    - Coral
+    - Mussel
+    - (vanilla) Nautilus shell (non-renewable - spawns on its own)
+    - Oyster
+    - Rainbow shell
+    - Sea urchin
+    - Seaweed

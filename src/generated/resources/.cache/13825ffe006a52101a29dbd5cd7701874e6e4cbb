@@ -1,5 +1,11 @@
-// 1.21.1	2026-08-21T01:31:51.4651734	Tags for minecraft:item mod id stardewdelight
+// 1.21.1	2026-08-21T17:30:53.9330746	Tags for minecraft:item mod id stardewdelight
 d69833ff124e5c7822a01083d9052688288cf598 data/c/tags/item/animal_foods.json
+c2a1e896205ace70e0412136aef43ebd93a74465 data/c/tags/item/crops.json
+ca17e9288f16b99fcb1b159bc1dc434078239ffb data/c/tags/item/foods.json
+60cf622cc505d8a0fa5b40c8d06da109d2bcd45f data/c/tags/item/foods/berry.json
+4c72ec827c461cbcc1e3c4a3e0c9badee2d0a505 data/c/tags/item/foods/fruit.json
+bab73017c9b721d99f7517526544a2b7db4c4ca6 data/c/tags/item/foods/vegetable.json
+089f3fb6a4f2aea3626c50b543b82c4e168496b2 data/c/tags/item/seeds.json
 43c31c6bf4c09e192a705badfa3bbb1a3c8171b7 data/c/tags/item/storage_blocks.json
 967eac9914effd1245c5961756edbb79b8946582 data/c/tags/item/storage_blocks/amaranth.json
 912107e71a2aea887daba327dbe2bd5fc68e03ff data/c/tags/item/storage_blocks/ancient_fruit.json
@@ -40,14 +46,21 @@ d69833ff124e5c7822a01083d9052688288cf598 data/minecraft/tags/item/flowers.json
 7f7f2560f088f194633b74a83ed172cb0743e487 data/minecraft/tags/item/saplings.json
 abd7453e030329cc5b18817b592a5f52920a0372 data/minecraft/tags/item/small_flowers.json
 ef6d499710f0c8ccb179289be3cba9bab378c657 data/minecraft/tags/item/tall_flowers.json
+089f3fb6a4f2aea3626c50b543b82c4e168496b2 data/minecraft/tags/item/villager_plantable_seeds.json
 d56ae03fe53109713b014b7e94136933b1e08a4e data/stardewdelight/tags/item/apple_logs.json
 827a48481a279f03cbd0e295e617fdbcb953b306 data/stardewdelight/tags/item/apricot_logs.json
 60b1097875f6cee737be3f0ac44308d39514d730 data/stardewdelight/tags/item/banana_logs.json
+804805763bbbd6f7dcba82ec5d3cffc548034a1c data/stardewdelight/tags/item/crops.json
+18833c3e55940c2c150ab03b3233027652cbff23 data/stardewdelight/tags/item/foods.json
+1b69b337216b89aa605dde4fc25367550c7b568f data/stardewdelight/tags/item/foods/berry.json
+02c6e3ddb95a629633e1240d4199e9da10098f3c data/stardewdelight/tags/item/foods/fruit.json
+817ebe227cc48de84981c8aedd11adf7ad22013a data/stardewdelight/tags/item/foods/vegetable.json
 24ddbd099b041ac7dd73b1d218e2778c4adff22b data/stardewdelight/tags/item/fruit_tree_saplings.json
 489d02da8a81a1b1bd788de343cdc81b039b459c data/stardewdelight/tags/item/mango_logs.json
 c274514f6c784d5394d49ff84b6b442710ee88db data/stardewdelight/tags/item/orange_logs.json
 db32828fec5053d41c67b8ee63e9e73cf4702eb8 data/stardewdelight/tags/item/peach_logs.json
 4d8c347bd350d2ac705a2bd90c66510ba63ffc8b data/stardewdelight/tags/item/pomegrate_logs.json
+0fdd72dbaf8c9fde81182634a9f6d58d6553324e data/stardewdelight/tags/item/seeds.json
 a6fea7df15c2374a9618431fcd806aa462d32f08 data/stardewdelight/tags/item/small_flowers.json
 c147a9c900e827bbedd4658e18332370709d4b63 data/stardewdelight/tags/item/storage_blocks.json
 b11cde9c9430a8e8cca0ff1f419e506b0ae63aaa data/stardewdelight/tags/item/tall_flowers.json
