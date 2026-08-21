@@ -1,15 +1,14 @@
+proper blockstate definitions per crop age
+block shapes, once textures are done.
 placement sounds
+go over and ensure all necessary methods are being implemented e.g. pathfinding
 
 signs for all wood types
-confirm recipes work fine with recipe book?
 
 names for fruit tree wood blocks is a bit weird. "Banana Stairs"?
 
 how get more flower seeds?
 seed recipes from fruits? cutting board?
-block shapes, once textures are done.
-go over and ensure all necessary methods are being implemented e.g. pathfinding
-proper blockstate definitions per crop age
 
 some crops should drop more
 some crops should not drop seeds when mature

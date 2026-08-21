@@ -96,7 +96,7 @@ public class SDRecipeProvider extends RecipeProvider {
         }
     }
 
-    private static void modNineBlockStorageRecipes(RecipeOutput output, RecipeCategory compactingCategory, ItemLike item, RecipeCategory breakingCategory, ItemLike compacted) {
+    private static void modNineBlockStorageRecipes(RecipeOutput output, RecipeCategory breakingCategory, ItemLike item, RecipeCategory compactingCategory, ItemLike compacted) {
         String itemName = getItemName(item);
         String compactedName = getItemName(compacted);
         ShapedRecipeBuilder.shaped(compactingCategory, compacted, 1).pattern("###").pattern("###").pattern("###").define('#', item).unlockedBy("has_" + itemName, hasItems(item)).save(output, StardewDelight.modLoc(compactedName + "_from_" + itemName));
