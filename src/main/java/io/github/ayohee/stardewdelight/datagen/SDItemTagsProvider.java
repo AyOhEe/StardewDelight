@@ -116,6 +116,16 @@ public class SDItemTagsProvider extends ItemTagsProvider {
         tag(SDTags.ItemTags.STORAGE_BLOCKS_PINEAPPLE).add(SDBlocks.PINEAPPLE_CRATE.getItem().get());
         tag(SDTags.ItemTags.STORAGE_BLOCKS_TARO_ROOT).add(SDBlocks.TARO_ROOT_CRATE.getItem().get());
 
+        tag(SDTags.ItemTags.STORAGE_BLOCKS_TEA).add(SDBlocks.TEA_CRATE.getItem().get());
+        tag(SDTags.ItemTags.STORAGE_BLOCKS_APRICOT).add(SDBlocks.APRICOT_CRATE.getItem().get());
+        tag(SDTags.ItemTags.STORAGE_BLOCKS_CHERRY).add(SDBlocks.CHERRY_CRATE.getItem().get());
+        tag(SDTags.ItemTags.STORAGE_BLOCKS_BANANA).add(SDBlocks.BANANA_CRATE.getItem().get());
+        tag(SDTags.ItemTags.STORAGE_BLOCKS_MANGO).add(SDBlocks.MANGO_CRATE.getItem().get());
+        tag(SDTags.ItemTags.STORAGE_BLOCKS_ORANGE).add(SDBlocks.ORANGE_CRATE.getItem().get());
+        tag(SDTags.ItemTags.STORAGE_BLOCKS_PEACH).add(SDBlocks.PEACH_CRATE.getItem().get());
+        tag(SDTags.ItemTags.STORAGE_BLOCKS_APPLE).add(SDBlocks.APPLE_CRATE.getItem().get());
+        tag(SDTags.ItemTags.STORAGE_BLOCKS_POMEGRANATE).add(SDBlocks.POMEGRANATE_CRATE.getItem().get());
+
 
         /*----- SEED TAGS -----*/
         tag(SDTags.ItemTags.SD_SEEDS)
@@ -233,6 +243,15 @@ public class SDItemTagsProvider extends ItemTagsProvider {
         tag(SDTags.ItemTags.CROP_TARO_ROOT).add(SDItems.TARO_ROOT.asItem());
         tag(SDTags.ItemTags.CROP_TARO).add(SDItems.TARO_ROOT.asItem());
 
+        tag(SDTags.ItemTags.CROP_TEA).add(SDItems.TEA_LEAVES.asItem());
+        tag(SDTags.ItemTags.CROP_APRICOT).add(SDItems.APRICOT.asItem());
+        tag(SDTags.ItemTags.CROP_CHERRY).add(SDItems.CHERRY.asItem());
+        tag(SDTags.ItemTags.CROP_BANANA).add(SDItems.BANANA.asItem());
+        tag(SDTags.ItemTags.CROP_MANGO).add(SDItems.MANGO.asItem());
+        tag(SDTags.ItemTags.CROP_ORANGE).add(SDItems.ORANGE.asItem());
+        tag(SDTags.ItemTags.CROP_PEACH).add(SDItems.PEACH.asItem());
+        tag(SDTags.ItemTags.CROP_POMEGRANATE).add(SDItems.POMEGRANATE.asItem());
+
 
         tag(SDTags.ItemTags.SD_FOODS_BERRY)
                 .add(SDItems.STRAWBERRY.asItem())
@@ -243,7 +262,14 @@ public class SDItemTagsProvider extends ItemTagsProvider {
                 .add(SDItems.STARFRUIT.asItem())
                 .add(SDItems.GRAPES.asItem())
                 .add(SDItems.POWDERMELON.asItem())
-                .add(SDItems.PINEAPPLE.asItem());
+                .add(SDItems.PINEAPPLE.asItem())
+                .add(SDItems.APRICOT.asItem())
+                .add(SDItems.CHERRY.asItem())
+                .add(SDItems.BANANA.asItem())
+                .add(SDItems.MANGO.asItem())
+                .add(SDItems.ORANGE.asItem())
+                .add(SDItems.PEACH.asItem())
+                .add(SDItems.POMEGRANATE.asItem());
         tag(SDTags.ItemTags.SD_FOODS_VEGETABLE)
                 .add(SDItems.CAULIFLOWER.asItem())
                 .add(SDItems.GARLIC.asItem())
@@ -299,5 +325,14 @@ public class SDItemTagsProvider extends ItemTagsProvider {
         tag(SDTags.ItemTags.FOOD_YAM).add(SDItems.YAM.asItem());
         tag(SDTags.ItemTags.FOOD_TARO_ROOT).add(SDItems.TARO_ROOT.asItem());
         tag(SDTags.ItemTags.FOOD_TARO).add(SDItems.TARO_ROOT.asItem());
+
+        tag(SDTags.ItemTags.FOOD_TEA).add(SDItems.TEA_LEAVES.asItem());
+        tag(SDTags.ItemTags.FOOD_APRICOT).add(SDItems.APRICOT.asItem());
+        tag(SDTags.ItemTags.FOOD_CHERRY).add(SDItems.CHERRY.asItem());
+        tag(SDTags.ItemTags.FOOD_BANANA).add(SDItems.BANANA.asItem());
+        tag(SDTags.ItemTags.FOOD_MANGO).add(SDItems.MANGO.asItem());
+        tag(SDTags.ItemTags.FOOD_ORANGE).add(SDItems.ORANGE.asItem());
+        tag(SDTags.ItemTags.FOOD_PEACH).add(SDItems.PEACH.asItem());
+        tag(SDTags.ItemTags.FOOD_POMEGRANATE).add(SDItems.POMEGRANATE.asItem());
     }
 }

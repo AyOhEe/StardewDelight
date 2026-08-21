@@ -82,6 +82,16 @@ public class SDTags {
         public static final TagKey<Block> STORAGE_BLOCKS_PINEAPPLE = common("storage_blocks/pineapple");
         public static final TagKey<Block> STORAGE_BLOCKS_TARO_ROOT = common("storage_blocks/taro_root");
 
+        public static final TagKey<Block> STORAGE_BLOCKS_TEA = common("storage_blocks/tea");
+        public static final TagKey<Block> STORAGE_BLOCKS_APRICOT = common("storage_blocks/apricot");
+        public static final TagKey<Block> STORAGE_BLOCKS_CHERRY = common("storage_blocks/cherry");
+        public static final TagKey<Block> STORAGE_BLOCKS_BANANA = common("storage_blocks/banana");
+        public static final TagKey<Block> STORAGE_BLOCKS_MANGO = common("storage_blocks/mango");
+        public static final TagKey<Block> STORAGE_BLOCKS_ORANGE = common("storage_blocks/orange");
+        public static final TagKey<Block> STORAGE_BLOCKS_PEACH = common("storage_blocks/peach");
+        public static final TagKey<Block> STORAGE_BLOCKS_APPLE = common("storage_blocks/apple");
+        public static final TagKey<Block> STORAGE_BLOCKS_POMEGRANATE = common("storage_blocks/pomegranate");
+
         private static TagKey<Block> create(String name) {
             return TagKey.create(Registries.BLOCK, StardewDelight.modLoc(name));
         }
@@ -167,6 +177,16 @@ public class SDTags {
         public static final TagKey<Item> STORAGE_BLOCKS_PINEAPPLE = common("storage_blocks/pineapple");
         public static final TagKey<Item> STORAGE_BLOCKS_TARO_ROOT = common("storage_blocks/taro_root");
 
+        public static final TagKey<Item> STORAGE_BLOCKS_TEA = common("storage_blocks/tea");
+        public static final TagKey<Item> STORAGE_BLOCKS_APRICOT = common("storage_blocks/apricot");
+        public static final TagKey<Item> STORAGE_BLOCKS_CHERRY = common("storage_blocks/cherry");
+        public static final TagKey<Item> STORAGE_BLOCKS_BANANA = common("storage_blocks/banana");
+        public static final TagKey<Item> STORAGE_BLOCKS_MANGO = common("storage_blocks/mango");
+        public static final TagKey<Item> STORAGE_BLOCKS_ORANGE = common("storage_blocks/orange");
+        public static final TagKey<Item> STORAGE_BLOCKS_PEACH = common("storage_blocks/peach");
+        public static final TagKey<Item> STORAGE_BLOCKS_APPLE = common("storage_blocks/apple");
+        public static final TagKey<Item> STORAGE_BLOCKS_POMEGRANATE = common("storage_blocks/pomegranate");
+
 
         public static final TagKey<Item> FOOD_STRAWBERRY = common("foods/strawberry");
         public static final TagKey<Item> FOOD_BLUEBERRY = common("foods/blueberry");
@@ -194,6 +214,15 @@ public class SDTags {
         public static final TagKey<Item> FOOD_YAM = common("foods/yam");
         public static final TagKey<Item> FOOD_TARO_ROOT = common("foods/taro_root");
         public static final TagKey<Item> FOOD_TARO = common("foods/taro");
+
+        public static final TagKey<Item> FOOD_TEA = common("foods/tea");
+        public static final TagKey<Item> FOOD_APRICOT = common("foods/apricot");
+        public static final TagKey<Item> FOOD_CHERRY = common("foods/cherry");
+        public static final TagKey<Item> FOOD_BANANA = common("foods/banana");
+        public static final TagKey<Item> FOOD_MANGO = common("foods/mango");
+        public static final TagKey<Item> FOOD_ORANGE = common("foods/orange");
+        public static final TagKey<Item> FOOD_PEACH = common("foods/peach");
+        public static final TagKey<Item> FOOD_POMEGRANATE = common("foods/pomegranate");
 
 
         public static final TagKey<Item> CROP_CAULIFLOWER = common("crops/cauliflower");
@@ -230,6 +259,15 @@ public class SDTags {
         public static final TagKey<Item> CROP_PINEAPPLE = common("crops/pineapple");
         public static final TagKey<Item> CROP_TARO_ROOT = common("crops/taro_root");
         public static final TagKey<Item> CROP_TARO = common("crops/taro");
+
+        public static final TagKey<Item> CROP_TEA = common("crops/tea");
+        public static final TagKey<Item> CROP_APRICOT = common("crops/apricot");
+        public static final TagKey<Item> CROP_CHERRY = common("crops/cherry");
+        public static final TagKey<Item> CROP_BANANA = common("crops/banana");
+        public static final TagKey<Item> CROP_MANGO = common("crops/mango");
+        public static final TagKey<Item> CROP_ORANGE = common("crops/orange");
+        public static final TagKey<Item> CROP_PEACH = common("crops/peach");
+        public static final TagKey<Item> CROP_POMEGRANATE = common("crops/pomegranate");
 
 
         public static final Map<WoodType, TagKey<Item>> LOG_TAGS = Map.of(

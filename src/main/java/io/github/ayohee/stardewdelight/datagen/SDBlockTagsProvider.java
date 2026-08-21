@@ -376,7 +376,16 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.QI_FRUIT_CRATE.getBlock().get())
                 .add(SDBlocks.SWEET_GEM_BERRY_CRATE.getBlock().get())
                 .add(SDBlocks.PINEAPPLE_CRATE.getBlock().get())
-                .add(SDBlocks.TARO_ROOT_CRATE.getBlock().get());
+                .add(SDBlocks.TARO_ROOT_CRATE.getBlock().get())
+                .add(SDBlocks.TEA_CRATE.getBlock().get())
+                .add(SDBlocks.APRICOT_CRATE.getBlock().get())
+                .add(SDBlocks.CHERRY_CRATE.getBlock().get())
+                .add(SDBlocks.BANANA_CRATE.getBlock().get())
+                .add(SDBlocks.MANGO_CRATE.getBlock().get())
+                .add(SDBlocks.ORANGE_CRATE.getBlock().get())
+                .add(SDBlocks.PEACH_CRATE.getBlock().get())
+                .add(SDBlocks.APPLE_CRATE.getBlock().get())
+                .add(SDBlocks.POMEGRANATE_CRATE.getBlock().get());
 
         tag(Tags.Blocks.STORAGE_BLOCKS).addTag(SDTags.BlockTags.SD_STORAGE_BLOCKS);
 
@@ -412,7 +421,16 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.QI_FRUIT_CRATE.getBlock().get())
                 .add(SDBlocks.SWEET_GEM_BERRY_CRATE.getBlock().get())
                 .add(SDBlocks.PINEAPPLE_CRATE.getBlock().get())
-                .add(SDBlocks.TARO_ROOT_CRATE.getBlock().get());
+                .add(SDBlocks.TARO_ROOT_CRATE.getBlock().get())
+                .add(SDBlocks.TEA_CRATE.getBlock().get())
+                .add(SDBlocks.APRICOT_CRATE.getBlock().get())
+                .add(SDBlocks.CHERRY_CRATE.getBlock().get())
+                .add(SDBlocks.BANANA_CRATE.getBlock().get())
+                .add(SDBlocks.MANGO_CRATE.getBlock().get())
+                .add(SDBlocks.ORANGE_CRATE.getBlock().get())
+                .add(SDBlocks.PEACH_CRATE.getBlock().get())
+                .add(SDBlocks.APPLE_CRATE.getBlock().get())
+                .add(SDBlocks.POMEGRANATE_CRATE.getBlock().get());
 
         tag(SDTags.BlockTags.STORAGE_BLOCKS_BLUE_JAZZ).add(SDBlocks.BLUE_JAZZ_BOX.getBlock().get());
         tag(SDTags.BlockTags.STORAGE_BLOCKS_CAULIFLOWER).add(SDBlocks.CAULIFLOWER_CRATE.getBlock().get());
@@ -448,6 +466,16 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
         tag(SDTags.BlockTags.STORAGE_BLOCKS_SWEET_GEM_BERRY).add(SDBlocks.SWEET_GEM_BERRY_CRATE.getBlock().get());
         tag(SDTags.BlockTags.STORAGE_BLOCKS_PINEAPPLE).add(SDBlocks.PINEAPPLE_CRATE.getBlock().get());
         tag(SDTags.BlockTags.STORAGE_BLOCKS_TARO_ROOT).add(SDBlocks.TARO_ROOT_CRATE.getBlock().get());
+
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_TEA).add(SDBlocks.TEA_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_APRICOT).add(SDBlocks.APRICOT_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_CHERRY).add(SDBlocks.CHERRY_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_BANANA).add(SDBlocks.BANANA_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_MANGO).add(SDBlocks.MANGO_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_ORANGE).add(SDBlocks.ORANGE_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_PEACH).add(SDBlocks.PEACH_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_APPLE).add(SDBlocks.APPLE_CRATE.getBlock().get());
+        tag(SDTags.BlockTags.STORAGE_BLOCKS_POMEGRANATE).add(SDBlocks.POMEGRANATE_CRATE.getBlock().get());
 
 
         /*----- SAPLING TAGS -----*/
