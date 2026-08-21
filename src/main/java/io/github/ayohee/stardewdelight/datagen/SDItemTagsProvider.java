@@ -22,7 +22,6 @@ public class SDItemTagsProvider extends ItemTagsProvider {
     }
 
 
-    // TODO FINISH
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         /*----- FRUIT TREE TAGS -----*/
@@ -198,7 +197,41 @@ public class SDItemTagsProvider extends ItemTagsProvider {
 
         tag(Tags.Items.CROPS).addTag(SDTags.ItemTags.SD_CROPS);
 
-        // TODO individual crop tags
+
+        tag(SDTags.ItemTags.CROP_CAULIFLOWER).add(SDItems.CAULIFLOWER.asItem());
+        tag(SDTags.ItemTags.CROP_GREEN_BEAN).add(SDItems.GREEN_BEAN.asItem());
+        tag(SDTags.ItemTags.CROP_GARLIC).add(SDItems.GARLIC.asItem());
+        tag(SDTags.ItemTags.CROP_COFFEE).add(SDItems.COFFEE_BEAN.asItem());
+        tag(SDTags.ItemTags.CROP_KALE).add(SDItems.KALE.asItem());
+        tag(SDTags.ItemTags.CROP_PARSNIP).add(SDItems.PARSNIP.asItem());
+        tag(SDTags.ItemTags.CROP_RHUBARB).add(SDItems.RHUBARB.asItem());
+        tag(SDTags.ItemTags.CROP_STRAWBERRY).add(SDItems.STRAWBERRY.asItem());
+        tag(SDTags.ItemTags.CROP_BLUEBERRY).add(SDItems.BLUEBERRY.asItem());
+        tag(SDTags.ItemTags.CROP_CORN).add(SDItems.CORN.asItem());
+        tag(SDTags.ItemTags.CROP_HOPS).add(SDItems.HOPS.asItem());
+        tag(SDTags.ItemTags.CROP_HOT_PEPPER).add(SDItems.HOT_PEPPER.asItem());
+        tag(SDTags.ItemTags.CROP_CHILLI_PEPPER).add(SDItems.HOT_PEPPER.asItem());
+        tag(SDTags.ItemTags.CROP_PINK_MELON).add(SDItems.PINK_MELON.asItem());
+        tag(SDTags.ItemTags.CROP_RADISH).add(SDItems.RADISH.asItem());
+        tag(SDTags.ItemTags.CROP_RED_CABBAGE).add(SDItems.RED_CABBAGE.asItem());
+        tag(SDTags.ItemTags.CROP_STARFRUIT).add(SDItems.STARFRUIT.asItem());
+        tag(SDTags.ItemTags.CROP_SQUASH).add(SDItems.SUMMER_SQUASH.asItem());
+        tag(SDTags.ItemTags.CROP_AMARANTH).add(SDItems.AMARANTH.asItem());
+        tag(SDTags.ItemTags.CROP_ARTICHOKE).add(SDItems.ARTICHOKE.asItem());
+        tag(SDTags.ItemTags.CROP_BOK_CHOY).add(SDItems.BOK_CHOY.asItem());
+        tag(SDTags.ItemTags.CROP_BROCCOLI).add(SDItems.BROCCOLI.asItem());
+        tag(SDTags.ItemTags.CROP_CRANBERRY).add(SDItems.CRANBERRY.asItem());
+        tag(SDTags.ItemTags.CROP_EGGPLANT).add(SDItems.EGGPLANT.asItem());
+        tag(SDTags.ItemTags.CROP_GRAPES).add(SDItems.GRAPES.asItem());
+        tag(SDTags.ItemTags.CROP_SUGAR_PUMPKIN).add(SDItems.SUGAR_PUMPKIN.asItem());
+        tag(SDTags.ItemTags.CROP_YAM).add(SDItems.YAM.asItem());
+        tag(SDTags.ItemTags.CROP_POWDERMELON).add(SDItems.POWDERMELON.asItem());
+        tag(SDTags.ItemTags.CROP_ANCIENT_FRUIT).add(SDItems.ANCIENT_FRUIT.asItem());
+        tag(SDTags.ItemTags.CROP_QI_FRUIT).add(SDItems.QI_FRUIT.asItem());
+        tag(SDTags.ItemTags.CROP_SWEET_GEM_BERRY).add(SDItems.SWEET_GEM_BERRY.asItem());
+        tag(SDTags.ItemTags.CROP_PINEAPPLE).add(SDItems.PINEAPPLE.asItem());
+        tag(SDTags.ItemTags.CROP_TARO_ROOT).add(SDItems.TARO_ROOT.asItem());
+        tag(SDTags.ItemTags.CROP_TARO).add(SDItems.TARO_ROOT.asItem());
 
 
         tag(SDTags.ItemTags.SD_FOODS_BERRY)

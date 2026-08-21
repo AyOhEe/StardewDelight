@@ -129,8 +129,6 @@ public class SDTags {
         public static final TagKey<Item> SD_FOODS_FRUIT = create("foods/fruit");
         public static final TagKey<Item> SD_FOODS_VEGETABLE = create("foods/vegetable");
 
-        //TODO crop tags for each? farmers does that
-
 
         public static final TagKey<Item> SD_STORAGE_BLOCKS = create("storage_blocks");
 
@@ -196,6 +194,42 @@ public class SDTags {
         public static final TagKey<Item> FOOD_YAM = common("foods/yam");
         public static final TagKey<Item> FOOD_TARO_ROOT = common("foods/taro_root");
         public static final TagKey<Item> FOOD_TARO = common("foods/taro");
+
+
+        public static final TagKey<Item> CROP_CAULIFLOWER = common("crops/cauliflower");
+        public static final TagKey<Item> CROP_GREEN_BEAN = common("crops/green_bean");
+        public static final TagKey<Item> CROP_GARLIC = common("crops/garlic");
+        public static final TagKey<Item> CROP_COFFEE = common("crops/coffee");
+        public static final TagKey<Item> CROP_KALE = common("crops/kale");
+        public static final TagKey<Item> CROP_PARSNIP = common("crops/parsnip");
+        public static final TagKey<Item> CROP_RHUBARB = common("crops/rhubarb");
+        public static final TagKey<Item> CROP_STRAWBERRY = common("crops/strawberry");
+        public static final TagKey<Item> CROP_BLUEBERRY = common("crops/blueberry");
+        public static final TagKey<Item> CROP_CORN = common("crops/corn");
+        public static final TagKey<Item> CROP_HOPS = common("crops/hops");
+        public static final TagKey<Item> CROP_HOT_PEPPER = common("crops/hot_pepper");
+        public static final TagKey<Item> CROP_CHILLI_PEPPER = common("crops/chilli_pepper");
+        public static final TagKey<Item> CROP_PINK_MELON = common("crops/pink_melon");
+        public static final TagKey<Item> CROP_RADISH = common("crops/radish");
+        public static final TagKey<Item> CROP_RED_CABBAGE = common("crops/red_cabbage");
+        public static final TagKey<Item> CROP_STARFRUIT = common("crops/starfruit");
+        public static final TagKey<Item> CROP_SQUASH = common("crops/squash");
+        public static final TagKey<Item> CROP_AMARANTH = common("crops/amaranth");
+        public static final TagKey<Item> CROP_ARTICHOKE = common("crops/artichoke");
+        public static final TagKey<Item> CROP_BOK_CHOY = common("crops/bok_choy");
+        public static final TagKey<Item> CROP_BROCCOLI = common("crops/broccoli");
+        public static final TagKey<Item> CROP_CRANBERRY = common("crops/cranberry");
+        public static final TagKey<Item> CROP_EGGPLANT = common("crops/eggplant");
+        public static final TagKey<Item> CROP_GRAPES = common("crops/grapes");
+        public static final TagKey<Item> CROP_SUGAR_PUMPKIN = common("crops/sugar_pumpkin");
+        public static final TagKey<Item> CROP_YAM = common("crops/yam");
+        public static final TagKey<Item> CROP_POWDERMELON = common("crops/powdermelon");
+        public static final TagKey<Item> CROP_ANCIENT_FRUIT = common("crops/ancient_fruit");
+        public static final TagKey<Item> CROP_QI_FRUIT = common("crops/qi_fruit");
+        public static final TagKey<Item> CROP_SWEET_GEM_BERRY = common("crops/sweet_gem_berry");
+        public static final TagKey<Item> CROP_PINEAPPLE = common("crops/pineapple");
+        public static final TagKey<Item> CROP_TARO_ROOT = common("crops/taro_root");
+        public static final TagKey<Item> CROP_TARO = common("crops/taro");
 
 
         public static final Map<WoodType, TagKey<Item>> LOG_TAGS = Map.of(
