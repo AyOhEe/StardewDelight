@@ -1,4 +1,4 @@
-package io.github.ayohee.stardewdelight.content.blocks.crops;
+package io.github.ayohee.stardewdelight.content.crops;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelReader;

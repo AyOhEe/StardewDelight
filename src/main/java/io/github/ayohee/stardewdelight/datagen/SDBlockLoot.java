@@ -1,6 +1,6 @@
 package io.github.ayohee.stardewdelight.datagen;
 
-import io.github.ayohee.stardewdelight.content.blocks.crops.*;
+import io.github.ayohee.stardewdelight.content.crops.*;
 import io.github.ayohee.stardewdelight.register.SDBlocks;
 import io.github.ayohee.stardewdelight.register.SDItems;
 import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;

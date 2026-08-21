@@ -1,4 +1,4 @@
-package io.github.ayohee.stardewdelight.content.blocks.crops;
+package io.github.ayohee.stardewdelight.content.crops;
 
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;

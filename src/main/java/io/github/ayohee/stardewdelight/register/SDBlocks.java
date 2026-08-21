@@ -1,8 +1,8 @@
 package io.github.ayohee.stardewdelight.register;
 
 import io.github.ayohee.stardewdelight.SDBlockStateProperties;
-import io.github.ayohee.stardewdelight.content.blocks.crops.*;
-import io.github.ayohee.stardewdelight.content.blocks.trees.FruitSaplingBlock;
+import io.github.ayohee.stardewdelight.content.crops.*;
+import io.github.ayohee.stardewdelight.content.trees.FruitSaplingBlock;
 import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;

@@ -1,6 +1,6 @@
 package io.github.ayohee.stardewdelight.register;
 
-import io.github.ayohee.stardewdelight.content.items.DoubleHighNamedBlockItem;
+import io.github.ayohee.stardewdelight.content.DoubleHighNamedBlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;

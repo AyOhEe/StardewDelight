@@ -1,4 +1,4 @@
-package io.github.ayohee.stardewdelight.content.items;
+package io.github.ayohee.stardewdelight.content;
 
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.level.block.Block;

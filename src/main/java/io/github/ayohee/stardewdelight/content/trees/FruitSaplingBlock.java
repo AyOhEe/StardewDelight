@@ -1,4 +1,4 @@
-package io.github.ayohee.stardewdelight.content.blocks.trees;
+package io.github.ayohee.stardewdelight.content.trees;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;

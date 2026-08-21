@@ -1,4 +1,4 @@
-package io.github.ayohee.stardewdelight.content.blocks.crops;
+package io.github.ayohee.stardewdelight.content.crops;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -14,8 +14,6 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.neoforged.neoforge.common.CommonHooks;
-
-import javax.annotation.Nullable;
 
 
 public abstract class TallCropBlock extends BaseCropBlock {
