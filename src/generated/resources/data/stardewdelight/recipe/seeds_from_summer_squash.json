@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "stardewdelight:summer_squash"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "stardewdelight:summer_squash_seeds"
+  }
+}

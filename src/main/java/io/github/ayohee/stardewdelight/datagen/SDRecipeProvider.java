@@ -16,6 +16,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import vectorwing.farmersdelight.data.builder.CuttingBoardRecipeBuilder;
 
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
@@ -97,13 +98,57 @@ public class SDRecipeProvider extends RecipeProvider {
             signBuilder(blocks.get(SDBlocks.WoodBlockTypes.SIGN), Ingredient.of(blocks.get(SDBlocks.WoodBlockTypes.PLANKS))).unlockedBy("has_planks", hasPlanks).save(recipeOutput);
             hangingSign(recipeOutput, blocks.get(SDBlocks.WoodBlockTypes.HANGING_SIGN), blocks.get(SDBlocks.WoodBlockTypes.STRIPPED_LOG));
         }
+
+        bushProduceSeeds(recipeOutput, SDItems.STRAWBERRY, SDItems.STRAWBERRY_SEEDS, 1);
+        bushProduceSeeds(recipeOutput, SDItems.BROCCOLI, SDItems.BROCCOLI_SEEDS, 1);
+        bushProduceSeeds(recipeOutput, SDItems.EGGPLANT, SDItems.EGGPLANT_SEEDS, 1);
+        bushProduceSeeds(recipeOutput, SDItems.PINEAPPLE, SDItems.PINEAPPLE_SEEDS, 1);
+        bushProduceSeeds(recipeOutput, SDItems.BLUEBERRY, SDItems.BLUEBERRY_SEEDS, 1);
+        bushProduceSeeds(recipeOutput, SDItems.HOT_PEPPER, SDItems.PEPPER_SEEDS, 1);
+        bushProduceSeeds(recipeOutput, SDItems.SUMMER_SQUASH, SDItems.SUMMER_SQUASH_SEEDS, 1);
+        bushProduceSeeds(recipeOutput, SDItems.CRANBERRY, SDItems.CRANBERRY_SEEDS, 1);
+        bushProduceSeeds(recipeOutput, SDItems.CORN, SDItems.CORN_SEEDS, 1);
+        bushProduceSeeds(recipeOutput, SDItems.ANCIENT_FRUIT, SDItems.ANCIENT_SEEDS, 1);
+
+        starterRecipe(recipeOutput, SDItems.GREEN_BEAN, SDItems.BEAN_STARTER);
+        starterRecipe(recipeOutput, SDItems.HOPS, SDItems.HOPS_STARTER);
+        starterRecipe(recipeOutput, SDItems.GRAPES, SDItems.GRAPE_STARTER);
     }
 
     private static void modNineBlockStorageRecipes(RecipeOutput output, RecipeCategory breakingCategory, ItemLike item, RecipeCategory compactingCategory, ItemLike compacted) {
         String itemName = getItemName(item);
         String compactedName = getItemName(compacted);
-        ShapedRecipeBuilder.shaped(compactingCategory, compacted, 1).pattern("###").pattern("###").pattern("###").define('#', item).unlockedBy("has_" + itemName, hasItems(item)).save(output, StardewDelight.modLoc(compactedName + "_from_" + itemName));
-        ShapelessRecipeBuilder.shapeless(breakingCategory, item, 9).requires(compacted).unlockedBy("has_" + compactedName, hasItems(compacted)).save(output, StardewDelight.modLoc(itemName + "_from_" + compactedName));
+        ShapedRecipeBuilder.shaped(compactingCategory, compacted, 1)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', item)
+                .unlockedBy("has_" + itemName, hasItems(item))
+                .save(output, StardewDelight.modLoc(compactedName + "_from_" + itemName));
+        ShapelessRecipeBuilder.shapeless(breakingCategory, item, 9)
+                .requires(compacted)
+                .unlockedBy("has_" + compactedName, hasItems(compacted))
+                .save(output, StardewDelight.modLoc(itemName + "_from_" + compactedName));
+    }
+
+    private static void bushProduceSeeds(RecipeOutput output, ItemLike produce, ItemLike seeds, int count) {
+        String produceName = getItemName(produce);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, seeds, 1)
+                .requires(produce)
+                .unlockedBy("has_" + produceName, hasItems(produce))
+                .save(output, StardewDelight.modLoc("seeds_from_" + produceName));
+    }
+
+    private static void starterRecipe(RecipeOutput output, ItemLike produce, ItemLike starter) {
+        String produceName = getItemName(produce);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, starter)
+                .define('/', Items.STICK)
+                .define('#', produce)
+                .pattern("/ /")
+                .pattern(" # ")
+                .pattern("/ /")
+                .unlockedBy("has_" + produceName, hasItems(produce))
+                .save(output, StardewDelight.modLoc("starter_from_" + produceName));
     }
 
 

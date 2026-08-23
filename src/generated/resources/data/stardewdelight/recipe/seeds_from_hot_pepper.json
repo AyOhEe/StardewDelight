@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "stardewdelight:hot_pepper"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "stardewdelight:pepper_seeds"
+  }
+}

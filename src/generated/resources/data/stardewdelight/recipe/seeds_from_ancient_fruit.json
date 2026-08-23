@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "stardewdelight:ancient_fruit"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "stardewdelight:ancient_seeds"
+  }
+}

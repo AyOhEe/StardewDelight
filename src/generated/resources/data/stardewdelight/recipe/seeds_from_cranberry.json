@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "stardewdelight:cranberry"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "stardewdelight:cranberry_seeds"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "stardewdelight:blueberry"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "stardewdelight:blueberry_seeds"
+  }
+}
