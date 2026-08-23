@@ -17,7 +17,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class FruitSaplingBlock extends BushBlock implements BonemealableBlock {
     public static final MapCodec<FruitSaplingBlock> CODEC = RecordCodecBuilder.mapCodec((p) -> p.group(propertiesCodec()).apply(p, FruitSaplingBlock::new));
-    protected static final VoxelShape SHAPE = Block.box(2.0F, 0.0F, 2.0F, 14.0F, 12.0F, 14.0F);;
+    protected static final VoxelShape SHAPE = Block.box(2.0F, 0.0F, 2.0F, 14.0F, 12.0F, 14.0F);
 
     @Override
     protected MapCodec<? extends BushBlock> codec() {

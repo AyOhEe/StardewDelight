@@ -12,7 +12,13 @@ some crops should drop more
 some crops should not drop seeds when mature
 sweet gem berry should not drop extra seeds
 
-textures
+flower textures
+seed textures
+sapling textures
+crate textures
+wood decoratives textures
+leaves textures
+crop block textures
 
 actual food recipes
 
