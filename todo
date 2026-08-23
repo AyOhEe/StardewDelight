@@ -6,7 +6,10 @@ go over and ensure all necessary methods are being implemented e.g. pathfinding
 names for fruit tree wood blocks is a bit weird. "Banana Stairs"?
 
 how get more flower seeds?
-how get rare seed?
+rare seed: wandering trader
+ancient seed (craftable into ancient seeds): desert temples, archaeology, trial chambers
+qi bean: wandering trader
+all other seeds: surface features (wild variants), village loot tables (some with fresh produce)
 
 
 flower textures
@@ -16,6 +19,18 @@ crate textures
 wood decoratives textures
 leaves textures
 crop block textures
+
+seed maker:
+- functions differently from in stardew
+- pass in 4 unique seeds, receive 1 different seed back
+- available seeds are restricted to those under #stardewdelight:seed_maker_options
+- some seeds (rare seed, ancient seeds, qi bean, or very common seeds) are not available this way
+- mainly intended to prevent endless searching for one specific crop
+
+seed packet:
+- drops 10 seeds under #stardewdelight:seed_packet_options
+- most seeds available this way (except e.g. ancient seed, rare seed, qi bean, or very common seeds)
+- mainly intended for structure loot, to prevent seeds clogging player inventories
 
 actual food recipes
 
