@@ -55,30 +55,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "block": "stardewdelight:broccoli_crop",
-              "condition": "minecraft:block_state_property",
-              "properties": {
-                "age": "5"
-              }
-            }
-          ],
-          "functions": [
-            {
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:binomial_with_bonus_count",
-              "function": "minecraft:apply_bonus",
-              "parameters": {
-                "extra": 3,
-                "probability": 0.5714286
-              }
-            }
-          ],
-          "name": "stardewdelight:broccoli_seeds"
-        },
-        {
-          "type": "minecraft:item",
           "name": "stardewdelight:broccoli_seeds"
         }
       ],

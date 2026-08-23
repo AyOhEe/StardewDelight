@@ -11,6 +11,7 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.ItemLike;
@@ -105,7 +106,7 @@ public class SDBlockLoot extends BlockLootSubProvider {
 
         tallCropDrops(SDBlocks.AMARANTH_CROP.get(), SDItems.AMARANTH.asItem(), SDItems.AMARANTH_SEEDS.asItem());
         tallCropDrops(SDBlocks.STARFRUIT_CROP.get(), SDItems.STARFRUIT.asItem(), SDItems.STARFRUIT_SEEDS.asItem());
-        tallCropDrops(SDBlocks.SWEET_GEM_BERRY_CROP.get(), SDItems.SWEET_GEM_BERRY.asItem(), SDItems.RARE_SEED.asItem());
+        tallSeedlessCropDrops(SDBlocks.SWEET_GEM_BERRY_CROP.get(), SDItems.SWEET_GEM_BERRY.asItem());
         tallCropDrops(SDBlocks.ARTICHOKE_CROP.get(), SDItems.ARTICHOKE.asItem(), SDItems.ARTICHOKE_SEEDS.asItem());
 
         bushCropDrops(SDBlocks.STRAWBERRY_BUSH.get(), SDItems.STRAWBERRY.asItem(), SDItems.STRAWBERRY_SEEDS.asItem());
@@ -136,48 +137,50 @@ public class SDBlockLoot extends BlockLootSubProvider {
     }
 
     private void bushCropDrops(BushCropBlock crop, Item item, Item seed) {
-        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         LootItemCondition.Builder isMature = LootItemBlockStatePropertyCondition.hasBlockStateProperties(crop).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(crop.getAgeProperty(), crop.getMaxAge()));
         LootTable.Builder table = LootTable.lootTable()
                 .withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(isMature)).setRolls(ConstantValue.exactly(crop.getBaseDrops())))
                 .withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(isMature)).setRolls(ConstantValue.exactly(crop.getBonusDrops())).when(LootItemRandomChanceCondition.randomChance(0.5f)))
-                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(seed).when(isMature).apply(ApplyBonusCount.addBonusBinomialDistributionCount(registrylookup.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3))).add(LootItem.lootTableItem(seed)));
+                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(seed)));
         add(crop, this.applyExplosionDecay(crop, table));
     }
 
 
     private void tallCropDrops(BaseCropBlock crop, Item item, Item seed) {
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
-        LootItemCondition.Builder isMature = LootItemBlockStatePropertyCondition.hasBlockStateProperties(crop).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(crop.getAgeProperty(), crop.getMaxAge()).hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER));
+        LootItemCondition.Builder isMatureAndLower = LootItemBlockStatePropertyCondition.hasBlockStateProperties(crop).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(crop.getAgeProperty(), crop.getMaxAge()).hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER));
         LootItemCondition.Builder isLower = LootItemBlockStatePropertyCondition.hasBlockStateProperties(crop).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER));
         LootTable.Builder table = LootTable.lootTable()
-                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(isMature)))
-                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(seed).when(isMature).apply(ApplyBonusCount.addBonusBinomialDistributionCount(registrylookup.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3))).add(LootItem.lootTableItem(seed).when(isLower)));
+                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(isMatureAndLower)))
+                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(seed).when(isMatureAndLower).apply(ApplyBonusCount.addBonusBinomialDistributionCount(registrylookup.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3))).add(LootItem.lootTableItem(seed).when(isLower)));
+        add(crop, this.applyExplosionDecay(crop, table));
+    }
+
+    private void tallSeedlessCropDrops(BaseCropBlock crop, Item item) {
+        LootItemCondition.Builder isMatureAndLower = LootItemBlockStatePropertyCondition.hasBlockStateProperties(crop).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(crop.getAgeProperty(), crop.getMaxAge()).hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER));
+        LootTable.Builder table = LootTable.lootTable()
+                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(isMatureAndLower)));
         add(crop, this.applyExplosionDecay(crop, table));
     }
 
 
     private void tallBushCropDrops(TallBushCropBlock crop, Item item, Item seed) {
-        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         LootItemCondition.Builder isMature = LootItemBlockStatePropertyCondition.hasBlockStateProperties(crop).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(crop.getAgeProperty(), crop.getMaxAge()));
-        LootItemCondition.Builder isMatureAndLower = LootItemBlockStatePropertyCondition.hasBlockStateProperties(crop).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(crop.getAgeProperty(), crop.getMaxAge()).hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER));
         LootItemCondition.Builder isLower = LootItemBlockStatePropertyCondition.hasBlockStateProperties(crop).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER));
         LootTable.Builder table = LootTable.lootTable()
                 .withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(isMature)).setRolls(ConstantValue.exactly(crop.getBaseDrops())))
                 .withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(isMature)).setRolls(ConstantValue.exactly(crop.getBonusDrops())).when(LootItemRandomChanceCondition.randomChance(0.5f)))
-                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(seed).when(isMatureAndLower).apply(ApplyBonusCount.addBonusBinomialDistributionCount(registrylookup.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3))).add(LootItem.lootTableItem(seed).when(isLower)));
+                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(seed).when(isLower)));
         add(crop, this.applyExplosionDecay(crop, table));
     }
 
     private void tallUpperBushCropDrops(TallUpperBushCropBlock crop, Item item, Item seed) {
-        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         LootItemCondition.Builder isMatureAndUpper = LootItemBlockStatePropertyCondition.hasBlockStateProperties(crop).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(crop.getAgeProperty(), crop.getMaxAge()).hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.UPPER));
-        LootItemCondition.Builder isMatureAndLower = LootItemBlockStatePropertyCondition.hasBlockStateProperties(crop).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(crop.getAgeProperty(), crop.getMaxAge()).hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER));
         LootItemCondition.Builder isLower = LootItemBlockStatePropertyCondition.hasBlockStateProperties(crop).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER));
         LootTable.Builder table = LootTable.lootTable()
                 .withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(isMatureAndUpper)).setRolls(ConstantValue.exactly(crop.getBaseDrops())))
                 .withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(isMatureAndUpper)).setRolls(ConstantValue.exactly(crop.getBonusDrops())).when(LootItemRandomChanceCondition.randomChance(0.5f)))
-                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(seed).when(isMatureAndLower).apply(ApplyBonusCount.addBonusBinomialDistributionCount(registrylookup.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3))).add(LootItem.lootTableItem(seed).when(isLower)));
+                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(seed).when(isLower)));
         add(crop, this.applyExplosionDecay(crop, table));
     }
 

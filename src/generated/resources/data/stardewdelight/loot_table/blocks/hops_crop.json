@@ -60,31 +60,6 @@
               "block": "stardewdelight:hops_crop",
               "condition": "minecraft:block_state_property",
               "properties": {
-                "age": "6",
-                "half": "lower"
-              }
-            }
-          ],
-          "functions": [
-            {
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:binomial_with_bonus_count",
-              "function": "minecraft:apply_bonus",
-              "parameters": {
-                "extra": 3,
-                "probability": 0.5714286
-              }
-            }
-          ],
-          "name": "stardewdelight:hops_starter"
-        },
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "block": "stardewdelight:hops_crop",
-              "condition": "minecraft:block_state_property",
-              "properties": {
                 "half": "lower"
               }
             }
