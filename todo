@@ -3,7 +3,30 @@ block shapes, once textures are done.
 placement sounds
 go over and ensure all necessary methods are being implemented e.g. pathfinding
 
-names for fruit tree wood blocks is a bit weird. "Banana Stairs"?
+
+2 block bulb crops:
+- qi fruit: 5
+- pink melon: 6
+- powdermelon: 6
+- sugar pumpkin: 6
+
+fruit trees (one intermediary phase before growing into a full tree):
+- apricot: 6
+- cherry: 6
+- banana: 6
+- mango: 6
+- orange: 6
+- peach: 6
+- apple: 6
+- pomegranate: 6
+
+
+seed packet:
+- drops 10 seeds under #stardewdelight:seed_packet_options
+- most seeds available this way (except e.g. ancient seed, rare seed, qi bean, or very common seeds)
+- mainly intended for structure loot, to prevent seeds clogging player inventories
+
+Seed bag (holds 128 items of seeds, up to 12 different stacks)
 
 how get more flower seeds?
 rare seed: wandering trader
@@ -27,33 +50,8 @@ seed maker:
 - some seeds (rare seed, ancient seeds, qi bean, or very common seeds) are not available this way
 - mainly intended to prevent endless searching for one specific crop
 
-seed packet:
-- drops 10 seeds under #stardewdelight:seed_packet_options
-- most seeds available this way (except e.g. ancient seed, rare seed, qi bean, or very common seeds)
-- mainly intended for structure loot, to prevent seeds clogging player inventories
 
 actual food recipes
-
-
-2 block bulb crops:
-- qi fruit: 5
-- pink melon: 6
-- powdermelon: 6
-- sugar pumpkin: 6
-
-
-fruit trees (one intermediary phase before growing into a full tree):
-- apricot: 6
-- cherry: 6
-- banana: 6
-- mango: 6
-- orange: 6
-- peach: 6
-- apple: 6
-- pomegranate: 6
-
-Seed bag (holds 128 items of seeds, up to 12 different stacks)
-
 
 
 
