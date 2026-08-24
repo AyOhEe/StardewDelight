@@ -113,6 +113,10 @@ public class SDRecipeProvider extends RecipeProvider {
         starterRecipe(recipeOutput, SDItems.GREEN_BEAN, SDItems.BEAN_STARTER);
         starterRecipe(recipeOutput, SDItems.HOPS, SDItems.HOPS_STARTER);
         starterRecipe(recipeOutput, SDItems.GRAPES, SDItems.GRAPE_STARTER);
+
+        flowerSeedsRecipe(recipeOutput, SDBlocks.GROWN_BLUE_JAZZ.getItem(), SDItems.JAZZ_SEEDS, 4);
+        flowerSeedsRecipe(recipeOutput, SDBlocks.GROWN_SUMMER_SPANGLE.getItem(), SDItems.SPANGLE_SEEDS, 4);
+        flowerSeedsRecipe(recipeOutput, SDBlocks.GROWN_FAIRY_ROSE.getItem(), SDItems.FAIRY_SEEDS, 4);
     }
 
     private static void modNineBlockStorageRecipes(RecipeOutput output, RecipeCategory breakingCategory, ItemLike item, RecipeCategory compactingCategory, ItemLike compacted) {
@@ -133,7 +137,7 @@ public class SDRecipeProvider extends RecipeProvider {
 
     private static void bushProduceSeeds(RecipeOutput output, ItemLike produce, ItemLike seeds, int count) {
         String produceName = getItemName(produce);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, seeds, 1)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, seeds, count)
                 .requires(produce)
                 .unlockedBy("has_" + produceName, hasItems(produce))
                 .save(output, StardewDelight.modLoc("seeds_from_" + produceName));
@@ -149,6 +153,14 @@ public class SDRecipeProvider extends RecipeProvider {
                 .pattern("/ /")
                 .unlockedBy("has_" + produceName, hasItems(produce))
                 .save(output, StardewDelight.modLoc("starter_from_" + produceName));
+    }
+
+    private static void flowerSeedsRecipe(RecipeOutput output, ItemLike flower, ItemLike seeds, int count) {
+        String flowerName = getItemName(flower);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, seeds, count)
+                .requires(flower)
+                .unlockedBy("has_" + flowerName, hasItems(flower))
+                .save(output, StardewDelight.modLoc("seeds_from_" + flowerName));
     }
 
 

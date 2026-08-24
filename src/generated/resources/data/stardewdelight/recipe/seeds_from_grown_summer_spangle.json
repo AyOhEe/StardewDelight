@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "stardewdelight:grown_summer_spangle"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "stardewdelight:spangle_seeds"
+  }
+}
