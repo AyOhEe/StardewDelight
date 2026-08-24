@@ -104,6 +104,11 @@ public class SDBlockLoot extends BlockLootSubProvider {
         stardewCropDrops(SDBlocks.BOK_CHOY_CROP.get(), SDItems.BOK_CHOY.asItem(), SDItems.BOK_CHOY_SEEDS.asItem());
         stardewCropDrops(SDBlocks.TARO_ROOT_CROP.get(), SDItems.TARO_ROOT.asItem(), SDItems.TARO_TUBER.asItem());
 
+        stardewCropDrops(SDBlocks.PINK_MELON_CROP.get(), SDItems.PINK_MELON.asItem(), SDItems.PINK_MELON_SEEDS.asItem());
+        stardewCropDrops(SDBlocks.SUGAR_PUMPKIN_CROP.get(), SDItems.SUGAR_PUMPKIN.asItem(), SDItems.SUGAR_PUMPKIN_SEEDS.asItem());
+        stardewCropDrops(SDBlocks.POWDERMELON_CROP.get(), SDItems.POWDERMELON.asItem(), SDItems.POWDERMELON_SEEDS.asItem());
+        stardewCropDrops(SDBlocks.QI_FRUIT_CROP.get(), SDItems.QI_FRUIT.asItem(), SDItems.QI_BEAN.asItem());
+
         tallCropDrops(SDBlocks.AMARANTH_CROP.get(), SDItems.AMARANTH.asItem(), SDItems.AMARANTH_SEEDS.asItem());
         tallCropDrops(SDBlocks.STARFRUIT_CROP.get(), SDItems.STARFRUIT.asItem(), SDItems.STARFRUIT_SEEDS.asItem());
         tallSeedlessCropDrops(SDBlocks.SWEET_GEM_BERRY_CROP.get(), SDItems.SWEET_GEM_BERRY.asItem());

@@ -3,13 +3,6 @@ block shapes, once textures are done.
 placement sounds
 go over and ensure all necessary methods are being implemented e.g. pathfinding
 
-
-2 block bulb crops:
-- qi fruit: 5
-- pink melon: 6
-- powdermelon: 6
-- sugar pumpkin: 6
-
 fruit trees (grow as normal trees):
 - apricot: 6
 - cherry: 6
@@ -33,6 +26,7 @@ rare seed: wandering trader
 ancient seed (craftable into ancient seeds): desert temples, archaeology, trial chambers
 qi bean: wandering trader
 all other seeds: surface features (wild variants), village loot tables (some with fresh produce)
+saplings: solitary fruit trees generate as surface features
 
 
 seed textures

@@ -126,9 +126,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> PINK_MELON_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> PINK_MELON_CROP = standardCrop(
             "pink_melon_crop",
-            Block::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_5, 5, SDItems.PINK_MELON_SEEDS),
             p -> p
     );
 
@@ -212,9 +212,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> SUGAR_PUMPKIN_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> SUGAR_PUMPKIN_CROP = standardCrop(
             "sugar_pumpkin_crop",
-            Block::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_5, 5, SDItems.SUGAR_PUMPKIN_SEEDS),
             p -> p
     );
 
@@ -226,9 +226,9 @@ public class SDBlocks {
 
 
     /*----- WINTER CROPS -----*/
-    public static final DeferredBlock<Block> POWDERMELON_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> POWDERMELON_CROP = standardCrop(
             "powdermelon_crop",
-            Block::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_5, 5, SDItems.POWDERMELON_SEEDS),
             p -> p
     );
 
@@ -240,9 +240,9 @@ public class SDBlocks {
             p -> p
     );
 
-    public static final DeferredBlock<Block> QI_FRUIT_CROP = standardCrop(
+    public static final DeferredBlock<BaseCropBlock> QI_FRUIT_CROP = standardCrop(
             "qi_fruit_crop",
-            Block::new,
+            p -> BaseCropBlock.create(p, BlockStateProperties.AGE_4, 4, SDItems.QI_BEAN),
             p -> p
     );
 
