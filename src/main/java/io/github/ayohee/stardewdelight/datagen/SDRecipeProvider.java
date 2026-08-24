@@ -99,16 +99,16 @@ public class SDRecipeProvider extends RecipeProvider {
             hangingSign(recipeOutput, blocks.get(SDBlocks.WoodBlockTypes.HANGING_SIGN), blocks.get(SDBlocks.WoodBlockTypes.STRIPPED_LOG));
         }
 
-        bushProduceSeeds(recipeOutput, SDItems.STRAWBERRY, SDItems.STRAWBERRY_SEEDS, 1);
-        bushProduceSeeds(recipeOutput, SDItems.BROCCOLI, SDItems.BROCCOLI_SEEDS, 1);
-        bushProduceSeeds(recipeOutput, SDItems.EGGPLANT, SDItems.EGGPLANT_SEEDS, 1);
-        bushProduceSeeds(recipeOutput, SDItems.PINEAPPLE, SDItems.PINEAPPLE_SEEDS, 1);
-        bushProduceSeeds(recipeOutput, SDItems.BLUEBERRY, SDItems.BLUEBERRY_SEEDS, 1);
-        bushProduceSeeds(recipeOutput, SDItems.HOT_PEPPER, SDItems.PEPPER_SEEDS, 1);
-        bushProduceSeeds(recipeOutput, SDItems.SUMMER_SQUASH, SDItems.SUMMER_SQUASH_SEEDS, 1);
-        bushProduceSeeds(recipeOutput, SDItems.CRANBERRY, SDItems.CRANBERRY_SEEDS, 1);
-        bushProduceSeeds(recipeOutput, SDItems.CORN, SDItems.CORN_SEEDS, 1);
-        bushProduceSeeds(recipeOutput, SDItems.ANCIENT_FRUIT, SDItems.ANCIENT_SEEDS, 1);
+        bushProduceSeeds(recipeOutput, SDItems.STRAWBERRY, SDItems.STRAWBERRY_SEEDS, 2);
+        bushProduceSeeds(recipeOutput, SDItems.BROCCOLI, SDItems.BROCCOLI_SEEDS, 2);
+        bushProduceSeeds(recipeOutput, SDItems.EGGPLANT, SDItems.EGGPLANT_SEEDS, 2);
+        bushProduceSeeds(recipeOutput, SDItems.PINEAPPLE, SDItems.PINEAPPLE_SEEDS, 2);
+        bushProduceSeeds(recipeOutput, SDItems.BLUEBERRY, SDItems.BLUEBERRY_SEEDS, 2);
+        bushProduceSeeds(recipeOutput, SDItems.HOT_PEPPER, SDItems.PEPPER_SEEDS, 2);
+        bushProduceSeeds(recipeOutput, SDItems.SUMMER_SQUASH, SDItems.SUMMER_SQUASH_SEEDS, 2);
+        bushProduceSeeds(recipeOutput, SDItems.CRANBERRY, SDItems.CRANBERRY_SEEDS, 2);
+        bushProduceSeeds(recipeOutput, SDItems.CORN, SDItems.CORN_SEEDS, 2);
+        bushProduceSeeds(recipeOutput, SDItems.ANCIENT_FRUIT, SDItems.ANCIENT_SEEDS, 2);
 
         starterRecipe(recipeOutput, SDItems.GREEN_BEAN, SDItems.BEAN_STARTER);
         starterRecipe(recipeOutput, SDItems.HOPS, SDItems.HOPS_STARTER);
