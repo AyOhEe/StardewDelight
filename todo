@@ -10,7 +10,7 @@ go over and ensure all necessary methods are being implemented e.g. pathfinding
 - powdermelon: 6
 - sugar pumpkin: 6
 
-fruit trees (one intermediary phase before growing into a full tree):
+fruit trees (grow as normal trees):
 - apricot: 6
 - cherry: 6
 - banana: 6
@@ -35,7 +35,6 @@ qi bean: wandering trader
 all other seeds: surface features (wild variants), village loot tables (some with fresh produce)
 
 
-flower textures
 seed textures
 sapling textures
 crate textures
