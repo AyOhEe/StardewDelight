@@ -147,6 +147,8 @@ public class SDTags {
         public static final TagKey<Item> SD_FOODS_FRUIT = create("foods/fruit");
         public static final TagKey<Item> SD_FOODS_VEGETABLE = create("foods/vegetable");
 
+        public static final TagKey<Item> SEED_PACKET_OPTIONS = create("seed_packet_options");
+
 
         public static final TagKey<Item> SD_STORAGE_BLOCKS = create("storage_blocks");
 

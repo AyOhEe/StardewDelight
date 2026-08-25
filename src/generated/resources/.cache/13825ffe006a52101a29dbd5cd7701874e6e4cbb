@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-21T23:01:46.9966582	Tags for minecraft:item mod id stardewdelight
+// 1.21.1	2026-08-24T20:18:15.6497297	Tags for minecraft:item mod id stardewdelight
 d69833ff124e5c7822a01083d9052688288cf598 data/c/tags/item/animal_foods.json
 c2a1e896205ace70e0412136aef43ebd93a74465 data/c/tags/item/crops.json
 cfe7dfbd3aecaab8a2f5310a0e0c03678910584d data/c/tags/item/crops/amaranth.json
@@ -188,6 +188,7 @@ c274514f6c784d5394d49ff84b6b442710ee88db data/stardewdelight/tags/item/orange_lo
 db32828fec5053d41c67b8ee63e9e73cf4702eb8 data/stardewdelight/tags/item/peach_logs.json
 4d8c347bd350d2ac705a2bd90c66510ba63ffc8b data/stardewdelight/tags/item/pomegrate_logs.json
 0fdd72dbaf8c9fde81182634a9f6d58d6553324e data/stardewdelight/tags/item/seeds.json
+fb1f6587156439477cbf01f89b52ab2c6c81fdf1 data/stardewdelight/tags/item/seed_packet_options.json
 a6fea7df15c2374a9618431fcd806aa462d32f08 data/stardewdelight/tags/item/small_flowers.json
 dfa5d1221de82bc3ca468a4f19d5bc76fefa8139 data/stardewdelight/tags/item/storage_blocks.json
 b11cde9c9430a8e8cca0ff1f419e506b0ae63aaa data/stardewdelight/tags/item/tall_flowers.json

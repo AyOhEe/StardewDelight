@@ -9,9 +9,11 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import vectorwing.farmersdelight.common.registry.ModItems;
 
 import javax.annotation.Nullable;
 import java.util.concurrent.CompletableFuture;
@@ -460,5 +462,52 @@ public class SDItemTagsProvider extends ItemTagsProvider {
         tag(SDTags.ItemTags.FOOD_ORANGE).add(SDItems.ORANGE.asItem());
         tag(SDTags.ItemTags.FOOD_PEACH).add(SDItems.PEACH.asItem());
         tag(SDTags.ItemTags.FOOD_POMEGRANATE).add(SDItems.POMEGRANATE.asItem());
+
+
+        /*----- SEED PACKET OPTIONS -----*/
+        // Explicitly excluded:
+        // - Ancient seeds
+        // - Qi bean
+        // - Rare seed
+        tag(SDTags.ItemTags.SEED_PACKET_OPTIONS)
+                .add(SDItems.JAZZ_SEEDS.asItem())
+                .add(SDItems.CAULIFLOWER_SEEDS.asItem())
+                .add(SDItems.COFFEE_BEAN.asItem())
+                .add(SDItems.GARLIC_SEEDS.asItem())
+                .add(SDItems.BEAN_STARTER.asItem())
+                .add(SDItems.KALE_SEEDS.asItem())
+                .add(SDItems.PARSNIP_SEEDS.asItem())
+                .add(SDItems.RHUBARB_SEEDS.asItem())
+                .add(SDItems.STRAWBERRY_SEEDS.asItem())
+                .add(SDItems.BLUEBERRY_SEEDS.asItem())
+                .add(SDItems.CORN_SEEDS.asItem())
+                .add(SDItems.HOPS_STARTER.asItem())
+                .add(SDItems.PEPPER_SEEDS.asItem())
+                .add(SDItems.PINK_MELON_SEEDS.asItem())
+                .add(SDItems.RADISH_SEEDS.asItem())
+                .add(SDItems.RED_CABBAGE_SEEDS.asItem())
+                .add(SDItems.STARFRUIT_SEEDS.asItem())
+                .add(SDItems.SPANGLE_SEEDS.asItem())
+                .add(SDItems.SUMMER_SQUASH_SEEDS.asItem())
+                .add(SDItems.AMARANTH_SEEDS.asItem())
+                .add(SDItems.ARTICHOKE_SEEDS.asItem())
+                .add(SDItems.BOK_CHOY_SEEDS.asItem())
+                .add(SDItems.BROCCOLI_SEEDS.asItem())
+                .add(SDItems.CRANBERRY_SEEDS.asItem())
+                .add(SDItems.EGGPLANT_SEEDS.asItem())
+                .add(SDItems.FAIRY_SEEDS.asItem())
+                .add(SDItems.GRAPE_STARTER.asItem())
+                .add(SDItems.SUGAR_PUMPKIN_SEEDS.asItem())
+                .add(SDItems.YAM_SEEDS.asItem())
+                .add(SDItems.POWDERMELON_SEEDS.asItem())
+                .add(SDItems.PINEAPPLE_SEEDS.asItem())
+                .add(SDItems.TARO_TUBER.asItem())
+                .add(ModItems.CABBAGE_SEEDS.get())
+                .add(ModItems.TOMATO_SEEDS.get())
+                .add(ModItems.ONION.get())
+                .add(ModItems.RICE.get())
+                .add(Items.MELON_SEEDS)
+                .add(Items.PUMPKIN_SEEDS)
+                .add(Items.BEETROOT_SEEDS);
     }
 }

@@ -13,12 +13,6 @@ fruit trees (grow as normal trees):
 - apple: 6
 - pomegranate: 6
 
-
-seed packet:
-- drops 10 seeds under #stardewdelight:seed_packet_options
-- most seeds available this way (except e.g. ancient seed, rare seed, qi bean, or very common seeds)
-- mainly intended for structure loot, to prevent seeds clogging player inventories
-
 Seed bag (holds 128 items of seeds, up to 12 different stacks)
 
 rare seed: wandering trader
@@ -26,6 +20,7 @@ ancient seed (craftable into ancient seeds): desert temples, archaeology, trial 
 qi bean: wandering trader
 all other seeds: surface features (wild variants), village loot tables (some with fresh produce)
 saplings: solitary fruit trees generate as surface features
+seed packet: structure loot
 
 
 seed textures

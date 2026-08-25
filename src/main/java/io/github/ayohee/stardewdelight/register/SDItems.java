@@ -1,6 +1,7 @@
 package io.github.ayohee.stardewdelight.register;
 
 import io.github.ayohee.stardewdelight.content.DoubleHighNamedBlockItem;
+import io.github.ayohee.stardewdelight.content.SeedPacketItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -17,6 +18,13 @@ import static io.github.ayohee.stardewdelight.register.SDTabs.TAB_CONTENTS;
 
 public class SDItems {
     private static DeferredHolder<CreativeModeTab, CreativeModeTab> currentTab = SDTabs.STARDEW_DELIGHT;
+
+
+    /*----- UTILITY ITEMS -----*/
+    public static final DeferredItem<SeedPacketItem> SEED_PACKET = item(
+            "seed_packet",
+            SeedPacketItem::new
+    );
 
 
     /*----- SEEDS -----*/

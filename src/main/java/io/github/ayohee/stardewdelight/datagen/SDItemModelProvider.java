@@ -26,6 +26,10 @@ public class SDItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        /*----- UTILITY ITEMS -----*/
+        basicItem(SDItems.SEED_PACKET.asItem());
+
+
         /*----- SEEDS -----*/
         /*----- SPRING CROPS -----*/
         basicItem(SDItems.JAZZ_SEEDS.get());
