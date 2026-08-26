@@ -171,6 +171,9 @@ public class SDBlockStateProvider extends BlockStateProvider {
             this.models().withExistingParent(woodType.name() + "_button_inventory", "block/button_inventory").texture("texture", planksTexture);
         }
 
+        Block fruitingCherry = SDBlocks.FRUITING_CHERRY_LEAVES.getBlock().get();
+        this.simpleBlock(fruitingCherry, this.models().cubeAll(this.name(fruitingCherry), this.blockTexture(fruitingCherry)).renderType(mcLoc("cutout")));
+
         /*----- GROWN FLOWERS -----*/
         new BlockModelPair(SDBlocks.GROWN_BLUE_JAZZ.getBlock().get(), this::cross_cutout)
                 .makeBlockModel();

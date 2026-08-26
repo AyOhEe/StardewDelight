@@ -1,20 +1,19 @@
 package io.github.ayohee.stardewdelight.register;
 
 import io.github.ayohee.stardewdelight.SDBlockStateProperties;
+import io.github.ayohee.stardewdelight.SDTreeGrowers;
 import io.github.ayohee.stardewdelight.StardewDelight;
 import io.github.ayohee.stardewdelight.content.crops.*;
 import io.github.ayohee.stardewdelight.content.signs.FruitTreeCeilingHangingSignBlock;
 import io.github.ayohee.stardewdelight.content.signs.FruitTreeStandingSignBlock;
 import io.github.ayohee.stardewdelight.content.signs.FruitTreeWallHangingSignBlock;
 import io.github.ayohee.stardewdelight.content.signs.FruitTreeWallSignBlock;
-import io.github.ayohee.stardewdelight.content.trees.FruitSaplingBlock;
 import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.resources.model.Material;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.HangingSignItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SignItem;
 import net.minecraft.world.item.component.SuspiciousStewEffects;
 import net.minecraft.world.level.block.*;
@@ -33,7 +32,6 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import static io.github.ayohee.stardewdelight.StardewDelight.MODID;
 import static io.github.ayohee.stardewdelight.register.SDRegistries.BLOCKS;
 import static io.github.ayohee.stardewdelight.register.SDRegistries.ITEMS;
 import static io.github.ayohee.stardewdelight.register.SDTabs.TAB_CONTENTS;
@@ -266,57 +264,57 @@ public class SDBlocks {
 
 
     /*----- FRUIT TREES -----*/
-    public static final DeferredBlockItem<FruitSaplingBlock> TEA_SAPLING = sapling(
+    public static final DeferredBlockItem<Block> TEA_SAPLING = sapling(
             "tea_sapling",
-            FruitSaplingBlock::new,
+            Block::new,
             p -> p
     );
 
-    public static final DeferredBlockItem<FruitSaplingBlock> APRICOT_SAPLING = sapling(
+    public static final DeferredBlockItem<SaplingBlock> APRICOT_SAPLING = sapling(
             "apricot_sapling",
-            FruitSaplingBlock::new,
+            p -> new SaplingBlock(SDTreeGrowers.APRICOT, p),
             p -> p
     );
 
-    public static final DeferredBlockItem<FruitSaplingBlock> FRUITING_CHERRY_SAPLING = sapling(
+    public static final DeferredBlockItem<SaplingBlock> FRUITING_CHERRY_SAPLING = sapling(
             "fruiting_cherry_sapling",
-            FruitSaplingBlock::new,
+            p -> new SaplingBlock(SDTreeGrowers.FRUITING_CHERRY, p),
             p -> p
     );
 
-    public static final DeferredBlockItem<FruitSaplingBlock> BANANA_SAPLING = sapling(
+    public static final DeferredBlockItem<SaplingBlock> BANANA_SAPLING = sapling(
             "banana_sapling",
-            FruitSaplingBlock::new,
+            p -> new SaplingBlock(SDTreeGrowers.BANANA, p),
             p -> p
     );
 
-    public static final DeferredBlockItem<FruitSaplingBlock> MANGO_SAPLING = sapling(
+    public static final DeferredBlockItem<SaplingBlock> MANGO_SAPLING = sapling(
             "mango_sapling",
-            FruitSaplingBlock::new,
+            p -> new SaplingBlock(SDTreeGrowers.MANGO, p),
             p -> p
     );
 
-    public static final DeferredBlockItem<FruitSaplingBlock> ORANGE_SAPLING = sapling(
+    public static final DeferredBlockItem<SaplingBlock> ORANGE_SAPLING = sapling(
             "orange_sapling",
-            FruitSaplingBlock::new,
+            p -> new SaplingBlock(SDTreeGrowers.ORANGE, p),
             p -> p
     );
 
-    public static final DeferredBlockItem<FruitSaplingBlock> PEACH_SAPLING = sapling(
+    public static final DeferredBlockItem<SaplingBlock> PEACH_SAPLING = sapling(
             "peach_sapling",
-            FruitSaplingBlock::new,
+            p -> new SaplingBlock(SDTreeGrowers.PEACH, p),
             p -> p
     );
 
-    public static final DeferredBlockItem<FruitSaplingBlock> APPLE_SAPLING = sapling(
+    public static final DeferredBlockItem<SaplingBlock> APPLE_SAPLING = sapling(
             "apple_sapling",
-            FruitSaplingBlock::new,
+            p -> new SaplingBlock(SDTreeGrowers.APPLE, p),
             p -> p
     );
 
-    public static final DeferredBlockItem<FruitSaplingBlock> POMEGRANATE_SAPLING = sapling(
+    public static final DeferredBlockItem<SaplingBlock> POMEGRANATE_SAPLING = sapling(
             "pomegranate_sapling",
-            FruitSaplingBlock::new,
+            p -> new SaplingBlock(SDTreeGrowers.POMEGRANATE, p),
             p -> p
     );
 
@@ -333,6 +331,11 @@ public class SDBlocks {
                     .toArray(new AbstractMap.SimpleImmutableEntry[SDWoodTypes.values().length])
     );
 
+    public static final DeferredBlockItem<LeavesBlock> FRUITING_CHERRY_LEAVES = leaves(
+            "fruiting_cherry_leaves",
+            LeavesBlock::new,
+            p -> p
+    );
 
     /*----- GROWN FLOWERS -----*/
     static {

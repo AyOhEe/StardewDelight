@@ -324,7 +324,8 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get())
                 .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get())
-                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get());
+                .add(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get())
+                .add(SDBlocks.FRUITING_CHERRY_LEAVES.getBlock().get());
 
         tag(BlockTags.REPLACEABLE_BY_TREES).addTag(SDTags.BlockTags.FRUIT_TREE_LEAVES);
         tag(BlockTags.PARROTS_SPAWNABLE_ON).addTag(SDTags.BlockTags.FRUIT_TREE_LEAVES);

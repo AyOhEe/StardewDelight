@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-21T23:01:47.0047882	Tags for minecraft:block mod id stardewdelight
+// 1.21.1	2026-08-26T21:09:20.0538665	Tags for minecraft:block mod id stardewdelight
 3dfeddce992b980934d807821d49d3b1d32b447c data/c/tags/block/fences.json
 3dfeddce992b980934d807821d49d3b1d32b447c data/c/tags/block/fences/wooden.json
 d6b6259567212c75ca4a2101399ca849cbdc4fbb data/c/tags/block/fence_gates.json
@@ -108,7 +108,7 @@ d5134ec61a7a0818f9e6d243dca2cd74d9e4056c data/stardewdelight/tags/block/fruit_tr
 ea0e1dcb3b8661956831033f4707c5adc6520678 data/stardewdelight/tags/block/fruit_tree_fences.json
 4f733906aa36f3a82de9b299460ed4f0eb822e48 data/stardewdelight/tags/block/fruit_tree_fence_gates.json
 336cb8b28ee8dd80598827e0dc45a73f0dd03bfd data/stardewdelight/tags/block/fruit_tree_hanging_signs.json
-722ae47bf1c774ca1536f7a01a1e5f809c5e9960 data/stardewdelight/tags/block/fruit_tree_leaves.json
+44be8728a202ae284749b60a018bb7e9cecbe018 data/stardewdelight/tags/block/fruit_tree_leaves.json
 a677cd2da74bdb0dbb01cf1441f34850e811ff73 data/stardewdelight/tags/block/fruit_tree_logs.json
 5b72c28f07010da26e9a1b2aa5b272411f880bdc data/stardewdelight/tags/block/fruit_tree_planks.json
 5e020edcd460ac372a1a10edd59202a7eac44f6a data/stardewdelight/tags/block/fruit_tree_pressure_plates.json

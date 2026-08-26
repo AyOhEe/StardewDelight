@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-24T20:18:15.6497297	Tags for minecraft:item mod id stardewdelight
+// 1.21.1	2026-08-26T21:09:20.0407641	Tags for minecraft:item mod id stardewdelight
 d69833ff124e5c7822a01083d9052688288cf598 data/c/tags/item/animal_foods.json
 c2a1e896205ace70e0412136aef43ebd93a74465 data/c/tags/item/crops.json
 cfe7dfbd3aecaab8a2f5310a0e0c03678910584d data/c/tags/item/crops/amaranth.json
@@ -171,7 +171,7 @@ d5134ec61a7a0818f9e6d243dca2cd74d9e4056c data/stardewdelight/tags/item/fruit_tre
 ea0e1dcb3b8661956831033f4707c5adc6520678 data/stardewdelight/tags/item/fruit_tree_fences.json
 4f733906aa36f3a82de9b299460ed4f0eb822e48 data/stardewdelight/tags/item/fruit_tree_fence_gates.json
 336cb8b28ee8dd80598827e0dc45a73f0dd03bfd data/stardewdelight/tags/item/fruit_tree_hanging_signs.json
-722ae47bf1c774ca1536f7a01a1e5f809c5e9960 data/stardewdelight/tags/item/fruit_tree_leaves.json
+44be8728a202ae284749b60a018bb7e9cecbe018 data/stardewdelight/tags/item/fruit_tree_leaves.json
 a677cd2da74bdb0dbb01cf1441f34850e811ff73 data/stardewdelight/tags/item/fruit_tree_logs.json
 5b72c28f07010da26e9a1b2aa5b272411f880bdc data/stardewdelight/tags/item/fruit_tree_planks.json
 5e020edcd460ac372a1a10edd59202a7eac44f6a data/stardewdelight/tags/item/fruit_tree_pressure_plates.json

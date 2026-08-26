@@ -113,6 +113,7 @@ public class SDItemModelProvider extends ItemModelProvider {
             basicItem(blocks.get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getItem().get());
         }
 
+        simpleBlockItem(SDBlocks.FRUITING_CHERRY_LEAVES.getBlock().get());
 
         /*----- CROP ITEMS -----*/
         /*----- SPRING CROPS -----*/

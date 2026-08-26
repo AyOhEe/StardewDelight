@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-21T22:31:49.3954857	Stardew's Delight's BlockStates
+// 1.21.1	2026-08-26T21:09:20.0589327	Stardew's Delight's BlockStates
 7e36ea50d1aab07bc11a6e2594bef7ae2ccc0c47 assets/stardewdelight/blockstates/amaranth_bale.json
 303577e0e9519b54388ba2505f190992b1a65598 assets/stardewdelight/blockstates/amaranth_crop.json
 6c8200731d72bbd5672f5ab2172a10034d73843a assets/stardewdelight/blockstates/ancient_fruit_crate.json
@@ -80,6 +80,7 @@ e101ac0b84d5487b4ccfa4ce0c392225b6083d27 assets/stardewdelight/blockstates/cranb
 0fdaba8b53a96b3bd4cd306cb42c06ceb3649d45 assets/stardewdelight/blockstates/eggplant_crop.json
 48dc61ded104cfc7fe9db9ec07407b3b84ae2e3c assets/stardewdelight/blockstates/fairy_rose_box.json
 670e8b5b2bf0124fc4ef96be0bb987a26371d10d assets/stardewdelight/blockstates/fairy_rose_crop.json
+42574a21ff33eb95ac503d390fc2e140c78853db assets/stardewdelight/blockstates/fruiting_cherry_leaves.json
 9fafd4ef5f3edec2fed0d773404f65d146f027d4 assets/stardewdelight/blockstates/fruiting_cherry_sapling.json
 94d21eb2677aaf1145d4dac1b479b3fb3943b475 assets/stardewdelight/blockstates/garlic_crate.json
 2f80d084d10bce7fced4a96cb4a5e5beaf9fae5f assets/stardewdelight/blockstates/garlic_crop.json
@@ -357,6 +358,7 @@ cc0261aaaf3020d5c2b1fbcda1ac9da059d8ca57 assets/stardewdelight/models/block/cran
 1c6053f564f99805d637b586514571a7cf5070f8 assets/stardewdelight/models/block/eggplant_crop.json
 e32142cf86063624b5342cb656ada8bfa130e83e assets/stardewdelight/models/block/fairy_rose_box.json
 be109bbc8fd66820122c382c1816f9e8990b9dad assets/stardewdelight/models/block/fairy_rose_crop.json
+d836c16c3153e98328d97b93eacd072cbe0a3a81 assets/stardewdelight/models/block/fruiting_cherry_leaves.json
 ef7834e2fd7d6f6df542d6f4ac81316eb58ef7c7 assets/stardewdelight/models/block/fruiting_cherry_sapling.json
 8618e20662ed5e14229b550d53fc4ddbff52f457 assets/stardewdelight/models/block/garlic_crate.json
 bdbb3f73f9b6e0f683c4b5bd64156cf7b69d6884 assets/stardewdelight/models/block/garlic_crop.json

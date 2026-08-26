@@ -16,6 +16,7 @@ import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.properties.Property;
@@ -59,30 +60,29 @@ public class SDBlockLoot extends BlockLootSubProvider {
         for (Map<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>> blocks : SDBlocks.WOOD_BLOCKS.values()) {
             for (Map.Entry<SDBlocks.WoodBlockTypes, DeferredBlockItem<?>> entry : blocks.entrySet()) {
                 if (entry.getKey() == SDBlocks.WoodBlockTypes.LEAVES
-                        || entry.getKey() == SDBlocks.WoodBlockTypes.DOOR
-                        || entry.getKey() == SDBlocks.WoodBlockTypes.WALL_SIGN
-                        || entry.getKey() == SDBlocks.WoodBlockTypes.WALL_HANGING_SIGN) {
+                        || entry.getKey() == SDBlocks.WoodBlockTypes.DOOR) {
                     continue;
                 }
                 dropSelf(entry.getValue().getBlock().get());
             }
         }
 
-        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.APRICOT_SAPLING.getBlock().get());
-        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.BANANA_SAPLING.getBlock().get());
-        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.MANGO_SAPLING.getBlock().get());
-        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.ORANGE_SAPLING.getBlock().get());
-        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.PEACH_SAPLING.getBlock().get());
-        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.APPLE_SAPLING.getBlock().get());
-        createLeavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.POMEGRANATE_SAPLING.getBlock().get());
+        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.APRICOT_SAPLING.getBlock().get());
+        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.BANANA_SAPLING.getBlock().get());
+        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.MANGO_SAPLING.getBlock().get());
+        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.ORANGE_SAPLING.getBlock().get());
+        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.PEACH_SAPLING.getBlock().get());
+        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.APPLE_SAPLING.getBlock().get());
+        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.POMEGRANATE_SAPLING.getBlock().get());
+        leavesDrops(SDBlocks.FRUITING_CHERRY_LEAVES.getBlock().get(), SDBlocks.FRUITING_CHERRY_SAPLING.getBlock().get());
 
-        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
-        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
-        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
-        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
-        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
-        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
-        createDoorTable(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
+        doorDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
+        doorDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
+        doorDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
+        doorDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
+        doorDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
+        doorDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
+        doorDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
 
         dropSelf(SDBlocks.GROWN_BLUE_JAZZ.getBlock().get());
         dropSelf(SDBlocks.GROWN_SUMMER_SPANGLE.getBlock().get());
@@ -135,6 +135,14 @@ public class SDBlockLoot extends BlockLootSubProvider {
     protected void add(Block block, LootTable.Builder builder) {
         this.generatedLootTables.add(block);
         this.map.put(block.getLootTable(), builder);
+    }
+
+    private void leavesDrops(Block leaves, Block sapling) {
+        add(leaves, createLeavesDrops(leaves, sapling, 0.05f, 0.0625f, 0.083333336f, 0.1f));
+    }
+
+    private void doorDrops(Block door) {
+        add(door, createDoorTable(door));
     }
 
     private void stardewCropDrops(BaseCropBlock crop, Item item, Item seed) {

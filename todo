@@ -2,16 +2,12 @@ proper blockstate definitions per crop age
 block shapes, once textures are done.
 placement sounds
 go over and ensure all necessary methods are being implemented e.g. pathfinding
+block properties
+item properties
 
-fruit trees (grow as normal trees):
-- apricot: 6
-- cherry: 6
-- banana: 6
-- mango: 6
-- orange: 6
-- peach: 6
-- apple: 6
-- pomegranate: 6
+
+tea tree
+fruit tree leaves
 
 Seed bag (holds 128 items of seeds, up to 12 different stacks)
 
@@ -29,13 +25,6 @@ crate textures
 wood decoratives textures
 leaves textures
 crop block textures
-
-seed maker:
-- functions differently from in stardew
-- pass in 4 unique seeds, receive 1 different seed back
-- available seeds are restricted to those under #stardewdelight:seed_maker_options
-- some seeds (rare seed, ancient seeds, qi bean, or very common seeds) are not available this way
-- mainly intended to prevent endless searching for one specific crop
 
 
 actual food recipes
