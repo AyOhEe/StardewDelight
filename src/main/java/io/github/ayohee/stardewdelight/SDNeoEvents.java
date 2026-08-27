@@ -1,5 +1,6 @@
-package io.github.ayohee.stardewdelight.register;
+package io.github.ayohee.stardewdelight;
 
+import io.github.ayohee.stardewdelight.register.SDBlocks;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.BlockState;

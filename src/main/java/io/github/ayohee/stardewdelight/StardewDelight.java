@@ -8,7 +8,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import org.slf4j.Logger;
 
@@ -18,7 +17,6 @@ public class StardewDelight {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public StardewDelight(IEventBus modEventBus, ModContainer modContainer) {
-        modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(EventPriority.HIGHEST, SDDatagen::gatherDataHighPriority);
         modEventBus.addListener(EventPriority.LOWEST, SDDatagen::gatherData);
 
@@ -37,9 +35,5 @@ public class StardewDelight {
 
     public static ResourceLocation modLoc(String name) {
         return ResourceLocation.fromNamespaceAndPath(MODID, name);
-    }
-
-    private void commonSetup(FMLCommonSetupEvent event) {
-        // Yet empty.
     }
 }

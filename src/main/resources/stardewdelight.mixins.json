@@ -3,7 +3,6 @@
   "package": "io.github.ayohee.stardewdelight.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "WanderingTraderMixin"
   ],
   "client": [
   ],
