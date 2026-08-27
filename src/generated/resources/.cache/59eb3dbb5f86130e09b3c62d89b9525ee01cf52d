@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-27T22:59:36.4714711	Loot Tables
+// 1.21.1	2026-08-27T23:30:11.6993557	Loot Tables
 82c9a4c94299267696f7aa54269f15302f31dc25 data/stardewdelight/loot_table/blocks/amaranth_bale.json
 2988ea00bb756ebdc11ce769da2eb9b6291cf08e data/stardewdelight/loot_table/blocks/amaranth_crop.json
 452b01372903f0d5d2a914a303c842833c744ffd data/stardewdelight/loot_table/blocks/ancient_fruit_crate.json
@@ -219,3 +219,4 @@ fbd1016c1f4dd8f10a24b13d2316ef383c96b42d data/stardewdelight/loot_table/blocks/s
 95792856e3a9d7df3eda8f312720f8fbd7130992 data/stardewdelight/loot_table/blocks/yam_crop.json
 19d49a09ff33ab9c39c30da4463afc8f0fa476ec data/stardewdelight/loot_table/partial_ancient_seed.json
 42394ab60b2f97bf772d9d8685eec18cbff643d1 data/stardewdelight/loot_table/partial_seeds_or_produce.json
+bb1390820cf0d9f1c335451c6df1058eafd4d295 data/stardewdelight/loot_table/partial_seed_packet.json

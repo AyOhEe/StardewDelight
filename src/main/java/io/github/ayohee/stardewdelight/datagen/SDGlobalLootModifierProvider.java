@@ -51,5 +51,32 @@ public class SDGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         SDLootTables.PARTIAL_SEEDS_OR_PRODUCE
                 )
         );
+
+        add(
+                "add_seed_packet",
+                new AddTableLootModifier(
+                        new LootItemCondition[]{
+                                AnyOfCondition.anyOf(
+                                        LootTableIdCondition.builder(BuiltInLootTables.VILLAGE_PLAINS_HOUSE.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.VILLAGE_SNOWY_HOUSE.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.VILLAGE_TAIGA_HOUSE.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.VILLAGE_DESERT_HOUSE.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.VILLAGE_SAVANNA_HOUSE.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.ABANDONED_MINESHAFT.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.ANCIENT_CITY.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.BURIED_TREASURE.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.DESERT_PYRAMID.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.IGLOO_CHEST.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.JUNGLE_TEMPLE.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.PILLAGER_OUTPOST.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.SHIPWRECK_SUPPLY.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.STRONGHOLD_CORRIDOR.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.STRONGHOLD_CROSSING.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.UNDERWATER_RUIN_SMALL.location())
+                                ).build()
+                        },
+                        SDLootTables.PARTIAL_SEED_PACKET
+                )
+        );
     }
 }

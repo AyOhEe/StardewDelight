@@ -13,6 +13,7 @@ import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.AlternativesEntry;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.NumberProviders;
@@ -71,6 +72,14 @@ public class SDChestLootProvider implements LootTableSubProvider {
                                 .add(produceChance(SDItems.PINEAPPLE_SEEDS, 0.75f, SDItems.PINEAPPLE))
                                 .add(produceChance(SDItems.TARO_TUBER, 0.75f, SDItems.TARO_ROOT))
                 )
+        );
+        output.accept(
+                SDLootTables.PARTIAL_SEED_PACKET,
+                LootTable.lootTable()
+                        .withPool(
+                                LootPool.lootPool().add(LootItem.lootTableItem(SDItems.SEED_PACKET))
+                                        .setRolls(UniformGenerator.between(0, 2))
+                        )
         );
     }
 
