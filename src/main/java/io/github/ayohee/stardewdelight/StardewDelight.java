@@ -15,7 +15,7 @@ import org.slf4j.Logger;
 @Mod(StardewDelight.MODID)
 public class StardewDelight {
     public static final String MODID = "stardewdelight";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public StardewDelight(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
