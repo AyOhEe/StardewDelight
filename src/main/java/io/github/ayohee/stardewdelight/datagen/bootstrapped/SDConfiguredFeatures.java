@@ -2,6 +2,8 @@ package io.github.ayohee.stardewdelight.datagen.bootstrapped;
 
 import io.github.ayohee.stardewdelight.StardewDelight;
 import io.github.ayohee.stardewdelight.register.SDBlocks;
+import net.minecraft.core.HolderGetter;
+import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
@@ -11,12 +13,15 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleRandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+
+import java.util.List;
 
 public class SDConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> APRICOT_TREE = key("apricot_tree");
@@ -27,8 +32,11 @@ public class SDConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEACH_TREE = key("peach_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> APPLE_TREE = key("apple_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> POMEGRANATE_TREE = key("pomegranate_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TREES_FRUIT = key("trees_fruit");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> bootstrap) {
+        HolderGetter<PlacedFeature> placedFeatures = bootstrap.lookup(Registries.PLACED_FEATURE);
+
         bootstrap.register(APRICOT_TREE,
                 new ConfiguredFeature<>(
                         Feature.TREE,
@@ -123,6 +131,24 @@ public class SDConfiguredFeatures {
                                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                                 new TwoLayersFeatureSize(1, 0, 1)
                         ).ignoreVines().build()
+                )
+        );
+
+        bootstrap.register(TREES_FRUIT,
+                new ConfiguredFeature<>(
+                        Feature.SIMPLE_RANDOM_SELECTOR,
+                        new SimpleRandomFeatureConfiguration(
+                                HolderSet.direct(
+                                        placedFeatures.getOrThrow(SDPlacedFeatures.APRICOT_TREE),
+                                        placedFeatures.getOrThrow(SDPlacedFeatures.FRUITING_CHERRY_TREE),
+                                        placedFeatures.getOrThrow(SDPlacedFeatures.BANANA_TREE),
+                                        placedFeatures.getOrThrow(SDPlacedFeatures.MANGO_TREE),
+                                        placedFeatures.getOrThrow(SDPlacedFeatures.ORANGE_TREE),
+                                        placedFeatures.getOrThrow(SDPlacedFeatures.PEACH_TREE),
+                                        placedFeatures.getOrThrow(SDPlacedFeatures.APPLE_TREE),
+                                        placedFeatures.getOrThrow(SDPlacedFeatures.POMEGRANATE_TREE)
+                                )
+                        )
                 )
         );
     }

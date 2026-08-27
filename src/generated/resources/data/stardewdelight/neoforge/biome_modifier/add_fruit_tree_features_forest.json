@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#stardewdelight:fruit_tree_forest_spawns",
+  "features": "stardewdelight:trees_forest_fruit",
+  "step": "vegetal_decoration"
+}

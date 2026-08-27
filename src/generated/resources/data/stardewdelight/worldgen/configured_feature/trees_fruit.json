@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      "stardewdelight:apricot_tree",
+      "stardewdelight:fruiting_cherry_tree",
+      "stardewdelight:banana_tree",
+      "stardewdelight:mango_tree",
+      "stardewdelight:orange_tree",
+      "stardewdelight:peach_tree",
+      "stardewdelight:apple_tree",
+      "stardewdelight:pomegranate_tree"
+    ]
+  }
+}

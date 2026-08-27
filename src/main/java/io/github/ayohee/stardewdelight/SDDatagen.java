@@ -38,6 +38,7 @@ public class SDDatagen {
         SDBlockTagsProvider blockTags = new SDBlockTagsProvider(output, lookupProvider, fileHelper);
         generator.addProvider(event.includeServer(), blockTags);
         generator.addProvider(event.includeServer(), new SDItemTagsProvider(output, lookupProvider, blockTags.contentsGetter(), fileHelper));
+        generator.addProvider(event.includeServer(), new SDBiomeTagsProvider(output, lookupProvider, fileHelper));
         generator.addProvider(event.includeServer(), new SDBuiltInEntriesProvider(output, lookupProvider));
 
         System.out.println("Gathering data for Stardew's Delight");

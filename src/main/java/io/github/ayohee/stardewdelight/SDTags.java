@@ -5,6 +5,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.WoodType;
 
@@ -296,6 +297,19 @@ public class SDTags {
 
         private static TagKey<Item> common(String name) {
             return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", name));
+        }
+    }
+
+    public static class BiomeTags {
+        public static final TagKey<Biome> FRUIT_TREE_FOREST_SPAWNS = create("fruit_tree_forest_spawns");
+        public static final TagKey<Biome> FRUIT_TREE_PLAINS_SPAWNS = create("fruit_tree_plains_spawns");
+
+        private static TagKey<Biome> create(String name) {
+            return TagKey.create(Registries.BIOME, StardewDelight.modLoc(name));
+        }
+
+        private static TagKey<Biome> common(String name) {
+            return TagKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("c", name));
         }
     }
 
