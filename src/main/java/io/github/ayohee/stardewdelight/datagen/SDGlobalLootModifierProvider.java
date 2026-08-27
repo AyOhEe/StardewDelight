@@ -35,5 +35,21 @@ public class SDGlobalLootModifierProvider extends GlobalLootModifierProvider {
                         SDLootTables.PARTIAL_ANCIENT_SEED
                 )
         );
+
+        add(
+                "add_seeds_or_produce",
+                new AddTableLootModifier(
+                        new LootItemCondition[]{
+                                AnyOfCondition.anyOf(
+                                        LootTableIdCondition.builder(BuiltInLootTables.VILLAGE_PLAINS_HOUSE.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.VILLAGE_SNOWY_HOUSE.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.VILLAGE_TAIGA_HOUSE.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.VILLAGE_DESERT_HOUSE.location()),
+                                        LootTableIdCondition.builder(BuiltInLootTables.VILLAGE_SAVANNA_HOUSE.location())
+                                ).build()
+                        },
+                        SDLootTables.PARTIAL_SEEDS_OR_PRODUCE
+                )
+        );
     }
 }

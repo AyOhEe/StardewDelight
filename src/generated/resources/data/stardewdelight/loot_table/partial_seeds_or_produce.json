@@ -1,0 +1,609 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:jazz_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:grown_blue_jazz"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:cauliflower_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:cauliflower"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stardewdelight:coffee_bean"
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:garlic_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:garlic"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:bean_starter"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:green_bean"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:kale_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:kale"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:parsnip_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:parsnip"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:rhubarb_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:rhubarb"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:strawberry_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:strawberry"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:blueberry_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:blueberry"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:corn_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:corn"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:hops_starter"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:hops"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:pepper_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:hot_pepper"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:pink_melon_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:pink_melon"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:radish_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:radish"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:red_cabbage_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:red_cabbage"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:starfruit_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:starfruit"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:spangle_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:grown_summer_spangle"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:summer_squash_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:summer_squash"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:amaranth_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:amaranth"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:artichoke_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:artichoke"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:bok_choy_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:bok_choy"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:broccoli_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:broccoli"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:cranberry_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:cranberry"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:eggplant_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:eggplant"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:fairy_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:grown_fairy_rose"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:grape_starter"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:grapes"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:sugar_pumpkin_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:sugar_pumpkin"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:yam_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:yam"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:powdermelon_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:powdermelon"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:pineapple_seeds"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:pineapple"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "chance": 0.75,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "name": "stardewdelight:taro_tuber"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "stardewdelight:taro_root"
+            }
+          ]
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 6.0,
+        "min": 3.0
+      }
+    }
+  ],
+  "random_sequence": "stardewdelight:partial_seeds_or_produce"
+}

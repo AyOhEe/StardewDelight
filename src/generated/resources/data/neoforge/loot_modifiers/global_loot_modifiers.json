@@ -1,6 +1,7 @@
 {
   "entries": [
-    "stardewdelight:add_ancient_seed"
+    "stardewdelight:add_ancient_seed",
+    "stardewdelight:add_seeds_or_produce"
   ],
   "replace": false
 }

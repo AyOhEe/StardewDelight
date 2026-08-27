@@ -2,8 +2,8 @@ proper blockstate definitions per crop age
 block shapes, once textures are done.
 placement sounds
 go over and ensure all necessary methods are being implemented e.g. pathfinding
-block properties
-item properties
+block properties (strength, tool for drops, etc... GO THROUGH AND CHECK)
+item properties (edible crops? etc... GO THROUGH AND CHECK)
 
 
 tea tree
@@ -11,13 +11,6 @@ fruit tree leaves
 
 Seed bag (holds 128 items of seeds, up to 12 different stacks)
 
-
-all other seeds: village loot tables (some with fresh produce)
-- data/minecraft/loot_table/chests/village/village_plains_house.json
-- data/minecraft/loot_table/chests/village/village_snowy_house.json
-- data/minecraft/loot_table/chests/village/village_taiga_house.json
-- data/minecraft/loot_table/chests/village/village_savanna_house.json
-- data/minecraft/loot_table/chests/village/village_desert_house.json
 
 seed packet: structure loot (where?)
 wild crop surface features
@@ -32,7 +25,7 @@ crop block textures
 
 
 actual food recipes
-
+food effects?
 
 
 
@@ -101,3 +94,8 @@ Forageables:
     - Rainbow shell
     - Sea urchin
     - Seaweed
+
+redesign fruit trees
+texture polish
+more recipes
+more food effects
