@@ -28,6 +28,7 @@ public class SDItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         /*----- UTILITY ITEMS -----*/
         basicItem(SDItems.SEED_PACKET.asItem());
+        basicItem(SDItems.ANCIENT_SEED.asItem());
 
 
         /*----- SEEDS -----*/

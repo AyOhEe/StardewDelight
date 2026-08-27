@@ -26,6 +26,11 @@ public class SDItems {
             SeedPacketItem::new
     );
 
+    public static final DeferredItem<Item> ANCIENT_SEED = item(
+            "ancient_seed",
+            Item::new
+    );
+
 
     /*----- SEEDS -----*/
     /*----- SPRING CROPS -----*/

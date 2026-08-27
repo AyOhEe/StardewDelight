@@ -310,6 +310,7 @@
   "item.stardewdelight.yam_seeds.tooltip": "Crop seeds: break to harvest when mature",
   "item.stardewdelight.powdermelon_seeds.tooltip": "Crop seeds: break to harvest when mature",
   "item.stardewdelight.ancient_seeds.tooltip": "Bush seeds: right-click mature crop to harvest (regrowable, top half only)",
+  "item.stardewdelight.ancient_seeds.tooltip_italic": "Could these still grow..?",
   "item.stardewdelight.qi_bean.tooltip": "Crop seeds: break to harvest when mature",
   "item.stardewdelight.rare_seed.tooltip": "Crop seeds: break to harvest when mature",
   "item.stardewdelight.pineapple_seeds.tooltip": "Bush seeds: right-click mature crop to harvest (regrowable)",
@@ -360,5 +361,8 @@
   "item.stardewdelight.blueberry_punnet": "Blueberry Punnet",
   "item.stardewdelight.cranberry_punnet": "Cranberry Punnet",
 
-  "item.stardewdelight.seed_packet": "Seed Packet"
+  "item.stardewdelight.seed_packet": "Seed Packet",
+  "item.stardewdelight.ancient_seed": "Ancient Seed",
+
+  "item.stardewdelight.ancient_seed.tooltip_italic": "By all appearances it's long since dead..."
 }

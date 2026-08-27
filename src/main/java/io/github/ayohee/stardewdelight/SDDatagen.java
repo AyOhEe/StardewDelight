@@ -34,12 +34,21 @@ public class SDDatagen {
         generator.addProvider(event.includeServer(), new SDRecipeProvider(output, lookupProvider).namedWrapper());
         generator.addProvider(event.includeClient(), new SDBlockStateProvider(output, fileHelper).namedWrapper());
         generator.addProvider(event.includeClient(), new SDItemModelProvider(output, fileHelper).namedWrapper());
-        generator.addProvider(event.includeServer(), new LootTableProvider(output, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(SDBlockLoot::new, LootContextParamSets.BLOCK)), lookupProvider));
+        generator.addProvider(event.includeServer(), new LootTableProvider(
+                output,
+                Collections.emptySet(),
+                List.of(
+                        new LootTableProvider.SubProviderEntry(SDBlockLootProvider::new, LootContextParamSets.BLOCK),
+                        new LootTableProvider.SubProviderEntry(SDChestLootProvider::new, LootContextParamSets.CHEST)
+                ),
+                lookupProvider)
+        );
         SDBlockTagsProvider blockTags = new SDBlockTagsProvider(output, lookupProvider, fileHelper);
         generator.addProvider(event.includeServer(), blockTags);
         generator.addProvider(event.includeServer(), new SDItemTagsProvider(output, lookupProvider, blockTags.contentsGetter(), fileHelper));
         generator.addProvider(event.includeServer(), new SDBiomeTagsProvider(output, lookupProvider, fileHelper));
         generator.addProvider(event.includeServer(), new SDBuiltInEntriesProvider(output, lookupProvider));
+        generator.addProvider(event.includeServer(), new SDGlobalLootModifierProvider(output, lookupProvider));
 
         System.out.println("Gathering data for Stardew's Delight");
         System.out.println(event.includeServer());

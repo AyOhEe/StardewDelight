@@ -1,7 +1,8 @@
-// 1.21.1	2026-08-26T21:09:20.0483417	Stardew's Delight's ItemTags Models
+// 1.21.1	2026-08-27T21:22:58.1245667	Stardew's Delight's ItemTags Models
 c80c5cd3050be4cc5222f1ee05061d40a56c0f9d assets/stardewdelight/models/item/amaranth.json
 c72b6390f795d02ac9d77eeb6e957b79d2c76b8a assets/stardewdelight/models/item/amaranth_seeds.json
 33565a838f79888fff561207abb8e3fa2964c1ab assets/stardewdelight/models/item/ancient_fruit.json
+6957ac9cc68291b9d210c1c8a0ac9d50f1eb2d2d assets/stardewdelight/models/item/ancient_seed.json
 ad972c69759f0c1ecf0f91a31357deb53f9df2f4 assets/stardewdelight/models/item/ancient_seeds.json
 029124d9ad81802e2b5fcc29965b373105a1a0d0 assets/stardewdelight/models/item/apple_button.json
 9a850acf8126a6720bcd8dd8d601c4960755988a assets/stardewdelight/models/item/apple_door.json

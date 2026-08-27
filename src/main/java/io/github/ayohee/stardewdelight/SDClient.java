@@ -17,6 +17,7 @@ import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 
 import static io.github.ayohee.stardewdelight.StardewDelight.MODID;
 import static net.minecraft.ChatFormatting.GRAY;
+import static net.minecraft.ChatFormatting.ITALIC;
 
 @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SDClient {
@@ -38,6 +39,12 @@ public class SDClient {
 
         Item item = event.getItemStack().getItem();
         ResourceLocation location = BuiltInRegistries.ITEM.getKey(item);
+
+        // NOTE components need to be added in reverse order, here
+        String italicName = "item." + location.getNamespace() + "." + location.getPath() + ".tooltip_italic";
+        if (I18n.exists(italicName)) {
+            event.getToolTip().add(1, Component.translatable(italicName).withStyle(GRAY).withStyle(ITALIC));
+        }
 
         String componentName = "item." + location.getNamespace() + "." + location.getPath() + ".tooltip";
         if (I18n.exists(componentName)) {

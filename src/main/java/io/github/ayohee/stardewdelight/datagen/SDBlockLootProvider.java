@@ -11,12 +11,10 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.properties.Property;
@@ -34,10 +32,10 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class SDBlockLoot extends BlockLootSubProvider {
+public class SDBlockLootProvider extends BlockLootSubProvider {
     private final Set<Block> generatedLootTables = new HashSet();
 
-    public SDBlockLoot(HolderLookup.Provider holder) {
+    public SDBlockLootProvider(HolderLookup.Provider holder) {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), holder);
     }
 
