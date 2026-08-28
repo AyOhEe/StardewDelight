@@ -12,10 +12,12 @@ import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.neoforged.neoforge.common.Tags;
 import vectorwing.farmersdelight.data.builder.CuttingBoardRecipeBuilder;
 
 import java.util.Map;
@@ -117,6 +119,16 @@ public class SDRecipeProvider extends RecipeProvider {
         flowerSeedsRecipe(recipeOutput, SDBlocks.GROWN_BLUE_JAZZ.getItem(), SDItems.JAZZ_SEEDS, 4);
         flowerSeedsRecipe(recipeOutput, SDBlocks.GROWN_SUMMER_SPANGLE.getItem(), SDItems.SPANGLE_SEEDS, 4);
         flowerSeedsRecipe(recipeOutput, SDBlocks.GROWN_FAIRY_ROSE.getItem(), SDItems.FAIRY_SEEDS, 4);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SDItems.ANCIENT_SEEDS)
+                .pattern("###")
+                .pattern("#.#")
+                .pattern("#U#")
+                .define('.', SDItems.ANCIENT_SEED)
+                .define('#', Ingredient.of(Tags.Items.SEEDS))
+                .define('U', Items.WATER_BUCKET)
+                .unlockedBy("has_" + getItemName(SDItems.ANCIENT_SEED), hasItems(SDItems.ANCIENT_SEED))
+                .save(recipeOutput, StardewDelight.modLoc("ancient_seeds_from_ancient_seed"));
     }
 
     private static void modNineBlockStorageRecipes(RecipeOutput output, RecipeCategory breakingCategory, ItemLike item, RecipeCategory compactingCategory, ItemLike compacted) {
