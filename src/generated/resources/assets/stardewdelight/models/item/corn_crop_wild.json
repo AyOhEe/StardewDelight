@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "stardewdelight:block/corn_crop_wild"
+  }
+}

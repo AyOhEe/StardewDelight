@@ -176,6 +176,53 @@ public class SDItemModelProvider extends ItemModelProvider {
         basicItem(SDItems.STRAWBERRY_PUNNET.get());
         basicItem(SDItems.BLUEBERRY_PUNNET.get());
         basicItem(SDItems.CRANBERRY_PUNNET.get());
+
+        /*----- WILD CROP BLOCKS -----*/
+        /*----- SPRING CROPS -----*/
+        // Blue jazz does not have a wild variant
+        blockTexture(SDBlocks.CAULIFLOWER_CROP_WILD.getItem());
+        blockTexture(SDBlocks.COFFEE_BUSH_WILD.getItem());
+        blockTexture(SDBlocks.GARLIC_CROP_WILD.getItem());
+        blockTexture(SDBlocks.GREEN_BEANS_CROP_WILD.getItem());
+        blockTexture(SDBlocks.KALE_CROP_WILD.getItem());
+        blockTexture(SDBlocks.PARSNIP_CROP_WILD.getItem());
+        blockTexture(SDBlocks.RHUBARB_CROP_WILD.getItem());
+        blockTexture(SDBlocks.STRAWBERRY_BUSH_WILD.getItem());
+
+        /*----- SUMMER CROPS -----*/
+        blockTexture(SDBlocks.BLUEBERRY_BUSH_WILD.getItem());
+        blockTexture(SDBlocks.CORN_CROP_WILD.getItem());
+        blockTexture(SDBlocks.HOPS_CROP_WILD.getItem());
+        blockTexture(SDBlocks.HOT_PEPPERS_CROP_WILD.getItem());
+        blockTexture(SDBlocks.PINK_MELON_CROP_WILD.getItem());
+        blockTexture(SDBlocks.RADISH_CROP_WILD.getItem());
+        blockTexture(SDBlocks.RED_CABBAGE_CROP_WILD.getItem());
+        blockTexture(SDBlocks.STARFRUIT_CROP_WILD.getItem());
+        // Summer spangle does not have a wild variant
+        blockTexture(SDBlocks.SUMMER_SQUASH_CROP_WILD.getItem());
+
+        /*----- FALL CROPS -----*/
+        blockTexture(SDBlocks.AMARANTH_CROP_WILD.getItem());
+        blockTexture(SDBlocks.ARTICHOKE_CROP_WILD.getItem());
+        blockTexture(SDBlocks.BOK_CHOY_CROP_WILD.getItem());
+        blockTexture(SDBlocks.BROCCOLI_CROP_WILD.getItem());
+        blockTexture(SDBlocks.CRANBERRY_BUSH_WILD.getItem());
+        blockTexture(SDBlocks.EGGPLANT_CROP_WILD.getItem());
+        // Fairy rose does not have a wild variant
+        blockTexture(SDBlocks.GRAPES_CROP_WILD.getItem());
+        blockTexture(SDBlocks.SUGAR_PUMPKIN_CROP_WILD.getItem());
+        blockTexture(SDBlocks.YAM_CROP_WILD.getItem());
+
+
+        /*----- WINTER CROPS -----*/
+        blockTexture(SDBlocks.POWDERMELON_CROP_WILD.getItem());
+
+        /*----- SPECIAL CROPS -----*/
+        // Ancient fruit does not have a wild variant
+        // Qi fruit does not have a wild variant
+        // Sweet gem berry does not have a wild variant
+        blockTexture(SDBlocks.PINEAPPLE_CROP_WILD.getItem());
+        blockTexture(SDBlocks.TARO_ROOT_CROP_WILD.getItem());
     }
 
     private void blockTexture(DeferredItem<? extends Item> i) {

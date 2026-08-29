@@ -12,6 +12,20 @@ fruit tree leaves
 Seed bag (holds 128 items of seeds, up to 12 different stacks)
 
 wild crop surface features
+flower features
+
+reassess bulb crops (sugar pumpkin, powdermelon, pink melon, qi fruit, cauliflower)
+ - should likely have different models for growth stages instead of just textures
+ - wild variants should have a model, not just cross_cutout
+
+organise texture folders
+- blocks
+  - crops
+  - wild crops
+  - crates
+- items
+  - seeds
+  - crops
 
 seed textures
 sapling textures
@@ -19,6 +33,7 @@ crate textures
 wood decoratives textures
 leaves textures
 crop block textures
+wild crop textures
 
 
 actual food recipes

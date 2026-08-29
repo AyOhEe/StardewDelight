@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "stardewdelight:block/hot_peppers_crop_wild"
+  }
+}

@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import vectorwing.farmersdelight.common.registry.ModItems;
+import vectorwing.farmersdelight.common.tag.ModTags;
 
 import javax.annotation.Nullable;
 import java.util.concurrent.CompletableFuture;
@@ -509,5 +510,15 @@ public class SDItemTagsProvider extends ItemTagsProvider {
                 .add(Items.MELON_SEEDS)
                 .add(Items.PUMPKIN_SEEDS)
                 .add(Items.BEETROOT_SEEDS);
+
+
+        /*----- WILD CROPS -----*/
+        copy(SDTags.BlockTags.SD_WILD_CROPS, SDTags.ItemTags.SD_WILD_CROPS);
+
+        tag(ItemTags.SMALL_FLOWERS).addTag(SDTags.ItemTags.SD_WILD_CROPS);
+        tag(ItemTags.BEE_FOOD).addTag(SDTags.ItemTags.SD_WILD_CROPS);
+        tag(ModTags.WILD_CROPS_ITEM).addTag(SDTags.ItemTags.SD_WILD_CROPS);
+        tag(Tags.Items.ANIMAL_FOODS).addTag(SDTags.ItemTags.SD_WILD_CROPS);
+        tag(ItemTags.FLOWERS).addTag(SDTags.ItemTags.SD_WILD_CROPS);
     }
 }

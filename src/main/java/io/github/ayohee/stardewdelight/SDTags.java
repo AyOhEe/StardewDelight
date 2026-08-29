@@ -49,6 +49,7 @@ public class SDTags {
 
 
         public static final TagKey<Block> CROPS = create("crops");
+        public static final TagKey<Block> SD_WILD_CROPS = create("wild_crops");
 
 
         public static final TagKey<Block> SD_STORAGE_BLOCKS = create("storage_blocks");
@@ -149,6 +150,8 @@ public class SDTags {
         public static final TagKey<Item> SD_FOODS_VEGETABLE = create("foods/vegetable");
 
         public static final TagKey<Item> SEED_PACKET_OPTIONS = create("seed_packet_options");
+
+        public static final TagKey<Item> SD_WILD_CROPS = create("wild_crops");
 
 
         public static final TagKey<Item> SD_STORAGE_BLOCKS = create("storage_blocks");

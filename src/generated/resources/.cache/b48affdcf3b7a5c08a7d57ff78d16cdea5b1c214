@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-26T21:09:20.0538665	Tags for minecraft:block mod id stardewdelight
+// 1.21.1	2026-08-29T20:23:12.1860973	Tags for minecraft:block mod id stardewdelight
 3dfeddce992b980934d807821d49d3b1d32b447c data/c/tags/block/fences.json
 3dfeddce992b980934d807821d49d3b1d32b447c data/c/tags/block/fences/wooden.json
 d6b6259567212c75ca4a2101399ca849cbdc4fbb data/c/tags/block/fence_gates.json
@@ -52,7 +52,8 @@ d773559d57df8eee19a88e8453abf432f950c871 data/c/tags/block/storage_blocks/taro_r
 967eac9914effd1245c5961756edbb79b8946582 data/farmersdelight/tags/block/campfire_signal_smoke.json
 1e3d50b22b9176fdcfd9ce92ba11a67987cbf3e8 data/farmersdelight/tags/block/mineable/knife.json
 1e3d50b22b9176fdcfd9ce92ba11a67987cbf3e8 data/farmersdelight/tags/block/straw_blocks.json
-ef6d499710f0c8ccb179289be3cba9bab378c657 data/farmersdelight/tags/block/unaffected_by_rich_soil.json
+800aee824f4b8c78fced52ff7c2f13bb453103aa data/farmersdelight/tags/block/unaffected_by_rich_soil.json
+47c120648aedd7cf91a5a7305dafafa445a02535 data/farmersdelight/tags/block/wild_crops.json
 a6df7e35123b4452ecaf17a21c42d4bac3935cf4 data/minecraft/tags/block/all_hanging_signs.json
 c706679890b52b4bb43a1b479ca37b65734b9800 data/minecraft/tags/block/all_signs.json
 c2a1e896205ace70e0412136aef43ebd93a74465 data/minecraft/tags/block/bee_growables.json
@@ -61,10 +62,10 @@ cc5056244c688007056e73a5c8de05e33d68d798 data/minecraft/tags/block/ceiling_hangi
 ba374b2204fa50542537f658784a9cde9d99e744 data/minecraft/tags/block/completes_find_tree_tutorial.json
 c2a1e896205ace70e0412136aef43ebd93a74465 data/minecraft/tags/block/crops.json
 400a84bdc025cec7033a056d3b518e2450ce46ce data/minecraft/tags/block/doors.json
-abd7453e030329cc5b18817b592a5f52920a0372 data/minecraft/tags/block/enderman_holdable.json
+7f40dfac702a84bfc2b00ca03744f3c072e8dcfc data/minecraft/tags/block/enderman_holdable.json
 3dfeddce992b980934d807821d49d3b1d32b447c data/minecraft/tags/block/fences.json
 d6b6259567212c75ca4a2101399ca849cbdc4fbb data/minecraft/tags/block/fence_gates.json
-d69833ff124e5c7822a01083d9052688288cf598 data/minecraft/tags/block/flowers.json
+0f6d6729287070b73ada6de6a06339d311aa3dfe data/minecraft/tags/block/flowers.json
 ba374b2204fa50542537f658784a9cde9d99e744 data/minecraft/tags/block/lava_pool_stone_cannot_replace.json
 8ff18829a64105b982b3440298d28fba5e0ab4ed data/minecraft/tags/block/leaves.json
 a5fdb4bc7621221974c67a9fbd5c967d14c4d059 data/minecraft/tags/block/logs.json
@@ -81,11 +82,11 @@ ba374b2204fa50542537f658784a9cde9d99e744 data/minecraft/tags/block/parrots_spawn
 7f7f2560f088f194633b74a83ed172cb0743e487 data/minecraft/tags/block/saplings.json
 8426f24f4d7542b3e58bc520d8ebf479930fa3db data/minecraft/tags/block/signs.json
 177e71f6a2f27a7ac09bd770c61c623b4aa1cd15 data/minecraft/tags/block/slabs.json
-abd7453e030329cc5b18817b592a5f52920a0372 data/minecraft/tags/block/small_flowers.json
+7f40dfac702a84bfc2b00ca03744f3c072e8dcfc data/minecraft/tags/block/small_flowers.json
 0221b4e4976ce1e940ee0c5f57abe8726230ba1d data/minecraft/tags/block/snaps_goat_horn.json
 38470700a5e7147c1d0181ee22640ed3492fabe7 data/minecraft/tags/block/stairs.json
 ea1843c7161929e70d278384be0d37488ad86c0c data/minecraft/tags/block/standing_signs.json
-a09d750321402340b2ba8057f4e88a05839d2c5c data/minecraft/tags/block/sword_efficient.json
+b4d0248a646c488b996e58added37bec66c03cfa data/minecraft/tags/block/sword_efficient.json
 ef6d499710f0c8ccb179289be3cba9bab378c657 data/minecraft/tags/block/tall_flowers.json
 fd4f55aee07c0f5e8ce08ccf54a01596bf542679 data/minecraft/tags/block/trapdoors.json
 d6b6259567212c75ca4a2101399ca849cbdc4fbb data/minecraft/tags/block/unstable_bottom_center.json
@@ -129,3 +130,4 @@ db32828fec5053d41c67b8ee63e9e73cf4702eb8 data/stardewdelight/tags/block/peach_lo
 a6fea7df15c2374a9618431fcd806aa462d32f08 data/stardewdelight/tags/block/small_flowers.json
 dfa5d1221de82bc3ca468a4f19d5bc76fefa8139 data/stardewdelight/tags/block/storage_blocks.json
 b11cde9c9430a8e8cca0ff1f419e506b0ae63aaa data/stardewdelight/tags/block/tall_flowers.json
+ebcd1509d57c90f6236275ad420608a1a0b620f1 data/stardewdelight/tags/block/wild_crops.json

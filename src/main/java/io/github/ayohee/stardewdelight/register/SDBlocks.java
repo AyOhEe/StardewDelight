@@ -3,6 +3,7 @@ package io.github.ayohee.stardewdelight.register;
 import io.github.ayohee.stardewdelight.SDBlockStateProperties;
 import io.github.ayohee.stardewdelight.SDTreeGrowers;
 import io.github.ayohee.stardewdelight.StardewDelight;
+import io.github.ayohee.stardewdelight.content.WildCropBlock;
 import io.github.ayohee.stardewdelight.content.crops.*;
 import io.github.ayohee.stardewdelight.content.signs.FruitTreeCeilingHangingSignBlock;
 import io.github.ayohee.stardewdelight.content.signs.FruitTreeStandingSignBlock;
@@ -639,6 +640,201 @@ public class SDBlocks {
     );
 
 
+    /*----- WILD CROP BLOCKS -----*/
+    static {
+        currentTab = SDTabs.STARDEW_DELIGHT_BUILDING;
+    }
+
+    /*----- SPRING CROPS -----*/
+    // Blue jazz is a flower, and does not have a wild variant
+    public static final DeferredBlockItem<WildCropBlock> CAULIFLOWER_CROP_WILD = wildCrop(
+            "cauliflower_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> COFFEE_BUSH_WILD = wildCrop(
+            "coffee_bush_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> GARLIC_CROP_WILD = wildCrop(
+            "garlic_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> GREEN_BEANS_CROP_WILD = wildCrop(
+            "green_beans_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> KALE_CROP_WILD = wildCrop(
+            "kale_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> PARSNIP_CROP_WILD = wildCrop(
+            "parsnip_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> RHUBARB_CROP_WILD = wildCrop(
+            "rhubarb_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> STRAWBERRY_BUSH_WILD = wildCrop(
+            "strawberry_bush_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+
+    /*----- SUMMER CROPS -----*/
+    public static final DeferredBlockItem<WildCropBlock> BLUEBERRY_BUSH_WILD = wildCrop(
+            "blueberry_bush_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> CORN_CROP_WILD = wildCrop(
+            "corn_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> HOPS_CROP_WILD = wildCrop(
+            "hops_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> HOT_PEPPERS_CROP_WILD = wildCrop(
+            "hot_peppers_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> PINK_MELON_CROP_WILD = wildCrop(
+            "pink_melon_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> RADISH_CROP_WILD = wildCrop(
+            "radish_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> RED_CABBAGE_CROP_WILD = wildCrop(
+            "red_cabbage_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> STARFRUIT_CROP_WILD = wildCrop(
+            "starfruit_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    // Summer spangle is a flower, and does not have a wild variant
+
+    public static final DeferredBlockItem<WildCropBlock> SUMMER_SQUASH_CROP_WILD = wildCrop(
+            "summer_squash_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+
+    /*----- FALL CROPS -----*/
+    public static final DeferredBlockItem<WildCropBlock> AMARANTH_CROP_WILD = wildCrop(
+            "amaranth_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> ARTICHOKE_CROP_WILD = wildCrop(
+            "artichoke_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> BOK_CHOY_CROP_WILD = wildCrop(
+            "bok_choy_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> BROCCOLI_CROP_WILD = wildCrop(
+            "broccoli_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> CRANBERRY_BUSH_WILD = wildCrop(
+            "cranberry_bush_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> EGGPLANT_CROP_WILD = wildCrop(
+            "eggplant_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    // Fairy roses are flowers, and do not have a wild variant
+
+    public static final DeferredBlockItem<WildCropBlock> GRAPES_CROP_WILD = wildCrop(
+            "grapes_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> SUGAR_PUMPKIN_CROP_WILD = wildCrop(
+            "sugar_pumpkin_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> YAM_CROP_WILD = wildCrop(
+            "yam_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+
+    /*----- WINTER CROPS -----*/
+    public static final DeferredBlockItem<WildCropBlock> POWDERMELON_CROP_WILD = wildCrop(
+            "powdermelon_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+
+    /*----- SPECIAL CROPS -----*/
+    // Ancient fruit, Qi fruit, and Sweet gem berries do not have wild variants
+    public static final DeferredBlockItem<WildCropBlock> PINEAPPLE_CROP_WILD = wildCrop(
+            "pineapple_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+    public static final DeferredBlockItem<WildCropBlock> TARO_ROOT_CROP_WILD = wildCrop(
+            "taro_root_crop_wild",
+            WildCropBlock::new,
+            p -> p
+    );
+
+
     /*----- UTILITY METHODS -----*/
     private static <B extends Block> DeferredBlock<B> block(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
         return BLOCKS.registerBlock(name, (p) -> sup.apply(pBuilder.apply(p)));
@@ -686,6 +882,10 @@ public class SDBlocks {
         );
         CRATES.add(b.getBlock());
         return b;
+    }
+
+    private static <B extends WildCropBlock> DeferredBlockItem<B> wildCrop(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {
+        return blockItem(name, sup, (p) -> pBuilder.apply(BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS)));
     }
 
     private static <B extends Block> DeferredBlockItem<B> flower(String name, Function<BlockBehaviour.Properties, B> sup, Function<BlockBehaviour.Properties, BlockBehaviour.Properties> pBuilder) {

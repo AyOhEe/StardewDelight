@@ -623,5 +623,45 @@ public class SDBlockTagsProvider extends BlockTagsProvider {
         tag(BlockTags.BEE_GROWABLES).addTag(SDTags.BlockTags.CROPS);
         tag(BlockTags.MAINTAINS_FARMLAND).addTag(SDTags.BlockTags.CROPS);
         tag(BlockTags.CROPS).addTag(SDTags.BlockTags.CROPS);
+
+
+        /*----- WILD CROPS -----*/
+        tag(SDTags.BlockTags.SD_WILD_CROPS)
+                .add(SDBlocks.CAULIFLOWER_CROP_WILD.getBlock().get())
+                .add(SDBlocks.COFFEE_BUSH_WILD.getBlock().get())
+                .add(SDBlocks.GARLIC_CROP_WILD.getBlock().get())
+                .add(SDBlocks.GREEN_BEANS_CROP_WILD.getBlock().get())
+                .add(SDBlocks.KALE_CROP_WILD.getBlock().get())
+                .add(SDBlocks.PARSNIP_CROP_WILD.getBlock().get())
+                .add(SDBlocks.RHUBARB_CROP_WILD.getBlock().get())
+                .add(SDBlocks.STRAWBERRY_BUSH_WILD.getBlock().get())
+                .add(SDBlocks.BLUEBERRY_BUSH_WILD.getBlock().get())
+                .add(SDBlocks.CORN_CROP_WILD.getBlock().get())
+                .add(SDBlocks.HOPS_CROP_WILD.getBlock().get())
+                .add(SDBlocks.HOT_PEPPERS_CROP_WILD.getBlock().get())
+                .add(SDBlocks.PINK_MELON_CROP_WILD.getBlock().get())
+                .add(SDBlocks.RADISH_CROP_WILD.getBlock().get())
+                .add(SDBlocks.RED_CABBAGE_CROP_WILD.getBlock().get())
+                .add(SDBlocks.STARFRUIT_CROP_WILD.getBlock().get())
+                .add(SDBlocks.SUMMER_SQUASH_CROP_WILD.getBlock().get())
+                .add(SDBlocks.AMARANTH_CROP_WILD.getBlock().get())
+                .add(SDBlocks.ARTICHOKE_CROP_WILD.getBlock().get())
+                .add(SDBlocks.BOK_CHOY_CROP_WILD.getBlock().get())
+                .add(SDBlocks.BROCCOLI_CROP_WILD.getBlock().get())
+                .add(SDBlocks.CRANBERRY_BUSH_WILD.getBlock().get())
+                .add(SDBlocks.EGGPLANT_CROP_WILD.getBlock().get())
+                .add(SDBlocks.GRAPES_CROP_WILD.getBlock().get())
+                .add(SDBlocks.SUGAR_PUMPKIN_CROP_WILD.getBlock().get())
+                .add(SDBlocks.YAM_CROP_WILD.getBlock().get())
+                .add(SDBlocks.POWDERMELON_CROP_WILD.getBlock().get())
+                .add(SDBlocks.PINEAPPLE_CROP_WILD.getBlock().get())
+                .add(SDBlocks.TARO_ROOT_CROP_WILD.getBlock().get());
+
+        tag(BlockTags.SWORD_EFFICIENT).addTag(SDTags.BlockTags.SD_WILD_CROPS);
+        tag(BlockTags.FLOWERS).addTag(SDTags.BlockTags.SD_WILD_CROPS);
+        tag(ModTags.UNAFFECTED_BY_RICH_SOIL).addTag(SDTags.BlockTags.SD_WILD_CROPS);
+        tag(BlockTags.ENDERMAN_HOLDABLE).addTag(SDTags.BlockTags.SD_WILD_CROPS);
+        tag(BlockTags.SMALL_FLOWERS).addTag(SDTags.BlockTags.SD_WILD_CROPS);
+        tag(ModTags.WILD_CROPS).addTag(SDTags.BlockTags.SD_WILD_CROPS);
     }
 }

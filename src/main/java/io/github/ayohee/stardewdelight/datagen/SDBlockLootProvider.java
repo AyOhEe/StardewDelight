@@ -1,5 +1,6 @@
 package io.github.ayohee.stardewdelight.datagen;
 
+import io.github.ayohee.stardewdelight.content.WildCropBlock;
 import io.github.ayohee.stardewdelight.content.crops.*;
 import io.github.ayohee.stardewdelight.register.SDBlocks;
 import io.github.ayohee.stardewdelight.register.SDItems;
@@ -21,6 +22,7 @@ import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -128,6 +130,36 @@ public class SDBlockLootProvider extends BlockLootSubProvider {
 
         tallUpperBushCropDrops(SDBlocks.CORN_CROP.get(), SDItems.CORN.asItem(), SDItems.CORN_SEEDS.asItem());
         tallUpperBushCropDrops(SDBlocks.ANCIENT_FRUIT_CROP.get(), SDItems.ANCIENT_FRUIT.asItem(), SDItems.ANCIENT_SEEDS.asItem());
+
+        wildCropDrops(SDBlocks.CAULIFLOWER_CROP_WILD.getBlock().get(), SDItems.CAULIFLOWER.asItem(), SDItems.CAULIFLOWER_SEEDS.asItem());
+        seedlessWildCropDrops(SDBlocks.COFFEE_BUSH_WILD.getBlock().get(), SDItems.COFFEE_BEAN.asItem());
+        wildCropDrops(SDBlocks.GARLIC_CROP_WILD.getBlock().get(), SDItems.GARLIC.asItem(), SDItems.GARLIC_SEEDS.asItem());
+        seedlessWildCropDrops(SDBlocks.GREEN_BEANS_CROP_WILD.getBlock().get(), SDItems.GREEN_BEAN.asItem());
+        wildCropDrops(SDBlocks.KALE_CROP_WILD.getBlock().get(), SDItems.KALE.asItem(), SDItems.KALE_SEEDS.asItem());
+        wildCropDrops(SDBlocks.PARSNIP_CROP_WILD.getBlock().get(), SDItems.PARSNIP.asItem(), SDItems.PARSNIP_SEEDS.asItem());
+        wildCropDrops(SDBlocks.RHUBARB_CROP_WILD.getBlock().get(), SDItems.RHUBARB.asItem(), SDItems.RHUBARB_SEEDS.asItem());
+        wildCropDrops(SDBlocks.STRAWBERRY_BUSH_WILD.getBlock().get(), SDItems.STRAWBERRY.asItem(), SDItems.STRAWBERRY_SEEDS.asItem());
+        wildCropDrops(SDBlocks.BLUEBERRY_BUSH_WILD.getBlock().get(), SDItems.BLUEBERRY.asItem(), SDItems.BLUEBERRY_SEEDS.asItem());
+        wildCropDrops(SDBlocks.CORN_CROP_WILD.getBlock().get(), SDItems.CORN.asItem(), SDItems.CORN_SEEDS.asItem());
+        seedlessWildCropDrops(SDBlocks.HOPS_CROP_WILD.getBlock().get(), SDItems.HOPS.asItem());
+        wildCropDrops(SDBlocks.HOT_PEPPERS_CROP_WILD.getBlock().get(), SDItems.HOT_PEPPER.asItem(), SDItems.PEPPER_SEEDS.asItem());
+        wildCropDrops(SDBlocks.PINK_MELON_CROP_WILD.getBlock().get(), SDItems.PINK_MELON.asItem(), SDItems.PINK_MELON_SEEDS.asItem());
+        wildCropDrops(SDBlocks.RADISH_CROP_WILD.getBlock().get(), SDItems.RADISH.asItem(), SDItems.RADISH_SEEDS.asItem());
+        wildCropDrops(SDBlocks.RED_CABBAGE_CROP_WILD.getBlock().get(), SDItems.RED_CABBAGE.asItem(), SDItems.RED_CABBAGE_SEEDS.asItem());
+        wildCropDrops(SDBlocks.STARFRUIT_CROP_WILD.getBlock().get(), SDItems.STARFRUIT.asItem(), SDItems.STARFRUIT_SEEDS.asItem());
+        wildCropDrops(SDBlocks.SUMMER_SQUASH_CROP_WILD.getBlock().get(), SDItems.SUMMER_SQUASH.asItem(), SDItems.SUMMER_SQUASH_SEEDS.asItem());
+        wildCropDrops(SDBlocks.AMARANTH_CROP_WILD.getBlock().get(), SDItems.AMARANTH.asItem(), SDItems.AMARANTH_SEEDS.asItem());
+        wildCropDrops(SDBlocks.ARTICHOKE_CROP_WILD.getBlock().get(), SDItems.ARTICHOKE.asItem(), SDItems.ARTICHOKE_SEEDS.asItem());
+        wildCropDrops(SDBlocks.BOK_CHOY_CROP_WILD.getBlock().get(), SDItems.BOK_CHOY.asItem(), SDItems.BOK_CHOY_SEEDS.asItem());
+        wildCropDrops(SDBlocks.BROCCOLI_CROP_WILD.getBlock().get(), SDItems.BROCCOLI.asItem(), SDItems.BROCCOLI_SEEDS.asItem());
+        wildCropDrops(SDBlocks.CRANBERRY_BUSH_WILD.getBlock().get(), SDItems.CRANBERRY.asItem(), SDItems.CRANBERRY_SEEDS.asItem());
+        wildCropDrops(SDBlocks.EGGPLANT_CROP_WILD.getBlock().get(), SDItems.EGGPLANT.asItem(), SDItems.EGGPLANT_SEEDS.asItem());
+        seedlessWildCropDrops(SDBlocks.GRAPES_CROP_WILD.getBlock().get(), SDItems.GRAPES.asItem());
+        wildCropDrops(SDBlocks.SUGAR_PUMPKIN_CROP_WILD.getBlock().get(), SDItems.SUGAR_PUMPKIN.asItem(), SDItems.SUGAR_PUMPKIN_SEEDS.asItem());
+        wildCropDrops(SDBlocks.YAM_CROP_WILD.getBlock().get(), SDItems.YAM.asItem(), SDItems.YAM_SEEDS.asItem());
+        wildCropDrops(SDBlocks.POWDERMELON_CROP_WILD.getBlock().get(), SDItems.POWDERMELON.asItem(), SDItems.POWDERMELON_SEEDS.asItem());
+        wildCropDrops(SDBlocks.PINEAPPLE_CROP_WILD.getBlock().get(), SDItems.PINEAPPLE.asItem(), SDItems.PINEAPPLE_SEEDS.asItem());
+        wildCropDrops(SDBlocks.TARO_ROOT_CROP_WILD.getBlock().get(), SDItems.TARO_ROOT.asItem(), SDItems.TARO_TUBER.asItem());
     }
 
     protected void add(Block block, LootTable.Builder builder) {
@@ -192,6 +224,21 @@ public class SDBlockLootProvider extends BlockLootSubProvider {
                 .withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(isMatureAndUpper)).setRolls(ConstantValue.exactly(crop.getBaseDrops())))
                 .withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(isMatureAndUpper)).setRolls(ConstantValue.exactly(crop.getBonusDrops())).when(LootItemRandomChanceCondition.randomChance(0.5f)))
                 .withPool(LootPool.lootPool().add(LootItem.lootTableItem(seed).when(isLower)));
+        add(crop, this.applyExplosionDecay(crop, table));
+    }
+
+    private void wildCropDrops(WildCropBlock crop, Item item, Item seed) {
+        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+        LootTable.Builder table = LootTable.lootTable()
+                .withPool(LootPool.lootPool().add((LootItem.lootTableItem(item))))
+                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(seed).apply(ApplyBonusCount.addBonusBinomialDistributionCount(registrylookup.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3))));
+        add(crop, this.applyExplosionDecay(crop, table));
+    }
+
+    private void seedlessWildCropDrops(WildCropBlock crop, Item item) {
+        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+        LootTable.Builder table = LootTable.lootTable()
+                .withPool(LootPool.lootPool().add((LootItem.lootTableItem(item))));
         add(crop, this.applyExplosionDecay(crop, table));
     }
 
