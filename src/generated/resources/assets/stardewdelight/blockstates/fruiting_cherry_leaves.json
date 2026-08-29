@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "fruit=false": {
       "model": "stardewdelight:block/fruiting_cherry_leaves"
+    },
+    "fruit=true": {
+      "model": "stardewdelight:block/fruiting_cherry_leaves_fruit"
     }
   }
 }

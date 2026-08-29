@@ -1,5 +1,6 @@
 package io.github.ayohee.stardewdelight.datagen;
 
+import io.github.ayohee.stardewdelight.SDBlockStateProperties;
 import io.github.ayohee.stardewdelight.StardewDelight;
 import io.github.ayohee.stardewdelight.register.SDBlocks;
 import io.github.ayohee.stardewdelight.register.lib.DeferredBlockItem;
@@ -13,6 +14,7 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.client.model.generators.VariantBlockStateBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -161,7 +163,11 @@ public class SDBlockStateProvider extends BlockStateProvider {
             buttonBlock((ButtonBlock) blocks.get(SDBlocks.WoodBlockTypes.BUTTON).getBlock().get(), planksTexture);
 
             Block leavesBlock = blocks.get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get();
-            this.simpleBlock(leavesBlock, this.models().cubeAll(this.name(leavesBlock), this.blockTexture(leavesBlock)).renderType(mcLoc("cutout")));
+            ModelFile noFruit = this.models().cubeAll(this.name(leavesBlock), blockTexture(leavesBlock)).renderType(mcLoc("cutout"));
+            ModelFile withFruit = this.models().cubeAll(this.name(leavesBlock) + "_fruit", blockTexture(leavesBlock).withSuffix("_fruit")).renderType(mcLoc("cutout"));
+            getVariantBuilder(leavesBlock)
+                    .partialState().with(SDBlockStateProperties.FRUIT, false).modelForState().modelFile(noFruit).addModel()
+                    .partialState().with(SDBlockStateProperties.FRUIT, true).modelForState().modelFile(withFruit).addModel();
 
             signBlock((StandingSignBlock) blocks.get(SDBlocks.WoodBlockTypes.SIGN).getBlock().get(), (WallSignBlock) blocks.get(SDBlocks.WoodBlockTypes.WALL_SIGN).getBlock().get(), planksTexture);
             hangingSignBlock((CeilingHangingSignBlock) blocks.get(SDBlocks.WoodBlockTypes.HANGING_SIGN).getBlock().get(), (WallHangingSignBlock) blocks.get(SDBlocks.WoodBlockTypes.WALL_HANGING_SIGN).getBlock().get(), strippedLogTexture);
@@ -172,7 +178,11 @@ public class SDBlockStateProvider extends BlockStateProvider {
         }
 
         Block fruitingCherry = SDBlocks.FRUITING_CHERRY_LEAVES.getBlock().get();
-        this.simpleBlock(fruitingCherry, this.models().cubeAll(this.name(fruitingCherry), this.blockTexture(fruitingCherry)).renderType(mcLoc("cutout")));
+        ModelFile noFruitCherry = this.models().cubeAll(this.name(fruitingCherry), blockTexture(fruitingCherry)).renderType(mcLoc("cutout"));
+        ModelFile withFruitCherry = this.models().cubeAll(this.name(fruitingCherry) + "_fruit", blockTexture(fruitingCherry).withSuffix("_fruit")).renderType(mcLoc("cutout"));
+        getVariantBuilder(fruitingCherry)
+                .partialState().with(SDBlockStateProperties.FRUIT, false).modelForState().modelFile(noFruitCherry).addModel()
+                .partialState().with(SDBlockStateProperties.FRUIT, true).modelForState().modelFile(withFruitCherry).addModel();
 
         /*----- GROWN FLOWERS -----*/
         new BlockModelPair(SDBlocks.GROWN_BLUE_JAZZ.getBlock().get(), this::cross_cutout)
@@ -182,7 +192,7 @@ public class SDBlockStateProvider extends BlockStateProvider {
 
         ModelFile fairyRoseBottom = cross_cutout(SDBlocks.GROWN_FAIRY_ROSE.getBlock().get(), "_bottom");
         ModelFile fairyRoseTop = cross_cutout(SDBlocks.GROWN_FAIRY_ROSE.getBlock().get(), "_top");
-        VariantBlockStateBuilder fairyRoseVariant = getVariantBuilder(SDBlocks.GROWN_FAIRY_ROSE.getBlock().get())
+        getVariantBuilder(SDBlocks.GROWN_FAIRY_ROSE.getBlock().get())
                 .partialState().with(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.LOWER).modelForState().modelFile(fairyRoseBottom).addModel()
                 .partialState().with(BlockStateProperties.DOUBLE_BLOCK_HALF, DoubleBlockHalf.UPPER).modelForState().modelFile(fairyRoseTop).addModel();
 

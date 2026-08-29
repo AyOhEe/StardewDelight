@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "fruit=false": {
       "model": "stardewdelight:block/banana_leaves"
+    },
+    "fruit=true": {
+      "model": "stardewdelight:block/banana_leaves_fruit"
     }
   }
 }

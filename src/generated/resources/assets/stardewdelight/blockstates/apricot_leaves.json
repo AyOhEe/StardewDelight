@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "fruit=false": {
       "model": "stardewdelight:block/apricot_leaves"
+    },
+    "fruit=true": {
+      "model": "stardewdelight:block/apricot_leaves_fruit"
     }
   }
 }

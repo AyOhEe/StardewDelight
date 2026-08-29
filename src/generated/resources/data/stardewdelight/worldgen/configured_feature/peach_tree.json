@@ -20,6 +20,7 @@
         "Name": "stardewdelight:peach_leaves",
         "Properties": {
           "distance": "7",
+          "fruit": "false",
           "persistent": "false",
           "waterlogged": "false"
         }

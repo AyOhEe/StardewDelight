@@ -1,8 +1,10 @@
 package io.github.ayohee.stardewdelight.register;
 
+import com.google.common.collect.ImmutableMap;
 import io.github.ayohee.stardewdelight.SDBlockStateProperties;
 import io.github.ayohee.stardewdelight.SDTreeGrowers;
 import io.github.ayohee.stardewdelight.StardewDelight;
+import io.github.ayohee.stardewdelight.content.FruitTreeLeavesBlock;
 import io.github.ayohee.stardewdelight.content.WildCropBlock;
 import io.github.ayohee.stardewdelight.content.crops.*;
 import io.github.ayohee.stardewdelight.content.signs.FruitTreeCeilingHangingSignBlock;
@@ -15,8 +17,10 @@ import net.minecraft.client.resources.model.Material;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.HangingSignItem;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SignItem;
 import net.minecraft.world.item.component.SuspiciousStewEffects;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -332,9 +336,9 @@ public class SDBlocks {
                     .toArray(new AbstractMap.SimpleImmutableEntry[SDWoodTypes.values().length])
     );
 
-    public static final DeferredBlockItem<LeavesBlock> FRUITING_CHERRY_LEAVES = leaves(
+    public static final DeferredBlockItem<FruitTreeLeavesBlock> FRUITING_CHERRY_LEAVES = leaves(
             "fruiting_cherry_leaves",
-            LeavesBlock::new,
+            p -> new FruitTreeLeavesBlock(p, () -> SDItems.CHERRY),
             p -> p
     );
 
@@ -1011,6 +1015,7 @@ public class SDBlocks {
 
         public static Map<WoodBlockTypes, DeferredBlockItem<?>> createVariants(WoodType type) {
             Map<WoodBlockTypes, DeferredBlockItem<?>> map = new EnumMap<>(WoodBlockTypes.class);
+            Supplier<ItemLike> fruit = SDWoodTypes.fruit(type);
 
             map.put(LOG, log(LOG.of(type), RotatedPillarBlock::new, p -> p));
             map.put(WOOD, wood(WOOD.of(type), RotatedPillarBlock::new, p -> p));
@@ -1025,7 +1030,7 @@ public class SDBlocks {
             map.put(TRAPDOOR, trapdoor(TRAPDOOR.of(type), p -> new TrapDoorBlock(type.setType(), p), p -> p));
             map.put(PRESSURE_PLATE, pressurePlate(PRESSURE_PLATE.of(type), p -> new PressurePlateBlock(type.setType(), p), p -> p));
             map.put(BUTTON, button(BUTTON.of(type), p -> new ButtonBlock(type.setType(), 30, p), p -> p));
-            map.put(LEAVES, leaves(LEAVES.of(type), LeavesBlock::new, p -> p));
+            map.put(LEAVES, leaves(LEAVES.of(type), p -> new FruitTreeLeavesBlock(p, fruit), p -> p));
 
             map.put(SIGN, sign(SIGN.of(type), p -> new FruitTreeStandingSignBlock(type, p), p -> p));
             map.put(WALL_SIGN, wallSign(WALL_SIGN.of(type), p -> new FruitTreeWallSignBlock(type, p), p -> p));
@@ -1083,6 +1088,28 @@ public class SDBlocks {
 
         public static WoodType[] values() {
             return new WoodType[] {APRICOT, BANANA, MANGO, ORANGE, PEACH, APPLE, POMEGRANATE};
+        }
+
+        // FIXME gross, but we can't use a switch case (technically non-constant values),
+        //       nor an ImmutableMap (null values at initialisation)
+        public static Supplier<ItemLike> fruit(WoodType type) {
+            if (type == APRICOT) {
+                return () -> SDItems.APRICOT;
+            } else if (type == BANANA) {
+                return () -> SDItems.BANANA;
+            } else if (type == MANGO) {
+                return () -> SDItems.MANGO;
+            } else if (type == ORANGE) {
+                return () -> SDItems.ORANGE;
+            } else if (type == PEACH) {
+                return () -> SDItems.PEACH;
+            } else if (type == APPLE) {
+                return () -> Items.APPLE;
+            } else if (type == POMEGRANATE) {
+                return () -> SDItems.POMEGRANATE;
+            }
+
+            return () -> null;
         }
 
         private static WoodType register(String name, BlockSetType set) {

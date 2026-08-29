@@ -1,5 +1,7 @@
 package io.github.ayohee.stardewdelight.datagen;
 
+import io.github.ayohee.stardewdelight.SDBlockStateProperties;
+import io.github.ayohee.stardewdelight.content.FruitTreeLeavesBlock;
 import io.github.ayohee.stardewdelight.content.WildCropBlock;
 import io.github.ayohee.stardewdelight.content.crops.*;
 import io.github.ayohee.stardewdelight.register.SDBlocks;
@@ -67,13 +69,13 @@ public class SDBlockLootProvider extends BlockLootSubProvider {
             }
         }
 
-        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.APRICOT_SAPLING.getBlock().get());
-        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.BANANA_SAPLING.getBlock().get());
-        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.MANGO_SAPLING.getBlock().get());
-        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.ORANGE_SAPLING.getBlock().get());
-        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.PEACH_SAPLING.getBlock().get());
-        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.APPLE_SAPLING.getBlock().get());
-        leavesDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.POMEGRANATE_SAPLING.getBlock().get());
+        leavesDrops((FruitTreeLeavesBlock) SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.APRICOT_SAPLING.getBlock().get());
+        leavesDrops((FruitTreeLeavesBlock) SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.BANANA).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.BANANA_SAPLING.getBlock().get());
+        leavesDrops((FruitTreeLeavesBlock) SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.MANGO).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.MANGO_SAPLING.getBlock().get());
+        leavesDrops((FruitTreeLeavesBlock) SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.ORANGE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.ORANGE_SAPLING.getBlock().get());
+        leavesDrops((FruitTreeLeavesBlock) SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.PEACH).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.PEACH_SAPLING.getBlock().get());
+        leavesDrops((FruitTreeLeavesBlock) SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APPLE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.APPLE_SAPLING.getBlock().get());
+        leavesDrops((FruitTreeLeavesBlock) SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.POMEGRANATE).get(SDBlocks.WoodBlockTypes.LEAVES).getBlock().get(), SDBlocks.POMEGRANATE_SAPLING.getBlock().get());
         leavesDrops(SDBlocks.FRUITING_CHERRY_LEAVES.getBlock().get(), SDBlocks.FRUITING_CHERRY_SAPLING.getBlock().get());
 
         doorDrops(SDBlocks.WOOD_BLOCKS.get(SDBlocks.SDWoodTypes.APRICOT).get(SDBlocks.WoodBlockTypes.DOOR).getBlock().get());
@@ -167,8 +169,12 @@ public class SDBlockLootProvider extends BlockLootSubProvider {
         this.map.put(block.getLootTable(), builder);
     }
 
-    private void leavesDrops(Block leaves, Block sapling) {
-        add(leaves, createLeavesDrops(leaves, sapling, 0.05f, 0.0625f, 0.083333336f, 0.1f));
+    private void leavesDrops(FruitTreeLeavesBlock leaves, Block sapling) {
+        LootItemCondition.Builder isFruiting = LootItemBlockStatePropertyCondition.hasBlockStateProperties(leaves).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SDBlockStateProperties.FRUIT, true));
+        add(leaves,
+                createLeavesDrops(leaves, sapling, 0.05f, 0.0625f, 0.083333336f, 0.1f)
+                        .withPool(LootPool.lootPool().add(LootItem.lootTableItem(leaves.result.get()).when(isFruiting)))
+        );
     }
 
     private void doorDrops(Block door) {

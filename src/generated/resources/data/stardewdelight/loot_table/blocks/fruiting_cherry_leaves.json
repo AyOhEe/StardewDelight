@@ -130,6 +130,25 @@
         }
       ],
       "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "stardewdelight:fruiting_cherry_leaves",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "fruit": "true"
+              }
+            }
+          ],
+          "name": "stardewdelight:cherry"
+        }
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "stardewdelight:blocks/fruiting_cherry_leaves"

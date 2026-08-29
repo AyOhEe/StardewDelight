@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "fruit=false": {
       "model": "stardewdelight:block/pomegranate_leaves"
+    },
+    "fruit=true": {
+      "model": "stardewdelight:block/pomegranate_leaves_fruit"
     }
   }
 }

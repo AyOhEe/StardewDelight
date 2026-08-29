@@ -130,6 +130,25 @@
         }
       ],
       "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "stardewdelight:apple_leaves",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "fruit": "true"
+              }
+            }
+          ],
+          "name": "minecraft:apple"
+        }
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "stardewdelight:blocks/apple_leaves"

@@ -7,101 +7,122 @@ item properties (edible crops? etc... GO THROUGH AND CHECK)
 
 
 tea tree
-fruit tree leaves
 
 Seed bag (holds 128 items of seeds, up to 12 different stacks)
 
 wild crop surface features
 flower features
 
+
+actual food recipes
+ - ingredients from produce
+food effects?
+
+
 seed textures
+better crop textures
+polish flower textures
 sapling textures
 crate textures
 wood decoratives textures
 leaves textures
-crop block textures
-wild crop textures
+crop block textures (skip bulb crops)
+wild crop textures (skip bulb crops)
+food textures
+ingredient textures
+effect textures
 
 reassess bulb crops (sugar pumpkin, powdermelon, pink melon, qi fruit, cauliflower)
  - should likely have different models for growth stages instead of just textures
  - wild variants should have a model, not just cross_cutout
 
 
-actual food recipes
-food effects?
-
 FINAL THING: advancements
 
 
-IN UPDATES:
-Giant crops:
-- cauliflower
-- pink melon
-- sugar pumpkin
-- powdermelon
-- qi Fruit
+IN UPDATES (no particular order:
+1. Giant crops:
+ - cauliflower
+ - pink melon
+ - sugar pumpkin
+ - powdermelon
+ - qi Fruit
 
-Forageables:
-- Wild seeds (Spring, Summer, Autumn, Winter)
-- Forage bag (holds 128 items of forageables, up to 8 different stacks)
-- Forage spots that replenish forageables over time, and can be repeatedly harvested.
-  Cannot be moved, but should be plentiful in the world (multiple in each biome) and can spawn any of the
-  several options for that particular biome.
-- Spring biomes:
-    - (vanilla) Brown mushrooms
-    - Daffodil
-    - Dandelion
-    - Leek
-    - Morel
-    - Salmonberry
-    - Spring onion
-    - Wild horseradish
-- Summer biomes:
-    - (vanilla) Brown mushrooms
-    - Fiddlehead fern
-    - Grapes
-    - (vanilla) Red mushrooms
-    - Spice berry
-    - Sweet pea
-- Autumnal biomes:
-    - Blackberry
-    - Chanterelle
-    - (vanilla) Brown mushrooms
-    - Hazelnut
-    - Purple mushroom
-    - (vanilla) Red mushrooms
-    - Wild plum
-- Cold/snowy biomes:
-    - Crocus
-    - Crystal fruit
-    - Holly
-    - Snow yam
-    - Winter root
-- Underground:
-    - Cave carrot
-    - Purple mushroom
-    - (vanilla) Red mushrooms
-- Deserts:
-    - Cactus fruit
-- Beaches:
-    - Coconut
-    - Ginger
-- Nether:
-    - Magma cap
-- Rivers:
-    - Clam
-    - Cockle
-    - Coral
-    - Mussel
-    - (vanilla) Nautilus shell (non-renewable - spawns on its own)
-    - Oyster
-    - Rainbow shell
-    - Sea urchin
-    - Seaweed
 
-redesign fruit trees
-texture polish
-more recipes
-more food effects
+2. Forageables:
+ - Wild seeds (Spring, Summer, Autumn, Winter)
+ - Forage bag (holds 128 items of forageables, up to 8 different stacks)
+ - Forage spots that replenish forageables over time, and can be repeatedly harvested.
+   Cannot be moved, but should be plentiful in the world (multiple in each biome) and can spawn any of the
+   several options for that particular biome.
+ - Spring biomes:
+     - (vanilla) Brown mushrooms
+     - Daffodil
+     - Dandelion
+     - Leek
+     - Morel
+     - Salmonberry
+     - Spring onion
+     - Wild horseradish
+ - Summer biomes:
+     - (vanilla) Brown mushrooms
+     - Fiddlehead fern
+     - Grapes
+     - (vanilla) Red mushrooms
+     - Spice berry
+     - Sweet pea
+ - Autumnal biomes:
+     - Blackberry
+     - Chanterelle
+     - (vanilla) Brown mushrooms
+     - Hazelnut
+     - Purple mushroom
+     - (vanilla) Red mushrooms
+     - Wild plum
+ - Cold/snowy biomes:
+     - Crocus
+     - Crystal fruit
+     - Holly
+     - Snow yam
+     - Winter root
+ - Underground:
+     - Cave carrot
+     - Purple mushroom
+     - (vanilla) Red mushrooms
+ - Deserts:
+     - Cactus fruit
+ - Beaches:
+     - Coconut
+     - Ginger
+ - Nether:
+     - Magma cap
+ - Rivers:
+     - Clam
+     - Cockle
+     - Coral
+     - Mussel
+     - (vanilla) Nautilus shell (non-renewable - spawns on its own)
+     - Oyster
+     - Rainbow shell
+     - Sea urchin
+     - Seaweed
+ - food recipes involving forageables
 
-patchouli book?
+
+3. Improvements
+ - redesign fruit tree TreeGrowers
+ - texture polish
+ - more recipes
+ - more food effects
+
+
+4. Patchouli book
+
+
+5. Fishing:
+ - every fish in stardew
+ - how to deal with excessive variety and the pain of getting what you're looking for
+   - biome exclusivity?
+   - fishing spots?
+   - bait?
+ - food recipes involving fish
