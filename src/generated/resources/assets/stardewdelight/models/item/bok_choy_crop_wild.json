@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "stardewdelight:block/bok_choy_crop_wild"
+    "layer0": "stardewdelight:block/wild/bok_choy_crop_wild"
   }
 }

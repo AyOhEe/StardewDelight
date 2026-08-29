@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "stardewdelight:block/green_beans_crop_wild"
+    "layer0": "stardewdelight:block/wild/green_beans_crop_wild"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "stardewdelight:block/summer_squash_crop_wild"
+    "layer0": "stardewdelight:block/wild/summer_squash_crop_wild"
   }
 }

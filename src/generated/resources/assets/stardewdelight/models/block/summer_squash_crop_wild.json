@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "stardewdelight:block/summer_squash_crop_wild"
+    "cross": "stardewdelight:block/wild/summer_squash_crop_wild"
   }
 }

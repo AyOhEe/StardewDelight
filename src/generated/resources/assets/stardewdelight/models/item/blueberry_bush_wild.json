@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "stardewdelight:block/blueberry_bush_wild"
+    "layer0": "stardewdelight:block/wild/blueberry_bush_wild"
   }
 }

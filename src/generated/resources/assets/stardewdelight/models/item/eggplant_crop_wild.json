@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "stardewdelight:block/eggplant_crop_wild"
+    "layer0": "stardewdelight:block/wild/eggplant_crop_wild"
   }
 }

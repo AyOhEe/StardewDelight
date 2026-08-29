@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "stardewdelight:block/pink_melon_crop_wild"
+    "layer0": "stardewdelight:block/wild/pink_melon_crop_wild"
   }
 }

@@ -2,7 +2,8 @@
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "bottom": "farmersdelight:block/crate_bottom",
-    "side": "stardewdelight:block/peach_crate_side",
-    "top": "stardewdelight:block/peach_crate_top"
+    "particle": "stardewdelight:block/crate/peach_crate_top",
+    "side": "stardewdelight:block/crate/peach_crate_side",
+    "top": "stardewdelight:block/crate/peach_crate_top"
   }
 }

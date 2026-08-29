@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "stardewdelight:block/red_cabbage_crop_wild"
+    "layer0": "stardewdelight:block/wild/red_cabbage_crop_wild"
   }
 }

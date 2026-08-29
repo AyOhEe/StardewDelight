@@ -337,77 +337,77 @@ public class SDBlockStateProvider extends BlockStateProvider {
         /*----- WILD CROP BLOCKS -----*/
         /*----- SPRING CROPS -----*/
         // Blue jazz does not have a wild variant
-        new BlockModelPair(SDBlocks.CAULIFLOWER_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.CAULIFLOWER_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.COFFEE_BUSH_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.COFFEE_BUSH_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.GARLIC_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.GARLIC_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.GREEN_BEANS_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.GREEN_BEANS_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.KALE_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.KALE_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.PARSNIP_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.PARSNIP_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.RHUBARB_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.RHUBARB_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.STRAWBERRY_BUSH_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.STRAWBERRY_BUSH_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
 
         /*----- SUMMER CROPS -----*/
-        new BlockModelPair(SDBlocks.BLUEBERRY_BUSH_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.BLUEBERRY_BUSH_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.CORN_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.CORN_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.HOPS_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.HOPS_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.HOT_PEPPERS_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.HOT_PEPPERS_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.PINK_MELON_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.PINK_MELON_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.RADISH_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.RADISH_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.RED_CABBAGE_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.RED_CABBAGE_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.STARFRUIT_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.STARFRUIT_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
         // Summer spangle does not have a wild variant
-        new BlockModelPair(SDBlocks.SUMMER_SQUASH_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.SUMMER_SQUASH_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
 
         /*----- FALL CROPS -----*/
-        new BlockModelPair(SDBlocks.AMARANTH_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.AMARANTH_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.ARTICHOKE_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.ARTICHOKE_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.BOK_CHOY_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.BOK_CHOY_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.BROCCOLI_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.BROCCOLI_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.CRANBERRY_BUSH_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.CRANBERRY_BUSH_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.EGGPLANT_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.EGGPLANT_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
         // Fairy rose does not have a wild variant
-        new BlockModelPair(SDBlocks.GRAPES_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.GRAPES_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.SUGAR_PUMPKIN_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.SUGAR_PUMPKIN_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.YAM_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.YAM_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
 
 
         /*----- WINTER CROPS -----*/
-        new BlockModelPair(SDBlocks.POWDERMELON_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.POWDERMELON_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
 
         /*----- SPECIAL CROPS -----*/
         // Ancient fruit does not have a wild variant
         // Qi fruit does not have a wild variant
         // Sweet gem berry does not have a wild variant
-        new BlockModelPair(SDBlocks.PINEAPPLE_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.PINEAPPLE_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
-        new BlockModelPair(SDBlocks.TARO_ROOT_CROP_WILD.getBlock().get(), this::cross_cutout)
+        new BlockModelPair(SDBlocks.TARO_ROOT_CROP_WILD.getBlock().get(), this::cross_cutout_wild)
                 .makeBlockModel();
     }
 
@@ -437,6 +437,10 @@ public class SDBlockStateProvider extends BlockStateProvider {
         return this.models().cross(this.name(b), this.blockTexture(b)).renderType(mcLoc("cutout"));
     }
 
+    private ModelFile cross_cutout_wild(Block b) {
+        return this.models().cross(this.name(b), key(b).withPrefix("block/wild/")).renderType(mcLoc("cutout"));
+    }
+
     private ModelFile cross_cutout(Block b, String suffix) {
         return this.models().cross(this.name(b) + suffix, this.blockTexture(b).withSuffix(suffix)).renderType(mcLoc("cutout"));
     }
@@ -449,9 +453,10 @@ public class SDBlockStateProvider extends BlockStateProvider {
         return this.models()
                 .cubeBottomTop(
                         this.name(b),
-                        modLoc("block/" + this.name(b) + "_side"),
+                        modLoc("block/crate/" + this.name(b) + "_side"),
                         ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/crate_bottom"),
-                        modLoc("block/" + this.name(b) + "_top"));
+                        modLoc("block/crate/" + this.name(b) + "_top"))
+                .texture("particle", modLoc("block/crate/" + this.name(b) + "_top"));
     }
 
     private ModelFile bag(Block b) {
@@ -459,12 +464,12 @@ public class SDBlockStateProvider extends BlockStateProvider {
                 .cube(
                         this.name(b),
                         ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_bottom"),
-                        modLoc("block/" + this.name(b) + "_top"),
+                        modLoc("block/crate/" + this.name(b) + "_top"),
                         ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_side_tied"),
                         ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_side_tied"),
                         ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_side"),
                         ResourceLocation.fromNamespaceAndPath(FarmersDelight.MODID, "block/rice_bag_side"))
-                .texture("particle", modLoc("block/" + this.name(b) + "_top"));
+                .texture("particle", modLoc("block/crate/" + this.name(b) + "_top"));
     }
 
 

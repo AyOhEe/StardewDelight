@@ -2,7 +2,8 @@
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "bottom": "farmersdelight:block/crate_bottom",
-    "side": "stardewdelight:block/amaranth_bale_side",
-    "top": "stardewdelight:block/amaranth_bale_top"
+    "particle": "stardewdelight:block/crate/amaranth_bale_top",
+    "side": "stardewdelight:block/crate/amaranth_bale_side",
+    "top": "stardewdelight:block/crate/amaranth_bale_top"
   }
 }

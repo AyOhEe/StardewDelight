@@ -2,7 +2,8 @@
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "bottom": "farmersdelight:block/crate_bottom",
-    "side": "stardewdelight:block/summer_spangle_box_side",
-    "top": "stardewdelight:block/summer_spangle_box_top"
+    "particle": "stardewdelight:block/crate/summer_spangle_box_top",
+    "side": "stardewdelight:block/crate/summer_spangle_box_side",
+    "top": "stardewdelight:block/crate/summer_spangle_box_top"
   }
 }

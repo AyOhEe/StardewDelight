@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "stardewdelight:block/pink_melon_crop_wild"
+    "cross": "stardewdelight:block/wild/pink_melon_crop_wild"
   }
 }
