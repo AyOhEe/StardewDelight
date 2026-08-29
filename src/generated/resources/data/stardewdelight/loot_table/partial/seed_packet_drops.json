@@ -27,5 +27,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "stardewdelight:partial_seed_packet_drops"
+  "random_sequence": "stardewdelight:partial/seed_packet_drops"
 }
