@@ -4,6 +4,7 @@ import io.github.ayohee.stardewdelight.SDLootTables;
 import io.github.ayohee.stardewdelight.StardewDelight;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraft.world.level.storage.loot.predicates.AnyOfCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -76,6 +77,24 @@ public class SDGlobalLootModifierProvider extends GlobalLootModifierProvider {
                                 ).build()
                         },
                         SDLootTables.PARTIAL_SEED_PACKET
+                )
+        );
+
+        add(
+                "add_mob_seed_packet_drops",
+                new AddTableLootModifier(
+                        new LootItemCondition[]{
+                                AnyOfCondition.anyOf(
+                                        LootTableIdCondition.builder(EntityType.ZOMBIE.getDefaultLootTable().location()),
+                                        LootTableIdCondition.builder(EntityType.ZOMBIE_VILLAGER.getDefaultLootTable().location()),
+                                        LootTableIdCondition.builder(EntityType.HUSK.getDefaultLootTable().location()),
+                                        LootTableIdCondition.builder(EntityType.DROWNED.getDefaultLootTable().location()),
+                                        LootTableIdCondition.builder(EntityType.SKELETON.getDefaultLootTable().location()),
+                                        LootTableIdCondition.builder(EntityType.STRAY.getDefaultLootTable().location()),
+                                        LootTableIdCondition.builder(EntityType.CREEPER.getDefaultLootTable().location())
+                                ).build()
+                        },
+                        SDLootTables.PARTIAL_SEED_PACKET_DROPS
                 )
         );
     }

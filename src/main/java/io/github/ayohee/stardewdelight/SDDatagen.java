@@ -39,7 +39,8 @@ public class SDDatagen {
                 Collections.emptySet(),
                 List.of(
                         new LootTableProvider.SubProviderEntry(SDBlockLootProvider::new, LootContextParamSets.BLOCK),
-                        new LootTableProvider.SubProviderEntry(SDChestLootProvider::new, LootContextParamSets.CHEST)
+                        new LootTableProvider.SubProviderEntry(SDChestLootProvider::new, LootContextParamSets.CHEST),
+                        new LootTableProvider.SubProviderEntry(SDPartialEntityLootProvider::new, LootContextParamSets.ENTITY)
                 ),
                 lookupProvider)
         );

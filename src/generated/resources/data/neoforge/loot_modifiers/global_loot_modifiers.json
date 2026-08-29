@@ -2,7 +2,8 @@
   "entries": [
     "stardewdelight:add_ancient_seed",
     "stardewdelight:add_seeds_or_produce",
-    "stardewdelight:add_seed_packet"
+    "stardewdelight:add_seed_packet",
+    "stardewdelight:add_mob_seed_packet_drops"
   ],
   "replace": false
 }

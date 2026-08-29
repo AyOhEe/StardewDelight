@@ -1,5 +1,6 @@
-// 1.21.1	2026-08-27T23:19:32.2330064	Global Loot Modifiers : stardewdelight
-d7229bb667a8ae3d18dffff4a10c9589d150baf0 data/neoforge/loot_modifiers/global_loot_modifiers.json
+// 1.21.1	2026-08-29T18:07:26.6333267	Global Loot Modifiers : stardewdelight
+657e737e2b0115fd77cbe2190d9376dbf1474576 data/neoforge/loot_modifiers/global_loot_modifiers.json
 620d16aecc8cd07295efaac45974581b8be5e4e2 data/stardewdelight/loot_modifiers/add_ancient_seed.json
+1a32cf4a2b020be7fc8a1c48272bd9e31aa1ae42 data/stardewdelight/loot_modifiers/add_mob_seed_packet_drops.json
 e4f8d1617afea96b9959c4b6c6357e5ac803db54 data/stardewdelight/loot_modifiers/add_seeds_or_produce.json
 96cd817d99df6d408027a1734c4b7641b8e24700 data/stardewdelight/loot_modifiers/add_seed_packet.json
