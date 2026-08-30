@@ -7,6 +7,7 @@ import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
@@ -29,78 +30,83 @@ public class SDBiomeModifiers {
         HolderGetter<Biome> biomes = bootstrap.lookup(Registries.BIOME);
         HolderGetter<PlacedFeature> features = bootstrap.lookup(Registries.PLACED_FEATURE);
 
-        // TODO maybe refactor?
-        bootstrap.register(
+
+        addFeatures(
                 ADD_FRUIT_TREE_FEATURES_FOREST,
-                new BiomeModifiers.AddFeaturesBiomeModifier(
-                        biomes.getOrThrow(SDTags.BiomeTags.FRUIT_TREE_FOREST_SPAWNS),
-                        HolderSet.direct(features.getOrThrow(SDPlacedFeatures.TREES_FOREST_FRUIT)),
-                        GenerationStep.Decoration.VEGETAL_DECORATION
-                )
+                bootstrap, biomes, features,
+                SDTags.BiomeTags.FRUIT_TREE_FOREST_SPAWNS,
+                GenerationStep.Decoration.VEGETAL_DECORATION,
+                SDPlacedFeatures.TREES_FOREST_FRUIT
         );
-
-        bootstrap.register(
+        addFeatures(
                 ADD_FRUIT_TREE_FEATURES_PLAINS,
-                new BiomeModifiers.AddFeaturesBiomeModifier(
-                        biomes.getOrThrow(SDTags.BiomeTags.FRUIT_TREE_PLAINS_SPAWNS),
-                        HolderSet.direct(features.getOrThrow(SDPlacedFeatures.TREES_PLAINS_FRUIT)),
-                        GenerationStep.Decoration.VEGETAL_DECORATION
-                )
+                bootstrap, biomes, features,
+                SDTags.BiomeTags.FRUIT_TREE_PLAINS_SPAWNS,
+                GenerationStep.Decoration.VEGETAL_DECORATION,
+                SDPlacedFeatures.TREES_PLAINS_FRUIT
         );
 
 
-        bootstrap.register(
+        addFeatures(
                 ADD_WILD_CROPS_SPRING,
-                new BiomeModifiers.AddFeaturesBiomeModifier(
-                        biomes.getOrThrow(SDTags.BiomeTags.WILD_CROP_SPAWNS_SPRING),
-                        HolderSet.direct(features.getOrThrow(SDPlacedFeatures.WILD_CROPS_SPRING)),
-                        GenerationStep.Decoration.VEGETAL_DECORATION
-                )
+                bootstrap, biomes, features,
+                SDTags.BiomeTags.WILD_CROP_SPAWNS_SPRING,
+                GenerationStep.Decoration.VEGETAL_DECORATION,
+                SDPlacedFeatures.WILD_CROPS_SPRING
         );
-
-        bootstrap.register(
+        addFeatures(
                 ADD_WILD_CROPS_SUMMER,
-                new BiomeModifiers.AddFeaturesBiomeModifier(
-                        biomes.getOrThrow(SDTags.BiomeTags.WILD_CROP_SPAWNS_SUMMER),
-                        HolderSet.direct(features.getOrThrow(SDPlacedFeatures.WILD_CROPS_SUMMER)),
-                        GenerationStep.Decoration.VEGETAL_DECORATION
-                )
+                bootstrap, biomes, features,
+                SDTags.BiomeTags.WILD_CROP_SPAWNS_SUMMER,
+                GenerationStep.Decoration.VEGETAL_DECORATION,
+                SDPlacedFeatures.WILD_CROPS_SUMMER
         );
-
-        bootstrap.register(
+        addFeatures(
                 ADD_WILD_CROPS_AUTUMN,
-                new BiomeModifiers.AddFeaturesBiomeModifier(
-                        biomes.getOrThrow(SDTags.BiomeTags.WILD_CROP_SPAWNS_AUTUMN),
-                        HolderSet.direct(features.getOrThrow(SDPlacedFeatures.WILD_CROPS_AUTUMN)),
-                        GenerationStep.Decoration.VEGETAL_DECORATION
-                )
+                bootstrap, biomes, features,
+                SDTags.BiomeTags.WILD_CROP_SPAWNS_AUTUMN,
+                GenerationStep.Decoration.VEGETAL_DECORATION,
+                SDPlacedFeatures.WILD_CROPS_AUTUMN
         );
-
-        bootstrap.register(
+        addFeatures(
                 ADD_WILD_CROPS_WINTER,
-                new BiomeModifiers.AddFeaturesBiomeModifier(
-                        biomes.getOrThrow(SDTags.BiomeTags.WILD_CROP_SPAWNS_WINTER),
-                        HolderSet.direct(features.getOrThrow(SDPlacedFeatures.WILD_CROPS_WINTER)),
-                        GenerationStep.Decoration.VEGETAL_DECORATION
-                )
+                bootstrap, biomes, features,
+                SDTags.BiomeTags.WILD_CROP_SPAWNS_WINTER,
+                GenerationStep.Decoration.VEGETAL_DECORATION,
+                SDPlacedFeatures.WILD_CROPS_WINTER
         );
-
-        bootstrap.register(
+        addFeatures(
                 ADD_WILD_CROPS_TROPICAL,
-                new BiomeModifiers.AddFeaturesBiomeModifier(
-                        biomes.getOrThrow(SDTags.BiomeTags.WILD_CROP_SPAWNS_TROPICAL),
-                        HolderSet.direct(features.getOrThrow(SDPlacedFeatures.WILD_CROPS_TROPICAL)),
-                        GenerationStep.Decoration.VEGETAL_DECORATION
-                )
+                bootstrap, biomes, features,
+                SDTags.BiomeTags.WILD_CROP_SPAWNS_TROPICAL,
+                GenerationStep.Decoration.VEGETAL_DECORATION,
+                SDPlacedFeatures.WILD_CROPS_TROPICAL
         );
 
 
-        bootstrap.register(
+        addFeatures(
                 ADD_FLOWER_PATCHES,
+                bootstrap, biomes, features,
+                SDTags.BiomeTags.FLOWER_PATCH_SPAWNS,
+                GenerationStep.Decoration.VEGETAL_DECORATION,
+                SDPlacedFeatures.FLOWER_PATCH
+        );
+    }
+
+    private static void addFeatures(
+            ResourceKey<BiomeModifier> key,
+            BootstrapContext<BiomeModifier> bootstrap,
+            HolderGetter<Biome> biomes,
+            HolderGetter<PlacedFeature> features,
+            TagKey<Biome> where,
+            GenerationStep.Decoration when,
+            ResourceKey<PlacedFeature> ...what) {
+        bootstrap.register(
+                key,
                 new BiomeModifiers.AddFeaturesBiomeModifier(
-                        biomes.getOrThrow(SDTags.BiomeTags.FLOWER_PATCH_SPAWNS),
-                        HolderSet.direct(features.getOrThrow(SDPlacedFeatures.FLOWER_PATCH)),
-                        GenerationStep.Decoration.VEGETAL_DECORATION
+                        biomes.getOrThrow(where),
+                        HolderSet.direct(features::getOrThrow, what),
+                        when
                 )
         );
     }

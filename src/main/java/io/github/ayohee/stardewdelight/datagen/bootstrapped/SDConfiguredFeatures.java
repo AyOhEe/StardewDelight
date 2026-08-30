@@ -88,7 +88,7 @@ public class SDConfiguredFeatures {
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> bootstrap) {
         HolderGetter<PlacedFeature> placedFeatures = bootstrap.lookup(Registries.PLACED_FEATURE);
 
-        // TODO refactor - gross
+        //NOTE this does not need to be refactored, as these will be made unique in an update
         bootstrap.register(APRICOT_TREE,
                 new ConfiguredFeature<>(
                         Feature.TREE,

@@ -12,6 +12,7 @@ import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.util.valueproviders.WeightedListInt;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -79,55 +80,14 @@ public class SDPlacedFeatures {
     public static void bootstrap(BootstrapContext<PlacedFeature> bootstrap) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = bootstrap.lookup(Registries.CONFIGURED_FEATURE);
 
-        // TODO refactor - gross
-        bootstrap.register(APRICOT_TREE, new PlacedFeature(
-                configuredFeatures.getOrThrow(SDConfiguredFeatures.APRICOT_TREE),
-                List.of(
-                        BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(SDBlocks.APRICOT_SAPLING.getBlock().get().defaultBlockState(), Vec3i.ZERO))
-                )
-        ));
-        bootstrap.register(FRUITING_CHERRY_TREE, new PlacedFeature(
-                configuredFeatures.getOrThrow(SDConfiguredFeatures.FRUITING_CHERRY_TREE),
-                List.of(
-                        BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(SDBlocks.FRUITING_CHERRY_SAPLING.getBlock().get().defaultBlockState(), Vec3i.ZERO))
-                )
-        ));
-        bootstrap.register(BANANA_TREE, new PlacedFeature(
-                configuredFeatures.getOrThrow(SDConfiguredFeatures.BANANA_TREE),
-                List.of(
-                        BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(SDBlocks.BANANA_SAPLING.getBlock().get().defaultBlockState(), Vec3i.ZERO))
-                )
-        ));
-        bootstrap.register(MANGO_TREE, new PlacedFeature(
-                configuredFeatures.getOrThrow(SDConfiguredFeatures.MANGO_TREE),
-                List.of(
-                        BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(SDBlocks.MANGO_SAPLING.getBlock().get().defaultBlockState(), Vec3i.ZERO))
-                )
-        ));
-        bootstrap.register(ORANGE_TREE, new PlacedFeature(
-                configuredFeatures.getOrThrow(SDConfiguredFeatures.ORANGE_TREE),
-                List.of(
-                        BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(SDBlocks.ORANGE_SAPLING.getBlock().get().defaultBlockState(), Vec3i.ZERO))
-                )
-        ));
-        bootstrap.register(PEACH_TREE, new PlacedFeature(
-                configuredFeatures.getOrThrow(SDConfiguredFeatures.PEACH_TREE),
-                List.of(
-                        BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(SDBlocks.PEACH_SAPLING.getBlock().get().defaultBlockState(), Vec3i.ZERO))
-                )
-        ));
-        bootstrap.register(APPLE_TREE, new PlacedFeature(
-                configuredFeatures.getOrThrow(SDConfiguredFeatures.APPLE_TREE),
-                List.of(
-                        BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(SDBlocks.APPLE_SAPLING.getBlock().get().defaultBlockState(), Vec3i.ZERO))
-                )
-        ));
-        bootstrap.register(POMEGRANATE_TREE, new PlacedFeature(
-                configuredFeatures.getOrThrow(SDConfiguredFeatures.POMEGRANATE_TREE),
-                List.of(
-                        BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(SDBlocks.POMEGRANATE_SAPLING.getBlock().get().defaultBlockState(), Vec3i.ZERO))
-                )
-        ));
+        tree(bootstrap, configuredFeatures, APRICOT_TREE, SDConfiguredFeatures.APRICOT_TREE, SDBlocks.APRICOT_SAPLING.getBlock().get());
+        tree(bootstrap, configuredFeatures, FRUITING_CHERRY_TREE, SDConfiguredFeatures.FRUITING_CHERRY_TREE, SDBlocks.FRUITING_CHERRY_SAPLING.getBlock().get());
+        tree(bootstrap, configuredFeatures, BANANA_TREE, SDConfiguredFeatures.BANANA_TREE, SDBlocks.BANANA_SAPLING.getBlock().get());
+        tree(bootstrap, configuredFeatures, MANGO_TREE, SDConfiguredFeatures.MANGO_TREE, SDBlocks.MANGO_SAPLING.getBlock().get());
+        tree(bootstrap, configuredFeatures, ORANGE_TREE, SDConfiguredFeatures.ORANGE_TREE, SDBlocks.ORANGE_SAPLING.getBlock().get());
+        tree(bootstrap, configuredFeatures, PEACH_TREE, SDConfiguredFeatures.PEACH_TREE, SDBlocks.PEACH_SAPLING.getBlock().get());
+        tree(bootstrap, configuredFeatures, APPLE_TREE, SDConfiguredFeatures.APPLE_TREE, SDBlocks.APPLE_SAPLING.getBlock().get());
+        tree(bootstrap, configuredFeatures, POMEGRANATE_TREE, SDConfiguredFeatures.POMEGRANATE_TREE, SDBlocks.POMEGRANATE_SAPLING.getBlock().get());
 
         bootstrap.register(TREES_FOREST_FRUIT, new PlacedFeature(
                 configuredFeatures.getOrThrow(SDConfiguredFeatures.TREES_FRUIT),
@@ -209,6 +169,20 @@ public class SDPlacedFeatures {
 
     private static ResourceKey<PlacedFeature> key(String name) {
         return ResourceKey.create(Registries.PLACED_FEATURE, StardewDelight.modLoc(name));
+    }
+
+    private static void tree(
+            BootstrapContext<PlacedFeature> bootstrap,
+            HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures,
+            ResourceKey<PlacedFeature> placedFeature,
+            ResourceKey<ConfiguredFeature<?, ?>> configuredFeature,
+            Block sapling) {
+        bootstrap.register(placedFeature, new PlacedFeature(
+                configuredFeatures.getOrThrow(configuredFeature),
+                List.of(
+                        BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(sapling.defaultBlockState(), Vec3i.ZERO))
+                )
+        ));
     }
 
     private static void individualPatch(BootstrapContext<PlacedFeature> bootstrap, HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures, ResourceKey<PlacedFeature> placedFeature, ResourceKey<ConfiguredFeature<?, ?>> configuredFeature) {
