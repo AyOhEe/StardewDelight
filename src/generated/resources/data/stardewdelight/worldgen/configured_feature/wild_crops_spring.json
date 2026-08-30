@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      "stardewdelight:wild_cauliflower",
+      "stardewdelight:wild_coffee_bush",
+      "stardewdelight:wild_garlic",
+      "stardewdelight:wild_green_beans",
+      "stardewdelight:wild_kale",
+      "stardewdelight:wild_parsnip",
+      "stardewdelight:wild_rhubarb",
+      "stardewdelight:wild_strawberry"
+    ]
+  }
+}

@@ -10,8 +10,9 @@ tea tree
 
 Seed bag (holds 128 items of seeds, up to 12 different stacks)
 
-wild crop surface features
-flower features
+refactor configured features
+refactor placed features
+refactor biome modifiers
 
 
 actual food recipes

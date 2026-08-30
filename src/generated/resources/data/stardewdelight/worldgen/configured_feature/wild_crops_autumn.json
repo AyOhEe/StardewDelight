@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      "stardewdelight:wild_amaranth",
+      "stardewdelight:wild_artichoke",
+      "stardewdelight:wild_bok_choy",
+      "stardewdelight:wild_broccoli",
+      "stardewdelight:wild_cranberry",
+      "stardewdelight:wild_eggplant",
+      "stardewdelight:wild_grapes",
+      "stardewdelight:wild_sugar_pumpkin",
+      "stardewdelight:wild_yam"
+    ]
+  }
+}

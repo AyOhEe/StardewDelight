@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#stardewdelight:wild_crop_spawns_autumn",
+  "features": "stardewdelight:wild_crops_autumn",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#stardewdelight:wild_crop_spawns_summer",
+  "features": "stardewdelight:wild_crops_summer",
+  "step": "vegetal_decoration"
+}

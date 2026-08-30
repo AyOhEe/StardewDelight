@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      "stardewdelight:wild_blueberry",
+      "stardewdelight:wild_corn",
+      "stardewdelight:wild_hops",
+      "stardewdelight:wild_hot_peppers",
+      "stardewdelight:wild_pink_melon",
+      "stardewdelight:wild_radish",
+      "stardewdelight:wild_red_cabbage",
+      "stardewdelight:wild_starfruit",
+      "stardewdelight:wild_summer_squash"
+    ]
+  }
+}

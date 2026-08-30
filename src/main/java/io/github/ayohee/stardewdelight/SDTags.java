@@ -307,6 +307,14 @@ public class SDTags {
         public static final TagKey<Biome> FRUIT_TREE_FOREST_SPAWNS = create("fruit_tree_forest_spawns");
         public static final TagKey<Biome> FRUIT_TREE_PLAINS_SPAWNS = create("fruit_tree_plains_spawns");
 
+        public static final TagKey<Biome> WILD_CROP_SPAWNS_SPRING = create("wild_crop_spawns_spring");
+        public static final TagKey<Biome> WILD_CROP_SPAWNS_SUMMER = create("wild_crop_spawns_summer");
+        public static final TagKey<Biome> WILD_CROP_SPAWNS_AUTUMN = create("wild_crop_spawns_autumn");
+        public static final TagKey<Biome> WILD_CROP_SPAWNS_WINTER = create("wild_crop_spawns_winter");
+        public static final TagKey<Biome> WILD_CROP_SPAWNS_TROPICAL = create("wild_crop_spawns_tropical");
+
+        public static final TagKey<Biome> FLOWER_PATCH_SPAWNS = create("flower_patch_spawns");
+
         private static TagKey<Biome> create(String name) {
             return TagKey.create(Registries.BIOME, StardewDelight.modLoc(name));
         }

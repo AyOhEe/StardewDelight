@@ -25,5 +25,31 @@ public class SDBiomeTagsProvider extends BiomeTagsProvider {
         tag(SDTags.BiomeTags.FRUIT_TREE_PLAINS_SPAWNS)
                 .addTag(BiomeTags.IS_HILL)
                 .addTag(BiomeTags.HAS_VILLAGE_PLAINS);
+
+
+        tag(SDTags.BiomeTags.WILD_CROP_SPAWNS_SPRING)
+                .addTag(BiomeTags.IS_FOREST)
+                .addTag(BiomeTags.HAS_VILLAGE_PLAINS);
+
+        tag(SDTags.BiomeTags.WILD_CROP_SPAWNS_SUMMER)
+                .addTag(BiomeTags.IS_JUNGLE)
+                .addTag(BiomeTags.IS_SAVANNA);
+
+        tag(SDTags.BiomeTags.WILD_CROP_SPAWNS_AUTUMN)
+                .addTag(BiomeTags.IS_TAIGA)
+                .addTag(BiomeTags.IS_FOREST);
+
+        tag(SDTags.BiomeTags.WILD_CROP_SPAWNS_WINTER)
+                .addTag(BiomeTags.HAS_VILLAGE_SNOWY)
+                .addTag(BiomeTags.HAS_IGLOO);
+
+        tag(SDTags.BiomeTags.WILD_CROP_SPAWNS_TROPICAL)
+                .addTag(BiomeTags.IS_BEACH);
+
+
+        tag(SDTags.BiomeTags.FLOWER_PATCH_SPAWNS)
+                .addTag(BiomeTags.HAS_VILLAGE_PLAINS)
+                .addTag(BiomeTags.IS_FOREST)
+                .addTag(BiomeTags.IS_SAVANNA);
     }
 }

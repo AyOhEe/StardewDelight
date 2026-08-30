@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#stardewdelight:wild_crop_spawns_spring",
+  "features": "stardewdelight:wild_crops_spring",
+  "step": "vegetal_decoration"
+}

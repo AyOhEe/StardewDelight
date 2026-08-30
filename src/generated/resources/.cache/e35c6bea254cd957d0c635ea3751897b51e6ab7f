@@ -1,3 +1,9 @@
-// 1.21.1	2026-08-27T17:52:33.3536836	Tags for minecraft:worldgen/biome mod id stardewdelight
+// 1.21.1	2026-08-30T17:12:04.6915295	Tags for minecraft:worldgen/biome mod id stardewdelight
+7d64a9299f30f850050e3451bc50dfbb53fa8fd5 data/stardewdelight/tags/worldgen/biome/flower_patch_spawns.json
 490705c560974f023f9fca41a8e913323f11d0c0 data/stardewdelight/tags/worldgen/biome/fruit_tree_forest_spawns.json
 7c8848ee029785a6204a3104b8e9bb58693ccec7 data/stardewdelight/tags/worldgen/biome/fruit_tree_plains_spawns.json
+608a9dce70d582b45de7fa737123efa1fa0b6110 data/stardewdelight/tags/worldgen/biome/wild_crop_spawns_autumn.json
+e22cc43caac446d667dccbb55ca30295b38e38fb data/stardewdelight/tags/worldgen/biome/wild_crop_spawns_spring.json
+61a55303f6a4ab36e61dc5a19f717459dea93134 data/stardewdelight/tags/worldgen/biome/wild_crop_spawns_summer.json
+ff13fafcc6c847d2ce8a4262842bf1316dc580ea data/stardewdelight/tags/worldgen/biome/wild_crop_spawns_tropical.json
+70288adef4f9ad4408485f0b4bb39fae842b92f2 data/stardewdelight/tags/worldgen/biome/wild_crop_spawns_winter.json
