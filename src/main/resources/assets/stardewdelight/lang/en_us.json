@@ -393,6 +393,7 @@
 
   "item.stardewdelight.seed_packet": "Seed Packet",
   "item.stardewdelight.ancient_seed": "Ancient Seed",
+  "item.stardewdelight.seed_bag": "Seed Bag",
 
   "item.stardewdelight.ancient_seed.tooltip_italic": "By all appearances it's long since dead..."
 }

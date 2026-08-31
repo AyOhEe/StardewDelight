@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-29T20:56:17.1119245	Stardew's Delight's ItemTags Models
+// 1.21.1	2026-08-31T20:41:47.3816921	Stardew's Delight's ItemTags Models
 c80c5cd3050be4cc5222f1ee05061d40a56c0f9d assets/stardewdelight/models/item/amaranth.json
 0ad7f1d7b854bc9ce8dd6fd4462b9c08cd65e82e assets/stardewdelight/models/item/amaranth_crop_wild.json
 c72b6390f795d02ac9d77eeb6e957b79d2c76b8a assets/stardewdelight/models/item/amaranth_seeds.json
@@ -194,6 +194,7 @@ a5148747a257f343e878bf8e61c4f67924369a79 assets/stardewdelight/models/item/red_c
 7647fc33a5c0c80e5c9af13edfe4069e08479413 assets/stardewdelight/models/item/rhubarb.json
 fa48178c8b5259cb51114d39d0f8f575c6230336 assets/stardewdelight/models/item/rhubarb_crop_wild.json
 542c75be19190e727e92e6d64c347e0da57a2933 assets/stardewdelight/models/item/rhubarb_seeds.json
+59b55207afcc5dcc45eae5c8acd9a65667c6c3b9 assets/stardewdelight/models/item/seed_bag.json
 945f4549b4f70fc4711c97f13f96b838e1376765 assets/stardewdelight/models/item/seed_packet.json
 3a3141ac090104400079e2bde365fda01898afb9 assets/stardewdelight/models/item/spangle_seeds.json
 f12f2bc5bc8808015d53df770925e3effe44a778 assets/stardewdelight/models/item/starfruit.json

@@ -8,8 +8,12 @@ item properties (edible crops? etc... GO THROUGH AND CHECK)
 
 tea tree
 
-Seed bag (holds 128 items of seeds, up to 12 different stacks)
 
+FIX SEED BAG
+ - do i need to be implementing any packets?
+seed bag scroll selection behaviour
+ - might be ContainerComponentManipulators?
+significantly improve seed bag rendering
 
 actual food recipes
  - ingredients from produce

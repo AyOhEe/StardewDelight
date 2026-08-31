@@ -29,6 +29,7 @@ public class SDItemModelProvider extends ItemModelProvider {
         /*----- UTILITY ITEMS -----*/
         basicItem(SDItems.SEED_PACKET.asItem());
         basicItem(SDItems.ANCIENT_SEED.asItem());
+        basicItem(SDItems.SEED_BAG.asItem());
 
 
         /*----- SEEDS -----*/

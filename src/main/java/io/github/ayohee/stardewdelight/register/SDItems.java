@@ -1,14 +1,21 @@
 package io.github.ayohee.stardewdelight.register;
 
+import io.github.ayohee.stardewdelight.SDTags;
 import io.github.ayohee.stardewdelight.content.DoubleHighNamedBlockItem;
 import io.github.ayohee.stardewdelight.content.SeedPacketItem;
+import io.github.ayohee.stardewdelight.content.seedbag.SeedBagContents;
+import io.github.ayohee.stardewdelight.content.seedbag.SeedBagItem;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.component.BundleContents;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
+import org.apache.commons.lang3.math.Fraction;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;
@@ -29,6 +36,12 @@ public class SDItems {
     public static final DeferredItem<Item> ANCIENT_SEED = item(
             "ancient_seed",
             Item::new
+    );
+
+    public static final DeferredItem<SeedBagItem> SEED_BAG = item(
+            "seed_bag",
+            p -> new SeedBagItem(p, Tags.Items.SEEDS, Fraction.getFraction(2), 12),
+            p -> p.stacksTo(1).component(SDDataComponents.SEED_BAG_CONTENTS, SeedBagContents.EMPTY)
     );
 
 

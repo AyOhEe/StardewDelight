@@ -129,6 +129,14 @@ public class SDRecipeProvider extends RecipeProvider {
                 .define('U', Items.WATER_BUCKET)
                 .unlockedBy("has_" + getItemName(SDItems.ANCIENT_SEED), hasItems(SDItems.ANCIENT_SEED))
                 .save(recipeOutput, StardewDelight.modLoc("ancient_seeds_from_ancient_seed"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SDItems.SEED_BAG)
+                .pattern("s")
+                .pattern("#")
+                .define('s', Items.STRING)
+                .define('#', Items.PAPER)
+                .unlockedBy("has_" + getItemName(Items.PAPER), hasItems(Items.PAPER))
+                .save(recipeOutput, StardewDelight.modLoc("seed_bag_from_paper"));
     }
 
     private static void modNineBlockStorageRecipes(RecipeOutput output, RecipeCategory breakingCategory, ItemLike item, RecipeCategory compactingCategory, ItemLike compacted) {

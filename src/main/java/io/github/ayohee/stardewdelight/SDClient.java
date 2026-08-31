@@ -1,5 +1,7 @@
 package io.github.ayohee.stardewdelight;
 
+import io.github.ayohee.stardewdelight.content.seedbag.ClientSeedBagTooltip;
+import io.github.ayohee.stardewdelight.content.seedbag.SeedBagTooltip;
 import io.github.ayohee.stardewdelight.register.SDBlockEntityTypes;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
@@ -13,6 +15,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterClientTooltipComponentFactoriesEvent;
 import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 
 import static io.github.ayohee.stardewdelight.StardewDelight.MODID;
@@ -50,5 +53,10 @@ public class SDClient {
         if (I18n.exists(componentName)) {
             event.getToolTip().add(1, Component.translatable(componentName).withStyle(GRAY));
         }
+    }
+
+    @SubscribeEvent
+    public static void onRegisterClientTooltipFactories(RegisterClientTooltipComponentFactoriesEvent event) {
+        event.register(SeedBagTooltip.class, t -> new ClientSeedBagTooltip(t.contents(), t.maxWeight(), t.maxStacks()));
     }
 }
